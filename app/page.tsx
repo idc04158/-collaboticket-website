@@ -1,10 +1,12 @@
 "use client"
 
 import { useState } from "react"
+
 import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
 import { AuthoritySection } from "@/components/authority-section"
 import { ServicesSection } from "@/components/services-section"
+import { InfluencerDataLabSection } from "@/components/influencer-data-lab-section"
 import { InsightsSection } from "@/components/insights-section"
 import { WebinarsSection } from "@/components/webinars-section"
 import { CtaSection } from "@/components/cta-section"
@@ -23,6 +25,7 @@ export default function Home() {
           <HeroSection onOpen={() => setOpen(true)} />
           <AuthoritySection />
           <ServicesSection />
+          <InfluencerDataLabSection />
           <InsightsSection />
           <WebinarsSection />
           <CtaSection onOpen={() => setOpen(true)} />

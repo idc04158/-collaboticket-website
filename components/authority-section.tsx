@@ -1,53 +1,63 @@
-import { Database, Users, Presentation } from "lucide-react"
-
-const reasons = [
-  {
-    icon: Database,
-    title: "일본 시장 전문 데이터 기반 전략",
-    description:
-      "일본 소비자 행동 데이터와 시장 트렌드를 기반으로 맞춤형 진출 전략을 설계합니다. 감이 아닌 데이터로 의사결정을 지원합니다.",
-  },
-  {
-    icon: Users,
-    title: "인플루언서 네트워크 및 실행 경험",
-    description:
-      "일본 현지 인플루언서와의 직접 네트워크를 활용하여 브랜드 인지도 확대부터 전환까지 실행 가능한 캠페인을 운영합니다.",
-  },
-  {
-    icon: Presentation,
-    title: "웨비나 기반 B2B 리드 설계 경험",
-    description:
-      "전략 웨비나를 통해 잠재 고객을 유치하고 B2B 파이프라인을 구축한 검증된 경험으로 실질적인 비즈니스 성과를 만들어냅니다.",
-  },
-]
+import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function AuthoritySection() {
   return (
-    <section id="about" className="bg-card py-24 lg:py-32">
+    <section className="bg-card py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-16">
+        <div className="mb-20 max-w-3xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-            {"Why CollaboTicket"}
+            Execution Flow
           </p>
-          <h2 className="text-balance font-sans text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            {"왜 콜라보티켓인가?"}
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            일본 시장은 ‘단계별 신뢰 축적 구조’로 움직입니다
           </h2>
+          <p className="mt-4 text-muted-foreground">
+            단일 캠페인이 아니라, 연결된 실행 구조로 접근해야
+            일본 시장에서 성과가 지속됩니다.
+          </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3 md:gap-12">
-          {reasons.map((reason) => (
-            <div key={reason.title} className="flex flex-col gap-4">
-              <div className="flex size-12 items-center justify-center rounded-xl bg-secondary">
-                <reason.icon className="size-5 text-foreground" />
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              step: "STEP 01",
+              title: "체험단 운영",
+              desc: "100명 모집 → 리뷰 80건 이상 확보 → 평균 평점 4.5 이상 유지",
+            },
+            {
+              step: "STEP 02",
+              title: "인플루언서 확산",
+              desc: "카테고리 맞춤 5~8명 협업 → 평균 조회수 40K 이상 확보",
+            },
+            {
+              step: "STEP 03",
+              title: "SNS 운영",
+              desc: "월간 도달 150K 이상 → 브랜드 신뢰도 상승",
+            },
+            {
+              step: "STEP 04",
+              title: "법인 · 물류 · 세무",
+              desc: "일본 법인 설립 → 세무·물류 인프라 구축 → 장기 운영 구조 완성",
+            },
+          ].map((item) => (
+            <div key={item.step} className="rounded-2xl border bg-background p-6 shadow-sm">
+              <div className="text-sm font-semibold text-[#00B140]">
+                {item.step}
               </div>
-              <h3 className="font-sans text-lg font-semibold text-foreground">
-                {reason.title}
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {reason.description}
+              <h3 className="mt-2 font-semibold">{item.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {item.desc}
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-20 text-center">
+          <Button className="bg-[#00B140] hover:bg-[#009C38] text-white px-10 rounded-lg shadow-md">
+            현재 단계 진단받기
+            <ArrowRight className="ml-2 size-4" />
+          </Button>
         </div>
       </div>
     </section>
