@@ -1,33 +1,22 @@
+import Link from "next/link"
+import Image from "next/image"
+import { ArrowRight, FileText } from "lucide-react"
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
+import { Skeleton } from "@/components/ui/skeleton"
+import type { InsightMeta } from "@/lib/insights"
 
-const articles = [
-  {
-    category: "Market Analysis",
-    title: "2025년 일본 이커머스 시장 트렌드 분석",
-    excerpt:
-      "일본 소비자 의사결정 구조와 카테고리별 성장 데이터를 기반으로 한국 브랜드의 기회 요인을 분석합니다.",
-  },
-  {
-    category: "Case Study",
-    title: "체험단 + 인플루언서 결합으로 매출 43% 상승 사례",
-    excerpt:
-      "리뷰 신뢰 구조 형성 이후 인플루언서 확산을 통해 메가와리 매출이 상승한 실제 실행 사례를 공개합니다.",
-  },
-  {
-    category: "Strategy Guide",
-    title: "일본 공식 SNS 운영이 매출에 미치는 영향",
-    excerpt:
-      "공식 계정 운영이 검색 노출과 브랜드 신뢰도에 어떤 영향을 미치는지 데이터로 설명합니다.",
-  },
-]
+type Props = {
+  teasers: InsightMeta[]
+  isLoading?: boolean
+}
 
-export function InsightsSection() {
+export function InsightsSection({ teasers, isLoading = false }: Props) {
   return (
-    <section id="insights" className="bg-card py-24 lg:py-32">
+    <section id="insights" className="scroll-mt-24 bg-card py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-
         <div className="mb-16 max-w-3xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
             Data & Case Hub
@@ -40,45 +29,84 @@ export function InsightsSection() {
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-3">
-          {articles.map((article) => (
-            <article
-              key={article.title}
-              className="group flex flex-col gap-4 border rounded-xl p-6 bg-background hover:shadow-md transition"
-            >
-              <Badge className="w-fit text-xs">
-                {article.category}
-              </Badge>
-
-              <h3 className="text-lg font-semibold leading-snug group-hover:text-[#00B140] transition">
-                {article.title}
-              </h3>
-
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {article.excerpt}
-              </p>
-
-              <a
-                href="#"
-                className="mt-auto inline-flex items-center gap-1 text-sm font-medium"
+        {isLoading ? (
+          <div className="grid gap-8 md:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, idx) => (
+              <div key={idx} className="rounded-xl border bg-background p-6">
+                <Skeleton className="mb-4 aspect-[16/9] w-full rounded-lg" />
+                <Skeleton className="mb-3 h-5 w-24" />
+                <Skeleton className="mb-2 h-5 w-full" />
+                <Skeleton className="mb-4 h-5 w-4/5" />
+                <Skeleton className="h-4 w-20" />
+              </div>
+            ))}
+          </div>
+        ) : teasers.length === 0 ? (
+          <Empty className="rounded-2xl border bg-background py-14">
+            <EmptyHeader>
+              <EmptyMedia variant="icon">
+                <FileText />
+              </EmptyMedia>
+              <EmptyTitle>아직 공개된 인사이트가 없습니다.</EmptyTitle>
+              <EmptyDescription>
+                새로운 콘텐츠가 업로드되면 이 영역에 자동으로 표시됩니다.
+              </EmptyDescription>
+            </EmptyHeader>
+          </Empty>
+        ) : (
+          <div className="grid gap-8 md:grid-cols-3">
+            {teasers.map((article) => (
+              <article
+                key={article.slug}
+                className="group flex h-full flex-col gap-4 rounded-xl border bg-background p-6 transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                자세히 보기
-                <ArrowRight className="size-3.5" />
-              </a>
-            </article>
-          ))}
-        </div>
+                {article.image ? (
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-lg border">
+                    <Image
+                      src={article.image}
+                      alt={`${article.title} 썸네일`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex aspect-[16/9] items-center justify-center rounded-lg border bg-muted/40 text-muted-foreground">
+                    <FileText className="size-5" />
+                  </div>
+                )}
+                <Badge className="w-fit text-xs">{article.category}</Badge>
+
+                <h3 className="line-clamp-2 text-lg font-semibold leading-snug transition group-hover:text-[#00B140]">
+                  <Link href={`/insights/${article.slug}`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00B140]/40">
+                    {article.title}
+                  </Link>
+                </h3>
+
+                <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">{article.description}</p>
+
+                <Link
+                  href={`/insights/${article.slug}`}
+                  className="mt-auto inline-flex items-center gap-1 text-sm font-medium text-foreground transition hover:text-[#00B140]"
+                >
+                  자세히 보기
+                  <ArrowRight className="size-3.5 transition group-hover:translate-x-0.5" />
+                </Link>
+              </article>
+            ))}
+          </div>
+        )}
 
         <div className="mt-14 flex justify-center">
           <Button
+            asChild
             variant="outline"
             size="lg"
-            className="rounded-lg px-8 font-medium border-[#00B140] text-[#00B140] hover:bg-[#00B140] hover:text-white"
+            className="rounded-lg border-[#00B140] px-8 font-medium text-[#00B140] transition hover:bg-[#00B140] hover:text-white"
           >
-            모든 인사이트 보기
+            <Link href="/insights">모든 인사이트 보기</Link>
           </Button>
         </div>
-
       </div>
     </section>
   )

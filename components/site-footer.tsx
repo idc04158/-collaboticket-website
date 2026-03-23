@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
 
 const footerLinks = [
@@ -11,36 +12,44 @@ const footerLinks = [
   },
 ]
 
+const internalLinks = [
+  { label: "인사이트", href: "/insights" },
+  { label: "웨비나", href: "/webinar" },
+  { label: "상담", href: "/contact" },
+  { label: "인플루언서 데모", href: "/influencers" },
+]
+
 export function SiteFooter() {
   return (
     <footer className="bg-[#111111] text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-        {/* 상단 영역 */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-
-          {/* 브랜드 */}
           <div className="flex flex-col gap-4">
-            <span className="font-sans text-lg font-bold text-white">
-              CollaboTicket
-            </span>
-            <p className="text-sm text-gray-400">
-              콜라보티켓
-            </p>
+            <span className="font-sans text-lg font-bold text-white">CollaboTicket</span>
+            <p className="text-sm text-gray-400">일본전문 마케팅 에이전시</p>
+            <p className="text-xs text-gray-500">Since 2020</p>
           </div>
 
-          {/* 연락처 */}
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-semibold text-white">연락처</h4>
-            <p className="text-sm text-gray-400">
-              contact@collaboticket.com
-            </p>
-            <p className="text-sm text-gray-400">
-              사업자등록번호 436-36-00682
-            </p>
+            <p className="text-sm text-gray-400">대표 강지예 (Kang Jiye)</p>
+            <p className="text-sm text-gray-400">TEL: 070-8057-6518 (직통)</p>
+            <p className="text-sm text-gray-400">E-mail: partner@collaboticket.com</p>
           </div>
 
-          {/* 법적 고지 */}
+          <div className="flex flex-col gap-3">
+            <h4 className="text-sm font-semibold text-white">바로가기</h4>
+            {internalLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-gray-400 transition hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-semibold text-white">법적 고지</h4>
             {footerLinks.map((link) => (
@@ -49,30 +58,23 @@ export function SiteFooter() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-gray-400 hover:text-white transition"
+                className="text-sm text-gray-400 transition hover:text-white"
               >
                 {link.label}
               </a>
             ))}
           </div>
-
-          {/* 빈 컬럼 (레이아웃 균형 유지용) */}
-          <div />
         </div>
 
         <Separator className="my-12 bg-gray-800" />
 
-        {/* 하단 사업자 정보 - 기존 데이터 반영 */}
         <div className="flex flex-col gap-4 text-xs text-gray-400">
           <p>
-            (주) 콜라보티켓 | 대표 홍길동 | 사업자번호 436-36-00682 |
-            통신판매업 신고번호 제2024-서울강남-00000호 |
-            주소: 서울특별시 강남구 테헤란로 000
+            콜라보티켓 | 일본전문 마케팅 에이전시 | 대표 강지예 (Kang Jiye) |
+            주소: 서울시 마포구 포은로8길 29,477
           </p>
 
-          <p>
-            ©2026 CollaboTicket. All rights reserved.
-          </p>
+          <p>©2020-2026 CollaboTicket. All rights reserved.</p>
         </div>
       </div>
     </footer>

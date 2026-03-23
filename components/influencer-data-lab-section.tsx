@@ -1,179 +1,68 @@
-"use client"
+﻿"use client"
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import Image from "next/image"
+import { Heart, MessageCircle, Send } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
-type Category = "뷰티" | "식품" | "라이프" | "패션"
+const reels = [
+  { src: "/influencer/reel-skincare-1.webp", alt: "일본 인플루언서 스킨케어 콘텐츠", username: "@tokyo_skin_lab", caption: "敏感肌でも使いやすい保湿レビュー。", profile: "/influencer/profile-1.webp" },
+  { src: "/influencer/reel-desk-1.webp", alt: "일본 데스크 라이프스타일 콘텐츠", username: "@jp_desk_style", caption: "仕事中でも使いやすい新作紹介。", profile: "/influencer/profile-2.webp" },
+  { src: "/influencer/reel-cafe-1.webp", alt: "일본 카페 라이프스타일 콘텐츠", username: "@osaka_cafe_log", caption: "週末カフェで映えるアイテム。", profile: "/influencer/profile-1.webp" },
+  { src: "/influencer/reel-unboxing-1.webp", alt: "일본 제품 언박싱 숏폼", username: "@unbox_japan", caption: "開封から使用感まで一気にチェック。", profile: "/influencer/profile-2.webp" },
+  { src: "/influencer/reel-fitness-1.webp", alt: "일본 피트니스 콘텐츠", username: "@fit_tokyo_daily", caption: "運動後ルーティン向け 제품 소개。", profile: "/influencer/profile-1.webp" },
+  { src: "/influencer/reel-product-1.webp", alt: "일본 제품 소개 콘텐츠", username: "@product_focus_jp", caption: "比較ポイントを30秒で理解。", profile: "/influencer/profile-2.webp" },
+]
 
-export function InfluencerDataLabSection() {
-  const [selected, setSelected] = useState<Category>("뷰티")
-  const [loading, setLoading] = useState(false)
-
-  const handleSelect = (cat: Category) => {
-    setLoading(true)
-    setSelected(cat)
-    setTimeout(() => setLoading(false), 2000)
-  }
-
-  const dummyData = Array.from({ length: 8 }).map((_, i) => ({
-    name: `tokyo_creator_${i + 1}`,
-    followers: `${(5 + i) * 1.3}만`,
-    engagement: `${(3 + i * 0.4).toFixed(1)}%`,
-  }))
-
+function ReelCaseCard({ item }: { item: (typeof reels)[number] }) {
   return (
-    <section className="bg-[#f8f9fa] py-32 relative">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="group relative aspect-[9/16] overflow-hidden rounded-2xl border shadow-lg transition duration-300 hover:scale-[1.03] hover:shadow-2xl">
+      <Image src={item.src} alt={item.alt} fill className="object-cover" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black/55 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
 
-        {/* ================= HEADER ================= */}
-        <div className="text-center mb-20">
-          <p className="text-sm font-semibold text-[#00B140] tracking-widest uppercase">
-            Influencer Matching System
-          </p>
-          <h2 className="mt-4 text-4xl font-bold">
-            하루 종일 찾던 인플루언서
-            <br />
-            <span className="text-[#00B140]">5초 만에 찾기</span>
-          </h2>
-          <p className="mt-6 text-muted-foreground">
-            카테고리 선택 → 데이터 분석 → 상위 3명 무료 공개  
-            선택 후 전체 데이터 확인
-          </p>
+      <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-3 text-white">
+        <div className="min-w-0 pr-2">
+          <div className="mb-1 flex items-center gap-2">
+            <div className="relative size-6 overflow-hidden rounded-full border border-white/80">
+              <Image src={item.profile} alt="인플루언서 프로필" fill className="object-cover" />
+            </div>
+            <span className="truncate text-xs font-semibold">{item.username}</span>
+          </div>
+          <p className="line-clamp-2 text-[11px] text-white/90">{item.caption}</p>
         </div>
 
-        {/* ================= CATEGORY ================= */}
-        <div className="flex justify-center gap-4 mb-16 flex-wrap">
-          {(["뷰티", "식품", "라이프", "패션"] as Category[]).map((cat) => (
-            <button
-              key={cat}
-              onClick={() => handleSelect(cat)}
-              className={`px-6 py-2 rounded-full border font-medium transition
-                ${
-                  selected === cat
-                    ? "bg-[#00B140] text-white border-[#00B140]"
-                    : "bg-white hover:bg-gray-100"
-                }`}
-            >
-              {cat}
-            </button>
+        <div className="flex flex-col items-center gap-2 text-white/95">
+          <Heart className="size-4" />
+          <MessageCircle className="size-4" />
+          <Send className="size-4" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function InfluencerDataLabSection() {
+  return (
+    <section className="bg-[#f8f9fa] py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Real Campaign Cases</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">실제 운영 중인 인플루언서 콘텐츠 사례</h2>
+          <p className="mt-4 text-muted-foreground">노출만이 아니라 전환까지 고려한 숏폼 운영 구조를 직접 확인하세요.</p>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {reels.map((item) => (
+            <ReelCaseCard key={item.src} item={item} />
           ))}
         </div>
 
-        {/* ================= LOADING ================= */}
-        {loading ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-center py-32"
-          >
-            <div className="text-xl font-semibold mb-6">
-              일본 인플루언서 데이터 분석 중...
-            </div>
-            <div className="w-20 h-20 border-4 border-[#00B140] border-t-transparent rounded-full animate-spin mx-auto" />
-          </motion.div>
-        ) : (
-          <>
-            {/* ================= LIST ================= */}
-            <div className="space-y-14 max-h-[900px] overflow-hidden relative">
-
-              {dummyData.map((item, i) => {
-                const locked = i >= 3
-
-                return (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.08 }}
-                    className={`relative rounded-3xl bg-white shadow-lg p-8 flex gap-10 items-center ${
-                      locked ? "blur-sm opacity-60" : ""
-                    }`}
-                  >
-
-                    {/* LEFT PROFILE */}
-                    <div className="min-w-[260px]">
-                      <div className="flex items-center gap-4">
-                        <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200 relative">
-                          <Image
-                            src="/images/sample-profile.jpg"
-                            alt="profile"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold">
-                            {item.name}
-                          </h3>
-                          <p className="text-sm text-muted-foreground">
-                            팔로워 {item.followers}
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            평균 참여율 {item.engagement}
-                          </p>
-                        </div>
-                      </div>
-
-                      {!locked && (
-                        <Button
-                          size="sm"
-                          className="mt-6 bg-[#00B140] text-white"
-                        >
-                          협업 제안하기
-                        </Button>
-                      )}
-                    </div>
-
-                    {/* RIGHT CONTENT */}
-                    <div className="flex gap-6 flex-1">
-                      {[1, 2, 3, 4].map((num) => (
-                        <div
-                          key={num}
-                          className="w-[160px] aspect-[9/16] relative rounded-xl overflow-hidden bg-gray-100 shadow-sm"
-                        >
-                          <Image
-                            src="/images/sample-thumb.jpg"
-                            alt="콘텐츠"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* LOCK OVERLAY */}
-                    {locked && (
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Button className="bg-[#00B140] text-white px-8 py-4 text-lg rounded-xl shadow-xl">
-                          전체 데이터 보기
-                        </Button>
-                      </div>
-                    )}
-                  </motion.div>
-                )
-              })}
-
-              {/* FADE */}
-              <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f8f9fa] to-transparent" />
-            </div>
-
-            {/* ================= CTA ================= */}
-            <div className="mt-28 text-center">
-              <Button
-                size="lg"
-                className="bg-[#00B140] hover:bg-[#009C38] text-white px-14 py-6 text-lg rounded-2xl shadow-xl"
-              >
-                우리 브랜드 맞춤 인플루언서 리스트 받기
-              </Button>
-              <p className="mt-4 text-sm text-muted-foreground">
-                ✔ 리스트 확인 후 결제 진행  
-                ✔ 인플루언서 선택 후 계약 진행
-              </p>
-            </div>
-          </>
-        )}
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" className="rounded-xl bg-[#00B140] px-10 text-white shadow-lg transition hover:bg-[#009C38]">
+            <Link href="/contact">일본 진출 상담 신청</Link>
+          </Button>
+        </div>
       </div>
     </section>
   )

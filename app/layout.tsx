@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "CollaboTicket | 데이터로 설계하는 일본 시장 진출 전략",
   description:
     "콜라보티켓은 한국 브랜드의 일본 진출을 전략적으로 설계하는 글로벌 마케팅 파트너입니다.",
+  icons: {
+    icon: "/CT logo.jpg",
+  },
 }
 
 export default function RootLayout({
