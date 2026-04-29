@@ -8,3 +8,7 @@ node_modules/
 .next/
 .env*.local
 .DS_Store
+data/inquiries.json
+data/crm-settings.json
+data/crm-activity.json
+data/uploads/

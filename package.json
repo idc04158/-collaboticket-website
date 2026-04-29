@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "import:insights": "node scripts/bulk-import-insights.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -39,6 +40,7 @@
     "@radix-ui/react-tooltip": "1.2.8",
     "@vercel/analytics": "1.6.1",
     "autoprefixer": "^10.4.20",
+    "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.1.1",
@@ -47,6 +49,7 @@
     "framer-motion": "^12.34.3",
     "gray-matter": "^4.0.3",
     "input-otp": "1.4.2",
+    "jose": "^6.2.3",
     "lucide-react": "^0.564.0",
     "marked": "^17.0.3",
     "next": "^14.2.5",
@@ -60,10 +63,12 @@
     "sonner": "^1.7.1",
     "tailwind-merge": "^3.3.1",
     "vaul": "^1.1.2",
+    "xlsx": "^0.18.5",
     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",

@@ -4,8 +4,10 @@ export function CtaSection() {
   return (
     <section id="contact" className="scroll-mt-24 bg-gray-900 px-6 py-24 text-center lg:py-32">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-white md:text-4xl">일본 시장 실행을 바로 시작해보세요</h2>
-        <p className="mt-6 text-lg text-gray-300">브랜드 상황에 맞는 실행 구조를 상담에서 구체적으로 설계해드립니다.</p>
+        <h2 className="text-balance text-3xl font-bold text-white md:text-4xl">일본 실행, 상담으로 시작하세요</h2>
+        <p className="mt-6 text-pretty text-lg text-gray-300">
+          채널 진단과 우선순위 설계부터 운영 대행까지 필요한 범위만 제안드립니다.
+        </p>
 
         <div className="mt-10">
           <Link

@@ -17,12 +17,17 @@ export default function ContactPage() {
   return (
     <MarketingShell>
       <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-xl px-6">
+        <div className="mx-auto max-w-2xl px-6">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Contact</p>
           <h1 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">상담 신청</h1>
-          <p className="mt-4 text-muted-foreground">
-            브랜드 상황에 맞는 일본 진출 실행 구조를 함께 설계합니다.
-          </p>
+          <div className="mt-6 space-y-4 text-muted-foreground">
+            <p>
+              아래 예약폼에서 편한 시간을 바로 선택하시거나, 가볍게 카카오톡으로 상담을 시작하실 수 있습니다.
+            </p>
+            <p>
+              아래 예약폼에서 편한 시간을 선택해 주시면 30분 무료 온라인 상담이 예약됩니다.
+            </p>
+          </div>
           <div className="mt-10">
             <ContactPageContent />
           </div>

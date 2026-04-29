@@ -1,7 +1,5 @@
 "use client"
 
-import { useState } from "react"
-
 import { HeroSection } from "@/components/hero-section"
 import { TrustHighlightsSection } from "@/components/trust-highlights-section"
 import { AuthoritySection } from "@/components/authority-section"
@@ -13,7 +11,6 @@ import { WebinarsSection } from "@/components/webinars-section"
 import { CtaSection } from "@/components/cta-section"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { ContactModal } from "@/components/contact-modal"
 import type { InsightMeta } from "@/lib/insights"
 
 type Props = {
@@ -21,29 +18,23 @@ type Props = {
 }
 
 export function HomePageClient({ insightTeasers }: Props) {
-  const [open, setOpen] = useState(false)
-
   return (
-    <>
-      <div className="flex min-h-screen flex-col">
-        <SiteHeader onOpen={() => setOpen(true)} />
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
 
-        <main>
-          <HeroSection />
-          <TrustHighlightsSection />
-          <AuthoritySection />
-          <InfluencerDataLabSection />
-          <MidCtaSection />
-          <ServicesSection />
-          <InsightsSection teasers={insightTeasers} />
-          <WebinarsSection />
-          <CtaSection />
-        </main>
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <TrustHighlightsSection />
+        <AuthoritySection />
+        <InfluencerDataLabSection />
+        <MidCtaSection />
+        <InsightsSection teasers={insightTeasers} />
+        <WebinarsSection />
+        <CtaSection />
+      </main>
 
-        <SiteFooter />
-      </div>
-
-      <ContactModal open={open} onClose={() => setOpen(false)} />
-    </>
+      <SiteFooter />
+    </div>
   )
 }

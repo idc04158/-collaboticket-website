@@ -123,3 +123,57 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes influencer-reel-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.influencer-reel-track {
+  animation: influencer-reel-scroll 36s linear infinite;
+}
+
+.influencer-reel-track:hover {
+  animation-play-state: paused;
+}
+
+.insight-body ul {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.insight-body li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--muted-foreground);
+}
+
+.insight-body li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  display: inline-flex;
+  width: 1.1rem;
+  height: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: color-mix(in oklab, #00b140 12%, transparent);
+  color: #00b140;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.insight-body ol {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+  color: var(--muted-foreground);
+}

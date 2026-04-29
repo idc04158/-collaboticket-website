@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "bulk-example-insight",
+    "title": "벌크 업로드 예시 — 데이터 인사이트",
+    "description": "JSON으로 여러 글을 한 번에 content/blog에 반영하는 예시입니다.",
+    "category": "Insight",
+    "date": "2026-04-19",
+    "body": "## 요약\n\n본문은 Markdown입니다.\n\n- 항목 1\n- 항목 2"
+  },
+  {
+    "slug": "bulk-example-case",
+    "title": "벌크 업로드 예시 — 실행 사례",
+    "description": "category를 Case Study 또는 실행사례로 두면 카드에 그대로 표시됩니다.",
+    "category": "Case Study",
+    "date": "2026-04-19",
+    "body": "## 과제\n\n...\n\n## 실행\n\n...\n\n## 결과\n\n..."
+  }
+]

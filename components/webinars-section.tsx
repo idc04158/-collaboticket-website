@@ -1,9 +1,52 @@
+"use client"
+
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CalendarDays, ArrowRight, Play } from "lucide-react"
+import { splitWebinars, type Webinar } from "@/lib/webinars"
+
+function WebinarCard({ webinar, status }: { webinar: Webinar; status: "upcoming" | "past" }) {
+  return (
+    <Card className="overflow-hidden border-border bg-card transition hover:shadow-md">
+      <div className="relative aspect-[16/9] overflow-hidden border-b bg-muted">
+        <Image src={webinar.image} alt={`${webinar.title} 배너`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+      </div>
+      <CardContent className="flex flex-col gap-5 p-6">
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <CalendarDays className="size-4" />
+          <time dateTime={webinar.date}>{webinar.dateLabel}</time>
+        </div>
+        <h4 className="font-sans text-xl font-semibold text-foreground">{webinar.title}</h4>
+        <p className="text-sm leading-relaxed text-muted-foreground">{webinar.summary}</p>
+        {status === "upcoming" ? (
+          <Button
+            asChild
+            size="lg"
+            className="w-fit rounded-lg bg-[#00B140] px-8 font-medium text-white transition hover:bg-[#009C38]"
+          >
+            <Link href="/contact">
+              사전 신청
+              <ArrowRight className="ml-1 size-4" />
+            </Link>
+          </Button>
+        ) : (
+          <Button asChild variant="outline" size="lg" className="w-fit rounded-lg px-8 font-medium">
+            <Link href="/webinar">
+              <Play className="size-4" />
+              지난 웨비나 보기
+            </Link>
+          </Button>
+        )}
+      </CardContent>
+    </Card>
+  )
+}
 
 export function WebinarsSection() {
+  const { upcoming, past } = splitWebinars()
+
   return (
     <section id="webinars" className="scroll-mt-24 bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -25,56 +68,27 @@ export function WebinarsSection() {
               </span>
               진행 예정 웨비나
             </h3>
-            <Card className="border-border bg-card transition hover:shadow-md">
-              <CardContent className="flex flex-col gap-5 p-8">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CalendarDays className="size-4" />
-                  <time dateTime="2026-03-15">2026년 3월 15일 (목) 14:00 KST</time>
-                </div>
-                <h4 className="font-sans text-xl font-semibold text-foreground">
-                  일본 이커머스 시장 진출을 위한 데이터 전략
-                </h4>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  일본 시장의 최신 이커머스 트렌드와 데이터 분석을 통해 한국 브랜드가 효과적으로 진출할 수 있는 전략적 프레임워크를 공유합니다.
-                </p>
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-fit rounded-lg bg-[#00B140] px-8 font-medium text-white transition hover:bg-[#009C38]"
-                >
-                  <Link href="/contact">
-                    사전 신청
-                    <ArrowRight className="ml-1 size-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+            {upcoming.length > 0 ? (
+              upcoming.map((webinar) => <WebinarCard key={webinar.id} webinar={webinar} status="upcoming" />)
+            ) : (
+              <Card className="border-border bg-card">
+                <CardContent className="p-8">
+                  <h4 className="font-sans text-xl font-semibold text-foreground">다음 웨비나를 준비 중입니다</h4>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    새로운 일정이 확정되면 이 영역에 가장 먼저 공개됩니다.
+                  </p>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
           <div className="flex flex-col gap-6">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
               종료된 웨비나
             </h3>
-            <Card className="border-border bg-card transition hover:shadow-md">
-              <CardContent className="flex flex-col gap-5 p-8">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CalendarDays className="size-4" />
-                  <time dateTime="2026-01-20">2026년 1월 20일 (수) 14:00 KST</time>
-                </div>
-                <h4 className="font-sans text-xl font-semibold text-foreground">
-                  K-뷰티 브랜드를 위한 일본 인플루언서 활용법
-                </h4>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  일본 뷰티 시장에서 인플루언서 마케팅을 효과적으로 활용하여 브랜드 인지도와 매출을 동시에 높인 실제 사례를 분석합니다.
-                </p>
-                <Button asChild variant="outline" size="lg" className="w-fit rounded-lg px-8 font-medium">
-                  <Link href="/webinar">
-                    <Play className="size-4" />
-                    요약 보기
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+            {past.map((webinar) => (
+              <WebinarCard key={webinar.id} webinar={webinar} status="past" />
+            ))}
           </div>
         </div>
       </div>
