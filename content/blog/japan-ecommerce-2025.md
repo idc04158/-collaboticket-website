@@ -1,9 +1,14 @@
 ---
-title: "2025년 일본 이커머스 시장 트렌드 분석"
-description: "일본 시장의 구조 변화와 한국 브랜드 전략"
-category: "Market Analysis"
-date: "2025-11-02"
-image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+title: 2025년 일본 이커머스 시장 트렌드 분석
+description: 일본 시장의 구조 변화와 한국 브랜드 전략
+category: Market Analysis
+date: '2025-11-02'
+image: >-
+  https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 시장분석
+  - 일본EC
+  - 데이터
 ---
 
 ## 1. 신뢰 기반 의사결정 구조

@@ -43,8 +43,7 @@ export function ServicesSection() {
         <p className="mb-4 text-sm font-bold uppercase tracking-widest text-[#00B140]">Services</p>
         <h2 className="text-balance text-4xl font-black tracking-tight md:text-5xl">콜라보티켓 서비스 소개</h2>
         <p className="mt-4 text-muted-foreground">
-          핵심 실행 영역만 메뉴 형태로 정리했습니다. 법인 설립은 메인 서비스 라인에 넣지 않으며,{" "}
-          <span className="font-semibold text-foreground">법인 설립 지원 가능</span>합니다.
+          이커머스 운영부터 물류, 상표등록, 법인설립 등 일본진출에 필요한 모든 서비스를 한번에 서포트 해드립니다.
         </p>
 
         <Accordion type="multiple" defaultValue={["sns", "open"]} className="mt-12 w-full rounded-2xl border bg-card px-2 shadow-sm md:px-4">

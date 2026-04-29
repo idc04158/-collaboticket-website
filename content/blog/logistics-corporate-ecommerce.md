@@ -1,9 +1,13 @@
 ---
-title: "법인 설립 후 이커머스·물류를 연결하는 구조"
-description: "세무·통관·풀필먼트까지 한 번에 설계할 때의 이점"
-category: "Case Study"
-date: "2025-08-05"
-image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80"
+title: 법인 설립 후 이커머스·물류를 연결하는 구조
+description: 세무·통관·풀필먼트까지 한 번에 설계할 때의 이점
+category: Case Study
+date: '2025-08-05'
+image: >-
+  https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 왜 법인·물류를 함께 보는가

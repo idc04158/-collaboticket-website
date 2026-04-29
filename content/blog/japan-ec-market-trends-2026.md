@@ -1,9 +1,14 @@
 ---
-title: "일본 EC 시장 트렌드 2026: 성장률보다 중요한 채널별 전환 전략"
-description: "일본 EC 트렌드 검색결과를 기반으로 물판 EC, 자사몰, 몰, SNS 연계 판매의 변화를 한국 브랜드 관점에서 정리했습니다."
-category: "Market Analysis"
-date: "2026-04-25"
-image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+title: '일본 EC 시장 트렌드 2026: 성장률보다 중요한 채널별 전환 전략'
+description: '일본 EC 트렌드 검색결과를 기반으로 물판 EC, 자사몰, 몰, SNS 연계 판매의 변화를 한국 브랜드 관점에서 정리했습니다.'
+category: Market Analysis
+date: '2026-04-25'
+image: >-
+  https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 시장분석
+  - 일본EC
+  - 데이터
 ---
 
 ## 요약

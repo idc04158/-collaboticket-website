@@ -412,6 +412,9 @@ export function AdminCrmClient() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
+            <Link href="/admin/insights" className="rounded-xl border bg-white px-4 py-2 text-sm font-bold">
+              인사이트 관리
+            </Link>
             <button
               type="button"
               onClick={() => exportExcel()}

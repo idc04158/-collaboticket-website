@@ -1,9 +1,13 @@
 ---
-title: "Qoo10 메가와리와 라이브커머스: 일본 진출 브랜드가 준비해야 할 것"
-description: "Qoo10 일본 매출, 메가와리, 라이브커머스 검색결과를 바탕으로 한국 브랜드가 준비해야 할 캠페인 구조를 정리했습니다."
-category: "Insight"
-date: "2026-04-24"
-image: "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80"
+title: 'Qoo10 메가와리와 라이브커머스: 일본 진출 브랜드가 준비해야 할 것'
+description: 'Qoo10 일본 매출, 메가와리, 라이브커머스 검색결과를 바탕으로 한국 브랜드가 준비해야 할 캠페인 구조를 정리했습니다.'
+category: Insight
+date: '2026-04-24'
+image: >-
+  https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

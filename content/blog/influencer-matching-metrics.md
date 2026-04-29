@@ -1,9 +1,14 @@
 ---
-title: "일본 인플루언서 매칭 시 봐야 할 데이터 지표"
-description: "팔로워 수만이 아닌 참여율·오디언스·콘텐츠 톤을 통합해 보는 방법"
-category: "Market Analysis"
-date: "2025-09-20"
-image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+title: 일본 인플루언서 매칭 시 봐야 할 데이터 지표
+description: 팔로워 수만이 아닌 참여율·오디언스·콘텐츠 톤을 통합해 보는 방법
+category: Market Analysis
+date: '2025-09-20'
+image: >-
+  https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 시장분석
+  - 일본EC
+  - 데이터
 ---
 
 ## 핵심 지표

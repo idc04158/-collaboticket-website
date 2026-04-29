@@ -1,9 +1,13 @@
 ---
-title: "일본 공식 SNS 운영이 매출에 미치는 영향"
-description: "검색 노출·브랜드 신뢰·전환까지 연결되는 SNS 운영 프레임워크"
-category: "Strategy Guide"
-date: "2025-11-28"
-image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80"
+title: 일본 공식 SNS 운영이 매출에 미치는 영향
+description: 검색 노출·브랜드 신뢰·전환까지 연결되는 SNS 운영 프레임워크
+category: Strategy Guide
+date: '2025-11-28'
+image: >-
+  https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 왜 일본에서는 공식 SNS가 중요한가

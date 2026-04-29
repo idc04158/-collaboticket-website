@@ -1,9 +1,13 @@
 ---
-title: "AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로"
-description: "Forbes Japan과 일본 EC 검색결과에서 보이는 AI 쇼핑 흐름을 바탕으로 한국 브랜드가 준비해야 할 콘텐츠 구조를 정리했습니다."
-category: "Insight"
-date: "2026-04-20"
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80"
+title: 'AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로'
+description: Forbes Japan과 일본 EC 검색결과에서 보이는 AI 쇼핑 흐름을 바탕으로 한국 브랜드가 준비해야 할 콘텐츠 구조를 정리했습니다.
+category: Insight
+date: '2026-04-20'
+image: >-
+  https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

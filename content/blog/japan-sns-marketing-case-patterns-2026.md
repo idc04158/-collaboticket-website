@@ -1,9 +1,15 @@
 ---
-title: "일본 SNS 마케팅 사례에서 반복되는 성공 패턴"
-description: "MarkeZine 등 일본 SNS 마케팅 사례 검색결과를 기반으로 기업 SNS, 캠페인, UGC 활용 패턴을 한국 브랜드 관점에서 분석했습니다."
-category: "Case Study"
-date: "2026-04-23"
-image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80"
+title: 일본 SNS 마케팅 사례에서 반복되는 성공 패턴
+description: >-
+  MarkeZine 등 일본 SNS 마케팅 사례 검색결과를 기반으로 기업 SNS, 캠페인, UGC 활용 패턴을 한국 브랜드 관점에서
+  분석했습니다.
+category: Case Study
+date: '2026-04-23'
+image: >-
+  https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

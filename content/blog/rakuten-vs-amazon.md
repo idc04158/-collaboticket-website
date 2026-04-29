@@ -1,9 +1,13 @@
 ---
-title: "라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까"
-description: "라쿠텐과 Amazon Japan의 구매 맥락, 운영 방식, SEO 관점을 비교해 일본 EC 진입 채널 선택 기준을 정리했습니다."
-category: "Strategy"
-date: "2026-04-14"
-image: "https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?auto=format&fit=crop&w=1400&q=80"
+title: '라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까'
+description: '라쿠텐과 Amazon Japan의 구매 맥락, 운영 방식, SEO 관점을 비교해 일본 EC 진입 채널 선택 기준을 정리했습니다.'
+category: Strategy
+date: '2026-04-14'
+image: >-
+  https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

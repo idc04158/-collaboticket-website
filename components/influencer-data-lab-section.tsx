@@ -95,7 +95,9 @@ export function InfluencerDataLabSection() {
             <div className="max-w-4xl">
               <p className="text-sm font-bold uppercase tracking-widest text-[#00B140] [text-shadow:0_2px_12px_rgba(255,255,255,0.9)]">Influencer Trust Framework</p>
               <h2 className="mx-auto mt-3 max-w-3xl text-balance text-3xl font-black tracking-tight text-foreground [text-shadow:0_2px_18px_rgba(255,255,255,0.95)] md:text-5xl">
-                인플루언서를 활용한 최고의 마케팅은 판매가 아닌 신뢰를 쌓는 것입니다
+                인플루언서를 활용한 최고의 마케팅은
+                <br />
+                판매가 아닌 신뢰를 쌓는 것 입니다
               </h2>
               <p className="mt-4 font-medium text-muted-foreground [text-shadow:0_2px_12px_rgba(255,255,255,0.95)]">
                 일본 소비자가 자연스럽게 믿고 확인하는 콘텐츠

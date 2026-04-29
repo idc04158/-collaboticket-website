@@ -1,9 +1,13 @@
 ---
-title: "일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호"
-description: "Google 검색결과 스크랩과 주요 일본 매체 SERP를 바탕으로 일본 EC 소비자가 구매 전에 확인하는 신뢰 요소를 정리했습니다."
-category: "Insight"
-date: "2026-04-26"
-image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80"
+title: '일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호'
+description: Google 검색결과 스크랩과 주요 일본 매체 SERP를 바탕으로 일본 EC 소비자가 구매 전에 확인하는 신뢰 요소를 정리했습니다.
+category: Insight
+date: '2026-04-26'
+image: >-
+  https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

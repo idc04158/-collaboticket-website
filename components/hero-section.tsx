@@ -28,10 +28,12 @@ export function HeroSection() {
             <span className="truncate">Japan ecommerce execution</span>
           </div>
           <h1 className="max-w-3xl text-balance text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl md:text-6xl xl:text-7xl">
-            일본 이커머스 실행 전문팀
+            <span className="block">일본 이커머스</span>
+            <span className="block">실행 전문팀</span>
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-white/78 sm:text-lg md:text-xl">
-            진단부터 운영·리포트까지, 일본 채널에서 매출이 나오도록 실행에 집중합니다.
+            <span className="block">진단부터 운영·리포트까지,</span>
+            <span className="block">일본 채널에서 안정적인 매출이 나오도록 실행에 집중합니다.</span>
           </p>
 
           <div className="mt-8 grid gap-3 text-sm text-white/82 sm:grid-cols-1 md:max-w-xl">

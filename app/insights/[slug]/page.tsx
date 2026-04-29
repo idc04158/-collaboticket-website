@@ -139,6 +139,15 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
           <div className="mt-8 space-y-4">
             <Badge variant="secondary">{meta.category}</Badge>
+            {meta.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {meta.tags.map((tag) => (
+                  <span key={tag} className="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
             {meta.date && (
               <p className="text-sm text-muted-foreground">
                 <time dateTime={meta.date}>{meta.date}</time>

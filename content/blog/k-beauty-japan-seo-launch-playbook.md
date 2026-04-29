@@ -1,9 +1,13 @@
 ---
-title: "K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로"
-description: "일본 EC·SNS·Qoo10 검색결과를 기반으로 K-Beauty 브랜드가 검색 유입을 상담과 구매로 연결하는 콘텐츠 구조를 정리했습니다."
-category: "Strategy"
-date: "2026-04-17"
-image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1400&q=80"
+title: 'K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로'
+description: 일본 EC·SNS·Qoo10 검색결과를 기반으로 K-Beauty 브랜드가 검색 유입을 상담과 구매로 연결하는 콘텐츠 구조를 정리했습니다.
+category: Strategy
+date: '2026-04-17'
+image: >-
+  https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

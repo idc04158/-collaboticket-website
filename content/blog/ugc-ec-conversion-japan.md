@@ -1,9 +1,13 @@
 ---
-title: "일본 EC에서 UGC가 전환율을 높이는 이유"
-description: "일본 EC와 SNS 콘텐츠 검색결과를 바탕으로 UGC가 상세페이지, 광고, 리뷰 신뢰에 미치는 영향을 정리했습니다."
-category: "Insight"
-date: "2026-04-21"
-image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80"
+title: 일본 EC에서 UGC가 전환율을 높이는 이유
+description: '일본 EC와 SNS 콘텐츠 검색결과를 바탕으로 UGC가 상세페이지, 광고, 리뷰 신뢰에 미치는 영향을 정리했습니다.'
+category: Insight
+date: '2026-04-21'
+image: >-
+  https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

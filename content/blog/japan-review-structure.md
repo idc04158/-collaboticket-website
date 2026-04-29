@@ -1,9 +1,13 @@
 ---
-title: "일본 소비자가 믿는 리뷰 구조: 별점보다 중요한 신뢰 설계"
-description: "일본 EC에서 리뷰가 구매 전환에 미치는 영향을 정리하고, 한국 브랜드가 초기 리뷰를 어떻게 확보해야 하는지 설명합니다."
-category: "Strategy Guide"
-date: "2026-04-15"
-image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1400&q=80"
+title: '일본 소비자가 믿는 리뷰 구조: 별점보다 중요한 신뢰 설계'
+description: '일본 EC에서 리뷰가 구매 전환에 미치는 영향을 정리하고, 한국 브랜드가 초기 리뷰를 어떻게 확보해야 하는지 설명합니다.'
+category: Strategy Guide
+date: '2026-04-15'
+image: >-
+  https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

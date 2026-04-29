@@ -1,9 +1,13 @@
 ---
-title: "일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법"
-description: "일본 인플루언서 마케팅 사례 검색결과를 토대로 한국 브랜드가 캠페인을 설계할 때 봐야 할 지표와 실행 구조를 정리했습니다."
-category: "Case Study"
-date: "2026-04-22"
-image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+title: 일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법
+description: 일본 인플루언서 마케팅 사례 검색결과를 토대로 한국 브랜드가 캠페인을 설계할 때 봐야 할 지표와 실행 구조를 정리했습니다.
+category: Case Study
+date: '2026-04-22'
+image: >-
+  https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

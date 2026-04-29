@@ -1,9 +1,13 @@
 ---
-title: "LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략"
-description: "일본 SNS 마케팅 사례 검색결과에서 반복되는 LINE, X, 팬 커뮤니케이션 흐름을 한국 브랜드 실행 전략으로 정리했습니다."
-category: "Insight"
-date: "2026-04-19"
-image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80"
+title: LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략
+description: '일본 SNS 마케팅 사례 검색결과에서 반복되는 LINE, X, 팬 커뮤니케이션 흐름을 한국 브랜드 실행 전략으로 정리했습니다.'
+category: Insight
+date: '2026-04-19'
+image: >-
+  https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약

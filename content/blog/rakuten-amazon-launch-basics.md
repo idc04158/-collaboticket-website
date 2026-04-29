@@ -1,9 +1,13 @@
 ---
-title: "라쿠텐·아마존 재팬 론칭 전 체크리스트"
-description: "상품 등록, 키워드, 리뷰 정책까지 사전에 점검해야 할 항목"
-category: "Strategy Guide"
-date: "2025-10-15"
-image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80"
+title: 라쿠텐·아마존 재팬 론칭 전 체크리스트
+description: '상품 등록, 키워드, 리뷰 정책까지 사전에 점검해야 할 항목'
+category: Strategy Guide
+date: '2025-10-15'
+image: >-
+  https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 몰별 특성

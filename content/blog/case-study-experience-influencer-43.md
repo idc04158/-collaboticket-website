@@ -1,9 +1,13 @@
 ---
-title: "체험단 + 인플루언서 결합으로 매출 43% 상승 사례"
-description: "리뷰 신뢰 구조 이후 확산 캠페인으로 메가와리 매출을 끌어올린 실행 기록"
-category: "Case Study"
-date: "2025-12-10"
-image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80"
+title: 체험단 + 인플루언서 결합으로 매출 43% 상승 사례
+description: 리뷰 신뢰 구조 이후 확산 캠페인으로 메가와리 매출을 끌어올린 실행 기록
+category: Case Study
+date: '2025-12-10'
+image: >-
+  https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 배경

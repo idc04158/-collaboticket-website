@@ -7,6 +7,7 @@ export type InsightMeta = {
   title: string
   description: string
   category: string
+  tags: string[]
   date: string
   image?: string
 }
@@ -25,6 +26,7 @@ function readMetaFromFile(fileName: string): InsightMeta | null {
     title: (data.title as string) || slug,
     description: (data.description as string) || "",
     category: (data.category as string) || "Insight",
+    tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
     date: (data.date as string) || "",
     image: data.image as string | undefined,
   }
@@ -60,6 +62,7 @@ export function getInsightBySlug(slug: string): {
       title: (data.title as string) || slug,
       description: (data.description as string) || "",
       category: (data.category as string) || "Insight",
+      tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
       date: (data.date as string) || "",
       image: data.image as string | undefined,
     }

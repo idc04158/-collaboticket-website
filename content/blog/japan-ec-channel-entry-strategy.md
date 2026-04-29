@@ -1,9 +1,15 @@
 ---
-title: "Qoo10·라쿠텐·Amazon Japan: 일본 EC 채널별 진입 전략"
-description: "일본 EC 검색결과와 채널별 구매 맥락을 바탕으로 한국 브랜드가 Qoo10, 라쿠텐, Amazon Japan을 어떻게 나눠 운영해야 하는지 정리했습니다."
-category: "Strategy"
-date: "2026-04-18"
-image: "https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?auto=format&fit=crop&w=1400&q=80"
+title: 'Qoo10·라쿠텐·Amazon Japan: 일본 EC 채널별 진입 전략'
+description: >-
+  일본 EC 검색결과와 채널별 구매 맥락을 바탕으로 한국 브랜드가 Qoo10, 라쿠텐, Amazon Japan을 어떻게 나눠 운영해야 하는지
+  정리했습니다.
+category: Strategy
+date: '2026-04-18'
+image: >-
+  https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?auto=format&fit=crop&w=1400&q=80
+tags:
+  - 일본진출
+  - 실행
 ---
 
 ## 요약
