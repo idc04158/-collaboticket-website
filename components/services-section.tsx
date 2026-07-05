@@ -11,7 +11,8 @@ import {
   Megaphone,
 } from "lucide-react"
 
-import { serviceComparisonRows } from "@/lib/aeo-content"
+import { heroDescription } from "@/lib/aeo-content"
+import { ServiceComparisonAccordion } from "@/components/service-comparison-accordion"
 
 const services: Array<{
   id: string
@@ -98,10 +99,7 @@ export function ServicesSection() {
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
             일본 시장 진출 A to Z 서비스
           </h2>
-          <p className="mt-4 text-pretty text-muted-foreground">
-            일본 오픈마켓 운영, 일본 SNS 마케팅, 일본 인플루언서 마케팅, 일본 리뷰 캠페인, 일본 광고 운영,
-            일본 물류, 일본 법인 설립, 일본 상표 등록을 하나의 팀이 통합 지원합니다.
-          </p>
+          <p className="mt-4 text-pretty text-muted-foreground">{heroDescription}</p>
         </div>
 
         <ul className="mt-14 grid list-none gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -133,35 +131,7 @@ export function ServicesSection() {
           ))}
         </ul>
 
-        <div className="mt-16">
-          <h3 className="text-center text-xl font-bold">서비스 비교표</h3>
-          <p className="mt-2 text-center text-sm text-muted-foreground">
-            콜라보티켓 일본 시장 진출 서비스별 지원 내용, 플랫폼, 결과물을 비교합니다.
-          </p>
-
-          <div className="mt-8 overflow-x-auto rounded-2xl border bg-card shadow-sm">
-            <table className="w-full min-w-[720px] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b bg-muted/50">
-                  <th scope="col" className="px-4 py-3 font-bold">서비스</th>
-                  <th scope="col" className="px-4 py-3 font-bold">지원 내용</th>
-                  <th scope="col" className="px-4 py-3 font-bold">플랫폼</th>
-                  <th scope="col" className="px-4 py-3 font-bold">결과물</th>
-                </tr>
-              </thead>
-              <tbody>
-                {serviceComparisonRows.map((row) => (
-                  <tr key={row.service} className="border-b last:border-b-0">
-                    <th scope="row" className="px-4 py-3 font-semibold text-foreground">{row.service}</th>
-                    <td className="px-4 py-3 text-muted-foreground">{row.support}</td>
-                    <td className="px-4 py-3 text-muted-foreground">{row.platforms}</td>
-                    <td className="px-4 py-3 text-muted-foreground">{row.deliverables}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <ServiceComparisonAccordion />
 
         <div className="mt-12 text-center">
           <Link href="/contact" className="btn-brand gap-2 px-8">

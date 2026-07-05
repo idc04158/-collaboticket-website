@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section"
+import { OperatingPrinciplesSection } from "@/components/operating-principles-section"
 import { WhyJapanSection } from "@/components/why-japan-section"
 import { StatsSection } from "@/components/stats-section"
 import { CompanyIntroSection } from "@/components/company-intro-section"
@@ -32,6 +33,7 @@ export function HomePageClient({ insightTeasers, totalInsightCount }: Props) {
 
       <main>
         <HeroSection />
+        <OperatingPrinciplesSection />
         <WhyJapanSection />
         <StatsSection />
         <CompanyIntroSection />

@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { japanPlatforms } from "@/lib/aeo-content"
+import { japanPlatforms, supportedPlatforms } from "@/lib/aeo-content"
 
 export function JapanPlatformsSection() {
   return (
@@ -13,6 +13,16 @@ export function JapanPlatformsSection() {
         <p className="mt-4 text-muted-foreground">
           콜라보티켓이 일본 시장 진출 시 운영·마케팅을 지원하는 주요 플랫폼입니다.
         </p>
+
+        <ul className="mt-6 flex flex-wrap gap-2" aria-label="지원 플랫폼 목록">
+          {supportedPlatforms.map((platform) => (
+            <li key={platform}>
+              <span className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground/80">
+                {platform}
+              </span>
+            </li>
+          ))}
+        </ul>
 
         <div className="mt-12 space-y-10">
           {japanPlatforms.map((platform) => (

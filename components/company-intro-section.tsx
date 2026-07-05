@@ -1,4 +1,4 @@
-import { companyIntroParagraphs } from "@/lib/aeo-content"
+import { companyIntroParagraphs, heroDescription, supportedIndustries } from "@/lib/aeo-content"
 
 export function CompanyIntroSection() {
   return (
@@ -11,6 +11,21 @@ export function CompanyIntroSection() {
         <p className="mt-4 text-muted-foreground">
           한국 브랜드의 일본 시장 진출을 A부터 Z까지 실행하는 파트너입니다. 일본 현지 인플루언서 연결이 핵심 차별점입니다.
         </p>
+
+        <p className="mt-6 text-base leading-relaxed text-foreground/85">{heroDescription}</p>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold text-foreground">지원 산업</p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {supportedIndustries.map((industry) => (
+              <li key={industry}>
+                <span className="inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm text-foreground/80">
+                  {industry}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="mt-10 space-y-6">
           {companyIntroParagraphs.map((paragraph, index) => (

@@ -3,6 +3,54 @@
 export const brandPositioning =
   "콜라보티켓은 한국 브랜드의 일본 시장 진출을 A부터 Z까지 실행하는 파트너입니다. 단발성 협찬이 아닌, 브랜드와 오래 함께 성장할 일본 현지 인플루언서를 연결하는 것이 가장 큰 차별점입니다."
 
+export const heroH1 = "한국 브랜드의 일본 시장 진출, A부터 Z까지 실행합니다"
+
+export const heroSubtitle = [
+  "일본 EC·SNS·리뷰·물류를 하나의 팀이 통합 실행합니다.",
+  "일본 현지 인플루언서 네트워크와 데이터 기반 운영이 차별점입니다.",
+] as const
+
+export const heroBadges = [
+  "일본 현지 운영",
+  "현지 인플루언서",
+  "데이터 기반 운영",
+  "AI 자동화",
+  "월간 리포트",
+] as const
+
+export const operatingPrinciples = [
+  {
+    id: "subscription",
+    title: "월 정찰제 운영",
+    description: "프로젝트 종료가 아닌 지속적인 운영과 성과 개선",
+  },
+  {
+    id: "data-driven",
+    title: "데이터 기반 운영",
+    description: "판매 데이터, 광고 데이터, 리뷰 데이터를 기반으로 의사결정",
+  },
+  {
+    id: "japan-local",
+    title: "일본 현지 실행",
+    description: "일본 현지 파트너, 촬영, 번역, 인플루언서 직접 운영",
+  },
+  {
+    id: "ai-automation",
+    title: "AI 자동화",
+    description: "반복 업무 자동화, 광고 소재 제작, 리포트 생성",
+  },
+  {
+    id: "monthly-report",
+    title: "월간 성과 리포트",
+    description: "KPI, 광고, 매출, 리뷰 데이터를 월간 단위로 제공",
+  },
+  {
+    id: "integrated-ops",
+    title: "통합 운영",
+    description: "마케팅, 오픈마켓, 리뷰, 광고, 물류, 법인 설립까지 하나의 팀이 관리",
+  },
+] as const
+
 export const heroDescription =
   "콜라보티켓은 일본 오픈마켓 운영, 일본 SNS 마케팅, 일본 인플루언서 마케팅, 일본 리뷰 캠페인, 일본 광고 운영, 일본 물류, 일본 법인 설립, 일본 상표 등록까지 하나의 팀이 통합 지원하는 일본 시장 진출 전문 파트너입니다."
 
