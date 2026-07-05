@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Users, Eye, TrendingUp, Filter } from "lucide-react"
 
 import { MarketingShell } from "@/components/marketing-shell"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { PageHero } from "@/components/page-hero"
 
 export const metadata: Metadata = {
   title: "인플루언서 매칭 데모 | CollaboTicket",
@@ -11,59 +11,63 @@ export const metadata: Metadata = {
     "카테고리·지표 기반으로 일본 인플루언서 후보를 빠르게 좁혀 보는 데모 흐름을 안내합니다. 실제 리스트는 상담 후 제공됩니다.",
 }
 
+const features = [
+  {
+    icon: Filter,
+    title: "카테고리 & 톤 필터",
+    body: "뷰티·식품 등 카테고리와 콘텐츠 톤을 맞춰 1차 후보를 축소합니다.",
+  },
+  {
+    icon: Eye,
+    title: "참여율·도달",
+    body: "팔로워 수만이 아닌 최근 캠페인 기준 참여 지표를 함께 봅니다.",
+  },
+  {
+    icon: Users,
+    title: "콘텐츠 샘플",
+    body: "릴스·피드 샘플로 브랜드 무드와의 적합도를 빠르게 확인합니다.",
+  },
+  {
+    icon: TrendingUp,
+    title: "계약·2차 활용",
+    body: "협업 조건과 라이선스·2차 활용 범위까지 한 번에 협의할 수 있습니다.",
+  },
+]
+
 export default function InfluencersPage() {
   return (
     <MarketingShell>
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Demo</p>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-            인플루언서 매칭 데모
-          </h1>
-          <p className="mt-4 text-muted-foreground">
-            메인 페이지의 매칭 UI는 샘플 데이터 기반 데모입니다. 브랜드에 맞는 실제 후보군과 지표는 상담을 통해 공유드립니다.
-          </p>
-        </div>
+      <PageHero
+        label="Influencer Data Lab"
+        title="인플루언서 매칭 데모"
+        description="2,400+ 일본 인플루언서 DB를 기반으로 카테고리·참여율·콘텐츠 적합도로 후보를 선별합니다. 실제 리스트는 상담을 통해 공유드립니다."
+      />
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-6 px-6 sm:grid-cols-2">
-          {[
-            {
-              title: "카테고리 & 톤 필터",
-              body: "뷰티·식품 등 카테고리와 콘텐츠 톤을 맞춰 1차 후보를 축소합니다.",
-            },
-            {
-              title: "참여율·도달",
-              body: "팔로워 수만이 아닌 최근 캠페인 기준 참여 지표를 함께 봅니다.",
-            },
-            {
-              title: "콘텐츠 샘플",
-              body: "릴스·피드 샘플로 브랜드 무드와의 적합도를 빠르게 확인합니다.",
-            },
-            {
-              title: "계약·2차 활용",
-              body: "협업 조건과 라이선스·2차 활용 범위까지 한 번에 협의할 수 있습니다.",
-            },
-          ].map((item) => (
-            <Card key={item.title} className="border-border transition hover:shadow-md">
-              <CardContent className="p-6">
-                <h2 className="text-lg font-semibold">{item.title}</h2>
-                <p className="mt-2 text-sm text-muted-foreground">{item.body}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      <section className="py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid gap-5 sm:grid-cols-2">
+            {features.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border bg-card p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-md"
+              >
+                <div className="flex size-10 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <item.icon className="size-5" />
+                </div>
+                <h2 className="mt-4 text-lg font-bold">{item.title}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              </article>
+            ))}
+          </div>
 
-        <div className="mx-auto mt-16 max-w-xl px-6 text-center">
-          <Button
-            asChild
-            size="lg"
-            className="rounded-xl bg-[#00B140] px-10 text-white transition hover:bg-[#009C38]"
-          >
-            <Link href="/contact">맞춤 리스트 상담받기</Link>
-          </Button>
-          <p className="mt-4 text-sm text-muted-foreground">
-            홈 화면의 「우리 브랜드에 맞는 인플루언서 찾기」에서도 동일 흐름으로 이동할 수 있습니다.
-          </p>
+          <div className="mt-16 text-center">
+            <Link href="/contact" className="btn-brand px-10">
+              맞춤 리스트 상담받기
+            </Link>
+            <p className="mt-4 text-sm text-muted-foreground">
+              홈 화면의 인플루언서 섹션에서도 동일한 매칭 흐름을 확인할 수 있습니다.
+            </p>
+          </div>
         </div>
       </section>
     </MarketingShell>

@@ -11,38 +11,44 @@ import type { InsightMeta } from "@/lib/insights"
 type Props = {
   teasers: InsightMeta[]
   isLoading?: boolean
+  totalCount?: number
 }
 
-export function InsightsSection({ teasers, isLoading = false }: Props) {
+export function InsightsSection({ teasers, isLoading = false, totalCount }: Props) {
+  const count = totalCount ?? teasers.length
+
   return (
-    <section id="insights" className="scroll-mt-24 bg-card py-24 lg:py-32">
+    <section id="insights" className="scroll-mt-24 bg-[var(--surface-elevated)] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-16 max-w-3xl">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-            Data & Case Hub
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            데이터 인사이트 & 실행 사례
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            분석과 실제 성과를 기반으로 일본 시장을 설명합니다.
-          </p>
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="section-label">데이터 인사이트</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight md:text-4xl">
+              데이터 인사이트 & 실행 사례
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              분석과 실제 성과를 기반으로 일본 시장을 설명합니다.
+            </p>
+          </div>
+          <div className="flex items-center gap-3 rounded-2xl border bg-card px-5 py-3 shadow-sm">
+            <span className="font-mono text-3xl font-bold text-brand">{count}</span>
+            <span className="text-sm text-muted-foreground">인사이트<br />리포트</span>
+          </div>
         </div>
 
         {isLoading ? (
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {Array.from({ length: 3 }).map((_, idx) => (
-              <div key={idx} className="rounded-xl border bg-background p-6">
-                <Skeleton className="mb-4 aspect-[16/9] w-full rounded-lg" />
+              <div key={idx} className="rounded-2xl border bg-card p-6">
+                <Skeleton className="mb-4 aspect-[16/9] w-full rounded-xl" />
                 <Skeleton className="mb-3 h-5 w-24" />
                 <Skeleton className="mb-2 h-5 w-full" />
-                <Skeleton className="mb-4 h-5 w-4/5" />
                 <Skeleton className="h-4 w-20" />
               </div>
             ))}
           </div>
         ) : teasers.length === 0 ? (
-          <Empty className="rounded-2xl border bg-background py-14">
+          <Empty className="mt-12 rounded-2xl border bg-card py-14">
             <EmptyHeader>
               <EmptyMedia variant="icon">
                 <FileText />
@@ -54,57 +60,51 @@ export function InsightsSection({ teasers, isLoading = false }: Props) {
             </EmptyHeader>
           </Empty>
         ) : (
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {teasers.map((article) => (
               <article
                 key={article.slug}
-                className="group flex h-full flex-col gap-4 rounded-xl border bg-background p-6 transition hover:-translate-y-0.5 hover:shadow-md"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"
               >
                 {article.image ? (
-                  <div className="relative aspect-[16/9] overflow-hidden rounded-lg border">
+                  <div className="relative aspect-[16/9] overflow-hidden">
                     <Image
                       src={article.image}
                       alt={`${article.title} 썸네일`}
                       fill
-                      className="object-cover"
+                      className="object-cover transition duration-300 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                 ) : (
-                  <div className="flex aspect-[16/9] items-center justify-center rounded-lg border bg-muted/40 text-muted-foreground">
-                    <FileText className="size-5" />
+                  <div className="flex aspect-[16/9] items-center justify-center bg-muted/40 text-muted-foreground">
+                    <FileText className="size-6" />
                   </div>
                 )}
-                <Badge className="w-fit text-xs">{article.category}</Badge>
-
-                <h3 className="line-clamp-2 text-lg font-semibold leading-snug transition group-hover:text-[#00B140]">
-                  <Link href={`/insights/${article.slug}`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00B140]/40">
-                    {article.title}
+                <div className="flex flex-1 flex-col gap-3 p-6">
+                  <Badge variant="secondary" className="w-fit text-xs">{article.category}</Badge>
+                  <h3 className="line-clamp-2 text-lg font-bold leading-snug transition group-hover:text-brand">
+                    <Link href={`/insights/${article.slug}`}>{article.title}</Link>
+                  </h3>
+                  <p className="line-clamp-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {article.description}
+                  </p>
+                  <Link
+                    href={`/insights/${article.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-brand"
+                  >
+                    자세히 보기
+                    <ArrowRight className="size-3.5 transition group-hover:translate-x-0.5" />
                   </Link>
-                </h3>
-
-                <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">{article.description}</p>
-
-                <Link
-                  href={`/insights/${article.slug}`}
-                  className="mt-auto inline-flex items-center gap-1 text-sm font-medium text-foreground transition hover:text-[#00B140]"
-                >
-                  자세히 보기
-                  <ArrowRight className="size-3.5 transition group-hover:translate-x-0.5" />
-                </Link>
+                </div>
               </article>
             ))}
           </div>
         )}
 
         <div className="mt-14 flex justify-center">
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="rounded-lg border-[#00B140] px-8 font-medium text-[#00B140] transition hover:bg-[#00B140] hover:text-white"
-          >
-            <Link href="/insights">모든 인사이트 보기</Link>
+          <Button asChild variant="outline" size="lg" className="rounded-xl border-brand px-8 font-semibold text-brand hover:bg-brand hover:text-white">
+            <Link href="/insights">모든 인사이트 보기 ({count})</Link>
           </Button>
         </div>
       </div>

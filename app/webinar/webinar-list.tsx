@@ -54,7 +54,7 @@ export function WebinarList() {
   const { upcoming, past } = splitWebinars()
 
   return (
-    <div className="mx-auto mt-14 flex max-w-4xl flex-col gap-10 px-6">
+    <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-16 lg:py-20">
       {upcoming.length > 0 && (
         <section>
           <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-[#00B140]">Coming Soon</h2>

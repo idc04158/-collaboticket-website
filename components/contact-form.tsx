@@ -251,7 +251,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
       <button
         type="submit"
         disabled={loading}
-        className="rounded-lg bg-[#00B140] py-3 font-medium text-white transition hover:bg-[#009C38] disabled:opacity-60"
+        className="btn-brand w-full py-3.5 disabled:opacity-60"
       >
         {loading ? "전송 중..." : submitLabel}
       </button>

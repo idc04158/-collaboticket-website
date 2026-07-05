@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 const step2Options = [
   { label: "매출", desc: "현재 채널에서 매출 상승이 정체된 상태" },
@@ -36,52 +35,57 @@ export function TrustHighlightsSection() {
   }
 
   return (
-    <section className="bg-card py-24 lg:py-32">
+    <section className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:px-8">
-        <p className="text-center text-sm font-semibold uppercase tracking-widest text-[#00B140]">Quick diagnostic</p>
-        <h2 className="mt-3 text-balance text-center text-3xl font-bold tracking-tight md:text-4xl">
-          지금 우리 브랜드 상황에 맞는
-          <br />
-          다음 스텝을 정리해보세요
-        </h2>
-        <p className="mt-4 text-center text-pretty text-muted-foreground">
-          우리 브랜드의 Next step을 셀프 진단해보세요
-        </p>
+        <div className="text-center">
+          <p className="section-label">Quick Diagnostic</p>
+          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+            우리 브랜드에 맞는
+            <br />
+            다음 스텝을 정리해보세요
+          </h2>
+          <p className="mt-4 text-pretty text-muted-foreground">
+            3분 셀프 진단으로 상담 아젠다를 미리 준비할 수 있습니다.
+          </p>
+        </div>
 
-        <div className="mt-10 rounded-[2rem] border bg-background p-8 shadow-lg md:p-10">
+        <div className="mt-10 rounded-3xl border bg-card p-8 shadow-lg md:p-10">
           {step === 1 && (
             <div>
-              <p className="text-lg font-semibold">1. 현재 일본 진출 중이신가요?</p>
+              <p className="text-lg font-bold">1. 현재 일본 진출 중이신가요?</p>
               <p className="mt-2 text-sm text-muted-foreground">
                 이미 운영 중인지, 준비 단계인지에 따라 제안되는 채널 전략과 실행 순서가 달라집니다.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-                <Button
+                <button
                   type="button"
-                  size="lg"
-                  className="rounded-xl bg-[#00B140] text-white"
+                  className="btn-brand"
                   onClick={() => {
                     setEnteredJapan(true)
                     setStep(2)
                   }}
                 >
                   예
-                </Button>
-                <Button type="button" size="lg" variant="outline" className="rounded-xl" onClick={() => {
-                  setEnteredJapan(false)
-                  setStep(4)
-                }}>
+                </button>
+                <button
+                  type="button"
+                  className="btn-brand-outline"
+                  onClick={() => {
+                    setEnteredJapan(false)
+                    setStep(4)
+                  }}
+                >
                   아니오
-                </Button>
+                </button>
               </div>
             </div>
           )}
 
           {step === 2 && (
             <div>
-              <p className="text-lg font-semibold">2. 현재 가장 큰 고민은 무엇인가요?</p>
+              <p className="text-lg font-bold">2. 현재 가장 큰 고민은 무엇인가요?</p>
               <p className="mt-2 text-sm text-muted-foreground">
-                가장 시급한 한 가지를 선택해 주세요. 선택한 항목 기준으로 상담 아젠다를 먼저 구성합니다.
+                가장 시급한 한 가지를 선택해 주세요.
               </p>
               <div className="mt-6 grid gap-2 sm:grid-cols-2">
                 {step2Options.map((opt) => (
@@ -92,10 +96,10 @@ export function TrustHighlightsSection() {
                       setConcern(opt.label)
                       setStep(3)
                     }}
-                    className="rounded-xl border bg-card px-4 py-3 text-left text-sm font-semibold transition hover:border-[#00B140] hover:bg-[#00B140]/5"
+                    className="rounded-xl border bg-background px-4 py-3 text-left text-sm transition hover:border-brand hover:bg-brand-light"
                   >
-                    <p className="font-semibold text-foreground">{opt.label}</p>
-                    <p className="mt-1 text-xs font-normal text-muted-foreground">{opt.desc}</p>
+                    <p className="font-semibold">{opt.label}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">{opt.desc}</p>
                   </button>
                 ))}
               </div>
@@ -108,30 +112,26 @@ export function TrustHighlightsSection() {
           {step === 3 && (
             <div className="text-center">
               <p className="text-sm text-muted-foreground">
-                일본 진출 여부: <span className="font-semibold text-foreground">{enteredJapan ? "진행 중" : "준비/검토 단계"}</span>
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                주요 고민: <span className="font-semibold text-foreground">{concern}</span>
-              </p>
-              <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                선택하신 항목 기준으로 추천하는 빠른 실행안입니다.
+                일본 진출: <span className="font-semibold text-foreground">{enteredJapan ? "진행 중" : "준비/검토"}</span>
+                {" · "}
+                고민: <span className="font-semibold text-foreground">{concern}</span>
               </p>
               {concern && (
-                <div className="mt-4 rounded-xl border bg-card p-4 text-left">
-                  <p className="text-sm font-semibold text-foreground">추천 솔루션</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                <div className="mt-6 rounded-xl border bg-background p-5 text-left">
+                  <p className="text-sm font-bold">추천 실행안</p>
+                  <ul className="mt-3 space-y-2">
                     {quickSolutions[concern].map((tip) => (
-                      <li key={tip}>{tip}</li>
+                      <li key={tip} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand" />
+                        {tip}
+                      </li>
                     ))}
                   </ul>
                 </div>
               )}
-              <p className="mt-5 text-sm text-muted-foreground">
-                위 방향을 우리 브랜드 상황에 맞게 구체화하려면, 아래에서 상담 예약을 진행해 주세요.
-              </p>
-              <Button asChild className="mt-8 rounded-xl bg-[#00B140] px-8 text-white">
-                <Link href="/contact">상담 예약하기</Link>
-              </Button>
+              <Link href="/contact" className="btn-brand mt-8 inline-flex">
+                상담 예약하기
+              </Link>
               <div className="mt-4">
                 <button type="button" className="text-sm text-muted-foreground underline-offset-4 hover:underline" onClick={reset}>
                   다시 선택하기
@@ -142,13 +142,9 @@ export function TrustHighlightsSection() {
 
           {step === 4 && (
             <div>
-              <p className="text-lg font-semibold">2. 현재 단계와 가장 궁금한 항목을 선택해 주세요.</p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                아직 일본 진출 전이라면 준비 상태와 관심 영역을 먼저 확인해, 오픈마켓 입점/컨설팅 중심으로 제안합니다.
-              </p>
-
-              <div className="mt-6 rounded-xl border bg-card p-4">
-                <p className="text-sm font-semibold text-foreground">현재 단계</p>
+              <p className="text-lg font-bold">2. 현재 단계와 관심 영역을 선택해 주세요.</p>
+              <div className="mt-6 rounded-xl border bg-background p-4">
+                <p className="text-sm font-semibold">현재 단계</p>
                 <div className="mt-3 grid gap-2 sm:grid-cols-2">
                   {(["준비 단계", "검토 단계"] as const).map((stage) => (
                     <button
@@ -156,7 +152,7 @@ export function TrustHighlightsSection() {
                       type="button"
                       onClick={() => setPreStage(stage)}
                       className={`rounded-xl border px-4 py-3 text-sm font-semibold transition ${
-                        preStage === stage ? "border-[#00B140] bg-[#00B140]/10 text-foreground" : "bg-background hover:border-[#00B140]"
+                        preStage === stage ? "border-brand bg-brand-light" : "hover:border-brand"
                       }`}
                     >
                       {stage}
@@ -165,8 +161,8 @@ export function TrustHighlightsSection() {
                 </div>
               </div>
 
-              <div className="mt-4 rounded-xl border bg-card p-4">
-                <p className="text-sm font-semibold text-foreground">지금 가장 궁금한 것</p>
+              <div className="mt-4 rounded-xl border bg-background p-4">
+                <p className="text-sm font-semibold">지금 가장 궁금한 것</p>
                 <div className="mt-3 grid gap-2 sm:grid-cols-2">
                   {(["마케팅", "물류", "오픈마켓 입점", "컨설팅"] as const).map((interest) => (
                     <button
@@ -174,9 +170,7 @@ export function TrustHighlightsSection() {
                       type="button"
                       onClick={() => setPreInterest(interest)}
                       className={`rounded-xl border px-4 py-3 text-sm font-semibold transition ${
-                        preInterest === interest
-                          ? "border-[#00B140] bg-[#00B140]/10 text-foreground"
-                          : "bg-background hover:border-[#00B140]"
+                        preInterest === interest ? "border-brand bg-brand-light" : "hover:border-brand"
                       }`}
                     >
                       {interest}
@@ -186,11 +180,15 @@ export function TrustHighlightsSection() {
               </div>
 
               {preStage && preInterest && (
-                <div className="mt-6 rounded-xl border bg-card p-4 text-left">
-                  <p className="text-sm font-semibold text-foreground">추천 제안</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
-                    <li>{preStage === "준비 단계" ? "초기 진입 체크리스트를 먼저 구성합니다." : "실행 가능성/리스크를 빠르게 검토합니다."}</li>
-                    <li>
+                <div className="mt-6 rounded-xl border bg-background p-5 text-left">
+                  <p className="text-sm font-bold">추천 제안</p>
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand" />
+                      {preStage === "준비 단계" ? "초기 진입 체크리스트를 먼저 구성합니다." : "실행 가능성/리스크를 빠르게 검토합니다."}
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand" />
                       {preInterest === "오픈마켓 입점"
                         ? "Rakuten/Qoo10/Amazon Japan 입점 우선순위와 준비 자료를 정리합니다."
                         : preInterest === "컨설팅"
@@ -199,14 +197,10 @@ export function TrustHighlightsSection() {
                             ? "판매 구조에 맞는 물류/통관 방식과 비용 구조를 비교 제안합니다."
                             : "마케팅 채널별 테스트 플랜과 초기 운영안을 제안합니다."}
                     </li>
-                    <li>필요 시 오픈마켓 입점 + 실행 컨설팅을 함께 설계합니다.</li>
                   </ul>
-                  <p className="mt-4 text-sm text-muted-foreground">
-                    위 제안을 우리 브랜드 상황에 맞게 구체화하려면, 아래에서 상담 예약을 진행해 주세요.
-                  </p>
-                  <Button asChild className="mt-5 rounded-xl bg-[#00B140] px-8 text-white">
-                    <Link href="/contact">상담 예약하기</Link>
-                  </Button>
+                  <Link href="/contact" className="btn-brand mt-5 inline-flex">
+                    상담 예약하기
+                  </Link>
                 </div>
               )}
 

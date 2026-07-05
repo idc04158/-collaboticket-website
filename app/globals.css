@@ -4,31 +4,37 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.975 0.002 90);
-  --foreground: oklch(0.15 0 0);
+  --background: oklch(0.985 0.002 120);
+  --foreground: oklch(0.13 0.01 150);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
+  --card-foreground: oklch(0.13 0.01 150);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.17 0 0);
-  --primary-foreground: oklch(0.98 0.002 90);
-  --secondary: oklch(0.955 0.003 90);
-  --secondary-foreground: oklch(0.17 0 0);
-  --muted: oklch(0.94 0.003 90);
-  --muted-foreground: oklch(0.48 0.01 90);
-  --accent: oklch(0.94 0.003 90);
-  --accent-foreground: oklch(0.17 0 0);
+  --popover-foreground: oklch(0.13 0.01 150);
+  --primary: oklch(0.55 0.18 145);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.008 120);
+  --secondary-foreground: oklch(0.2 0.01 150);
+  --muted: oklch(0.955 0.006 120);
+  --muted-foreground: oklch(0.48 0.015 150);
+  --accent: oklch(0.94 0.02 145);
+  --accent-foreground: oklch(0.2 0.01 150);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.004 90);
-  --input: oklch(0.91 0.004 90);
-  --ring: oklch(0.55 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
+  --border: oklch(0.91 0.008 120);
+  --input: oklch(0.91 0.008 120);
+  --ring: oklch(0.55 0.18 145);
+  --chart-1: oklch(0.55 0.18 145);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.75rem;
+  --radius: 0.875rem;
+  --brand: #00B140;
+  --brand-dark: #009C38;
+  --brand-light: #E6F7EE;
+  --brand-glow: rgba(0, 177, 64, 0.15);
+  --surface-dark: #0a1610;
+  --surface-elevated: #f4f6f2;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -76,7 +82,7 @@
 
 @theme inline {
   --font-sans: 'Noto Sans KR', 'Geist', 'Geist Fallback', sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', ui-monospace, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -101,6 +107,9 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -124,13 +133,47 @@
   }
 }
 
+@layer utilities {
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-brand;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, oklch(0.91 0.008 120 / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(0.91 0.008 120 / 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .dot-bg {
+    background-image: radial-gradient(circle, oklch(0.85 0.01 120 / 0.6) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md;
+  }
+
+  .stat-value {
+    @apply font-mono text-4xl font-bold tracking-tight text-foreground md:text-5xl;
+  }
+
+  .btn-brand {
+    @apply inline-flex items-center justify-center rounded-xl bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_30px_var(--brand-glow)] transition hover:bg-brand-dark;
+  }
+
+  .btn-brand-outline {
+    @apply inline-flex items-center justify-center rounded-xl border border-brand/30 bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:border-brand hover:bg-brand-light;
+  }
+
+  .subscription-badge {
+    @apply inline-flex items-center gap-1 rounded-full bg-brand/10 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-brand;
+  }
+}
+
 @keyframes influencer-reel-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .influencer-reel-track {
@@ -139,6 +182,15 @@
 
 .influencer-reel-track:hover {
   animation-play-state: paused;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
 }
 
 .insight-body ul {

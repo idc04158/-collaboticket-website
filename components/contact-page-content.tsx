@@ -10,12 +10,11 @@ export function ContactPageContent() {
   if (success) {
     return (
       <div className="rounded-2xl border bg-card p-10 text-center shadow-sm">
-        <div className="mb-4 text-4xl">✅</div>
-        <h2 className="text-2xl font-semibold">신청이 접수되었습니다.</h2>
-        <div className="mt-2 space-y-2 text-muted-foreground">
-          <p>아래 예약폼에서 편한 시간을 바로 선택하시거나, 가볍게 카카오톡으로 상담을 시작하실 수 있습니다.</p>
-          <p>아래 예약폼에서 편한 시간을 선택해 주시면 30분 무료 온라인 상담이 예약됩니다.</p>
-        </div>
+        <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-brand-light text-2xl">✅</div>
+        <h2 className="text-2xl font-bold">신청이 접수되었습니다</h2>
+        <p className="mt-3 text-muted-foreground">
+          아래 예약폼에서 편한 시간을 선택하시면 30분 무료 온라인 상담이 예약됩니다. 카카오톡으로도 상담을 시작하실 수 있습니다.
+        </p>
         <div className="mt-8 overflow-hidden rounded-2xl border bg-background">
           <iframe
             src={success.calendarUrl}

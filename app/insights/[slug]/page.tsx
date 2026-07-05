@@ -128,11 +128,11 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
   return (
     <MarketingShell>
-      <article className="bg-background py-16 lg:py-24">
+      <article className="bg-background py-12 lg:py-20">
         <div className="mx-auto max-w-4xl px-6">
           <Link
             href="/insights"
-            className="text-sm font-medium text-[#00B140] underline-offset-4 hover:underline"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-brand underline-offset-4 hover:underline"
           >
             ← 인사이트 목록
           </Link>

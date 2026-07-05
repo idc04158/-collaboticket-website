@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 
 import { MarketingShell } from "@/components/marketing-shell"
+import { PageHero } from "@/components/page-hero"
 import { ContactPageContent } from "@/components/contact-page-content"
 
 export const metadata: Metadata = {
@@ -16,21 +17,15 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <MarketingShell>
-      <section className="bg-background py-20 lg:py-28">
+      <PageHero
+        label="Contact"
+        title="상담 신청"
+        description="30분 무료 온라인 상담. 아래 폼을 작성하시면 예약 페이지로 안내해 드립니다."
+      />
+
+      <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-2xl px-6">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Contact</p>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">상담 신청</h1>
-          <div className="mt-6 space-y-4 text-muted-foreground">
-            <p>
-              아래 예약폼에서 편한 시간을 바로 선택하시거나, 가볍게 카카오톡으로 상담을 시작하실 수 있습니다.
-            </p>
-            <p>
-              아래 예약폼에서 편한 시간을 선택해 주시면 30분 무료 온라인 상담이 예약됩니다.
-            </p>
-          </div>
-          <div className="mt-10">
-            <ContactPageContent />
-          </div>
+          <ContactPageContent />
         </div>
       </section>
     </MarketingShell>

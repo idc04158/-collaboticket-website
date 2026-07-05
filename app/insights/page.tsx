@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 
 import { MarketingShell } from "@/components/marketing-shell"
+import { PageHero } from "@/components/page-hero"
 import { InsightsIndexClient } from "@/components/insights-index-client"
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
 import { getAllInsightSummaries } from "@/lib/insights"
@@ -21,14 +22,19 @@ export default function InsightsIndexPage() {
 
   return (
     <MarketingShell>
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-6xl px-6">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Insights</p>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">인사이트 자료</h1>
-          <p className="mt-4 max-w-2xl text-muted-foreground">
-            시장 분석, 실행 가이드, 케이스 스터디를 한곳에서 확인하세요.
-          </p>
+      <PageHero
+        label="Insights"
+        title="데이터 인사이트 자료"
+        description="시장 분석, 실행 가이드, 케이스 스터디를 한곳에서 확인하세요. 50개 이상의 리포트가 지속 업데이트됩니다."
+      >
+        <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-3">
+          <span className="font-mono text-3xl font-bold text-brand">{posts.length}</span>
+          <span className="text-sm text-white/60">인사이트 리포트</span>
+        </div>
+      </PageHero>
 
+      <section className="py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6">
           <InsightsIndexClient posts={posts} />
 
           {posts.length === 0 && (
@@ -40,7 +46,7 @@ export default function InsightsIndexPage() {
                   </EmptyMedia>
                   <EmptyTitle>아직 등록된 인사이트가 없습니다.</EmptyTitle>
                   <EmptyDescription>
-                    CMS 또는 DB에서 신규 콘텐츠가 연동되면 자동으로 카드가 표시됩니다.
+                    신규 콘텐츠가 연동되면 자동으로 카드가 표시됩니다.
                   </EmptyDescription>
                 </EmptyHeader>
               </Empty>

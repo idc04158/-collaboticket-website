@@ -2,8 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Heart, MessageCircle, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Heart, MessageCircle, Send, Users, Eye, TrendingUp } from "lucide-react"
 
 const reels = [
   {
@@ -50,11 +49,17 @@ const reels = [
   },
 ]
 
+const dataMetrics = [
+  { icon: Users, label: "인플루언서 DB", value: "2,400+" },
+  { icon: Eye, label: "평균 참여율", value: "4.2%" },
+  { icon: TrendingUp, label: "캠페인 ROI", value: "3.1x" },
+]
+
 const sliderReels = [...reels, ...reels]
 
 function ReelCaseCard({ item }: { item: (typeof reels)[number] }) {
   return (
-    <div className="group relative aspect-[9/16] w-[220px] flex-none overflow-hidden rounded-2xl border shadow-lg transition duration-300 hover:scale-[1.03] hover:shadow-2xl sm:w-[240px] lg:w-[260px]">
+    <div className="group relative aspect-[9/16] w-[200px] flex-none overflow-hidden rounded-2xl border border-white/10 shadow-xl transition duration-300 hover:scale-[1.03] sm:w-[220px] lg:w-[240px]">
       <Image src={item.src} alt={item.alt} fill className="object-cover" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black/55 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
@@ -69,7 +74,6 @@ function ReelCaseCard({ item }: { item: (typeof reels)[number] }) {
           </div>
           <p className="line-clamp-2 text-[11px] leading-snug text-white/90">{item.caption}</p>
         </div>
-
         <div className="flex flex-col items-center gap-2 text-white/95">
           <Heart className="size-4" />
           <MessageCircle className="size-4" />
@@ -82,34 +86,45 @@ function ReelCaseCard({ item }: { item: (typeof reels)[number] }) {
 
 export function InfluencerDataLabSection() {
   return (
-    <section className="bg-[#f8f9fa] py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] py-16 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-          <div className="influencer-reel-track flex w-max gap-4 py-2">
-            {sliderReels.map((item, index) => (
-              <ReelCaseCard key={`${item.src}-${index}`} item={item} />
-            ))}
+    <section className="relative overflow-hidden bg-[var(--surface-dark)] py-24 text-white lg:py-32">
+      <div className="pointer-events-none absolute inset-0 dot-bg opacity-[0.04]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="section-label">인플루언서 데이터랩</p>
+            <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+              데이터로 선별하는
+              <br />
+              일본 인플루언서
+            </h2>
+            <p className="mt-4 text-pretty leading-relaxed text-white/65">
+              팔로워 수가 아닌 참여율·콘텐츠 적합도·전환 데이터로 후보를 좁힙니다.
+              실제 캠페인 성과가 축적된 DB를 기반으로 매칭합니다.
+            </p>
+
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {dataMetrics.map((metric) => (
+                <div key={metric.label} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <metric.icon className="size-4 text-brand" />
+                  <p className="mt-2 font-mono text-xl font-bold">{metric.value}</p>
+                  <p className="mt-0.5 text-[11px] text-white/50">{metric.label}</p>
+                </div>
+              ))}
+            </div>
+
+            <Link href="/influencers" className="btn-brand mt-8 inline-flex gap-2">
+              매칭 데모 보기
+            </Link>
           </div>
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.72)_0%,rgba(255,255,255,0.42)_34%,rgba(255,255,255,0)_68%)]" />
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-center">
-            <div className="max-w-4xl">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#00B140] [text-shadow:0_2px_12px_rgba(255,255,255,0.9)]">Influencer Trust Framework</p>
-              <h2 className="mx-auto mt-3 max-w-3xl text-balance text-3xl font-black tracking-tight text-foreground [text-shadow:0_2px_18px_rgba(255,255,255,0.95)] md:text-5xl">
-                인플루언서를 활용한 최고의 마케팅은
-                <br />
-                판매가 아닌 신뢰를 쌓는 것 입니다
-              </h2>
-              <p className="mt-4 font-medium text-muted-foreground [text-shadow:0_2px_12px_rgba(255,255,255,0.95)]">
-                일본 소비자가 자연스럽게 믿고 확인하는 콘텐츠
-              </p>
+
+          <div className="relative overflow-hidden rounded-2xl py-4 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+            <div className="influencer-reel-track flex w-max gap-4">
+              {sliderReels.map((item, index) => (
+                <ReelCaseCard key={`${item.src}-${index}`} item={item} />
+              ))}
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <Button asChild size="lg" className="rounded-xl bg-[#00B140] px-10 text-white shadow-lg transition hover:bg-[#009C38]">
-            <Link href="/contact">일본 진출 상담 신청</Link>
-          </Button>
         </div>
       </div>
     </section>
