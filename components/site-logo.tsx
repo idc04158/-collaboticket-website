@@ -12,7 +12,13 @@ type SiteLogoProps = {
   className?: string
 }
 
-function LogoWordmark({ variant }: { variant: "header" | "footer" }) {
+function LogoWordmark({
+  variant,
+  className,
+}: {
+  variant: "header" | "footer"
+  className?: string
+}) {
   const isFooter = variant === "footer"
 
   return (
@@ -20,6 +26,7 @@ function LogoWordmark({ variant }: { variant: "header" | "footer" }) {
       className={cn(
         "text-lg font-black tracking-tight",
         isFooter ? "text-white" : "text-foreground",
+        className,
       )}
     >
       Collabo<span className="text-brand">Ticket</span>
@@ -45,7 +52,7 @@ export function SiteLogo({ variant = "header", className }: SiteLogoProps) {
         priority={variant === "header"}
         className="h-8 w-auto object-contain sm:h-9"
       />
-      <LogoWordmark variant={variant} />
+      <LogoWordmark variant={variant} className={variant === "header" ? "hidden min-[420px]:inline" : undefined} />
     </Link>
   )
 }

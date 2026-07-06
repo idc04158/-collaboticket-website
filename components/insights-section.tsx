@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
 import { Skeleton } from "@/components/ui/skeleton"
+import { getInsightCategoryLabel } from "@/lib/insight-categories"
 import type { InsightMeta } from "@/lib/insights"
 
 type Props = {
@@ -82,7 +83,9 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
                   </div>
                 )}
                 <div className="flex flex-1 flex-col gap-3 p-6">
-                  <Badge variant="secondary" className="w-fit text-xs">{article.category}</Badge>
+                  <Badge variant="secondary" className="w-fit text-xs">
+                    {getInsightCategoryLabel(article.category)}
+                  </Badge>
                   <h3 className="line-clamp-2 text-lg font-bold leading-snug transition group-hover:text-brand">
                     <Link href={`/insights/${article.slug}`}>{article.title}</Link>
                   </h3>

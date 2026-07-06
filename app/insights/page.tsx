@@ -1,59 +1,61 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 
 import { MarketingShell } from "@/components/marketing-shell"
-import { PageHero } from "@/components/page-hero"
+import { InsightsHubHero } from "@/components/insights/insights-hub-hero"
+import { InsightsFeaturedReport } from "@/components/insights/insights-featured-report"
+import { InsightsWeeklyBrief } from "@/components/insights/insights-weekly-brief"
+import { InsightsNewsletter } from "@/components/insights/insights-newsletter"
 import { InsightsIndexClient } from "@/components/insights-index-client"
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
-import { getAllInsightSummaries } from "@/lib/insights"
-import { FileText } from "lucide-react"
+import { InsightsHubJsonLd } from "@/components/insights/insights-hub-json-ld"
+import {
+  getAllEnrichedInsights,
+  getFeaturedReport,
+  getHubStats,
+  getWeeklyBriefLines,
+} from "@/lib/insights"
 
 export const metadata: Metadata = {
-  title: "인사이트 | CollaboTicket",
+  title: "일본 시장 인사이트 | CollaboTicket",
   description:
-    "일본 이커머스·인플루언서·SNS·법인/물류 실행에 필요한 데이터 인사이트와 사례를 정리했습니다.",
+    "일본 EC, SNS, 소비자 트렌드, 광고 데이터, 플랫폼 변화, 성공 사례를 분석한 일본 시장 데이터 센터입니다.",
   openGraph: {
-    title: "인사이트 | CollaboTicket",
-    description: "일본 시장 실행 전략과 사례를 데이터 기반으로 공유합니다.",
+    title: "일본 시장 인사이트 | CollaboTicket",
+    description: "실행 가능한 일본 시장 데이터와 인사이트를 매주 업데이트합니다.",
   },
 }
 
 export default function InsightsIndexPage() {
-  const posts = getAllInsightSummaries()
+  const posts = getAllEnrichedInsights()
+  const stats = getHubStats(posts)
+  const featured = getFeaturedReport(posts)
+  const weeklyBrief = getWeeklyBriefLines(posts)
 
   return (
     <MarketingShell>
-      <PageHero
-        label="Insights"
-        title="데이터 인사이트 자료"
-        description="시장 분석, 실행 가이드, 케이스 스터디를 한곳에서 확인하세요. 50개 이상의 리포트가 지속 업데이트됩니다."
-      >
-        <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-3">
-          <span className="font-mono text-3xl font-bold text-brand">{posts.length}</span>
-          <span className="text-sm text-white/60">인사이트 리포트</span>
-        </div>
-      </PageHero>
+      <InsightsHubJsonLd posts={posts} stats={stats} />
+      <InsightsHubHero stats={stats} />
 
-      <section className="py-16 lg:py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <InsightsIndexClient posts={posts} />
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16">
+        {featured && <InsightsFeaturedReport report={featured} />}
+        <InsightsWeeklyBrief lines={weeklyBrief} />
+        <InsightsNewsletter />
 
-          {posts.length === 0 && (
-            <div className="mt-12">
-              <Empty className="rounded-2xl border bg-card py-16">
-                <EmptyHeader>
-                  <EmptyMedia variant="icon">
-                    <FileText />
-                  </EmptyMedia>
-                  <EmptyTitle>아직 등록된 인사이트가 없습니다.</EmptyTitle>
-                  <EmptyDescription>
-                    신규 콘텐츠가 연동되면 자동으로 카드가 표시됩니다.
-                  </EmptyDescription>
-                </EmptyHeader>
-              </Empty>
-            </div>
-          )}
-        </div>
-      </section>
+        <section aria-labelledby="insights-list-title" className="mt-12">
+          <h2 id="insights-list-title" className="text-2xl font-black tracking-tight">
+            전체 리포트
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Qoo10, Rakuten, Amazon Japan, Meta, TikTok, LINE, 리뷰, 인플루언서, 물류 주제별로 탐색하세요.
+          </p>
+
+          <div className="mt-8">
+            <Suspense fallback={<p className="text-sm text-muted-foreground">리포트 목록을 불러오는 중...</p>}>
+              <InsightsIndexClient posts={posts} />
+            </Suspense>
+          </div>
+        </section>
+      </div>
     </MarketingShell>
   )
 }

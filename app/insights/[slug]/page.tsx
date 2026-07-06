@@ -2,12 +2,21 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { marked } from "marked"
 import { notFound } from "next/navigation"
+import { Sparkles } from "lucide-react"
 
 import { MarketingShell } from "@/components/marketing-shell"
+import { InsightCard } from "@/components/insights/insight-card"
+import { InsightArticleJsonLd } from "@/components/insights/insight-article-json-ld"
+import { InsightDiagnosisCta } from "@/components/insights/insight-diagnosis-cta"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { getAllInsightSummaries, getInsightBySlug, getInsightSlugs } from "@/lib/insights"
+import {
+  getAllEnrichedInsights,
+  getEnrichedInsightBySlug,
+  getInsightSlugs,
+  getInsightCategoryLabel,
+  getRelatedInsights,
+  getTopicClusterLinks,
+} from "@/lib/insights"
 
 type PageProps = {
   params: { slug: string }
@@ -20,12 +29,12 @@ type TocItem = {
 }
 
 const preConsultationHeading = "상담 전에 준비하면 좋은 자료"
-const consultationCtaHtml = `
+const diagnosisCtaHtml = `
 <aside class="my-10 rounded-[1.75rem] border border-[#00B140]/20 bg-[#00B140]/5 p-6">
-  <p class="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Consultation</p>
-  <h2 class="mt-2 text-2xl font-bold tracking-tight text-foreground">자료를 모두 준비하기 전에 먼저 방향부터 잡아보세요</h2>
-  <p class="mt-3 text-sm leading-relaxed text-muted-foreground">현재 판매 상태, 예산, 희망 채널이 정리되어 있지 않아도 괜찮습니다. CollaboTicket이 일본 진출 단계와 우선순위를 먼저 점검해드립니다.</p>
-  <a href="/contact" class="mt-5 inline-flex rounded-xl bg-[#00B140] px-6 py-3 text-sm font-bold text-white">일본 진출 상담 신청</a>
+  <p class="text-sm font-semibold text-[#00B140]">무료 진단</p>
+  <h2 class="mt-2 text-2xl font-bold tracking-tight text-foreground">우리 브랜드도 일본 시장에서 가능성이 있을까요?</h2>
+  <p class="mt-3 text-sm leading-relaxed text-muted-foreground">현재 상품, 채널, 예산만 알려주시면 일본 진출 가능성과 우선 실행 과제를 무료로 정리해 드립니다.</p>
+  <a href="/contact?topic=diagnosis" class="mt-5 inline-flex rounded-xl bg-[#00B140] px-6 py-3 text-sm font-bold text-white">무료 일본 진출 진단 받기</a>
 </aside>
 `
 
@@ -57,7 +66,7 @@ function prepareInsightContent(content: string, image?: string) {
   body = body.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
   body = body.replace(
     new RegExp(`^##\\s+${escapeRegExp(preConsultationHeading)}\\s*$`, "m"),
-    `${consultationCtaHtml}\n## ${preConsultationHeading}`,
+    `${diagnosisCtaHtml}\n## ${preConsultationHeading}`,
   )
 
   if (image) {
@@ -91,101 +100,121 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const result = getInsightBySlug(params.slug)
+  const result = getEnrichedInsightBySlug(params.slug)
   if (!result) {
     return { title: "Not found | CollaboTicket" }
   }
-  const { meta } = result
   return {
-    title: `${meta.title} | CollaboTicket`,
-    description: meta.description,
+    title: `${result.title} | CollaboTicket`,
+    description: result.aiSummary || result.description,
     openGraph: {
-      title: meta.title,
-      description: meta.description,
+      title: result.title,
+      description: result.aiSummary || result.description,
+      images: result.image ? [{ url: result.image }] : undefined,
     },
   }
 }
 
 export default async function InsightDetailPage({ params }: PageProps) {
-  const result = getInsightBySlug(params.slug)
+  const result = getEnrichedInsightBySlug(params.slug)
   if (!result) notFound()
 
-  const { meta, content } = result
+  const { content, ...meta } = result
+  const allEnriched = getAllEnrichedInsights()
   const prepared = prepareInsightContent(content, meta.image)
   const html = await marked.parse(prepared.content)
   const tocItems =
     prepared.toc.filter((item) => item.level === 2).length > 0
-      ? prepared.toc.filter((item) => item.level === 2).slice(0, 5)
-      : prepared.toc.slice(0, 5)
-  const related = getAllInsightSummaries()
-    .filter((post) => post.slug !== meta.slug)
-    .sort((a, b) => {
-      if (a.category === meta.category && b.category !== meta.category) return -1
-      if (a.category !== meta.category && b.category === meta.category) return 1
-      return b.date.localeCompare(a.date)
-    })
-    .slice(0, 3)
+      ? prepared.toc.filter((item) => item.level === 2).slice(0, 6)
+      : prepared.toc.slice(0, 6)
+  const related = getRelatedInsights(meta, allEnriched, 3)
+  const clusterLinks = getTopicClusterLinks(meta)
 
   return (
     <MarketingShell>
+      <InsightArticleJsonLd
+        title={meta.title}
+        description={meta.description}
+        date={meta.date}
+        slug={meta.slug}
+        image={meta.image}
+        aiSummary={meta.aiSummary}
+      />
+
       <article className="bg-background py-12 lg:py-20">
         <div className="mx-auto max-w-4xl px-6">
-          <Link
-            href="/insights"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-brand underline-offset-4 hover:underline"
-          >
-            ← 인사이트 목록
-          </Link>
+          <nav aria-label="인사이트 breadcrumb">
+            <Link
+              href="/insights"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-brand underline-offset-4 hover:underline"
+            >
+              ← 일본 시장 인사이트
+            </Link>
+          </nav>
 
-          <div className="mt-8 space-y-4">
-            <Badge variant="secondary">{meta.category}</Badge>
-            {meta.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {meta.tags.map((tag) => (
-                  <span key={tag} className="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
+          <header className="mt-8 space-y-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="secondary">{getInsightCategoryLabel(meta.category)}</Badge>
+              <Badge variant="outline">{meta.difficulty}</Badge>
+              {meta.platforms.map((platform) => (
+                <Badge key={platform} variant="outline" className="text-[11px]">
+                  {platform}
+                </Badge>
+              ))}
+            </div>
+
             {meta.date && (
               <p className="text-sm text-muted-foreground">
-                <time dateTime={meta.date}>{meta.date}</time>
+                <time dateTime={meta.date}>업데이트 {meta.date}</time>
+                <span className="mx-2" aria-hidden="true">
+                  ·
+                </span>
+                <span>{meta.readingTimeMinutes}분 읽기</span>
+                <span className="mx-2" aria-hidden="true">
+                  ·
+                </span>
+                <span>추천 대상: {meta.audience}</span>
               </p>
             )}
-            <h1 className="text-3xl font-bold tracking-tight md:text-4xl">{meta.title}</h1>
-            {meta.description && (
-              <p className="text-lg text-muted-foreground">{meta.description}</p>
-            )}
-          </div>
+
+            <h1 className="text-3xl font-black tracking-tight md:text-4xl">{meta.title}</h1>
+            {meta.description && <p className="text-lg text-muted-foreground">{meta.description}</p>}
+          </header>
 
           {meta.image && (
-            <img
-              src={meta.image}
-              alt={`${meta.title} 대표 이미지`}
-              className="mt-10 w-full rounded-xl border object-cover"
-            />
+            <figure className="mt-10">
+              <img
+                src={meta.image}
+                alt={`${meta.title} 대표 이미지`}
+                className="w-full rounded-xl border object-cover"
+              />
+            </figure>
           )}
 
-          <section className="mt-10 grid gap-4 rounded-[1.75rem] border bg-card p-6 md:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Quick Summary</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight">이 글에서 바로 확인할 것</h2>
-            </div>
-            <ul className="grid gap-3 text-sm text-muted-foreground">
-              <li className="rounded-2xl bg-background p-4">일본 시장에서 왜 이 주제가 구매 전환과 연결되는지</li>
-              <li className="rounded-2xl bg-background p-4">우리 브랜드가 먼저 점검해야 할 운영 지표와 체크리스트</li>
-              <li className="rounded-2xl bg-background p-4">상담 전 준비하면 좋은 자료와 다음 실행 우선순위</li>
-            </ul>
+          <section
+            aria-labelledby="ai-summary-title"
+            className="mt-10 rounded-[1.75rem] border border-brand/20 bg-brand-light/40 p-6 sm:p-8"
+          >
+            <p
+              id="ai-summary-title"
+              className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-brand"
+            >
+              <Sparkles className="size-4" aria-hidden="true" />
+              AI 30초 요약
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-foreground/90">{meta.aiSummary}</p>
           </section>
 
           {tocItems.length > 0 && (
-            <nav className="mt-8 rounded-2xl border bg-background p-6" aria-label="인사이트 목차">
-              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">목차</p>
+            <nav className="mt-8 rounded-2xl border bg-background p-6" aria-label="리포트 목차">
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">목차</h2>
               <ol className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
                 {tocItems.map((item) => (
                   <li key={item.id}>
-                    <a href={`#${item.id}`} className="text-muted-foreground underline-offset-4 hover:text-[#00B140] hover:underline">
+                    <a
+                      href={`#${item.id}`}
+                      className="text-muted-foreground underline-offset-4 hover:text-brand hover:underline"
+                    >
                       {item.text}
                     </a>
                   </li>
@@ -194,57 +223,69 @@ export default async function InsightDetailPage({ params }: PageProps) {
             </nav>
           )}
 
-          <div
+          <section
+            aria-label="리포트 본문"
             className="insight-body mt-12 max-w-none space-y-4 text-base leading-relaxed [&_h2]:mt-10 [&_h2]:scroll-mt-24 [&_h2]:text-xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:scroll-mt-24 [&_h3]:text-lg [&_h3]:font-semibold [&_img]:mt-6 [&_img]:w-full [&_img]:rounded-xl [&_img]:border [&_img]:object-cover [&_p]:text-muted-foreground [&_strong]:text-foreground"
             dangerouslySetInnerHTML={{ __html: html }}
           />
 
+          {meta.checklist.length > 0 && (
+            <aside
+              aria-labelledby="checklist-title"
+              className="mt-12 rounded-2xl border bg-card p-6 sm:p-8"
+            >
+              <h2 id="checklist-title" className="text-xl font-bold">
+                실행 체크리스트
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">이 리포트를 실행할 때 확인할 실무 항목입니다.</p>
+              <ul className="mt-5 space-y-3">
+                {meta.checklist.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed">
+                    <span className="mt-0.5 font-bold text-brand" aria-hidden="true">
+                      □
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          )}
+
+          {clusterLinks.length > 0 && (
+            <nav aria-label="관련 토픽" className="mt-10 rounded-2xl border border-dashed p-6">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-muted-foreground">토픽 클러스터</h2>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {clusterLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="inline-flex rounded-full border bg-background px-4 py-2 text-xs font-semibold transition hover:border-brand hover:text-brand"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
           {related.length > 0 && (
-            <section className="mt-16 border-t pt-10">
-              <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Related Insights</p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight">함께 보면 좋은 인사이트</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <section aria-labelledby="related-title" className="mt-16 border-t pt-10">
+              <h2 id="related-title" className="text-2xl font-black tracking-tight">
+                관련 글
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                같은 플랫폼·주제의 리포트를 이어서 확인하세요.
+              </p>
+              <div className="mt-6 grid gap-6 md:grid-cols-3">
                 {related.map((post) => (
-                  <Link key={post.slug} href={`/insights/${post.slug}`} className="group block h-full">
-                    <Card className="h-full transition hover:-translate-y-0.5 hover:shadow-md">
-                      <CardContent className="flex h-full flex-col gap-3 p-5">
-                        <Badge variant="secondary" className="w-fit text-[11px]">
-                          {post.category}
-                        </Badge>
-                        <h3 className="line-clamp-2 text-sm font-semibold leading-snug group-hover:text-[#00B140]">
-                          {post.title}
-                        </h3>
-                        <p className="line-clamp-3 text-xs leading-relaxed text-muted-foreground">
-                          {post.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </Link>
+                  <InsightCard key={post.slug} post={post} />
                 ))}
               </div>
             </section>
           )}
 
-          <section className="mt-10 rounded-[2rem] border bg-card p-8">
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#00B140]">Webinar</p>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight">관련 웨비나에서 실행 흐름을 더 자세히 확인하세요</h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              일본 SNS, EC, 리뷰, 물류, 인플루언서 운영을 주제로 한 웨비나에서 실제 실행 순서와 체크포인트를 정리해드립니다.
-            </p>
-            <Button asChild variant="outline" className="mt-6 rounded-xl">
-              <Link href="/webinar">웨비나 일정 보기</Link>
-            </Button>
-          </section>
-
-          <section className="mt-8 rounded-[2rem] bg-[#00B140] p-8 text-white">
-            <h2 className="text-2xl font-bold tracking-tight">우리 브랜드에 맞는 일본 진출 실행 구조가 필요하신가요?</h2>
-            <p className="mt-3 text-sm leading-relaxed text-white/85">
-              검색 인사이트를 실제 매출 구조로 연결하려면 채널, 리뷰, SNS, 인플루언서, 물류를 함께 설계해야 합니다. 현재 상황을 남겨주시면 우선순위부터 정리해드립니다.
-            </p>
-            <Button asChild className="mt-6 rounded-xl bg-white px-8 text-[#00B140] hover:bg-white/90">
-              <Link href="/contact">일본 진출 상담 신청</Link>
-            </Button>
-          </section>
+          <InsightDiagnosisCta />
         </div>
       </article>
     </MarketingShell>

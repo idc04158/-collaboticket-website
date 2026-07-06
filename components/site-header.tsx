@@ -24,7 +24,7 @@ export function SiteHeader() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
           <SiteLogo variant="header" />
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -36,7 +36,7 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link href="/contact" className="btn-brand px-5 py-2.5 text-sm">
               상담 신청
             </Link>
@@ -44,7 +44,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="flex size-10 items-center justify-center rounded-lg border border-border md:hidden"
+            className="flex size-10 items-center justify-center rounded-lg border border-border lg:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "메뉴 닫기" : "메뉴 열기"}
           >
@@ -54,7 +54,7 @@ export function SiteHeader() {
 
         <div
           className={cn(
-            "overflow-hidden border-t border-border bg-background transition-all duration-300 md:hidden",
+            "overflow-hidden border-t border-border bg-background transition-all duration-300 lg:hidden",
             mobileOpen ? "max-h-[28rem] py-4" : "max-h-0 py-0",
           )}
         >
