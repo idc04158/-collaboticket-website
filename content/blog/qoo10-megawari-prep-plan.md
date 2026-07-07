@@ -8,13 +8,13 @@ tags:
   - Amazon
 date: '2026-01-17'
 image: >-
-  https://images.unsplash.com/photo-1573164713714-d95e436058b6?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
 ---
 ## 요약
 
 Qoo10의 '메가와리'는 일본 시장에서 분기별로 진행되는 대규모 할인 행사로, 한국 브랜드들에게 매출 증대와 시장 인지도 향상의 기회를 제공합니다. 이 글에서는 메가와리 준비를 위한 실무적인 전략과 체크리스트를 제시하여, 한국 브랜드들이 일본 오픈 마켓에서 성공적으로 자리매김할 수 있도록 돕고자 합니다.
 
-![Qoo10 메가와리 준비 플랜](https://images.unsplash.com/photo-1573164713714-d95e436058b6?auto=format&fit=crop&w=1400&q=80)
+![Qoo10 메가와리 준비 플랜](https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

@@ -4,7 +4,7 @@ description: '일본 소비자는 리뷰에서 별점보다 신뢰성을 중시�
 category: Strategy Guide
 date: '2026-04-15'
 image: >-
-  https://images.unsplash.com/photo-1555421689-491a97ff5280?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -13,7 +13,7 @@ tags:
 
 일본에서 온라인 소비자 리뷰는 단순한 후기 수치가 아니라 구매 결정에 있어 신뢰를 형성하는 핵심 요소입니다. 별점의 높이는 구매를 유도할 수 있지만, 소비자는 실제 사용 사례와 다양한 맥락을 중시하여 최종 결정을 내립니다. 따라서 한국 브랜드가 일본 시장에 진입하기 위해서는 리뷰 운영에 대한 성과 기반 전략이 필요합니다.
 
-![일본 소비자가 믿는 리뷰 구조: 별점보다 중요한 신뢰 설계](https://images.unsplash.com/photo-1555421689-491a97ff5280?auto=format&fit=crop&w=1400&q=80)
+![일본 소비자가 믿는 리뷰 구조: 별점보다 중요한 신뢰 설계](https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

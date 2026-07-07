@@ -4,7 +4,7 @@ description: 일본 시장에서 인플루언서 마케팅을 신뢰 구축의 �
 category: Case Study
 date: '2026-04-22'
 image: >-
-  https://images.unsplash.com/photo-1551836022-deb49876c1d1?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -13,7 +13,7 @@ tags:
 
 일본 시장에서 인플루언서 마케팅은 단순한 협찬 게시물을 넘어, 브랜드 신뢰 구축과 구매 전환을 촉진하는 전략적 도구로 자리매김하고 있습니다. 한국 브랜드가 일본 시장에 성공적으로 진출하기 위해서는 인플루언서를 광고 채널이 아닌 신뢰를 증명하는 콘텐츠 파트너로 활용하는 것이 중요합니다.
 
-![일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법](https://images.unsplash.com/photo-1551836022-deb49876c1d1?auto=format&fit=crop&w=1400&q=80)
+![일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법](https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

@@ -4,7 +4,7 @@ description: '일본 EC 시장에서 소비자 신뢰를 구축하는 것이 구
 category: Insight
 date: '2026-04-26'
 image: >-
-  https://images.unsplash.com/photo-1521737711865-e3b97375f902?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -13,7 +13,7 @@ tags:
 
 일본의 전자상거래(EC) 시장에서 소비자들은 단순한 가격 비교를 넘어, 신뢰할 수 있는 정보를 중시하고 있습니다. 리뷰의 최신성과 구체성, 공식 판매처의 신뢰성, 배송 안정성, SNS 반응, 반품 조건 등이 구매 결정에 중요한 요소로 작용합니다. 따라서 한국 브랜드가 일본 시장에 진출할 때는 상세페이지 번역에 그치지 않고, 제품 설명, 리뷰, 사용자 생성 콘텐츠(UGC), 인플루언서 콘텐츠, 고객 응대 정보 등을 통합적으로 제공하여 소비자의 신뢰를 구축해야 합니다.
 
-![일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호](https://images.unsplash.com/photo-1521737711865-e3b97375f902?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

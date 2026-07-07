@@ -8,13 +8,13 @@ tags:
   - 콘텐츠
 date: '2026-01-04'
 image: >-
-  https://images.unsplash.com/photo-1497215728101-856f4ea4214f?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80
 ---
 ## 요약
 
 일본 시장에서 성공적인 SNS 마케팅을 위해서는 월간 콘텐츠 캘린더의 체계적인 설계가 필수적입니다. 이를 통해 브랜드는 소비자와의 지속적인 소통을 유지하고, 효과적인 프로모션을 전개할 수 있습니다. 본 글에서는 일본 SNS 마케팅의 최신 동향과 한국 브랜드의 전략적 접근 방안을 제시합니다.
 
-![일본 SNS 월간 콘텐츠 캘린더 설계](https://images.unsplash.com/photo-1497215728101-856f4ea4214f?auto=format&fit=crop&w=1400&q=80)
+![일본 SNS 월간 콘텐츠 캘린더 설계](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

@@ -8,13 +8,13 @@ tags:
   - 운영
 date: '2026-01-26'
 image: >-
-  https://images.unsplash.com/photo-1556742502-ec7c0e7f34b1?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80
 ---
 ## 요약
 
 일본 시장에서 한국 브랜드의 성공적인 진출을 위해서는 체계적인 고객응대 표준운영절차(SOP)가 필수적입니다. 본 가이드는 일본 소비자 특성에 맞는 고객응대 전략을 수립하고, 이를 실행하기 위한 단계별 절차와 체크리스트를 제공합니다.
 
-![일본 고객응대 SOP 기본안](https://images.unsplash.com/photo-1556742502-ec7c0e7f34b1?auto=format&fit=crop&w=1400&q=80)
+![일본 고객응대 SOP 기본안](https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 

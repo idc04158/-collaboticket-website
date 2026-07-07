@@ -8,13 +8,13 @@ tags:
   - 운영
 date: '2026-01-14'
 image: >-
-  https://images.unsplash.com/photo-1556760544-7402140f8d9e?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80
 ---
 ## 요약
 
 라이프스타일 브랜드의 일본 론칭은 단순한 정보 정리가 아니라, 실제 운영팀이 바로 실행할 수 있는 우선순위 설계가 핵심입니다. 이 글에서는 Execution Guide 관점에서 "무엇을 먼저 하고, 무엇을 나중에 해야 하는지"를 실무 흐름으로 정리합니다.
 
-![라이프스타일 브랜드 일본 론칭 순서](https://images.unsplash.com/photo-1556760544-7402140f8d9e?auto=format&fit=crop&w=1400&q=80)
+![라이프스타일 브랜드 일본 론칭 순서](https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80)
 
 ## 왜 이 주제가 중요한가
 
