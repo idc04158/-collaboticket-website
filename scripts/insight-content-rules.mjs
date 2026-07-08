@@ -188,7 +188,7 @@ Required markdown structure (use these ## headings in order, adapt subsection ti
 (minimum 3 tips with specific situations)
 
 ## FAQ
-(minimum 7 Q&A, format: ### 질문? then answer paragraph)
+(minimum 7 Q&A, format: ### Qoo10에서 초기 리뷰는 몇 개가 필요한가요? then answer paragraph — NEVER prefix with "질문?")
 
 ## References
 (- Source Name Year format bullets, match inline citations)

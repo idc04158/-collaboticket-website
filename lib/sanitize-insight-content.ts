@@ -11,5 +11,13 @@ export function sanitizeInsightBody(content: string) {
   body = body.replace(/^<aside[\s\S]*?<\/aside>\s*$/gm, "")
   body = body.replace(/^<script[\s\S]*?<\/script>\s*$/gm, "")
 
+  // FAQ headings should be the question itself, not "질문?"
+  body = body.replace(/^###\s*질문\?\s*/gm, "### ")
+  body = body.replace(/^###\s*Q\d+[:.]\s*/gm, "### ")
+
+  // Broken Megawari spelling from mixed-language generation
+  body = body.replace(/Mega\s*Warí/gi, "메가와리")
+  body = body.replace(/Mega\s*Wari/gi, "메가와리")
+
   return body.trimEnd()
 }
