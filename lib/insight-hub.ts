@@ -105,10 +105,20 @@ export function inferDifficulty(meta: InsightMeta, content: string): InsightDiff
 
 export function estimateReadingTime(content: string, description: string) {
   const chars = (content + description).replace(/\s/g, "").length
-  return Math.max(4, Math.min(18, Math.ceil(chars / 900)))
+  return Math.max(6, Math.min(22, Math.ceil(chars / 850)))
 }
 
 export function extractSummaryParagraph(content: string) {
+  const aiSummaryMatch = content.match(/^##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
+  if (aiSummaryMatch) {
+    return aiSummaryMatch[1]
+      .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+      .replace(/\[[^\]]*\]\([^)]+\)/g, "")
+      .replace(/^✓\s*/gm, "• ")
+      .replace(/^-\s*/gm, "• ")
+      .trim()
+  }
+
   const summaryMatch = content.match(/^##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
   if (summaryMatch) {
     return summaryMatch[1].replace(/!\[[^\]]*\]\([^)]+\)/g, "").replace(/\[[^\]]*\]\([^)]+\)/g, "").trim()
