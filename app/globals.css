@@ -193,24 +193,117 @@
   animation: fade-up 0.6s ease-out both;
 }
 
-.insight-body ul {
+.insight-body {
+  max-width: none;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--foreground);
+}
+
+.insight-body > * + * {
+  margin-top: 1rem;
+}
+
+.insight-body h2 {
+  margin-top: 2.75rem;
+  scroll-margin-top: 6rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.insight-body h3 {
+  margin-top: 1.75rem;
+  scroll-margin-top: 6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.insight-body p {
+  color: var(--muted-foreground);
+}
+
+.insight-body strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.insight-body img {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.insight-body a {
+  color: var(--brand, #00b140);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.insight-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  background: var(--card);
+  font-size: 0.875rem;
+}
+
+.insight-body thead {
+  background: color-mix(in oklab, var(--muted) 55%, transparent);
+}
+
+.insight-body th,
+.insight-body td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.insight-body tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.insight-body th {
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.insight-body td {
+  color: var(--muted-foreground);
+}
+
+.insight-body ul:not(.contains-task-list) {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.625rem;
   padding-left: 0;
   list-style: none;
 }
 
-.insight-body li {
+.insight-body ul:not(.contains-task-list) > li {
   position: relative;
   padding-left: 1.75rem;
   color: var(--muted-foreground);
 }
 
-.insight-body li::before {
+.insight-body ul:not(.contains-task-list) > li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  top: 0.05rem;
+  top: 0.15rem;
   display: inline-flex;
   width: 1.1rem;
   height: 1.1rem;
@@ -223,9 +316,55 @@
   font-weight: 800;
 }
 
+.insight-body ul.contains-task-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.insight-body ul.contains-task-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  background: var(--card);
+  color: var(--foreground);
+}
+
+.insight-body ul.contains-task-list li::before {
+  display: none;
+}
+
+.insight-body ul.contains-task-list input[type="checkbox"] {
+  margin-top: 0.2rem;
+  accent-color: #00b140;
+}
+
 .insight-body ol {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.75rem;
   padding-left: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.insight-body ol li::marker {
+  color: #00b140;
+  font-weight: 700;
+}
+
+.insight-body hr {
+  margin: 2rem 0;
+  border-color: var(--border);
+}
+
+.insight-body blockquote {
+  margin: 1.5rem 0;
+  border-left: 3px solid color-mix(in oklab, #00b140 50%, transparent);
+  padding: 0.75rem 1rem;
+  background: color-mix(in oklab, #00b140 6%, transparent);
+  border-radius: 0 0.75rem 0.75rem 0;
   color: var(--muted-foreground);
 }

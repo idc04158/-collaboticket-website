@@ -114,8 +114,8 @@ export function extractSummaryParagraph(content: string) {
     return aiSummaryMatch[1]
       .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
       .replace(/\[[^\]]*\]\([^)]+\)/g, "")
-      .replace(/^✓\s*/gm, "• ")
-      .replace(/^-\s*/gm, "• ")
+      .replace(/^✓\s*/gm, "")
+      .replace(/^-\s*/gm, "")
       .trim()
   }
 

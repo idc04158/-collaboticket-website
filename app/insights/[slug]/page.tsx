@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { marked } from "marked"
 import { notFound } from "next/navigation"
 import { Sparkles } from "lucide-react"
 
@@ -18,15 +17,10 @@ import {
   getTopicClusterLinks,
 } from "@/lib/insights"
 import { sanitizeInsightBody } from "@/lib/sanitize-insight-content"
+import { renderInsightMarkdown, splitSummaryBullets } from "@/lib/render-insight-markdown"
 
 type PageProps = {
   params: { slug: string }
-}
-
-type TocItem = {
-  id: string
-  level: number
-  text: string
 }
 
 const preConsultationHeading = "상담 전에 준비하면 좋은 자료"
@@ -43,29 +37,8 @@ function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
 }
 
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-}
-
-function toAnchorId(text: string, index: number) {
-  const normalized = text
-    .toLowerCase()
-    .replace(/<[^>]*>/g, "")
-    .replace(/[^\p{L}\p{N}\s-]/gu, "")
-    .trim()
-    .replace(/\s+/g, "-")
-
-  return normalized || `section-${index + 1}`
-}
-
 function prepareInsightContent(content: string, image?: string) {
   let body = sanitizeInsightBody(content.replace(/<!-- expanded-blog-body-v2 -->\n?/g, ""))
-  body = body.replace(/^##\s+AI 30초 요약\s*\n+[\s\S]*?(?=\n##\s+|\n!\[|\n*$)/m, "")
-  body = body.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
   body = body.replace(
     new RegExp(`^##\\s+${escapeRegExp(preConsultationHeading)}\\s*$`, "m"),
     `${diagnosisCtaHtml}\n## ${preConsultationHeading}`,
@@ -79,22 +52,7 @@ function prepareInsightContent(content: string, image?: string) {
     body = body.replace(duplicateImagePattern, "\n")
   }
 
-  const usedIds = new Map<string, number>()
-  const toc: TocItem[] = []
-
-  body = body.replace(/^(#{2,3})\s+(.+)$/gm, (full, hashes: string, rawText: string) => {
-    const text = rawText.trim()
-    const baseId = toAnchorId(text, toc.length)
-    const count = usedIds.get(baseId) || 0
-    usedIds.set(baseId, count + 1)
-    const id = count === 0 ? baseId : `${baseId}-${count + 1}`
-    const level = hashes.length
-
-    toc.push({ id, level, text })
-    return `<h${level} id="${id}">${escapeHtml(text)}</h${level}>`
-  })
-
-  return { content: body, toc }
+  return body
 }
 
 export async function generateStaticParams() {
@@ -123,12 +81,13 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
   const { content, ...meta } = result
   const allEnriched = getAllEnrichedInsights()
-  const prepared = prepareInsightContent(content, meta.image)
-  const html = await marked.parse(prepared.content)
+  const preparedBody = prepareInsightContent(content, meta.image)
+  const { html, toc } = await renderInsightMarkdown(preparedBody)
+  const summaryBullets = splitSummaryBullets(meta.aiSummary)
   const tocItems =
-    prepared.toc.filter((item) => item.level === 2).length > 0
-      ? prepared.toc.filter((item) => item.level === 2).slice(0, 6)
-      : prepared.toc.slice(0, 6)
+    toc.filter((item) => item.level === 2).length > 0
+      ? toc.filter((item) => item.level === 2).slice(0, 8)
+      : toc.slice(0, 8)
   const related = getRelatedInsights(meta, allEnriched, 3)
   const clusterLinks = getTopicClusterLinks(meta)
 
@@ -204,7 +163,16 @@ export default async function InsightDetailPage({ params }: PageProps) {
               <Sparkles className="size-4" aria-hidden="true" />
               AI 30초 요약
             </p>
-            <p className="mt-4 text-base leading-relaxed text-foreground/90">{meta.aiSummary}</p>
+            <ul className="mt-4 space-y-2.5">
+              {summaryBullets.map((line) => (
+                <li key={line} className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground/90">
+                  <span className="mt-0.5 flex size-4 shrink-0 items-center justify-center rounded-full bg-brand/15 text-[10px] font-bold text-brand">
+                    ✓
+                  </span>
+                  {line}
+                </li>
+              ))}
+            </ul>
           </section>
 
           {tocItems.length > 0 && (
@@ -227,7 +195,7 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
           <section
             aria-label="리포트 본문"
-            className="insight-body mt-12 max-w-none space-y-4 text-base leading-relaxed [&_h2]:mt-10 [&_h2]:scroll-mt-24 [&_h2]:text-xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:scroll-mt-24 [&_h3]:text-lg [&_h3]:font-semibold [&_img]:mt-6 [&_img]:w-full [&_img]:rounded-xl [&_img]:border [&_img]:object-cover [&_p]:text-muted-foreground [&_strong]:text-foreground"
+            className="insight-body mt-12"
             dangerouslySetInnerHTML={{ __html: html }}
           />
 

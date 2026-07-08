@@ -126,7 +126,7 @@ Minimum per article:
 - 2+ markdown tables (platform compare, metrics trend, market size, etc.)
 - AI 30초 요약: 5-7 bullet lines starting with ✓
 - 실무 TIP: minimum 3 items (use ★ rating optional)
-- FAQ: minimum 7 Q&A pairs (real search-intent questions)
+- FAQ answers must be written in Korean only (no Japanese sentences in answers)
 - 실행 체크list section
 - References section with bullet sources
 - 5+ internal markdown links to other CollaboTicket insights using format [anchor text](/insights/slug)
