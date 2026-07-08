@@ -6,7 +6,7 @@ tags:
   - 라쿠텐
   - Qoo10
   - Amazon
-date: '2024-12-11'
+date: '2024-11-27'
 image: >-
   https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80
 ---
@@ -108,4 +108,4 @@ VT, 아누아 등의 브랜드는 메가와리로 매출을 150% 이상 증가�
 
 --- 
 
-For additional insights, visit [Qoo10 메가와리 라이브 커머스 전략](/insights/qoo10-megawari-live-commerce-strategy), [Qoo10 런칭 체크리스트 30일](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026).
+For additional insights, visit [Qoo10 메가와리 라이브 커머스 전략](/insights/qoo10-megawari-live-commerce-strategy), [Qoo10 런칭 체크리스트 30일](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024).

@@ -6,7 +6,7 @@ tags:
   - 리뷰
   - 전환
   - 신뢰
-date: '2024-12-25'
+date: '2024-12-11'
 image: >-
   https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80
 ---
@@ -109,4 +109,4 @@ LINE을 통해 개인화된 후기 요청을 하여 고객 경험을 개선합�
 - METI 2024
 - JETRO 2024
 
-Explore further insights: [Amazon FBA 온보딩 과정](/insights/amazon-japan-fba-onboarding), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [Rakuten과 Amazon 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2026), [인플루언서 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan).
+Explore further insights: [Amazon FBA 온보딩 과정](/insights/amazon-japan-fba-onboarding), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [Rakuten과 Amazon 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2024), [인플루언서 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan).

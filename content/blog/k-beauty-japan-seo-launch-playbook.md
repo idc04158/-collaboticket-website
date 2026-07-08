@@ -2,7 +2,7 @@
 title: 'K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로'
 description: '일본 K-뷰티 시장 점유율은 2025년 32.6%로 예상되며, B2C EC 시장은 24.8조 엔 규모입니다.'
 category: Strategy
-date: '2024-08-14'
+date: '2024-08-07'
 image: >-
   https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -10,7 +10,7 @@ tags:
   - 실행
 ---
 ## AI 30초 요약
-✓ 일본 K-뷰티 시장 점유율은 2025년 기준 32.6%로 예상 (Nikkei 2024)  
+✓ 일본 K-뷰티 시장 점유율은 2024년 기준 32.6%로 예상 (Nikkei 2024)  
 ✓ 일본 B2C EC 시장 규모는 약 24.8조 엔, 2023년 대비 9% 성장 (METI EC Market Survey 2024)  
 ✓ Qoo10의 리뷰 수는 평균 300개 이상, 구매 전환율 12% (CollaboTicket 운영 데이터)  
 ✓ Rakuten의 재구매율은 50% 이상, CRM 전략에 따른 효과 (CollaboTicket 운영 데이터)  
@@ -20,7 +20,7 @@ tags:
 ![K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 K-뷰티 시장 데이터
-- **일본 K-뷰티 시장 규모**: 2024년에는 약 1.5억 엔으로 추정되며, 특히 2025년에는 32.6%의 시장 점유율을 기록할 것으로 예상 (Nikkei 2024).
+- **일본 K-뷰티 시장 규모**: 2024년에는 약 1.5억 엔으로 추정되며, 특히 2024년에는 32.6%의 시장 점유율을 기록할 것으로 예상 (Nikkei 2024).
 - **소비자 신뢰도**: 일본 소비자 중 70%가 제품 효능에 대해 긍정적인 리뷰를 바탕으로 구매결정을 한다고 응답 (JETRO 2023).
   
 ### 플랫폼별 매출 현황
@@ -122,8 +122,8 @@ Amazon의 광고 전환율이 높고, Qoo10은 초기 판매에 유리합니다.
 
 
 ## 관련 리포트
-- [2026 일본 EC 트렌드](/insights/japan-ec-market-trends-2026)
-- [2025 일본 이커머스 시장](/insights/japan-ecommerce-2025)
+- [2024 일본 EC 트렌드](/insights/japan-ec-market-trends-2024)
+- [2024 일본 이커머스 시장](/insights/japan-ecommerce-2024)
 - [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)
 - [Japan Ec Channel Entry Strategy](/insights/japan-ec-channel-entry-strategy)
 - [K-Beauty 일본 진출](/insights/kbeauty-japan-entry-roadmap)
@@ -133,4 +133,4 @@ Amazon의 광고 전환율이 높고, Qoo10은 초기 판매에 유리합니다.
 - METI EC Market Survey 2024  
 - JETRO 2023  
 
-위 자료를 통해 일본 K-뷰티 시장 진출을 위한 구체적이고 실행 가능한 전략을 세울 수 있습니다. 더 궁금한 사항은 [일본 전자상거래 시장 동향](insights/japan-ec-market-trends-2026) 및 [K-뷰티 일본 진출 로드맵](insights/kbeauty-japan-entry-roadmap)을 확인하시기 바랍니다.
+위 자료를 통해 일본 K-뷰티 시장 진출을 위한 구체적이고 실행 가능한 전략을 세울 수 있습니다. 더 궁금한 사항은 [일본 전자상거래 시장 동향](insights/japan-ec-market-trends-2024) 및 [K-뷰티 일본 진출 로드맵](insights/kbeauty-japan-entry-roadmap)을 확인하시기 바랍니다.

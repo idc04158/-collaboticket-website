@@ -6,7 +6,7 @@ tags:
   - 리뷰
   - 전환
   - 신뢰
-date: '2025-01-15'
+date: '2025-01-01'
 image: >-
   https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80
 ---
@@ -116,4 +116,4 @@ Rakuten은 브랜드 신뢰성 구축에 중점을 두며, Amazon은 검색 중�
 [Amazon 리뷰 최적화](/insights/amazon-japan-review-velocity)  
 [일본 리뷰 구조](/insights/japan-review-structure)  
 [Qoo10 출시 체크리스트](/insights/qoo10-launch-checklist-30days)  
-[AI 기반 쇼핑 트렌드](/insights/ai-shopping-commerce-japan-2026)
+[AI 기반 쇼핑 트렌드](/insights/ai-shopping-commerce-japan-2025)

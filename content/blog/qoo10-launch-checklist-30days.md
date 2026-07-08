@@ -6,7 +6,7 @@ tags:
   - 라쿠텐
   - Qoo10
   - Amazon
-date: '2024-10-16'
+date: '2024-10-09'
 image: >-
   https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80
 ---
@@ -109,4 +109,4 @@ Mega Warí 및 할인 쿠폰을 활용하여 초기 고객 유도 및 반복 구
 - insights.tridge.com 2024
 - wac-works-ec.jp 2024
 
-자세한 내용은 [Qoo10 Mega Warí 준비 방안](/insights/qoo10-megawari-prep-plan), [Qoo10 Mega Warí 라이브 커머스 전략](/insights/qoo10-megawari-live-commerce-strategy), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑과 커머스의 미래](/insights/ai-shopping-commerce-japan-2026)에서 확인하십시오.
+자세한 내용은 [Qoo10 Mega Warí 준비 방안](/insights/qoo10-megawari-prep-plan), [Qoo10 Mega Warí 라이브 커머스 전략](/insights/qoo10-megawari-live-commerce-strategy), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑과 커머스의 미래](/insights/ai-shopping-commerce-japan-2024)에서 확인하십시오.

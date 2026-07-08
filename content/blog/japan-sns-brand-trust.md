@@ -4,7 +4,7 @@ description: >-
   일본 전자상거래 시장은 2025년 약 2조 3천억 엔으로 성장할 것으로 예상되며, 공식 SNS 운영이 소비자 신뢰에 70% 긍정적 영향을
   미칩니다.
 category: Strategy Guide
-date: '2025-01-29'
+date: '2025-01-15'
 image: >-
   https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80
 tags:

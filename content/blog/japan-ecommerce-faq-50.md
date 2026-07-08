@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2025-06-04'
+date: '2025-06-11'
 image: >-
   https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=80
 ---
@@ -105,4 +105,4 @@ SNS와 인플루언서를 활용한 마케팅이 효과적입니다. 브랜드 �
 - JFS 2024
 - Rakuten 2025
 
-더 많은 자료를 원하시면 [일본 이커머스 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) 등의 리포트를 참고하세요.
+더 많은 자료를 원하시면 [일본 이커머스 트렌드 2025](/insights/japan-ec-market-trends-2025), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) 등의 리포트를 참고하세요.

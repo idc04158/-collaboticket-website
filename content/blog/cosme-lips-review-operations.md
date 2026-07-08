@@ -6,12 +6,12 @@ tags:
   - 리뷰
   - 전환
   - 신뢰
-date: '2025-01-08'
+date: '2024-12-25'
 image: >-
   https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ @cosme와 LIPS는 일본의 대표적인 뷰티 리뷰 플랫폼으로, 월간 방문자는 @cosme 1,000만, LIPS 500만 (2025년 기준, JETRO).  
+✓ @cosme와 LIPS는 일본의 대표적인 뷰티 리뷰 플랫폼으로, 월간 방문자는 @cosme 1,000만, LIPS 500만 (2024년 기준, JETRO).  
 ✓ 일본 시장에서 리뷰의 신뢰성은 매우 높으며, 브랜드 이미지에 직접적 영향을 미침 (NielsenIQ).  
 ✓ 한국 브랜드는 투명한 정보 제공을 통해 소비자의 신뢰를 구축해야 함.  
 ✓ 리뷰 수집 및 관리를 위한 프로모션 전략이 필요함.  
@@ -27,7 +27,7 @@ image: >-
 | @cosme   | 10,000,000     | 1999      | 최대의 뷰티 커뮤니티            |
 | LIPS     | 5,000,000      | 2012      | 모바일 중심의 뷰티 커뮤니티     |
 
-일본 뷰티 시장의 규모는 약 3.5조 엔으로 예상되며, 전년 대비 약 4.5% 성장할 것으로 보입니다 (JETRO, 2025). 소비자들은 리뷰를 구매 결정 시 가장 중요한 요소 중 하나로 보고 있습니다.
+일본 뷰티 시장의 규모는 약 3.5조 엔으로 예상되며, 전년 대비 약 4.5% 성장할 것으로 보입니다 (JETRO, 2024). 소비자들은 리뷰를 구매 결정 시 가장 중요한 요소 중 하나로 보고 있습니다.
 
 ## INSIGHT: CollaboTicket 운영 데이터
 ### 리뷰의 중요성과 관리 전략
@@ -90,10 +90,10 @@ image: >-
 리뷰의 질과 본질이 중요하며, 품질 높은 리뷰는 더 높은 전환율을 가져올 수 있습니다.
 
 ## References
-- JETRO 2025
-- NielsenIQ 2025
+- JETRO 2023
+- NielsenIQ 2023
 - 근거 자료: @cosme 공식 발표 2025
 - LIPS 자료: 사용자 통계 2025
 - 한국 소비자 동향: 뷰티 시장 - 2025
 
-내부 링크는 적절히 포함했습니다: [리뷰 증명 보고서 형식](/insights/review-proof-report-format), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026).
+내부 링크는 적절히 포함했습니다: [리뷰 증명 보고서 형식](/insights/review-proof-report-format), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024).

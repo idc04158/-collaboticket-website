@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-09-25'
+date: '2024-09-18'
 image: >-
   https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80
 ---
@@ -103,11 +103,11 @@ Rakuten의 포인트 시스템을 활용하여 재구매 유인을 제공하고,
 소셜 미디어와 리뷰 플랫폼을 통해 실행 가능하며, 고객 설문조사를 통해 추가적인 데이터를 얻을 수 있습니다.
 
 ### 질문? 일본 시장의 성장 전망은?
-2026년까지 일본 전자상거래 시장은 30조 엔을 넘어설 것으로 예상됩니다 (Statista 2024 예측).
+2024년까지 일본 전자상거래 시장은 30조 엔을 넘어설 것으로 예상됩니다 (Statista 2024 예측).
 
 ## References
 - 경제산업성 METI EC Market Survey 2024
 - NielsenIQ 2024
 - JETRO 2023
 
-Explore more insights on Japanese ecommerce strategies: [일본 전자상거래 시장 동향 2026](/insights/japan-ec-market-trends-2026), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).
+Explore more insights on Japanese ecommerce strategies: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024), [일본 이커머스 2025](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).

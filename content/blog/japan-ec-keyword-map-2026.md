@@ -6,12 +6,12 @@ tags:
   - 시장분석
   - 일본EC
   - 데이터
-date: '2024-11-13'
+date: '2025-05-21'
 image: >-
   https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본 전자상거래 시장은 2026년까지 약 20조 엔에 이를 것으로 예상되며, 연평균 성장률은 5% (METI 2024)  
+✓ 일본 전자상거래 시장은 2025년까지 약 20조 엔에 이를 것으로 예상되며, 연평균 성장률은 5% (METI 2024)  
 ✓ 라쿠텐, 아마존, 야후 쇼핑이 주요 플랫폼으로 자리 잡고 있음  
 ✓ 소비자의 검색 의도는 카테고리별로 다르며, 이를 고려한 마케팅이 필요함  
 ✓ B2C 서비 스시장 내 스킨케어 브랜드 D제품은 강한 검색 트렌드를 보임  
@@ -107,4 +107,4 @@ Mega Warí는 Qoo10의 프로모션 행사로, 소비자들에게 특별 할인�
 - JETRO 2024  
 - Statista 2024  
 
-For more insights, check out our articles: [일본 EC 시장 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).
+For more insights, check out our articles: [일본 EC 시장 트렌드 2026](/insights/japan-ec-market-trends-2025), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).

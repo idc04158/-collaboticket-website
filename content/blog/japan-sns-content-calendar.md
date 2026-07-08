@@ -6,12 +6,12 @@ tags:
   - SNS
   - 인플루언서
   - 콘텐츠
-date: '2025-02-05'
+date: '2025-01-22'
 image: >-
   https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본 SNS 시장은 2026년 1월 기준, 인스타그램 사용자 수가 2,758만 명으로 가장 많음 (wowtoday.co.kr)  
+✓ 일본 SNS 시장은 2025년 1월 기준, 인스타그램 사용자 수가 2,758만 명으로 가장 많음 (wowtoday.co.kr)  
 ✓ 마이크로 인플루언서의 도달당 비용은 메가 인플루언서보다 30~50% 저렴함 (snsboost.kr)  
 ✓ 사진과 영상 중심의 콘텐츠 소비가 일본 소비자에게 선호되며, 숏폼 콘텐츠 반응이 긍정적임 (wowtoday.co.kr)  
 ✓ 일본 내 SNS 마케팅 전략 수립을 위한 월간 콘텐츠 캘린더 설계는 필수적임  
@@ -105,4 +105,4 @@ image: >-
 - 경제산업성 METI EC Market Survey 2024  
 - JETRO 2025   
 
-Explore more insights: [LINE CRM Funnel](/insights/line-official-account-funnel), [LINE X CRM Marketing](/insights/line-x-crm-fan-marketing-japan), [Influencer Brief Template](/insights/influencer-brief-template-jp), [UGC Conversion Playbook](/insights/japan-ugc-conversion-playbook), [AI in Shopping Commerce](/insights/ai-shopping-commerce-japan-2026)
+Explore more insights: [LINE CRM Funnel](/insights/line-official-account-funnel), [LINE X CRM Marketing](/insights/line-x-crm-fan-marketing-japan), [Influencer Brief Template](/insights/influencer-brief-template-jp), [UGC Conversion Playbook](/insights/japan-ugc-conversion-playbook), [AI in Shopping Commerce](/insights/ai-shopping-commerce-japan-2025)

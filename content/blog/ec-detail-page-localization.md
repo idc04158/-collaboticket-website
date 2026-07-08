@@ -6,12 +6,12 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-09-18'
+date: '2024-09-11'
 image: >-
   https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본 전자상거래 시장 규모는 2025년 약 20조 엔, 5% 성장 예상 (METI 2024)  
+✓ 일본 전자상거래 시장 규모는 2024년 약 20조 엔, 5% 성장 예상 (METI 2024)  
 ✓ 상세페이지 현지화는 소비자의 신뢰를 확보하는 첫 단계  
 ✓ 완전한 현지화 우선순위 - 정보의 정확성 및 디자인 간결성  
 ✓ 소비자 행동 분석은 일본 시장 성공의 열쇠  
@@ -22,7 +22,7 @@ image: >-
 ![일본 상세페이지 현지화 포인트 12가지](https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 상세페이지 현지화 시장 데이터
-일본의 전자상거래 시장은 2025년 기준 약 20조 엔에 이를 것으로 예상되며, 연평균 5% 성장률을 유지할 것으로 보입니다 (METI 2024). 소비자들은 상세페이지의 정보 제공 수준이 매출에 상당한 영향을 미치므로, 이를 고려한 현지화 전략이 필요합니다.
+일본의 전자상거래 시장은 2024년 기준 약 20조 엔에 이를 것으로 예상되며, 연평균 5% 성장률을 유지할 것으로 보입니다 (METI 2024). 소비자들은 상세페이지의 정보 제공 수준이 매출에 상당한 영향을 미치므로, 이를 고려한 현지화 전략이 필요합니다.
 
 | 지표            | 수치          | 출처                       |
 |-----------------|---------------|----------------------------|
@@ -107,8 +107,8 @@ image: >-
 
 
 ## 관련 리포트
-- [2026 일본 EC 트렌드](/insights/japan-ec-market-trends-2026)
-- [2025 일본 이커머스 시장](/insights/japan-ecommerce-2025)
+- [2025 일본 EC 트렌드](/insights/japan-ec-market-trends-2024)
+- [2025 일본 이커머스 시장](/insights/japan-ecommerce-2024)
 - [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)
 - [Japan Ec Channel Entry Strategy](/insights/japan-ec-channel-entry-strategy)
 - [K-Beauty 일본 진출](/insights/kbeauty-japan-entry-roadmap)
@@ -119,4 +119,4 @@ image: >-
 - Statista 2024
 - JETRO 2023
 
-추가 자료를 원하시면 [일본 EC 시장 트렌드](https://collaboticket.com/insights/japan-ec-market-trends-2026), [일본 eCommerce 2025](https://collaboticket.com/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](https://collaboticket.com/insights/japan-ec-kpi-dashboard) 등을 참고하세요.
+추가 자료를 원하시면 [일본 EC 시장 트렌드](https://collaboticket.com/insights/japan-ec-market-trends-2024), [일본 eCommerce 2025](https://collaboticket.com/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](https://collaboticket.com/insights/japan-ec-kpi-dashboard) 등을 참고하세요.

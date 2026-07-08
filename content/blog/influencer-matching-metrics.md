@@ -2,7 +2,7 @@
 title: 일본 인플루언서 매칭 시 봐야 할 데이터 지표
 description: '일본 인플루언서 마케팅 시장 규모는 약 500억 엔으로, 2025년까지 연평균 10% 성장할 것으로 예상됩니다.'
 category: Market Analysis
-date: '2025-03-19'
+date: '2025-02-26'
 image: >-
   https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -106,6 +106,6 @@ LINE 플랫폼을 통한 마케팅은 재구매율을 높일 수 있으며, 사�
 [일본 SNS 콘텐츠 캘린더](/insights/japan-sns-content-calendar)  
 [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp)  
 [일본 UGC 전환 플레이북](/insights/japan-ugc-conversion-playbook)  
-[AI 쇼핑 커머스의 미래](/insights/ai-shopping-commerce-japan-2026)  
+[AI 쇼핑 커머스의 미래](/insights/ai-shopping-commerce-japan-2025)  
 [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding)  
 [아마존 일본 리뷰 속도 최적화](/insights/amazon-japan-review-velocity)

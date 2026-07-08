@@ -2,7 +2,7 @@
 title: 체험단 + 인플루언서 결합으로 매출 43% 상승 사례
 description: 일본 뷰티 시장에서 한국 브랜드가 체험단과 인플루언서를 결합해 매출을 43% 증가시킨 사례입니다.
 category: Case Study
-date: '2025-04-16'
+date: '2025-03-26'
 image: >-
   https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
 tags:

@@ -2,7 +2,7 @@
 title: 일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법
 description: '일본 전자상거래 시장은 2025년 약 2조 5천억 엔에 이를 것으로 예상되며, 인플루언서 마케팅의 중요성이 커지고 있습니다.'
 category: Case Study
-date: '2025-04-09'
+date: '2025-03-19'
 image: >-
   https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80
 tags:

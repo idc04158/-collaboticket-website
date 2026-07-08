@@ -2,7 +2,7 @@
 title: 일본 EC에서 UGC가 전환율을 높이는 이유
 description: 일본 EC 시장에서 UGC는 전환율을 평균 30% 증가시키며 소비자 신뢰도를 75% 향상시킵니다.
 category: Insight
-date: '2025-02-26'
+date: '2025-02-05'
 image: >-
   https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80
 tags:

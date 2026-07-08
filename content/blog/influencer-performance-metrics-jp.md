@@ -6,7 +6,7 @@ tags:
   - SNS
   - 인플루언서
   - 콘텐츠
-date: '2025-04-02'
+date: '2025-03-12'
 image: >-
   https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80
 ---

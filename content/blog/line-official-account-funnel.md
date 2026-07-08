@@ -6,7 +6,7 @@ tags:
   - SNS
   - 인플루언서
   - 콘텐츠
-date: '2025-03-05'
+date: '2025-02-12'
 image: >-
   https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1400&q=80
 ---
@@ -109,7 +109,7 @@ LINE의 분석 도구를 활용하여 광고의 클릭률, 전환율, 재구매�
 - [Japan Sns Content Calendar](/insights/japan-sns-content-calendar)
 - [Influencer Brief Template Jp](/insights/influencer-brief-template-jp)
 - [Japan Ugc Conversion Playbook](/insights/japan-ugc-conversion-playbook)
-- [AI 쇼핑커머스 2026](/insights/ai-shopping-commerce-japan-2026)
+- [AI 쇼핑커머스 2025](/insights/ai-shopping-commerce-japan-2025)
 
 ## References
 - Statista 2025
@@ -117,4 +117,4 @@ LINE의 분석 도구를 활용하여 광고의 클릭률, 전환율, 재구매�
 - eMarketer 2025
 - METI 2024
 
-자세한 내용은 [LINE CRM 활용](https://collaboticket/insights/line-x-crm-fan-marketing-japan), [SNS 콘텐츠 계획](https://collaboticket/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](https://collaboticket/insights/influencer-brief-template-jp), [UGC 전환 플레이북](https://collaboticket/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 툴](https://collaboticket/insights/ai-shopping-commerce-japan-2026)에서 확인할 수 있습니다.
+자세한 내용은 [LINE CRM 활용](https://collaboticket/insights/line-x-crm-fan-marketing-japan), [SNS 콘텐츠 계획](https://collaboticket/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](https://collaboticket/insights/influencer-brief-template-jp), [UGC 전환 플레이북](https://collaboticket/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 툴](https://collaboticket/insights/ai-shopping-commerce-japan-2025)에서 확인할 수 있습니다.

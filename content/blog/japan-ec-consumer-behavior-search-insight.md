@@ -2,7 +2,7 @@
 title: '일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호'
 description: '일본 EC 시장 규모는 2024년 약 21.4조 엔으로 예상되며, 소비자 리뷰가 구매 전환에 중요한 신뢰 신호로 작용합니다.'
 category: Insight
-date: '2024-07-17'
+date: '2024-07-10'
 image: >-
   https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -101,8 +101,8 @@ tags:
 - 다마르케트 조사 2024  
 - CollaboTicket 운영 데이터 2024  
 
-[일본 EC 시장 트렌드 2026](/insights/japan-ec-market-trends-2026)  
-[일본 이커머스 2025](/insights/japan-ecommerce-2025)  
+[일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2024)  
+[일본 이커머스 2024](/insights/japan-ecommerce-2024)  
 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)  
 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)  
 [한국 뷰티 카테고리 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

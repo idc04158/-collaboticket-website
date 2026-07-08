@@ -6,12 +6,12 @@ tags:
   - 라쿠텐
   - Qoo10
   - Amazon
-date: '2024-12-04'
+date: '2024-11-20'
 image: >-
   https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 라쿠텐 슈퍼세일은 일본에서 연 4회 진행되며, 월간 활성 사용자 수는 약 1,500만 명으로 추정됨 (2025년 예상, Rakuten IR).  
+✓ 라쿠텐 슈퍼세일은 일본에서 연 4회 진행되며, 월간 활성 사용자 수는 약 1,500만 명으로 추정됨 (2024년 예상, Rakuten IR).  
 ✓ 평균 장바구니 금액(AOV)은 약 5,000엔으로, 소비자들은 할인 제품을 선호함 (NielsenIQ 2024).  
 ✓ 실시간 리뷰 수가 증가할수록 구매 전환율(CVR)도 평균 15%까지 상승함 (CollaboTicket 운영 데이터 기준).  
 ✓ 경쟁력 있는 가격 설정이 필수적이며, 가격 민감도가 높은 일본 소비자들을 겨냥한 전략이 필요함.  
@@ -25,7 +25,7 @@ image: >-
 
 | 항목             | 수치                      | 출처               |
 |----------------|-------------------------|-------------------|
-| 월간 활성 사용자 | 약 1,500만명             | Rakuten IR 2025    |
+| 월간 활성 사용자 | 약 1,500만명             | Rakuten IR 2023    |
 | 평균 장바구니 금액 | 약 5,000엔               | NielsenIQ 2024     |
 | 구매 전환율       | 약 12%                   | Rakuten IR 2024    |
 | 가격 민감도       | 60% 이상의 소비자가 할인에 민감 | CollaboTicket 운영 데이터 기준 |
@@ -103,4 +103,4 @@ image: >-
 - JETRO 2024
 - NielsenIQ 2024
 
-For further reading, see related insights on [라쿠텐 SEO 구조](/insights/rakuten-seo-title-structure), [라쿠텐 vs 아마존](/insights/rakuten-vs-amazon), [라쿠텐 아마존 런칭 기초](/insights/rakuten-amazon-launch-basics), [일본 검색-전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026).
+For further reading, see related insights on [라쿠텐 SEO 구조](/insights/rakuten-seo-title-structure), [라쿠텐 vs 아마존](/insights/rakuten-vs-amazon), [라쿠텐 아마존 런칭 기초](/insights/rakuten-amazon-launch-basics), [일본 검색-전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024).

@@ -6,7 +6,7 @@ tags:
   - 라쿠텐
   - Qoo10
   - Amazon
-date: '2024-11-27'
+date: '2024-11-13'
 image: >-
   https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80
 ---
@@ -102,4 +102,4 @@ Qoo10 및 Amazon에서도 상품명 최적화가 중요합니다. 각 플랫폼�
 - JETRO 2024
 - Statista 2024
 
-Internal links: [라쿠텐 슈퍼 세일 운영 통찰](/insights/rakuten-super-sale-ops), [라쿠텐 vs 아마존](/insights/rakuten-vs-amazon), [라쿠텐 아마존 출시에 대한 기본 정보](/insights/rakuten-amazon-launch-basics), [일본의 검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 상거래 일본 2026](/insights/ai-shopping-commerce-japan-2026), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [사례 연구 & 경험 인플루언서](/insights/case-study-experience-influencer-43)
+Internal links: [라쿠텐 슈퍼 세일 운영 통찰](/insights/rakuten-super-sale-ops), [라쿠텐 vs 아마존](/insights/rakuten-vs-amazon), [라쿠텐 아마존 출시에 대한 기본 정보](/insights/rakuten-amazon-launch-basics), [일본의 검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 상거래 일본 2025](/insights/ai-shopping-commerce-japan-2024), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [사례 연구 & 경험 인플루언서](/insights/case-study-experience-influencer-43)

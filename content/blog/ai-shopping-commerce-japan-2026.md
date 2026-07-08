@@ -2,7 +2,7 @@
 title: 'AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로'
 description: '2025년 일본 전자상거래 시장 규모는 27.1조 엔으로, 소비자 75%가 AI 추천을 통해 제품을 찾습니다.'
 category: Insight
-date: '2025-06-11'
+date: '2025-06-04'
 image: >-
   https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -111,7 +111,7 @@ LINE은 사용자와의 직접적인 커뮤니케이션을 통해 높은 재구�
 - LINE 공식 리포트 2025
 - Statista 2025
 
-[Japan EC Market Trends 2026](/insights/japan-ec-market-trends-2026)  
+[Japan EC Market Trends 2026](/insights/japan-ec-market-trends-2025)  
 [Japan E-commerce 2025](/insights/japan-ecommerce-2025)  
 [Japan EC KPI Dashboard](/insights/japan-ec-kpi-dashboard)  
 [Japan EC Channel Entry Strategy](/insights/japan-ec-channel-entry-strategy)  

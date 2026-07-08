@@ -2,7 +2,7 @@
 title: LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략
 description: '일본 SNS 시장에서 LINE 사용자는 8천만 명, X는 4천만 명으로 CRM 전략이 중요해지고 있습니다.'
 category: Insight
-date: '2025-03-12'
+date: '2025-02-19'
 image: >-
   https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -111,4 +111,4 @@ LINE은 고객과의 지속적인 소통을, X는 실시간 정보 공유와 트
 - Rakuten IR 2024  
 - LINE Official 2025  
 
-자세한 소식은 [LINE 공식 계정 프레임워크](/insights/line-official-account-funnel), [일본 SNS 콘텐츠 일정](/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp), [사용자 생성 콘텐츠 전환 플레이북](/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 2026](/insights/ai-shopping-commerce-japan-2026) 등을 참고하세요.
+자세한 소식은 [LINE 공식 계정 프레임워크](/insights/line-official-account-funnel), [일본 SNS 콘텐츠 일정](/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp), [사용자 생성 콘텐츠 전환 플레이북](/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 2025](/insights/ai-shopping-commerce-japan-2025) 등을 참고하세요.

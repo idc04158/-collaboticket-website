@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-08-07'
+date: '2024-07-31'
 image: >-
   https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80
 ---
@@ -105,4 +105,4 @@ LINE을 활용한 CRM 전략을 통해 고객 유입과 재구매를 촉진할 �
 - Qoo10 공식 보고서 2024
 - LINE IR 2023
 
-[일본 전자상거래 시장 동향 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험 기반 사례 연구](/insights/case-study-experience-influencer-43)
+[일본 전자상거래 시장 동향 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2024](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [AI 쇼핑 커머스 일본 2024](/insights/ai-shopping-commerce-japan-2024), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험 기반 사례 연구](/insights/case-study-experience-influencer-43)

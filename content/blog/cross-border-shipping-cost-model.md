@@ -6,7 +6,7 @@ tags:
   - 물류
   - 통관
   - 운영
-date: '2025-04-30'
+date: '2025-04-09'
 image: >-
   https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=80
 ---
@@ -109,4 +109,4 @@ CRM 시스템을 통해 소비자와의 지속적인 소통을 강화해야 합�
 - CJ Logistics 2025
 - JETRO 2024
 
-[역직구 물류 서비스 최적화](/insights/logistics-corporate-ecommerce) | [FBA vs 3PL](/insights/fba-vs-3pl-japan) | [Amazon 일본 FBA 온보딩 가이드](/insights/amazon-japan-fba-onboarding) | [AI 쇼핑 및 전자상거래 미래](/insights/ai-shopping-commerce-japan-2026) | [리뷰 속도 최적화 전략](/insights/amazon-japan-review-velocity)
+[역직구 물류 서비스 최적화](/insights/logistics-corporate-ecommerce) | [FBA vs 3PL](/insights/fba-vs-3pl-japan) | [Amazon 일본 FBA 온보딩 가이드](/insights/amazon-japan-fba-onboarding) | [AI 쇼핑 및 전자상거래 미래](/insights/ai-shopping-commerce-japan-2025) | [리뷰 속도 최적화 전략](/insights/amazon-japan-review-velocity)

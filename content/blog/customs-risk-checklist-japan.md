@@ -6,7 +6,7 @@ tags:
   - 물류
   - 통관
   - 운영
-date: '2025-05-07'
+date: '2025-04-16'
 image: >-
   https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1400&q=80
 ---
@@ -110,7 +110,7 @@ image: >-
 - Qoo10 2024  
 
 내부 링크:
-- [일본 전자상거래 시장 트렌드 2026](/insights/japan-ec-market-trends-2026)  
+- [일본 전자상거래 시장 트렌드 2025](/insights/japan-ec-market-trends-2025)  
 - [일본 전자상거래 정책 2025](/insights/japan-ecommerce-2025)  
 - [일본 전자상거래 KPI 대시보드](/insights/japan-ec-kpi-dashboard)  
 - [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)  

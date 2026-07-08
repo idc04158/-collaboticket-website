@@ -6,7 +6,7 @@ tags:
   - 시장분석
   - 일본EC
   - 데이터
-date: '2024-11-06'
+date: '2024-10-30'
 image: >-
   https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
 ---
@@ -118,11 +118,11 @@ Qoo10은 가격 중시 전략에, Rakuten은 포인트 시스템으로 충성 �
 - Qoo10 공식 보고서 2024
 
 추가 정보는 아래의 관련 인사이트를 참조하시기 바랍니다:  
-- [일본 EC 시장 트렌드 2026](/insights/japan-ec-market-trends-2026)  
-- [일본 전자상거래 2025](/insights/japan-ecommerce-2025)  
+- [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2024)  
+- [일본 전자상거래 2025](/insights/japan-ecommerce-2024)  
 - [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)  
 - [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)  
-- [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026)  
+- [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024)  
 - [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding)  
 - [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)  
 - [사례 연구 경험 인플루언서 43](/insights/case-study-experience-influencer-43)

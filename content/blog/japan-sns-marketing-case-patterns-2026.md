@@ -2,7 +2,7 @@
 title: 일본 SNS 마케팅 사례에서 반복되는 성공 패턴
 description: '일본 SNS 사용자 수는 약 8,000만 명으로, 브랜드의 공식 계정을 통한 구매 전환율이 20% 증가했습니다.'
 category: Case Study
-date: '2025-02-12'
+date: '2025-05-28'
 image: >-
   https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1400&q=80
 tags:

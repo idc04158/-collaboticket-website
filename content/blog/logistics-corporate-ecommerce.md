@@ -2,7 +2,7 @@
 title: 법인 설립 후 이커머스·물류를 연결하는 구조
 description: '일본 B2C 이커머스 시장은 2024년까지 24.8조 엔으로 9% 성장할 것으로 예상되며, 물류 최적화가 핵심입니다.'
 category: Case Study
-date: '2025-05-14'
+date: '2025-04-23'
 image: >-
   https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -102,4 +102,4 @@ Qoo10이나 Rakuten에서의 프로모션을 통해 초기 구매자들에게 �
 - Amazon IR 2023
 - Qoo10 공식 발표 2024
 
-[일본 FBA와 3PL 비교](/insights/fba-vs-3pl-japan) | [일본의 크로스보더 배송 비용 모델](/insights/cross-border-shipping-cost-model) | [일본 세관 리스크 체크리스트](/insights/customs-risk-checklist-japan) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [2026년 일본 AI 쇼핑 상거래](/insights/ai-shopping-commerce-japan-2026) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity) | [성공적 인플루언서 캠페인 사례](/insights/case-study-experience-influencer-43) | [코스메틱 입술 리뷰 운영](/insights/cosme-lips-review-operations)
+[일본 FBA와 3PL 비교](/insights/fba-vs-3pl-japan) | [일본의 크로스보더 배송 비용 모델](/insights/cross-border-shipping-cost-model) | [일본 세관 리스크 체크리스트](/insights/customs-risk-checklist-japan) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [2025년 일본 AI 쇼핑 상거래](/insights/ai-shopping-commerce-japan-2025) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity) | [성공적 인플루언서 캠페인 사례](/insights/case-study-experience-influencer-43) | [코스메틱 입술 리뷰 운영](/insights/cosme-lips-review-operations)

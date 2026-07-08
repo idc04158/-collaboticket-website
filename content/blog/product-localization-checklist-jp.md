@@ -6,14 +6,14 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-09-11'
+date: '2024-09-04'
 image: >-
   https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 B2C EC 시장 규모는 약 24.8조 엔, 전년 대비 9% 성장 (경제산업성 METI EC Market Survey 2024)  
 ✓ 큐텐은 새로운 판매 채널 생성에 유리하며, 2023년 매출이 약 2,000억 엔에 도달 (Qoo10 IR)  
-✓ 라쿠텐은 고객 충성도를 높이기 위한 브랜드 홍보가 필요하며, 2025년 1억 회원 목표 (Rakuten IR)  
+✓ 라쿠텐은 고객 충성도를 높이기 위한 브랜드 홍보가 필요하며, 2024년 1억 회원 목표 (Rakuten IR)  
 ✓ 아마존 재팬의 구매 전환율은 약 17%로, 검색 최적화 및 광고가 중요 (NielsenIQ)  
 ✓ 고객 서비스 만족도는 일본 내에서 95% 이상으로, 지원 체계 강화 필요 (총무성)  
 
@@ -21,10 +21,10 @@ image: >-
 
 ## FACT: 일본 제품 현지화 및 전자상거래 플랫폼 데이터
 - 일본 B2C 전자상거래 시장 규모는 약 24.8조 엔, 전년 대비 9% 성장 (경제산업성 METI EC Market Survey 2024)
-- 2025년 일본 전자상거래 시장 규모는 2조 3천억 엔으로 예상 (JETRO)
+- 2024년 일본 전자상거래 시장 규모는 2조 3천억 엔으로 예상 (JETRO)
 - 주요 플랫폼별 점유율: 라쿠텐 28%, 아마존 25%, 큐텐 15% (2024년 데이터, Statista)
 
-| 플랫폼     | 2024년 시장 점유율 | 2025년 예상 매출 | 주요 특징            |
+| 플랫폼     | 2024년 시장 점유율 | 2024년 예상 매출 | 주요 특징            |
 |------------|----------------|----------------|-------------------|
 | 라쿠텐     | 28%            | 6.5조 엔       | 브랜드 홍보 강화 필요 |
 | 아마존     | 25%            | 5.5조 엔       | 광고 최적화 중요     |
@@ -108,4 +108,4 @@ LINE CRM을 통한 지속적인 소통 및 혜택 제공이 필요합니다.
 - NielsenIQ 2024  
 - 총무성 2024  
 
-내부 링크: [일본 전자상거래 시장 동향 2026](/insights/japan-ec-market-trends-2026), [2025년 일본 전자상거래 계획](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 시장 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)
+내부 링크: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024), [2024년 일본 전자상거래 계획](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 시장 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

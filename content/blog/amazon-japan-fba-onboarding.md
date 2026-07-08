@@ -6,21 +6,21 @@ tags:
   - 라쿠텐
   - Qoo10
   - Amazon
-date: '2024-10-23'
+date: '2024-10-16'
 image: >-
   https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본의 온라인 쇼핑 시장 규모는 2025년까지 약 20조 엔에 이를 것으로 예상 (eMarketer 2024)  
+✓ 일본의 온라인 쇼핑 시장 규모는 2024년까지 약 20조 엔에 이를 것으로 예상 (eMarketer 2024)  
 ✓ Amazon Japan은 전체 전자상거래 시장의 약 30%를 차지 (Statista 2024)  
-✓ Prime 회원 수는 2025년까지 2,000만 명을 넘길 것으로 보임 (Nikkei 2024)  
+✓ Prime 회원 수는 2024년까지 2,000만 명을 넘길 것으로 보임 (Nikkei 2024)  
 ✓ Amazon FBA를 사용하면 물류 비용이 약 30% 감소 (CollaboTicket 운영 데이터 기준)  
 ✓ 스킨케어 브랜드 D제품, Amazon에서 6개월간 광고 비용 대비 300% ROAS 기록  
 
 ![Amazon Japan FBA 온보딩 가이드](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 온라인 쇼핑 및 Amazon Japan의 시장 데이터
-일본의 온라인 쇼핑 시장은 2025년까지 약 20조 엔에 이를 것으로 예상되고 있으며, Amazon Japan는 전체 전자상거래 시장의 약 30%를 차지하고 있습니다. Prime 회원 수는 계속 증가하고 있어, 2025년에는 2,000만 명을 돌파할 것으로 보입니다.
+일본의 온라인 쇼핑 시장은 2024년까지 약 20조 엔에 이를 것으로 예상되고 있으며, Amazon Japan는 전체 전자상거래 시장의 약 30%를 차지하고 있습니다. Prime 회원 수는 계속 증가하고 있어, 2024년에는 2,000만 명을 돌파할 것으로 보입니다.
 
 | 연도  | 온라인 쇼핑 시장 규모 (조 엔) | Amazon Japan 시장 점유율 (%) | Prime 회원 수 (명) |
 |-------|--------------------|-----------------------|----------------|
@@ -109,4 +109,4 @@ Amazon은 검색 최적화와 Buy Box를 중시하는 반면, Qoo10과 Rakuten�
 - Statista 2024
 - Nikkei 2024
 
-내부 링크: [리뷰 속도 최적화](/insights/amazon-japan-review-velocity), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [라쿠텐 대 아마존 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2026), [인플루언서 경험 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan)
+내부 링크: [리뷰 속도 최적화](/insights/amazon-japan-review-velocity), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [라쿠텐 대 아마존 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2024), [인플루언서 경험 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan)

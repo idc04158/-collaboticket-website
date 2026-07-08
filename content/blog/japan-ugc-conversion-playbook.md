@@ -6,7 +6,7 @@ tags:
   - SNS
   - 인플루언서
   - 콘텐츠
-date: '2025-02-19'
+date: '2025-01-29'
 image: >-
   https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80
 ---
@@ -113,4 +113,4 @@ TikTok은 짧은 비디오 콘텐츠에 최적화되어 있습니다. 소비자�
 - Social Media Lab 데이터 2024
 - NielsenIQ 2024
 
-자세한 인사이트는 다음 링크에서 확인하세요: [LINE 공식 계정 관련 인사이트](/insights/line-official-account-funnel), [LINE x CRM 마케팅 인사이트](/insights/line-x-crm-fan-marketing-japan), [일본 SNS 콘텐츠 캘린더](/insights/japan-sns-content-calendar), [영향력자 브리프 샘플](/insights/influencer-brief-template-jp), [AI 쇼핑 코머스 관련 인사이트](/insights/ai-shopping-commerce-japan-2026).
+자세한 인사이트는 다음 링크에서 확인하세요: [LINE 공식 계정 관련 인사이트](/insights/line-official-account-funnel), [LINE x CRM 마케팅 인사이트](/insights/line-x-crm-fan-marketing-japan), [일본 SNS 콘텐츠 캘린더](/insights/japan-sns-content-calendar), [영향력자 브리프 샘플](/insights/influencer-brief-template-jp), [AI 쇼핑 코머스 관련 인사이트](/insights/ai-shopping-commerce-japan-2025).

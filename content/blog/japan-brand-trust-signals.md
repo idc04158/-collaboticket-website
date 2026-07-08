@@ -8,12 +8,12 @@ tags:
   - 리뷰
   - 전환
   - 신뢰
-date: '2024-09-04'
+date: '2024-08-28'
 image: >-
   https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본의 전자상거래 시장 규모는 2025년까지 약 20조 엔에 달할 것으로 예상 (경제산업성 METI, 2024)  
+✓ 일본의 전자상거래 시장 규모는 2024년까지 약 20조 엔에 달할 것으로 예상 (경제산업성 METI, 2024)  
 ✓ 소비자 신뢰 구축을 위해 리뷰 관리 및 반응이 필수적; 긍정적인 리뷰 비율이 70% 이상일 경우 전환율(CVR) 2배 증가 (NielsenIQ, 2024)  
 ✓ Qoo10에서의 초기 리뷰 수가 50개 이상일 경우 본격 판매 가능성 상승 (장기 채널 분석 결과)  
 ✓ Amazon에서 Buy Box 획득 시 반복 구매율 30%까지 증가 (Amazon IR, 2024)  
@@ -114,4 +114,4 @@ Google Analytics와 같은 플랫폼 분석 도구를 사용할 수 있습니다
 - Amazon IR 2024
 - LINE 공식 보고서 2024
 
-[일본 전자상거래 시장 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)
+[일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2024](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)

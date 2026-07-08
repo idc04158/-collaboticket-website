@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-07-31'
+date: '2024-07-24'
 image: >-
   https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=1400&q=80
 ---
@@ -111,4 +111,4 @@ LINE 플랫폼을 통해 고객과의 커뮤니케이션과 쿠폰 발행 시스
 - NielsenIQ 2023
 - JETRO 2023
 
-기타 통합 기사 링크: [일본 전자상거래 시장 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity).
+기타 통합 기사 링크: [일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity).

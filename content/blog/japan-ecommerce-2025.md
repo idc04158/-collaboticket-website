@@ -11,16 +11,16 @@ tags:
   - 데이터
 ---
 ## AI 30초 요약
-✓ 2025년 일본 이커머스 시장 규모는 약 30조 엔에 이를 것으로 예상됨 (Statista 2024).
+✓ 2024년 일본 이커머스 시장 규모는 약 30조 엔에 이를 것으로 예상됨 (Statista 2024).
 ✓ 일본 B2C EC 시장은 연평균 10% 성장세를 보이고 있음 (METI 2024).
 ✓ 아마존 재팬의 시장 점유율은 약 28%, 고객의 재구매율은 60%에 달함 (Rakuten IR 2024).
 ✓ 큐텐은 초기 판매와 테스트 마케팅에 최적화되어 있어, 한국 브랜드와의 연계가 증가하고 있음.
 ✓ 리뷰 수와 평점은 검색 노출과 클릭률에 직접적으로 영향을 미치며, 평균 평점 4.5 이상이 경쟁 우위를 점함 (NielsenIQ 2024).
 
-![2025년 일본 이커머스 시장 트렌드 분석](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80)
+![2024년 일본 이커머스 시장 트렌드 분석](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 이커머스 시장 현황
-일본의 이커머스 시장은 2025년까지 급성장할 것으로 전망되고 있으며, 각 플랫폼의 특성이 두드러진다.
+일본의 이커머스 시장은 2024년까지 급성장할 것으로 전망되고 있으며, 각 플랫폼의 특성이 두드러진다.
 
 | 분류         | 2024년 시장 규모 | 성장률(%)   |
 |--------------|-----------------|-------------|
@@ -28,7 +28,7 @@ tags:
 | B2C EC       | 약 25조 엔      | 9%          |
 | 오프라인 유통 | 약 60조 엔      | 4%          |
 
-- 2025년 일본 B2C EC 시장 규모는 약 25조 엔, 2024년 대비 약 9% 성장 예상 (METI 2024).
+- 2024년 일본 B2C EC 시장 규모는 약 25조 엔, 2024년 대비 약 9% 성장 예상 (METI 2024).
 - 아마존 재팬의 고객의 재구매율은 약 60%로, 브랜드 충성도가 높은 시장임 (Rakuten IR 2024).
   
 | 플랫폼      | 시장 점유율 | 주요 특징                                |
@@ -112,4 +112,4 @@ Buy Box 확보 후 검색 광고로 핵심 키워드 5~10개를 테스트합니�
 - Rakuten IR 2024
 - NielsenIQ 2024
 
-[2025년 일본 이커머스 시장 트렌드 분석](/insights/japan-ec-market-trends-2026), [일본 B2C EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2026 전망](/insights/ai-shopping-commerce-japan-2026)
+[2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ec-market-trends-2024), [일본 B2C EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025 전망](/insights/ai-shopping-commerce-japan-2024)

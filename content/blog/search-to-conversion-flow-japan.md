@@ -6,7 +6,7 @@ tags:
   - 시장분석
   - 일본EC
   - 데이터
-date: '2024-11-20'
+date: '2024-11-06'
 image: >-
   https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1400&q=80
 ---
@@ -108,8 +108,8 @@ LINE을 활용하면 재구매율을 높일 수 있으며, 쿠폰과 프로모�
 - Statista 2024
 - NielsenIQ 2024
 
-[일본 전자상거래 시장 동향 2026](/insights/japan-ec-market-trends-2026)  
-[일본 전자상거래 2025](/insights/japan-ecommerce-2025)  
+[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024)  
+[일본 전자상거래 2025](/insights/japan-ecommerce-2024)  
 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)  
 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)  
 [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

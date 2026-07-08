@@ -2,7 +2,7 @@
 title: 'Qoo10 메가와리와 라이브커머스: 일본 진출 브랜드가 준비해야 할 것'
 description: '일본 B2C EC 시장 규모는 약 24.8조 엔으로, Qoo10 메가와리 재계약률은 63.2%에 달합니다.'
 category: Insight
-date: '2024-12-18'
+date: '2024-12-04'
 image: >-
   https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -112,4 +112,4 @@ Q&A 세션을 통해 소비자 질문에 실시간으로 반응하고, 즉각적
 - ZDNet 2023  
 - SQI 2023  
 
-For more insights, refer to [Qoo10 메가와리 사전 준비 계획](/insights/qoo10-megawari-prep-plan), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 커머스 전망](/insights/ai-shopping-commerce-japan-2026), [Amazon 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [인플루언서 경험 사례](/insights/case-study-experience-influencer-43), [코스메 입술 리뷰 운영](/insights/cosme-lips-review-operations).
+For more insights, refer to [Qoo10 메가와리 사전 준비 계획](/insights/qoo10-megawari-prep-plan), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 커머스 전망](/insights/ai-shopping-commerce-japan-2024), [Amazon 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [인플루언서 경험 사례](/insights/case-study-experience-influencer-43), [코스메 입술 리뷰 운영](/insights/cosme-lips-review-operations).

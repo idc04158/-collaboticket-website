@@ -2,7 +2,7 @@
 title: '일본 소비자가 믿는 리뷰 구조: 별점보다 중요한 신뢰 설계'
 description: '일본 소비자의 70%가 리뷰 내용의 신뢰성을 중시하며, 이는 브랜드 신뢰성의 핵심 요소입니다.'
 category: Strategy Guide
-date: '2025-01-01'
+date: '2024-12-18'
 image: >-
   https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -109,4 +109,4 @@ A7: Qoo10, Rakuten, Amazon, LINE과 같은 다양한 플랫폼을 통해 최적�
 - 한국 소비자포털 2024
 - 라쿠텐 소비자 조사 2024
 
-Explore further insights on this topic: [리뷰 운영 체크리스트](/insights/qoo10-launch-checklist-30days) | [아마존 일본 리뷰 전략](/insights/amazon-japan-review-velocity) | [소비자 경험 기반 마케팅](/insights/case-study-experience-influencer-43) | [AI 쇼핑 트렌드 일본](/insights/ai-shopping-commerce-japan-2026).
+Explore further insights on this topic: [리뷰 운영 체크리스트](/insights/qoo10-launch-checklist-30days) | [아마존 일본 리뷰 전략](/insights/amazon-japan-review-velocity) | [소비자 경험 기반 마케팅](/insights/case-study-experience-influencer-43) | [AI 쇼핑 트렌드 일본](/insights/ai-shopping-commerce-japan-2024).

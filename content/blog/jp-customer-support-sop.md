@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2025-05-21'
+date: '2025-04-30'
 image: >-
   https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80
 ---
@@ -102,4 +102,4 @@ image: >-
 - Qoo10 보고서 2024
 - JETRO 고객 서비스 통계 2024
 
-[일본 전자상거래 시장 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025 전망](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+[일본 전자상거래 시장 트렌드 2025](/insights/japan-ec-market-trends-2025), [일본 전자상거래 2025 전망](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2025), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

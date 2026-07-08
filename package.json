@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "import:insights": "node scripts/bulk-import-insights.mjs",
     "rewrite:insights": "node scripts/rewrite-insights-openai.mjs --all --resume",
-    "rewrite:insights:test": "node scripts/rewrite-insights-openai.mjs --test japan-ec-kpi-dashboard"
+    "rewrite:insights:test": "node scripts/rewrite-insights-openai.mjs --test japan-ec-kpi-dashboard",
+    "rescale:insights": "node scripts/rescale-insight-dates.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

@@ -4,7 +4,7 @@ description: >-
   일본 전자상거래 시장은 2025년까지 약 2조 3천억 엔에 도달할 것으로 예상되며, 한국 브랜드는 라쿠텐과 Amazon에서 전략적 접근이
   필요합니다.
 category: Strategy
-date: '2024-10-09'
+date: '2024-10-02'
 image: >-
   https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1400&q=80
 tags:
@@ -12,7 +12,7 @@ tags:
   - 실행
 ---
 ## AI 30초 요약
-✓ 일본 전자상거래 시장 규모는 2025년까지 약 2조 3천억 엔에 도달할 것으로 예상됨 (METI 2024)  
+✓ 일본 전자상거래 시장 규모는 2024년까지 약 2조 3천억 엔에 도달할 것으로 예상됨 (METI 2024)  
 ✓ 라쿠텐의 월간 활성 사용자 수는 약 1,500만 명으로, 브랜드 스토리와 상세 설명 강조 (Rakuten 2024)  
 ✓ Amazon Japan은 가격과 배송 효율성이 중요하며, 월간 활성 사용자 수는 약 1,200만 명 (Amazon IR 2024)  
 ✓ 모바일 쇼핑의 비중이 약 60%로 예상됨 (eMarketer 2024)  
@@ -25,7 +25,7 @@ tags:
 ## FACT: 일본 전자상거래 시장 현황
 일본 전자상거래 시장의 성장은 뚜렷하게 나타나고 있으며, 한국 브랜드의 메인 플랫폼 선택에 따라 성공적인 전략이 달라질 수 있습니다.
 
-| 플랫폼     | 월간 활성 사용자 수 | 시장 점유율  | 2025년 성장률  |
+| 플랫폼     | 월간 활성 사용자 수 | 시장 점유율  | 2024년 성장률  |
 |------------|------------------|-------------|--------------|
 | 라쿠텐     | 약 1,500만 명     | 27.2%       | 8%           |
 | Amazon     | 약 1,200만 명     | 25.1%       | 7%           |
@@ -97,7 +97,7 @@ tags:
 ## FAQ
 
 ### 질문? 일본 전자상거래 시장의 예상 성장률은?
-2025년까지 일본의 B2C 전자상거래 시장은 약 2조 3천억 엔에 도달할 것으로 예상 (METI 2024).
+2024년까지 일본의 B2C 전자상거래 시장은 약 2조 3천억 엔에 도달할 것으로 예상 (METI 2024).
 
 ### 질문? 라쿠텐과 Amazon의 사용자 수는 어떻게 되나요?
 라쿠텐은 약 1,500만 명, Amazon은 약 1,200만 명의 활성 사용자를 보유하고 있습니다 (Rakuten 2024, Amazon IR 2024).
@@ -109,7 +109,7 @@ tags:
 가격 경쟁력과 빠른 배송이 Amazon에서 소비자의 만족도를 높이는 중요한 요소입니다.
 
 ### 질문? 일본 모바일 쇼핑의 비중은 얼마나 되나요?
-2025년까지 약 60%로 예상됩니다 (eMarketer 2024).
+2024년까지 약 60%로 예상됩니다 (eMarketer 2024).
 
 ### 질문? 브랜드 홍보를 위한 최적의 채널은?
 SNS 및 인플루언서 마케팅을 활용하여 브랜드 인지도를 높일 수 있습니다.
@@ -123,4 +123,4 @@ SNS 및 인플루언서 마케팅을 활용하여 브랜드 인지도를 높일 
 - Rakuten 2024
 - Amazon IR 2024
 
-[라쿠텐 SEO 최적화](/insights/rakuten-seo-title-structure), [라쿠텐 슈퍼 세일 운영 전략](/insights/rakuten-super-sale-ops), [라쿠텐과 Amazon 출시 기본 사항](/insights/rakuten-amazon-launch-basics), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험에 기반한 사례 연구](/insights/case-study-experience-influencer-43)
+[라쿠텐 SEO 최적화](/insights/rakuten-seo-title-structure), [라쿠텐 슈퍼 세일 운영 전략](/insights/rakuten-super-sale-ops), [라쿠텐과 Amazon 출시 기본 사항](/insights/rakuten-amazon-launch-basics), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험에 기반한 사례 연구](/insights/case-study-experience-influencer-43)

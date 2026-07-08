@@ -6,7 +6,7 @@ tags:
   - 실행가이드
   - 체크리스트
   - 운영
-date: '2024-10-30'
+date: '2024-10-23'
 image: >-
   https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80
 ---
@@ -113,4 +113,4 @@ image: >-
 - NielsenIQ 2023
 - Statista 2024
 
-링크: [일본 EC 시장 트렌드 2026](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2026](/insights/ai-shopping-commerce-japan-2026), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+링크: [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2025](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

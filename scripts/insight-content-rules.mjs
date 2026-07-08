@@ -5,10 +5,16 @@ export const CONTENT_RULES_VERSION = "v2-report"
 export const PUBLISH_START = "2024-07-03"
 export const PUBLISH_INTERVAL_DAYS = 7
 
-/** Chronological publish order: foundational → platform → advanced → forecast */
-export const PUBLISH_ORDER = [
-  "japan-ecommerce-2025",
+/** Chronological publish order: foundational → platform → advanced → year-outlook */
+const YEAR_OUTLOOK_2026 = [
   "japan-ec-market-trends-2026",
+  "japan-ec-keyword-map-2026",
+  "japan-sns-marketing-case-patterns-2026",
+  "ai-shopping-commerce-japan-2026",
+]
+
+const CORE_ORDER = [
+  "japan-ecommerce-2025",
   "japan-ec-consumer-behavior-search-insight",
   "japan-ec-channel-entry-strategy",
   "japan-entry-consulting-agenda",
@@ -26,7 +32,6 @@ export const PUBLISH_ORDER = [
   "amazon-japan-fba-onboarding",
   "marketplace-content-reuse-system",
   "japan-ec-kpi-dashboard",
-  "japan-ec-keyword-map-2026",
   "search-to-conversion-flow-japan",
   "rakuten-seo-title-structure",
   "rakuten-super-sale-ops",
@@ -39,7 +44,6 @@ export const PUBLISH_ORDER = [
   "japan-ec-ad-creative-patterns",
   "japan-sns-brand-trust",
   "japan-sns-content-calendar",
-  "japan-sns-marketing-case-patterns-2026",
   "japan-ugc-conversion-playbook",
   "ugc-ec-conversion-japan",
   "line-official-account-funnel",
@@ -55,9 +59,9 @@ export const PUBLISH_ORDER = [
   "logistics-corporate-ecommerce",
   "jp-customer-support-sop",
   "crm-followup-template-japan",
-  "japan-ecommerce-faq-50",
-  "ai-shopping-commerce-japan-2026",
 ]
+
+export const PUBLISH_ORDER = [...CORE_ORDER, ...YEAR_OUTLOOK_2026, "japan-ecommerce-faq-50"]
 
 export const INTERNAL_LINK_TARGETS = PUBLISH_ORDER.map((slug) => ({
   slug,
@@ -152,7 +156,7 @@ Rewrite this insight report.
 Title: ${meta.title}
 Category: ${meta.category}
 Tags: ${Array.isArray(meta.tags) ? meta.tags.join(", ") : ""}
-Publish date (as-of date for facts): ${publishDate} (${year}년 ${month}월 기준 — only cite data publicly available on or before this date)
+Publish date (as-of date for facts): ${publishDate} (${year}년 ${month}월 기준 — only cite data publicly available on or before this date; outlook year in title must be at most 1 year ahead of publish year)
 Thumbnail: ${imageUrl}
 
 Existing draft (replace entirely with superior report):

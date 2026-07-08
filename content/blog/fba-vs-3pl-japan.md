@@ -6,7 +6,7 @@ tags:
   - 물류
   - 통관
   - 운영
-date: '2025-04-23'
+date: '2025-04-02'
 image: >-
   https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=1400&q=80
 ---
@@ -113,7 +113,7 @@ FBA는 Amazon 플랫폼 내에서 제공되는 서비스로, 빠른 배송과 �
 ## 관련 리포트
 - [Amazon Japan 리뷰](/insights/amazon-japan-review-velocity)
 - [검색→전환 흐름](/insights/search-to-conversion-flow-japan)
-- [AI 쇼핑커머스 2026](/insights/ai-shopping-commerce-japan-2026)
+- [AI 쇼핑커머스 2025](/insights/ai-shopping-commerce-japan-2025)
 
 ## References
 - 경제산업성 (METI) 2025
