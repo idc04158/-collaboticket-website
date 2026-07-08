@@ -17,6 +17,7 @@ import {
   getRelatedInsights,
   getTopicClusterLinks,
 } from "@/lib/insights"
+import { sanitizeInsightBody } from "@/lib/sanitize-insight-content"
 
 type PageProps = {
   params: { slug: string }
@@ -62,7 +63,7 @@ function toAnchorId(text: string, index: number) {
 }
 
 function prepareInsightContent(content: string, image?: string) {
-  let body = content.replace(/<!-- expanded-blog-body-v2 -->\n?/g, "")
+  let body = sanitizeInsightBody(content.replace(/<!-- expanded-blog-body-v2 -->\n?/g, ""))
   body = body.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
   body = body.replace(
     new RegExp(`^##\\s+${escapeRegExp(preConsultationHeading)}\\s*$`, "m"),

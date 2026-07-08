@@ -154,7 +154,7 @@ async function rewritePost(meta, existingContent, imageUrl) {
   }
 
   // Strip trailing JSON description if model included it
-  const jsonMatch = body.match(/\n\{ "description": "[^"]+" \}\s*$/)
+  const jsonMatch = body.match(/\n\{"description"\s*:\s*"[\s\S]*?"\}\s*$/)
   let descriptionFromBody = null
   if (jsonMatch) {
     try {
@@ -164,6 +164,9 @@ async function rewritePost(meta, existingContent, imageUrl) {
     }
     body = body.slice(0, jsonMatch.index).trim()
   }
+
+  // Remove broken partial JSON lines
+  body = body.replace(/\n\{"description"\s*:\s*"[^\n]*$/m, "").trim()
 
   // Remove accidental frontmatter fences
   body = body.replace(/^---[\s\S]*?---\n+/m, "").trim()
