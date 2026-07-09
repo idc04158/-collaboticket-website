@@ -12,4 +12,5 @@ data/inquiries.json
 data/crm-settings.json
 data/crm-activity.json
 data/uploads/
+.data/
 .vercel

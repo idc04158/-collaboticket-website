@@ -10,7 +10,13 @@
     "import:insights": "node scripts/bulk-import-insights.mjs",
     "rewrite:insights": "node scripts/rewrite-insights-openai.mjs --all --resume",
     "rewrite:insights:test": "node scripts/rewrite-insights-openai.mjs --test japan-ec-kpi-dashboard",
-    "rescale:insights": "node scripts/rescale-insight-dates.mjs"
+    "rescale:insights": "node scripts/rescale-insight-dates.mjs",
+    "retone:insights": "node scripts/retone-insights-toss.mjs --all --resume",
+    "fix:operational-data": "node scripts/fix-insight-operational-data.mjs --all --resume",
+    "dedup:insights": "node scripts/dedup-insights.mjs --all --resume --force",
+    "strip:insight-duplicates": "node scripts/strip-duplicate-blocks.mjs",
+    "enforce:case-labels": "node scripts/enforce-case-labels.mjs",
+    "import:poomgo": "node scripts/import-poomgo-insights.mjs --resume"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

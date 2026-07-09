@@ -1,6 +1,8 @@
 import type { InsightMeta } from "@/lib/insights"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
 
+import { getFollowUpInsights } from "@/lib/insight-reading-paths"
+
 export type InsightDifficulty = "입문" | "실무" | "전문가"
 
 export type InsightEnriched = InsightMeta & {
@@ -232,20 +234,7 @@ export function filterInsights(posts: InsightEnriched[], filters: InsightFilters
 }
 
 export function getRelatedInsights(current: InsightEnriched, all: InsightEnriched[], limit = 5) {
-  return all
-    .filter((post) => post.slug !== current.slug)
-    .map((post) => {
-      let score = 0
-      if (post.category === current.category) score += 3
-      score += post.platforms.filter((p) => current.platforms.includes(p)).length * 2
-      score += post.topics.filter((t) => current.topics.includes(t)).length * 2
-      score += post.tags.filter((t) => current.tags.includes(t)).length
-      return { post, score }
-    })
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date))
-    .slice(0, limit)
-    .map(({ post }) => post)
+  return getFollowUpInsights(current, all, limit)
 }
 
 export function getTopicClusterLinks(current: InsightEnriched) {

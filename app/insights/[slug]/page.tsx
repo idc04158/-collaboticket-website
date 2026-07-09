@@ -7,6 +7,7 @@ import { MarketingShell } from "@/components/marketing-shell"
 import { InsightCard } from "@/components/insights/insight-card"
 import { InsightArticleJsonLd } from "@/components/insights/insight-article-json-ld"
 import { InsightDiagnosisCta } from "@/components/insights/insight-diagnosis-cta"
+import { InsightEngagementTracker } from "@/components/insights/insight-engagement-tracker"
 import { Badge } from "@/components/ui/badge"
 import {
   getAllEnrichedInsights,
@@ -101,6 +102,8 @@ export default async function InsightDetailPage({ params }: PageProps) {
         image={meta.image}
         aiSummary={meta.aiSummary}
       />
+
+      <InsightEngagementTracker slug={meta.slug} title={meta.title} />
 
       <article className="bg-background py-12 lg:py-20">
         <div className="mx-auto max-w-4xl px-6">
@@ -210,9 +213,12 @@ export default async function InsightDetailPage({ params }: PageProps) {
               <p className="mt-2 text-sm text-muted-foreground">이 리포트를 실행할 때 확인할 실무 항목입니다.</p>
               <ul className="mt-5 space-y-3">
                 {meta.checklist.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm leading-relaxed">
-                    <span className="mt-0.5 font-bold text-brand" aria-hidden="true">
-                      □
+                  <li key={item} className="relative pl-7 text-sm leading-relaxed text-muted-foreground">
+                    <span
+                      className="absolute left-0 top-0.5 inline-flex h-[1.1rem] w-[1.1rem] items-center justify-center rounded-full bg-brand/10 text-[0.72rem] font-extrabold text-brand"
+                      aria-hidden="true"
+                    >
+                      ✓
                     </span>
                     {item}
                   </li>
@@ -242,10 +248,10 @@ export default async function InsightDetailPage({ params }: PageProps) {
           {related.length > 0 && (
             <section aria-labelledby="related-title" className="mt-16 border-t pt-10">
               <h2 id="related-title" className="text-2xl font-black tracking-tight">
-                관련 글
+                더 알아보기
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                같은 플랫폼·주제의 리포트를 이어서 확인하세요.
+                이 리포트 다음에 읽으면 실행 흐름이 자연스럽게 이어지는 글입니다. 끝까지 읽고 나면 우리 팀과 상담할 준비가 됩니다.
               </p>
               <div className="mt-6 grid gap-6 md:grid-cols-3">
                 {related.map((post) => (

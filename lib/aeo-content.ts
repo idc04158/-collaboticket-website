@@ -636,28 +636,28 @@ export const footerCompanyInfo = {
 } as const
 
 export const footerServiceLinks = [
-  { label: "일본 마케팅", href: "/#services" },
-  { label: "일본 SNS 마케팅", href: "/#services" },
-  { label: "일본 인플루언서 마케팅", href: "/#influencer-network" },
-  { label: "일본 리뷰 마케팅", href: "/#services" },
-  { label: "Qoo10 운영대행", href: "/#platforms" },
-  { label: "Rakuten 운영", href: "/#platforms" },
-  { label: "Amazon Japan 운영", href: "/#platforms" },
-  { label: "물류·통관", href: "/#services" },
-  { label: "법인 설립", href: "/#services" },
-  { label: "상표 등록", href: "/#services" },
+  "일본 마케팅",
+  "일본 SNS 마케팅",
+  "일본 인플루언서 마케팅",
+  "일본 리뷰 마케팅",
+  "Qoo10 운영대행",
+  "Rakuten 운영",
+  "Amazon Japan 운영",
+  "물류·통관",
+  "법인 설립",
+  "상표 등록",
 ] as const
 
 export const footerPlatformLinks = [
-  { label: "Amazon Japan", href: "/#platforms" },
-  { label: "Qoo10", href: "/#platforms" },
-  { label: "Rakuten", href: "/#platforms" },
-  { label: "Yahoo Shopping", href: "/#platforms" },
-  { label: "TikTok", href: "/#platforms" },
-  { label: "Instagram", href: "/#platforms" },
-  { label: "LINE", href: "/#platforms" },
-  { label: "Meta Ads", href: "/#services" },
-  { label: "Google Ads", href: "/#services" },
+  "Amazon Japan",
+  "Qoo10",
+  "Rakuten",
+  "Yahoo Shopping",
+  "TikTok",
+  "Instagram",
+  "LINE",
+  "Meta Ads",
+  "Google Ads",
 ] as const
 
 export const footerGuideLinks = [

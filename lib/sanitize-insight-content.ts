@@ -19,5 +19,12 @@ export function sanitizeInsightBody(content: string) {
   body = body.replace(/Mega\s*Warí/gi, "메가와리")
   body = body.replace(/Mega\s*Wari/gi, "메가와리")
 
+  // Footer link blocks — shown in "더 알아보기" section instead
+  body = body.replace(/^##\s+관련 리포트\s*\n[\s\S]*?(?=^##\s+|\n*$)/gm, "")
+  body = body.replace(
+    /\n(?:For (?:more|further|additional)[^\n]*|Explore further[^\n]*|내부 링크[^\n]*)\s*$/gm,
+    "",
+  )
+
   return body.trimEnd()
 }

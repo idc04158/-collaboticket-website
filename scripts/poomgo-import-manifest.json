@@ -1,0 +1,82 @@
+[
+  {
+    "poomgoSlug": "tiktokshop-jp-logistics",
+    "slug": "japan-tiktok-shop-entry-ops",
+    "title": "일본 TikTok Shop 진입: 채널·전환·운영 로드맵",
+    "category": "Strategy",
+    "tags": ["일본EC", "TikTok", "채널"],
+    "sourceNote": "품고: 틱톡샵 물류 4단계 → CollaboTicket: 숏폼 유입→PDP→재고·CS 운영 설계 관점. 품고/풀필먼트 홍보 금지."
+  },
+  {
+    "poomgoSlug": "japan-logistics-changes-2026-q2",
+    "slug": "japan-logistics-regulation-2026",
+    "title": "2026년 2분기 일본 물류·통관 변화: EC 브랜드 대응 체크리스트",
+    "category": "Market Analysis",
+    "tags": ["일본EC", "통관", "물류"],
+    "sourceNote": "품고: 물류 효율화법·통관 기준 → EC 매출·마진·배송 SLA 영향과 채널별 대응."
+  },
+  {
+    "poomgoSlug": "megawari-data-guide",
+    "slug": "megawari-kpi-seven-metrics",
+    "title": "메가와리 성과를 가르는 KPI 7가지: 대시보드 설계",
+    "category": "Open Market",
+    "tags": ["Qoo10", "메가와리", "KPI"],
+    "sourceNote": "품고: 메가와리 데이터 7가지 → ROAS/CVR/재고/장바구니 전환 중심 운영 KPI."
+  },
+  {
+    "poomgoSlug": "qoo10-japan-megafor-shipping-strategy",
+    "slug": "qoo10-megafor-cart-conversion",
+    "title": "Qoo10 메가포: 장바구니→결제 전환 설계",
+    "category": "Open Market",
+    "tags": ["Qoo10", "메가포", "전환"],
+    "sourceNote": "품고: 메가포 배송 → CollaboTicket: 장바구니 이탈·쿠폰·PDP·CRM 전환 전술."
+  },
+  {
+    "poomgoSlug": "qoo10jp-megawari-last-minute-strategy",
+    "slug": "megawari-closing-week-ops",
+    "title": "메가와리 종료 직전 7일: 매출 뒤집기 운영 런북",
+    "category": "Open Market",
+    "tags": ["Qoo10", "메가와리", "프로모션"],
+    "sourceNote": "품고: 막판 5전략 → 광고·가격·리뷰·CRM 집중 주간 운영."
+  },
+  {
+    "poomgoSlug": "japan-consumer-trend-2026-no-effort-economy",
+    "slug": "japan-effortless-consumer-2026",
+    "title": "2026 일본 ‘고생 취소’ 소비 트렌드: K브랜드 포지셔닝",
+    "category": "Market Analysis",
+    "tags": ["일본EC", "소비자", "트렌드"],
+    "sourceNote": "품고: 고생 취소·1인가구 → PDP·카피·번들·구독형 CRM 기회."
+  },
+  {
+    "poomgoSlug": "3-step-marketing-strategy",
+    "slug": "japan-awareness-to-purchase-3step",
+    "title": "일본 SNS→검색→구매 3단계 전환 설계",
+    "category": "SNS Marketing",
+    "tags": ["SNS", "전환", "일본EC"],
+    "sourceNote": "품고: 인지→전환 3단계 → SNS·검색·마켓플레이스 퍼널 연결."
+  },
+  {
+    "poomgoSlug": "megawari-sales-strategy",
+    "slug": "megawari-demand-forecast-playbook",
+    "title": "메가와리 수요 예측 3단계: 재고·광고·가격 시뮬레이션",
+    "category": "Open Market",
+    "tags": ["Qoo10", "메가와리", "재고"],
+    "sourceNote": "품고: 판매량 예측 → 광고비·할인율·SKU별 목표 산출."
+  },
+  {
+    "poomgoSlug": "megawari-margin-acp",
+    "slug": "japan-customs-acp-margin-guide",
+    "title": "일본 관세·ACP와 메가와리 마진: HS·가격 설계",
+    "category": "Strategy",
+    "tags": ["통관", "관세", "메가와리"],
+    "sourceNote": "품고: ACP·관세 → 채널별 MAP·할인·관세가 CVR/ROAS에 미치는 영향."
+  },
+  {
+    "poomgoSlug": "japan-cosmetics-check",
+    "slug": "kbeauty-japan-ingredient-compliance",
+    "title": "K-Beauty 일본 성분·표시 컴플라이언스 체크리스트",
+    "category": "Strategy",
+    "tags": ["K-Beauty", "통관", "현지화"],
+    "sourceNote": "품고: 성분 체크 → 医薬部外品·禁止成分·PDP 표기·클레임 규칙."
+  }
+]

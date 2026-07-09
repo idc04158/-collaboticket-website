@@ -22,6 +22,29 @@ const legalLinks = [
   },
 ]
 
+function FooterTextList({
+  title,
+  items,
+  ariaLabel,
+}: {
+  title: string
+  items: ReadonlyArray<string>
+  ariaLabel: string
+}) {
+  return (
+    <div aria-label={ariaLabel}>
+      <h2 className="text-sm font-bold text-white">{title}</h2>
+      <ul className="mt-4 space-y-2.5">
+        {items.map((item) => (
+          <li key={item} className="cursor-default text-sm leading-snug text-white/65">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 function FooterNav({
   title,
   links,
@@ -39,7 +62,7 @@ function FooterNav({
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-sm leading-snug text-white/65 transition hover:text-brand"
+              className="text-sm leading-snug text-white/65 underline-offset-4 transition-colors hover:text-brand"
             >
               {link.label}
             </Link>
@@ -83,7 +106,7 @@ export function SiteFooter() {
                   {footerCompanyInfo.email}
                 </a>
               </li>
-              <li className="flex items-start gap-2.5 text-white/65">
+              <li className="flex items-start gap-2.5 text-sm text-white/65">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden="true" />
                 <address className="not-italic leading-relaxed">{footerCompanyInfo.address}</address>
               </li>
@@ -91,10 +114,10 @@ export function SiteFooter() {
           </div>
 
           {/* 2. 서비스 */}
-          <FooterNav title="서비스" links={footerServiceLinks} ariaLabel="서비스" />
+          <FooterTextList title="서비스" items={footerServiceLinks} ariaLabel="서비스" />
 
           {/* 3. 지원 플랫폼 */}
-          <FooterNav title="지원 플랫폼" links={footerPlatformLinks} ariaLabel="지원 플랫폼" />
+          <FooterTextList title="지원 플랫폼" items={footerPlatformLinks} ariaLabel="지원 플랫폼" />
 
           {/* 4. 가이드 */}
           <FooterNav title="가이드" links={footerGuideLinks} ariaLabel="가이드" />

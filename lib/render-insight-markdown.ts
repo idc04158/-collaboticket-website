@@ -22,12 +22,23 @@ function toAnchorId(text: string, index: number) {
   return normalized || `section-${index + 1}`
 }
 
+function escapeNumericRangeTildes(text: string) {
+  return text.replace(/(\d+(?:\.\d+)?)~(\d+(?:\.\d+)?)/g, "$1\\~$2")
+}
+
 function stripSectionsForRender(body: string) {
   let next = body
   next = next.replace(/^##\s+AI 30초 요약\s*\n+[\s\S]*?(?=\n##\s+|\n!\[|\n*$)/m, "")
   next = next.replace(/^##\s+실행 체크리스트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
+  next = next.replace(/^##\s+관련 리포트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
   next = next.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
   return next.trim()
+}
+
+function wrapTables(html: string) {
+  return html.replace(/<table(\s[^>]*)?>([\s\S]*?)<\/table>/g, (match) => {
+    return `<div class="insight-table-wrap">${match}</div>`
+  })
 }
 
 function addHeadingIds(html: string) {
@@ -51,8 +62,9 @@ function addHeadingIds(html: string) {
 
 export async function renderInsightMarkdown(rawBody: string) {
   const body = stripSectionsForRender(rawBody)
-  const parsed = await marked.parse(body)
-  return addHeadingIds(parsed)
+  const parsed = await marked.parse(escapeNumericRangeTildes(body))
+  const wrapped = wrapTables(parsed)
+  return addHeadingIds(wrapped)
 }
 
 export function splitSummaryBullets(summary: string) {
