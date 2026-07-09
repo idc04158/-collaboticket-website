@@ -39,12 +39,10 @@ export function TrustHighlightsSection() {
       <div className="mx-auto max-w-2xl px-6 lg:px-8">
         <div className="text-center">
           <p className="section-label">Quick Diagnostic</p>
-          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
-            우리 브랜드에 맞는
-            <br />
-            다음 스텝을 정리해보세요
+          <h2 className="type-section-title type-section-title--center mt-4">
+            우리 브랜드에 맞는 다음 스텝을 정리해보세요
           </h2>
-          <p className="mt-4 text-pretty text-muted-foreground">
+          <p className="type-lead type-lead--center mt-4 text-muted-foreground">
             3분 셀프 진단으로 상담 아젠다를 미리 준비할 수 있습니다.
           </p>
         </div>

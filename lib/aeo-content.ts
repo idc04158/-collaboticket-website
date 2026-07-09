@@ -1,14 +1,12 @@
 // AEO content data — Korean user-facing copy for AI-readable homepage structure
 
 export const brandPositioning =
-  "콜라보티켓은 Japan Commerce Intelligence & Execution Company입니다. 일본 시장을 분석하고 인사이트를 제공하며, EC·콘텐츠·인플루언서 운영까지 실제로 실행합니다."
+  "콜라보티켓은 Japan Commerce Intelligence & Execution Company입니다. 한국 브랜드의 일본 시장 진출을 분석하고, EC·콘텐츠·인플루언서 운영까지 실행합니다."
 
-export const heroH1 = "일본 시장을 분석하고, 실행까지 합니다"
+export const heroH1 = "한국 브랜드의 일본 시장 진출을 실행합니다"
 
-export const heroSubtitle = [
-  "Japan Commerce Intelligence & Execution.",
-  "매주 업데이트되는 시장 인사이트와 EC·콘텐츠·인플루언서 운영을 한 팀이 수행합니다.",
-] as const
+export const heroSubtitle =
+  "일본 EC 운영부터 현지 콘텐츠 제작, 인플루언서, 리뷰 구축, 시장 인사이트까지 하나의 팀이 실행합니다."
 
 export const heroBadges = [
   "시장 인사이트",

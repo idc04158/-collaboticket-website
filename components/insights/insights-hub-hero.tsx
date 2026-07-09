@@ -24,10 +24,10 @@ export function InsightsHubHero({ stats }: Props) {
 
       <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
         <p className="section-label text-brand">일본 시장 데이터 센터</p>
-        <h1 id="insights-hub-title" className="mt-4 max-w-3xl text-balance text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
+        <h1 id="insights-hub-title" className="type-display max-w-3xl mt-4">
           일본 시장 인사이트
         </h1>
-        <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-white/70 sm:text-lg">
+        <p className="type-lead mt-5 max-w-2xl text-white/70 sm:text-lg">
           매주 일본 EC, SNS, 소비자 트렌드, 광고 데이터, 플랫폼 변화, 성공 사례를 분석하여 실행 가능한
           인사이트를 제공합니다.
         </p>

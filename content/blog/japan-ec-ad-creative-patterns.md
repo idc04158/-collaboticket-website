@@ -55,7 +55,7 @@ image: >-
 
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 각 채널별 광고 성과와 지출 현황 체크
@@ -102,4 +102,4 @@ Qoo10은 초기 세일, Rakuten은 충성 고객 개발, Amazon은 검색 최적
 - Statista 2025
 - JETRO 2025
 
-[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2025) | [2025 일본 전자상거래 분석](/insights/japan-ecommerce-2025) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy) | [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2025) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026) | [2025 일본 전자상거래 분석](/insights/japan-ecommerce-2025) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy) | [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2025) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

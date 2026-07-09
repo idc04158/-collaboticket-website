@@ -14,10 +14,10 @@ export function AuthoritySection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <p className="section-label">실행 프로세스</p>
-          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+          <h2 className="type-section-title type-section-title--center mt-4">
             일본 진출은 단일 캠페인이 아닙니다
           </h2>
-          <p className="mt-4 text-pretty text-muted-foreground">
+          <p className="type-lead type-lead--center mt-4 text-muted-foreground">
             CollaboTicket은 SNS, 오픈마켓, 리뷰, 물류를 하나의 판매 흐름으로 설계하고,
             데이터 기반 월간 리포트로 지속 개선합니다.
           </p>

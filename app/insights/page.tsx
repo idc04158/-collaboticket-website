@@ -8,6 +8,7 @@ import { InsightsWeeklyBrief } from "@/components/insights/insights-weekly-brief
 import { InsightsNewsletter } from "@/components/insights/insights-newsletter"
 import { InsightsIndexClient } from "@/components/insights-index-client"
 import { InsightsHubJsonLd } from "@/components/insights/insights-hub-json-ld"
+import { GlossaryHubLink } from "@/components/insights/glossary-hub-link"
 import {
   getAllEnrichedInsights,
   getFeaturedReport,
@@ -38,6 +39,9 @@ export default function InsightsIndexPage() {
 
       <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16">
         {featured && <InsightsFeaturedReport report={featured} />}
+        <div className="mt-8">
+          <GlossaryHubLink />
+        </div>
         <InsightsWeeklyBrief lines={weeklyBrief} />
         <InsightsNewsletter />
 

@@ -48,7 +48,7 @@ tags:
 5. **경쟁사 분석**: 유사 브랜드와의 비교 분석을 통해 협업한 인플루언서의 성과를 확립합니다.
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 인플루언서의 팔로워 수 및 참여율을 확인합니다.

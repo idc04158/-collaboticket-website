@@ -10,10 +10,10 @@ export function OperatingPrinciplesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="section-label">운영 원칙</p>
-          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+          <h2 className="type-section-title type-section-title--center mt-4">
             콜라보티켓은 어떻게 운영하나요?
           </h2>
-          <p className="mt-5 text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="type-lead type-lead--center mt-5 text-muted-foreground md:text-lg">
             어떤 서비스를 제공하는지보다, 브랜드와 함께 성장하는 운영 방식이 더 중요합니다.
             콜라보티켓은 일본 시장 진출을 단발성 프로젝트가 아닌 지속 가능한 운영 체계로 설계합니다.
           </p>

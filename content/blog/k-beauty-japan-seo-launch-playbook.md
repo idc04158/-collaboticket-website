@@ -1,6 +1,6 @@
 ---
 title: 'K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로'
-description: '일본 K-뷰티 시장 점유율은 2025년 32.6%로 예상되며, B2C EC 시장은 24.8조 엔 규모입니다.'
+description: '일본 K-뷰티 시장 점유율은 2024년 32.6%로 예상되며, B2C EC 시장은 24.8조 엔 규모입니다.'
 category: Strategy
 date: '2024-08-07'
 image: >-
@@ -59,7 +59,7 @@ tags:
    - 오프라인 이벤트를 병행하여 소비자 접점을 확장합니다.
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 일본 시장 데이터 분석을 완료해보세요.

@@ -39,10 +39,10 @@ export function HomeMarketBriefingSection({ insights, totalCount, weeklyNewCount
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <p className="section-label">Japan Commerce Intelligence</p>
-            <h2 id="market-briefing-title" className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
+            <h2 id="market-briefing-title" className="type-section-title mt-3">
               이번 주 일본 시장 브리핑
             </h2>
-            <p className="mt-4 text-pretty text-muted-foreground">
+            <p className="type-lead mt-4 text-muted-foreground">
               실제 일본 EC·SNS·카테고리 운영 데이터를 바탕으로 매주 업데이트합니다. 시장 변화를 먼저
               확인하고, 실행까지 연결하세요.
             </p>

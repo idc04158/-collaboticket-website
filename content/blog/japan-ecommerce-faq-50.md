@@ -50,7 +50,7 @@ image: >-
 
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 경쟁사 및 소비자 분석 수행
@@ -93,4 +93,4 @@ SNS와 인플루언서를 활용한 마케팅이 효과적입니다. 브랜드 �
 - JFS 2024
 - Rakuten 2025
 
-더 많은 자료를 원하시면 [일본 이커머스 트렌드 2025](/insights/japan-ec-market-trends-2025), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) 등의 리포트를 참고하세요.
+더 많은 자료를 원하시면 [일본 이커머스 트렌드 2025](/insights/japan-ec-market-trends-2026), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) 등의 리포트를 참고하세요.

@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { ArrowRight, FileText } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
@@ -24,16 +24,14 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="section-label">아카이브</p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight md:text-4xl">
-              더 많은 시장 리포트
-            </h2>
-            <p className="mt-4 text-muted-foreground">
+            <h2 className="type-section-title mt-4">더 많은 시장 리포트</h2>
+            <p className="type-lead mt-4 text-muted-foreground">
               플랫폼·카테고리·실행 가이드까지, 일본 시장 운영에 필요한 분석을 모았습니다.
             </p>
           </div>
           <div className="flex items-center gap-3 rounded-2xl border bg-card px-5 py-3 shadow-sm">
             <span className="font-mono text-3xl font-bold text-brand">{count}</span>
-            <span className="text-sm text-muted-foreground">인사이트<br />리포트</span>
+            <span className="type-body text-sm text-muted-foreground">인사이트 리포트</span>
           </div>
         </div>
 
@@ -54,9 +52,9 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
               <EmptyMedia variant="icon">
                 <FileText />
               </EmptyMedia>
-              <EmptyTitle>아직 공개된 인사이트가 없습니다.</EmptyTitle>
+              <EmptyTitle>아직 게시된 리포트가 없습니다.</EmptyTitle>
               <EmptyDescription>
-                새로운 콘텐츠가 업로드되면 이 영역에 자동으로 표시됩니다.
+                곧 새로운 일본 시장 분석 리포트가 업데이트됩니다.
               </EmptyDescription>
             </EmptyHeader>
           </Empty>
@@ -70,7 +68,7 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <InsightCoverImage
                     src={article.image}
-                    alt={`${article.title} 썸네일`}
+                    alt={`${article.title} 대표 이미지`}
                     className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                   />
                 </div>
@@ -78,17 +76,17 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
                   <Badge variant="secondary" className="w-fit text-xs">
                     {getInsightCategoryLabel(article.category)}
                   </Badge>
-                  <h3 className="line-clamp-2 text-lg font-bold leading-snug transition group-hover:text-brand">
+                  <h3 className="type-card-title line-clamp-2 text-lg transition group-hover:text-brand">
                     <Link href={`/insights/${article.slug}`}>{article.title}</Link>
                   </h3>
-                  <p className="line-clamp-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  <p className="type-body line-clamp-2 flex-1 text-sm text-muted-foreground">
                     {article.description}
                   </p>
                   <Link
                     href={`/insights/${article.slug}`}
                     className="inline-flex items-center gap-1 text-sm font-semibold text-brand"
                   >
-                    자세히 보기
+                    리포트 읽기
                     <ArrowRight className="size-3.5 transition group-hover:translate-x-0.5" />
                   </Link>
                 </div>
@@ -99,7 +97,7 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
 
         <div className="mt-14 flex justify-center">
           <Button asChild variant="outline" size="lg" className="rounded-xl border-brand px-8 font-semibold text-brand hover:bg-brand hover:text-white">
-            <Link href="/insights">모든 인사이트 보기 ({count})</Link>
+            <Link href="/insights">전체 리포트 보기 ({count})</Link>
           </Button>
         </div>
       </div>

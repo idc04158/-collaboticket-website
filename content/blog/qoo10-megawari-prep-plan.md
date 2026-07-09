@@ -36,7 +36,7 @@ image: >-
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 ### Case Studies
 
-    - 지난 메가와리에서 매출이 180% 증가했습니다. 광고 spend 50万엔 기준으로 ROAS는 380%입니다.
+    - 지난 메가와리에서 매출이 180% 증가했습니다. 광고 spend 50만 엔 기준으로 ROAS는 380%입니다.
     - 리뷰 수는 20개에서 70개로 증가했으며, CVR은 2.0%에서 3.0%로 성장했습니다.
 
 | 브랜드 | 광고 Spend (만 엔) | 매출 (억 엔) | ROAS | CVR (%) |
@@ -57,7 +57,7 @@ image: >-
 | LINE    | CRM, 쿠폰 발행, LTV 관리     |
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 경쟁 브랜드 분석을 완료합니다.

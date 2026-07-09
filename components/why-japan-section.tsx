@@ -5,7 +5,7 @@ export function WhyJapanSection() {
     <section id="why-japan" className="scroll-mt-24 border-b bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <p className="section-label">일본 시장 진출</p>
-        <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title mt-4">
           왜 일본 시장 진출은 어려울까요?
         </h2>
 

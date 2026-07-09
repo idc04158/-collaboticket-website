@@ -1,6 +1,6 @@
 ---
 title: Amazon Japan FBA 온보딩 가이드
-description: '일본 온라인 쇼핑 시장은 2025년까지 약 20조 엔에 이를 것으로 예상되며, Amazon Japan은 30%를 차지합니다.'
+description: '일본 온라인 쇼핑 시장은 2024년까지 약 20조 엔에 이를 것으로 예상되며, Amazon Japan은 30%를 차지합니다.'
 category: Open Market
 tags:
   - 라쿠텐
@@ -47,7 +47,7 @@ Amazon FBA를 통해 물류 효율성을 높일 수 있으며, 실제로 비용�
 
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 일본 시장에 적합한 제품 선정 및 현지화

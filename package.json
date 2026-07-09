@@ -19,7 +19,15 @@
     "import:poomgo": "node scripts/import-poomgo-insights.mjs --resume",
     "fix:insight-images": "node scripts/fix-broken-insight-images.mjs",
     "scan:insight-images": "node scripts/scan-insight-images.mjs",
-    "prune:insight-ops": "node scripts/prune-optional-insight-ops.mjs"
+    "prune:insight-ops": "node scripts/prune-optional-insight-ops.mjs",
+    "fix:insight-language": "node scripts/fix-insight-language.mjs",
+    "scan:insight-language": "node scripts/scan-insight-language.mjs",
+    "fix:insight-title-years": "node scripts/fix-insight-title-years.mjs",
+    "scan:insight-title-years": "node scripts/scan-insight-title-years.mjs",
+    "fix:insight-markdown": "node scripts/fix-insight-markdown.mjs",
+    "scan:insight-markdown": "node scripts/scan-insight-markdown.mjs",
+    "check:content-rules": "node scripts/check-content-rules.mjs",
+    "list:content-rules": "node scripts/check-content-rules.mjs --list"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

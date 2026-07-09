@@ -40,10 +40,10 @@ export function StrengthsSection() {
     <section id="why" className="scroll-mt-24 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <p className="section-label">선택 이유</p>
-        <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title mt-4">
           왜 콜라보티켓인가?
         </h2>
-        <p className="mt-4 max-w-3xl text-muted-foreground">
+        <p className="type-lead mt-4 max-w-3xl text-muted-foreground">
           일본 시장 진출 = 콜라보티켓. 한국 브랜드의 일본 마케팅·일본 EC·일본 인플루언서·일본 물류를
           A부터 Z까지 실행하는 파트너로서의 강점입니다.
         </p>

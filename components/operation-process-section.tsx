@@ -5,10 +5,10 @@ export function OperationProcessSection() {
     <section id="process" className="scroll-mt-24 bg-[var(--surface-elevated)] py-24 lg:py-32">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <p className="section-label">운영 프로세스</p>
-        <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title mt-4">
           일본 시장 진출 실행 프로세스
         </h2>
-        <p className="mt-4 text-muted-foreground">
+        <p className="type-lead mt-4 text-muted-foreground">
           콜라보티켓이 한국 브랜드의 일본 시장 진출을 A부터 Z까지 실행하는 10단계 프로세스입니다.
         </p>
 

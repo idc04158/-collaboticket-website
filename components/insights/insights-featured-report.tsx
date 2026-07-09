@@ -34,7 +34,7 @@ export function InsightsFeaturedReport({ report }: Props) {
 
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
             <Badge className="w-fit bg-brand text-white">🔥 이번주 일본 시장 리포트</Badge>
-            <h3 className="mt-4 text-balance text-2xl font-black leading-snug tracking-tight sm:text-3xl">
+            <h3 className="type-section-title mt-4">
               <Link href={`/insights/${report.slug}`} className="transition hover:text-brand">
                 {report.title}
               </Link>

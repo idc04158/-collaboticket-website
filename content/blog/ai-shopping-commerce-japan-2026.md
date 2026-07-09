@@ -50,7 +50,7 @@ tags:
    - 인플루언서와의 협업으로 브랜드 인지도를 상승시킬 수 있습니다.
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] **질문형 키워드 분석**: 일본 소비자들이 자주 묻는 질문과 관련 키워드를 조사해보세요.
@@ -86,7 +86,7 @@ LINE은 사용자와의 직접적인 커뮤니케이션을 통해 높은 재구�
 - LINE 공식 리포트 2025
 - Statista 2025
 
-[Japan EC Market Trends 2026](/insights/japan-ec-market-trends-2025)  
+[Japan EC Market Trends 2026](/insights/japan-ec-market-trends-2026)  
 [Japan E-commerce 2025](/insights/japan-ecommerce-2025)  
 [Japan EC KPI Dashboard](/insights/japan-ec-kpi-dashboard)  
 [Japan EC Channel Entry Strategy](/insights/japan-ec-channel-entry-strategy)  

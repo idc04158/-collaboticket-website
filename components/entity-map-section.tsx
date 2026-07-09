@@ -5,10 +5,10 @@ export function EntityMapSection() {
     <section id="entity-map" className="scroll-mt-24 py-24 lg:py-32">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <p className="section-label">서비스 구조</p>
-        <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title mt-4">
           콜라보티켓 서비스 관계도
         </h2>
-        <p className="mt-4 text-muted-foreground">
+        <p className="type-lead mt-4 text-muted-foreground">
           콜라보티켓이 제공하는 일본 마케팅·일본 EC·물류·법인 서비스가 일본 시장 진출로 연결되는 구조입니다.
         </p>
 

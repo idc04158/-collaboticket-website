@@ -1,3 +1,5 @@
+import { typeDisplay, typeLead } from "@/lib/typography"
+
 type PageHeroProps = {
   label: string
   title: string
@@ -14,12 +16,8 @@ export function PageHero({ label, title, description, children }: PageHeroProps)
 
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <p className="section-label text-brand">{label}</p>
-        <h1 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-5xl">{title}</h1>
-        {description && (
-          <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-white/70 md:text-lg">
-            {description}
-          </p>
-        )}
+        <h1 className={typeDisplay("mt-4")}>{title}</h1>
+        {description && <p className={typeLead("mt-5 text-white/70")}>{description}</p>}
         {children}
       </div>
     </div>

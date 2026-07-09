@@ -8,6 +8,7 @@ import { InsightCard } from "@/components/insights/insight-card"
 import { InsightArticleJsonLd } from "@/components/insights/insight-article-json-ld"
 import { InsightDiagnosisCta } from "@/components/insights/insight-diagnosis-cta"
 import { InsightEngagementTracker } from "@/components/insights/insight-engagement-tracker"
+import { InsightGlossaryBody } from "@/components/insights/insight-glossary-body"
 import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -20,6 +21,7 @@ import {
 } from "@/lib/insights"
 import { sanitizeInsightBody } from "@/lib/sanitize-insight-content"
 import { renderInsightMarkdown, splitSummaryBullets } from "@/lib/render-insight-markdown"
+import { getGlossaryHref } from "@/lib/marketing-glossary"
 
 type PageProps = {
   params: { slug: string }
@@ -84,7 +86,7 @@ export default async function InsightDetailPage({ params }: PageProps) {
   const { content, ...meta } = result
   const allEnriched = getAllEnrichedInsights()
   const preparedBody = prepareInsightContent(content, meta.image)
-  const { html, toc } = await renderInsightMarkdown(preparedBody)
+  const { html, toc } = await renderInsightMarkdown(preparedBody, meta.slug)
   const summaryBullets = splitSummaryBullets(meta.aiSummary)
   const tocItems =
     toc.filter((item) => item.level === 2).length > 0
@@ -108,12 +110,21 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
       <article className="bg-background py-12 lg:py-20">
         <div className="mx-auto max-w-4xl px-6">
-          <nav aria-label="인사이트 breadcrumb">
+          <nav aria-label="인사이트 breadcrumb" className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
             <Link
               href="/insights"
-              className="inline-flex items-center gap-1 text-sm font-semibold text-brand underline-offset-4 hover:underline"
+              className="inline-flex items-center gap-1 font-semibold text-brand underline-offset-4 hover:underline"
             >
               ← 일본 시장 인사이트
+            </Link>
+            <span className="text-muted-foreground" aria-hidden="true">
+              ·
+            </span>
+            <Link
+              href={getGlossaryHref()}
+              className="font-semibold text-brand underline-offset-4 hover:underline"
+            >
+              용어 사전
             </Link>
           </nav>
 
@@ -142,7 +153,7 @@ export default async function InsightDetailPage({ params }: PageProps) {
               </p>
             )}
 
-            <h1 className="text-3xl font-black tracking-tight md:text-4xl">{meta.title}</h1>
+            <h1 className="type-article-title">{meta.title}</h1>
             {meta.description && <p className="text-lg text-muted-foreground">{meta.description}</p>}
           </header>
 
@@ -197,11 +208,7 @@ export default async function InsightDetailPage({ params }: PageProps) {
             </nav>
           )}
 
-          <section
-            aria-label="리포트 본문"
-            className="insight-body mt-12"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <InsightGlossaryBody html={html} slug={meta.slug} className="insight-body mt-12" />
 
           {meta.checklist.length > 0 && (
             <aside

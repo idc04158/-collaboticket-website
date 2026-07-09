@@ -21,6 +21,8 @@ import {
   PUBLISH_ORDER,
   sortPostsByPublishOrder,
 } from "./insight-content-rules.mjs"
+import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
+import { fixMarkdownHygiene } from "../lib/insight-markdown-hygiene.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BLOG_DIR = path.join(__dirname, "..", "content", "blog")
@@ -65,7 +67,7 @@ function sanitizeGeneratedBody(body) {
   cleaned = cleaned.replace(/^\s*\{"description"\s*:\s*"[^\n]*$/gm, "")
   cleaned = cleaned.replace(/^<aside[\s\S]*?<\/aside>\s*$/gm, "")
   cleaned = cleaned.replace(/^<script[\s\S]*?<\/script>\s*$/gm, "")
-  return cleaned.trim()
+  return normalizeInsightKorean(fixMarkdownHygiene(cleaned.trim()))
 }
 
 function countFaqItems(body) {
@@ -106,7 +108,7 @@ SKU 1~2개에서 전환율 2% 이상, 반품률 5% 이하가 4주 유지될 때 
 }
 
 function ensureMinimumFaq(body, meta) {
-  if (countFaqItems(body) >= 7) return body
+  if (countFaqItems(body) >= 4) return body
 
   const topic = meta.title.replace(/^\d+\.\s*/, "")
   const block = buildFaqBlock(topic)

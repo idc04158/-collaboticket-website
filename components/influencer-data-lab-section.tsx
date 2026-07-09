@@ -93,12 +93,8 @@ export function InfluencerDataLabSection() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="section-label">인플루언서 데이터랩</p>
-            <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
-              데이터로 선별하는
-              <br />
-              일본 인플루언서
-            </h2>
-            <p className="mt-4 text-pretty leading-relaxed text-white/65">
+            <h2 className="type-section-title mt-4">데이터로 선별하는 일본 인플루언서</h2>
+            <p className="type-lead mt-4 text-white/65">
               팔로워 수가 아닌 참여율·콘텐츠 적합도·전환 데이터로 후보를 좁힙니다.
               실제 캠페인 성과가 축적된 DB를 기반으로 매칭합니다.
             </p>

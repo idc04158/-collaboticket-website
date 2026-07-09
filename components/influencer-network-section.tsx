@@ -8,10 +8,10 @@ export function InfluencerNetworkSection() {
     <section id="influencer-network" className="scroll-mt-24 bg-[var(--surface-dark)] py-24 text-white lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <p className="section-label">핵심 차별점</p>
-        <h2 className="mt-4 max-w-3xl text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title max-w-3xl mt-4">
           일본 현지 인플루언서 네트워크
         </h2>
-        <p className="mt-6 max-w-3xl text-pretty text-base leading-relaxed text-white/75">
+        <p className="type-lead max-w-3xl mt-6 text-white/75">
           콜라보티켓은 단발성 협찬이 아닌, 브랜드와 장기적으로 함께 성장할 일본 현지 인플루언서를 연결합니다.
           일본 인플루언서 마케팅은 일본 소비자의 신뢰를 확보하고 브랜드 인지도를 높이는 대표적인 방법이며,
           콜라보티켓은 카테고리별 일본 현지 인플루언서 풀을 보유하고 있습니다.

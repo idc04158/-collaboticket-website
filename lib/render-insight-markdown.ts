@@ -1,4 +1,5 @@
 import { marked } from "marked"
+import { applyGlossaryHighlights } from "@/lib/apply-glossary-highlights"
 
 export type InsightTocItem = {
   id: string
@@ -60,11 +61,12 @@ function addHeadingIds(html: string) {
   return { html: withIds, toc }
 }
 
-export async function renderInsightMarkdown(rawBody: string) {
+export async function renderInsightMarkdown(rawBody: string, slug?: string) {
   const body = stripSectionsForRender(rawBody)
   const parsed = await marked.parse(escapeNumericRangeTildes(body))
   const wrapped = wrapTables(parsed)
-  return addHeadingIds(wrapped)
+  const highlighted = applyGlossaryHighlights(wrapped, slug)
+  return addHeadingIds(highlighted)
 }
 
 export function splitSummaryBullets(summary: string) {

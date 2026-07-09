@@ -8,10 +8,10 @@ export function KnowledgeHubSection() {
     <section id="guides" className="scroll-mt-24 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <p className="section-label">지식 허브</p>
-        <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+        <h2 className="type-section-title mt-4">
           일본 시장 지식 허브
         </h2>
-        <p className="mt-4 max-w-2xl text-muted-foreground">
+        <p className="type-lead mt-4 max-w-2xl text-muted-foreground">
           일본 마케팅, Qoo10·Rakuten·Amazon Japan 운영, 일본 인플루언서·리뷰 마케팅, 일본 물류, 법인 설립, 상표 등록에 대한
           실행 가이드를 인사이트 자료로 제공합니다.
         </p>

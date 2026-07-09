@@ -6,10 +6,10 @@ export function CtaSection() {
     <section id="contact" className="scroll-mt-24 relative overflow-hidden bg-brand py-24 lg:py-32">
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-10" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
-        <h2 className="text-balance text-3xl font-black text-white md:text-4xl">
+        <h2 className="type-section-title text-white">
           일본 실행, 상담으로 시작하세요
         </h2>
-        <p className="mt-5 text-pretty text-lg text-white/85">
+        <p className="type-lead mt-5 text-lg text-white/85">
           채널 진단과 우선순위 설계부터 월 정찰제 운영까지 — 필요한 범위만 제안드립니다.
         </p>
 

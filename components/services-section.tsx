@@ -96,10 +96,10 @@ export function ServicesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-label">서비스</p>
-          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+          <h2 className="type-section-title type-section-title--center mt-4">
             일본 시장 진출 A to Z 서비스
           </h2>
-          <p className="mt-4 text-pretty text-muted-foreground">{heroDescription}</p>
+          <p className="type-lead type-lead--center mt-4 text-muted-foreground">{heroDescription}</p>
         </div>
 
         <ul className="mt-14 grid list-none gap-5 sm:grid-cols-2 lg:grid-cols-4">

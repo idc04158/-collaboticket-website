@@ -1,9 +1,15 @@
-/** CollaboTicket insight report content rules (v2) */
+/** CollaboTicket insight report content rules — see insight-content-rules-registry.mjs */
 
-import { OPERATIONAL_DATA_RULES } from "./insight-operational-data-rules.mjs"
+import {
+  buildAntiDuplicationPrompt,
+  buildManagedRulePromptBlocks,
+  CONTENT_RULES_VERSION,
+  OPTIONAL_INSIGHT_RULES_PROMPT,
+  SANITIZE_OUTPUT_RULES_PROMPT,
+} from "./insight-content-rules-registry.mjs"
 import { CANONICAL_HUBS, getUniqueAngle } from "./insight-unique-angles.mjs"
 
-export const CONTENT_RULES_VERSION = "v2-report"
+export { CONTENT_RULES_VERSION }
 
 export const PUBLISH_START = "2024-07-03"
 export const PUBLISH_INTERVAL_DAYS = 7
@@ -111,6 +117,8 @@ export const CASE_BRANDS = [
 ]
 
 export function buildContentSystemPrompt() {
+  const rules = buildManagedRulePromptBlocks()
+
   return `You are CollaboTicket's Chief Content Strategist and Japan ecommerce consultant.
 
 Write Korean B2B insight REPORTS (not generic SEO blogs). Readers must think: "This company actually operates in Japan."
@@ -126,25 +134,30 @@ FACT rules:
 - Preferred sources: METI, JETRO, 総務省, Statista, NielsenIQ, Euromonitor, eMarketer, Rakuten IR, Amazon IR, Qoo10 official, LINE official, Yahoo Japan, Japanese government, industry associations
 
 INSIGHT rules:
-${OPERATIONAL_DATA_RULES}
-- INSIGHT (운영 데이터) 섹션은 **필요할 때만** 포함합니다. 템플릿·체크리스트·컴플라이언스·시장 허브 글에는 넣지 않습니다.
-- 실행·KPI·메가와리·채널 운영·인플루언서 성과·타임리 이벤트 대응 글에만 CollaboTicket 운영 사례를 1건 넣습니다.
-- CTR/CVR/ROAS/광고비 표는 광고·전환·KPI 주제 글에만 사용합니다. 관세·물류·현지화·CS 글에 광고 지표 표를 넣지 않습니다.
+${rules.operationalData}
+${OPTIONAL_INSIGHT_RULES_PROMPT}
 - Use report-style progression tables (month 1 → month 3 → month 6) when showing trends.
 - Never use real customer names. Use anonymized labels assigned to THIS slug only (see unique angle).
 - Prefix with "CollaboTicket 운영 데이터" or "CollaboTicket 운영 데이터 기준" when INSIGHT is included
 - Do NOT change FACT section third-party market statistics (MAU, market size, industry reports).
-- If no relevant operational case exists, omit ## INSIGHT entirely and link to /insights/japan-ec-kpi-dashboard in 다음 단계
 
 Platform differentiation (never describe all platforms the same way):
-- Qoo10: early sales, Mega Warí, reviews, test marketing
+- Qoo10: early sales, megawari, reviews, test marketing
 - Rakuten: brand building, SEO, CRM, repurchase
 - Amazon: search-led, Buy Box, repeat purchase, ad optimization
 - LINE: CRM, repurchase, coupons, LTV
 
 Banned generic phrases (never use without specific data):
-- "일본 소비자는 신뢰를 중important..." / "현지화가 중요합니다" / "리뷰가 중important" / "브랜드 인지도가 중important" / "SEO가 중important"
+- "일본 소비자는 신뢰를 중요하게..." / "현지화가 중요합니다" / "리뷰가 중요합니다" / "브랜드 인지도가 중요합니다" / "SEO가 중요합니다"
 Always explain: why, how much, in what situation, with what data.
+
+${rules.language}
+
+${rules.titleYear}
+
+${rules.markdownHygiene}
+
+${SANITIZE_OUTPUT_RULES_PROMPT}
 
 Tone: Toss-style Korean UX writing — warm, clear, polite. Prefer ~합니다 / ~했습니다 / ~해요 / ~입니다.
 - NEVER use plain report style: ~한다, ~했다, ~된다, ~이다, ~하라, ~함, ~됨, ~임
@@ -164,17 +177,7 @@ Minimum per article:
 - Do NOT add footer blocks like "## 관련 리포트" or English "For more insights..." link lists — follow-up articles are shown in the page UI
 - Weave 2-3 internal links naturally inside FACT/INSIGHT/ACTION prose only using format [anchor text](/insights/slug)
 
-Anti-duplication (corpus of 50 reports — each must feel distinct):
-- Every article has ONE unique focus angle — never copy FACT/INSIGHT/FAQ blocks from sibling posts
-- Canonical hubs (link instead of repeating):
-  · Market TAM/CAGR: /insights/${CANONICAL_HUBS.marketData}
-  · Platform role matrix: /insights/${CANONICAL_HUBS.platformRoles}
-  · Generic FAQ hub: /insights/${CANONICAL_HUBS.faq}
-  · KPI definitions + aggregate ops: /insights/${CANONICAL_HUBS.kpiOps}
-- INSIGHT: ONE primary anonymized case (max 2 if this article compares channels). Do NOT default to "헤어케어 B + 스킨케어 D" in every post
-- "## 플랫폼별 역할 정리": ONLY on channel-entry-strategy hub; other posts use "## 다음 단계" with 2-3 sentences + link to channel strategy
-- FAQ: 4-5 questions answerable ONLY from this article's topic — no generic "시장 규모/어떤 플랫폼/리뷰 중요성" unless this IS the FAQ hub
-- Tables must be topic-specific (not the same 4-platform boilerplate row text)
+${buildAntiDuplicationPrompt()}
 
 Output ONLY markdown body. No YAML frontmatter. No H1 (#). No JSON at end. No HTML comments.`
 }
@@ -200,7 +203,7 @@ ${uniqueAngle}
 Title: ${meta.title}
 Category: ${meta.category}
 Tags: ${Array.isArray(meta.tags) ? meta.tags.join(", ") : ""}
-Publish date (as-of date for facts): ${publishDate} (${year}년 ${month}월 기준 — only cite data publicly available on or before this date; outlook year in title must be at most 1 year ahead of publish year)
+Publish date (as-of date for facts): ${publishDate} (${year}년 ${month}월 기준 — only cite data publicly available on or before this date; title year must match this as-of year unless the article is a timed event or names a specific future quarter as its primary subject)
 Thumbnail: ${imageUrl}
 
 Existing draft (replace entirely with superior report):

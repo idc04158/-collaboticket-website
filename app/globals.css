@@ -43,6 +43,44 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Typography — Korean: use em (not ch) for line-length control */
+  --type-hero-size: clamp(2rem, 3.2vw + 1rem, 2.75rem);
+  --type-hero-lh: 1.32;
+  --type-hero-ls: -0.028em;
+  --type-hero-max: 11em;
+
+  --type-display-size: clamp(2rem, 3.5vw + 0.75rem, 3rem);
+  --type-display-lh: 1.26;
+  --type-display-ls: -0.03em;
+  --type-display-max: 12em;
+
+  --type-section-size: clamp(1.75rem, 2vw + 1rem, 2.25rem);
+  --type-section-lh: 1.34;
+  --type-section-ls: -0.022em;
+  --type-section-max: 14em;
+
+  --type-card-size: 1rem;
+  --type-card-lh: 1.5;
+  --type-card-ls: -0.015em;
+
+  --type-article-size: clamp(1.75rem, 2vw + 1rem, 2.25rem);
+  --type-article-lh: 1.32;
+  --type-article-ls: -0.024em;
+  --type-article-max: 16em;
+
+  --type-lead-size: clamp(1rem, 0.35vw + 0.95rem, 1.125rem);
+  --type-lead-lh: 1.75;
+  --type-lead-ls: -0.012em;
+  --type-lead-max: 30em;
+
+  --type-body-size: 1rem;
+  --type-body-lh: 1.75;
+  --type-body-ls: -0.01em;
+
+  --type-faq-size: 1rem;
+  --type-faq-lh: 1.55;
+  --type-faq-ls: -0.012em;
 }
 
 .dark {
@@ -130,6 +168,12 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-size: var(--type-body-size);
+    line-height: var(--type-body-lh);
+    letter-spacing: var(--type-body-ls);
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    line-break: strict;
   }
 }
 
@@ -169,6 +213,92 @@
   .subscription-badge {
     @apply inline-flex items-center gap-1 rounded-full bg-brand/10 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-brand;
   }
+
+  .type-hero,
+  .type-display,
+  .type-section-title,
+  .type-card-title,
+  .type-article-title {
+    font-weight: 800;
+    color: inherit;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    line-break: strict;
+    text-wrap: pretty;
+    hyphens: none;
+  }
+
+  .type-hero {
+    max-width: var(--type-hero-max);
+    font-size: var(--type-hero-size);
+    line-height: var(--type-hero-lh);
+    letter-spacing: var(--type-hero-ls);
+  }
+
+  .type-display {
+    max-width: var(--type-display-max);
+    font-size: var(--type-display-size);
+    line-height: var(--type-display-lh);
+    letter-spacing: var(--type-display-ls);
+  }
+
+  .type-section-title {
+    max-width: var(--type-section-max);
+    font-size: var(--type-section-size);
+    line-height: var(--type-section-lh);
+    letter-spacing: var(--type-section-ls);
+  }
+
+  .type-card-title {
+    font-size: var(--type-card-size);
+    line-height: var(--type-card-lh);
+    letter-spacing: var(--type-card-ls);
+    font-weight: 700;
+    text-wrap: pretty;
+  }
+
+  .type-article-title {
+    max-width: var(--type-article-max);
+    font-size: var(--type-article-size);
+    line-height: var(--type-article-lh);
+    letter-spacing: var(--type-article-ls);
+  }
+
+  .type-lead,
+  .type-body,
+  .type-faq-question {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    line-break: strict;
+    text-wrap: pretty;
+    hyphens: none;
+  }
+
+  .type-lead {
+    max-width: var(--type-lead-max);
+    font-size: var(--type-lead-size);
+    line-height: var(--type-lead-lh);
+    letter-spacing: var(--type-lead-ls);
+  }
+
+  .type-body {
+    font-size: var(--type-body-size);
+    line-height: var(--type-body-lh);
+    letter-spacing: var(--type-body-ls);
+  }
+
+  .type-faq-question {
+    font-size: var(--type-faq-size);
+    line-height: var(--type-faq-lh);
+    letter-spacing: var(--type-faq-ls);
+    font-weight: 600;
+  }
+
+  .type-section-title--center,
+  .type-lead--center {
+    margin-inline: auto;
+    text-align: center;
+  }
 }
 
 @keyframes influencer-reel-scroll {
@@ -195,9 +325,13 @@
 
 .insight-body {
   max-width: none;
-  font-size: 1rem;
-  line-height: 1.75;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-lh);
+  letter-spacing: var(--type-body-ls);
   color: var(--foreground);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
 }
 
 .insight-body > * + * {
@@ -209,18 +343,28 @@
   scroll-margin-top: 6rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
-  font-size: 1.35rem;
+  max-width: var(--type-section-max);
+  font-size: var(--type-section-size);
+  line-height: var(--type-section-lh);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--type-section-ls);
   color: var(--foreground);
+  text-wrap: pretty;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 .insight-body h3 {
   margin-top: 1.75rem;
   scroll-margin-top: 6rem;
+  max-width: var(--type-section-max);
   font-size: 1.05rem;
+  line-height: var(--type-card-lh);
   font-weight: 700;
+  letter-spacing: var(--type-card-ls);
   color: var(--foreground);
+  text-wrap: pretty;
+  word-break: keep-all;
 }
 
 .insight-body p {
@@ -399,4 +543,47 @@
   background: color-mix(in oklab, #00b140 6%, transparent);
   border-radius: 0 0.75rem 0.75rem 0;
   color: var(--muted-foreground);
+}
+
+.insight-body .glossary-term {
+  cursor: help;
+  border-bottom: 1px dashed color-mix(in oklab, #00b140 55%, transparent);
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.glossary-tooltip {
+  position: fixed;
+  z-index: 80;
+  width: min(18rem, calc(100vw - 2rem));
+  transform: translateX(-50%);
+  border-radius: 0.875rem;
+  border: 1px solid var(--border);
+  background: var(--popover);
+  padding: 0.875rem 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+}
+
+.glossary-tooltip-label {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--foreground);
+}
+
+.glossary-tooltip-def {
+  margin-top: 0.375rem;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--muted-foreground);
+}
+
+.glossary-tooltip-link {
+  display: inline-block;
+  margin-top: 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--brand, #00b140);
+  text-decoration: underline;
 }

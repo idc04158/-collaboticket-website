@@ -1,6 +1,6 @@
 ---
-title: 2025년 일본 이커머스 시장 트렌드 분석
-description: '2025년 일본 이커머스 시장 규모는 약 30조 엔에 이를 것으로 예상되며, B2C EC 시장은 연평균 10% 성장 중입니다.'
+title: 2024년 일본 이커머스 시장 트렌드 분석
+description: '2024년 일본 이커머스 시장 규모는 약 30조 엔에 이를 것으로 예상되며, B2C EC 시장은 연평균 10% 성장 중입니다.'
 category: Market Analysis
 date: '2024-07-03'
 image: >-
@@ -46,7 +46,7 @@ tags:
 4. **일본어 기반의 SNS 운영**: 브랜드 신뢰도 구축을 위한 일본 소비자와의 활발한 소통을 해보세요.  
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 상품명 및 키워드를 일본어로 최적화하는 것을 검토해보세요.  

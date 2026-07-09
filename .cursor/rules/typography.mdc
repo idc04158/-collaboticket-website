@@ -1,0 +1,56 @@
+---
+description: CollaboTicket global typography — Korean readability, no forced line breaks
+globs: "**/*.{tsx,ts,css,md}"
+alwaysApply: true
+---
+
+# CollaboTicket Typography
+
+CollaboTicket is a Japan-market consulting brand where **text is UI**. The top priority is **readability (읽기 쉬움)**.
+
+## Never do
+
+- Do **not** force line breaks in headings or marketing copy to fit character counts.
+- Do **not** use `<br />`, `<br>`, or split strings into arrays for visual line breaks in Hero, section titles, card titles, article titles, or FAQ questions.
+- Do **not** create separate mobile/desktop/desktop copy variants for wrapping.
+
+Bad:
+
+```tsx
+<h1>
+  일본 시장을 분석하
+  <br />
+  고, 실행까지 합니다.
+</h1>
+```
+
+## Always do
+
+- Write headings as **one natural Korean sentence** (meaning unit).
+- Control wrapping with CSS only: `max-width` (**em** for Korean — not `ch`), `line-height`, `letter-spacing`, `text-wrap: pretty`, `word-break: keep-all`, `line-break: strict`.
+- Use shared classes from `lib/typography.ts` and `app/globals.css`:
+
+| Role | Class |
+|------|--------|
+| Hero H1 | `type-hero` |
+| Page hero / hub H1 | `type-display` |
+| Section H2 | `type-section-title` |
+| Card H3 | `type-card-title` |
+| Article H1 | `type-article-title` |
+| Sub copy / intro | `type-lead` |
+| Body | `type-body` |
+| FAQ question | `type-faq-question` |
+
+Helpers: `typeHero()`, `typeSectionTitle()`, etc. in `lib/typography.ts`.
+
+## Centered sections
+
+Add `type-section-title--center` and `type-lead--center` when the block is text-center.
+
+## Insight markdown
+
+Article headings in `.insight-body` inherit typography tokens automatically. Do not inject `<br>` into markdown titles.
+
+## Design tone
+
+Minimal (Stripe / Linear / Vercel) layout, but **Korean enterprise-grade readability** — comfortable line length, generous line-height, subtle negative letter-spacing on headings.

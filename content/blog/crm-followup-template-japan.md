@@ -44,7 +44,7 @@ image: >-
 
 
 ## 다음 단계
-Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2025년 일본 이커머스 시장 트렌드](/insights/japan-ecommerce-2025)를 참고하세요.
+Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
 
 ## 실행 체크리스트
 - [ ] 일본어로 작성된 콘텐츠 제공
@@ -86,4 +86,4 @@ CRM 시스템에서 고객 데이터를 수집하고, 이 데이터를 분석하
 - Statista 2025
 - JETRO 2024
 
-[일본 전자상거래 시장 트렌드 2025](/insights/japan-ec-market-trends-2025), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).
+[2025년 일본 EC 시장 트렌드](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).

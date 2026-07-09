@@ -9,10 +9,10 @@ export function MidCtaSection() {
           <div className="pointer-events-none absolute inset-0 grid-bg opacity-[0.06]" />
           <div className="relative">
             <p className="section-label">무료 상담</p>
-            <h3 className="mt-4 text-balance text-2xl font-black text-white md:text-3xl">
+            <h3 className="type-section-title mt-4 text-white">
               실행 우선순위를 함께 정리해드립니다
             </h3>
-            <p className="mx-auto mt-4 max-w-2xl text-pretty text-white/65">
+            <p className="type-lead mx-auto mt-4 max-w-2xl text-white/65">
               채널 진단 후 바로 손대야 할 일부터 순서대로 제안드립니다. 30분 무료 온라인 상담.
             </p>
             <Link href="/contact" className="btn-brand mt-8 inline-flex gap-2 px-10">

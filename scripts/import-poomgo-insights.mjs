@@ -19,6 +19,7 @@ import {
   PUBLISH_ORDER,
   pickRelatedSlugs,
 } from "./insight-content-rules.mjs"
+import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
 import { getUniqueAngle } from "./insight-unique-angles.mjs"
 import { OPERATIONAL_DATA_RULES } from "./insight-operational-data-rules.mjs"
 
@@ -60,11 +61,13 @@ function extractResponseText(data) {
 }
 
 function sanitizeBody(body) {
-  return body
-    .replace(/^---[\s\S]*?---\n+/m, "")
-    .replace(/^```(?:markdown)?\n?/m, "")
-    .replace(/\n?```\s*$/m, "")
-    .trim()
+  return normalizeInsightKorean(
+    body
+      .replace(/^---[\s\S]*?---\n+/m, "")
+      .replace(/^```(?:markdown)?\n?/m, "")
+      .replace(/\n?```\s*$/m, "")
+      .trim(),
+  )
 }
 
 function buildPoomgoPrompt(item, poomgoMeta, publishDate, relatedSlugs) {

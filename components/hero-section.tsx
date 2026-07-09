@@ -2,6 +2,7 @@
 import { ArrowRight, Check, Sparkles } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { typeBody, typeCardTitle, typeHero, typeLead } from "@/lib/typography"
 import {
   heroBadges,
   heroH1,
@@ -24,21 +25,15 @@ export function HeroSection({ totalInsightCount, weeklyNewCount }: Props) {
 
       <div className="relative mx-auto w-full max-w-7xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-12 xl:gap-16">
-          <div className="animate-fade-up lg:max-w-xl">
+          <div className="animate-fade-up min-w-0 max-w-[min(100%,28rem)]">
             <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold tracking-wide text-white/70">
               <Sparkles className="size-3.5 text-brand" aria-hidden="true" />
               Japan Commerce Intelligence &amp; Execution
             </p>
 
-            <h1 className="mt-5 text-balance text-[2rem] font-black leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.75rem]">
-              {heroH1}
-            </h1>
+            <h1 className={typeHero("mt-5")}>{heroH1}</h1>
 
-            <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-white/65 sm:text-lg">
-              {heroSubtitle[0]}
-              <br />
-              {heroSubtitle[1]}
-            </p>
+            <p className={typeLead("mt-5 text-white/65 sm:text-lg")}>{heroSubtitle}</p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button asChild size="lg" className="btn-brand h-11 rounded-xl px-7 text-sm font-semibold">
@@ -78,7 +73,7 @@ export function HeroSection({ totalInsightCount, weeklyNewCount }: Props) {
                   {heroNewServiceLaunch.badge}
                 </p>
 
-                <h2 className="mt-4 text-xl font-bold leading-snug">{heroNewServiceLaunch.title}</h2>
+                <h2 className={typeCardTitle("mt-4 text-xl")}>{heroNewServiceLaunch.title}</h2>
 
                 <ul className="mt-4 space-y-2">
                   {heroNewServiceLaunch.features.map((feature) => (
@@ -120,8 +115,8 @@ export function HeroSection({ totalInsightCount, weeklyNewCount }: Props) {
                 <span className="text-xl" aria-hidden="true">
                   {card.emoji}
                 </span>
-                <h3 className="mt-3 text-sm font-bold leading-snug">{card.title}</h3>
-                <p className="mt-1.5 text-xs leading-relaxed text-white/55">{card.description}</p>
+                <h3 className={typeCardTitle("mt-3")}>{card.title}</h3>
+                <p className={typeBody("mt-1.5 text-xs text-white/55")}>{card.description}</p>
               </article>
             </li>
           ))}

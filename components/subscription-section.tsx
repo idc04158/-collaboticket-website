@@ -35,10 +35,10 @@ export function SubscriptionSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-label">정찰제 운영</p>
-          <h2 className="mt-4 text-balance text-3xl font-black tracking-tight md:text-4xl">
+          <h2 className="type-section-title type-section-title--center mt-4">
             필요한 서비스만, 월 정찰제로 운영합니다
           </h2>
-          <p className="mt-4 text-pretty text-muted-foreground">
+          <p className="type-lead type-lead--center mt-4 text-muted-foreground">
             단발성 프로젝트가 아닌 지속적인 운영 파트너십입니다. 일본 SNS 마케팅, Qoo10·Rakuten·Amazon Japan 운영,
             일본 리뷰 마케팅, 일본 물류를 채널별 전담팀이 데이터 기반으로 매월 성과를 관리합니다.
           </p>
