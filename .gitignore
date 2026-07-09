@@ -14,3 +14,9 @@ data/crm-activity.json
 data/uploads/
 .data/
 .vercel
+
+# Local script run artifacts
+scripts/*.log
+scripts/.*-progress.json
+scripts/poomgo-japan-articles.json
+scripts/poomgo-sample-articles.json
