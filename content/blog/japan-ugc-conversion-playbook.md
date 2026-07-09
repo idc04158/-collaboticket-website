@@ -35,9 +35,10 @@ image: >-
 | Qoo10       | 3.6조          | 5%                |
 | LINE        | N/A            | N/A               |
 
-## INSIGHT: CollaboTicket 운영 데이터
-운영 경험상, 일본 소비자는 브랜드의 신뢰성과 현지화를 중시합니다. 다음은 UGC 활용의 구체적 사례입니다.
 
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: UGC 활용 실행 계획
 1. 소비자와의 적극적인 소통 전략 수립 (LINE과 TikTok 활용)

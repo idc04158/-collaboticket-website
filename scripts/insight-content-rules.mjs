@@ -127,11 +127,14 @@ FACT rules:
 
 INSIGHT rules:
 ${OPERATIONAL_DATA_RULES}
+- INSIGHT (운영 데이터) 섹션은 **필요할 때만** 포함합니다. 템플릿·체크리스트·컴플라이언스·시장 허브 글에는 넣지 않습니다.
+- 실행·KPI·메가와리·채널 운영·인플루언서 성과·타임리 이벤트 대응 글에만 CollaboTicket 운영 사례를 1건 넣습니다.
+- CTR/CVR/ROAS/광고비 표는 광고·전환·KPI 주제 글에만 사용합니다. 관세·물류·현지화·CS 글에 광고 지표 표를 넣지 않습니다.
 - Use report-style progression tables (month 1 → month 3 → month 6) when showing trends.
-- Never use real customer names. Use anonymized labels: 헤어케어 브랜드 B제품, 스킨케어 브랜드 D제품, etc.
-- Include minimum 2 case studies from: 헤어케어, 스킨케어, 더마코스메틱, 패션, 건강기능식품 (random pick per article)
-- Prefix with "CollaboTicket 운영 데이터 기준" or "운영 경험상"
+- Never use real customer names. Use anonymized labels assigned to THIS slug only (see unique angle).
+- Prefix with "CollaboTicket 운영 데이터" or "CollaboTicket 운영 데이터 기준" when INSIGHT is included
 - Do NOT change FACT section third-party market statistics (MAU, market size, industry reports).
+- If no relevant operational case exists, omit ## INSIGHT entirely and link to /insights/japan-ec-kpi-dashboard in 다음 단계
 
 Platform differentiation (never describe all platforms the same way):
 - Qoo10: early sales, Mega Warí, reviews, test marketing
@@ -213,8 +216,8 @@ Required markdown structure (use these ## headings in order, adapt subsection ti
 ## FACT: (topic-specific market/platform data heading)
 (Research-backed data with sources inline; minimum 2 tables)
 
-## INSIGHT: CollaboTicket 운영 데이터
-(ONE primary case study with realistic metrics — use assigned brand label; link to KPI dashboard for metric definitions)
+## INSIGHT: CollaboTicket 운영 데이터 (OPTIONAL — include only when this topic needs an execution case study; otherwise skip and link KPI dashboard in 다음 단계)
+(ONE primary case study with realistic metrics — use assigned brand label for this slug only)
 
 ## ACTION: (execution heading for this topic)
 (Numbered steps unique to THIS workflow — not generic entry checklist)

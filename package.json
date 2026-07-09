@@ -18,7 +18,8 @@
     "enforce:case-labels": "node scripts/enforce-case-labels.mjs",
     "import:poomgo": "node scripts/import-poomgo-insights.mjs --resume",
     "fix:insight-images": "node scripts/fix-broken-insight-images.mjs",
-    "scan:insight-images": "node scripts/scan-insight-images.mjs"
+    "scan:insight-images": "node scripts/scan-insight-images.mjs",
+    "prune:insight-ops": "node scripts/prune-optional-insight-ops.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

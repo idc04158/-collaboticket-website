@@ -30,7 +30,9 @@ image: >-
 | -------------- | ------------ |
 | 15~70만 엔     | 220~500%    |
 
-## INSIGHT: CollaboTicket 운영 데이터 기준
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: 즉각 실행 가능한 단계
 1. TikTok Shop에 진입하기 위한 광고비 예산을 30~50만 엔으로 설정합니다.  

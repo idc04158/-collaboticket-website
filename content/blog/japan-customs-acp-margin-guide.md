@@ -32,12 +32,7 @@ image: >-
 | Qoo10      | 10,000엔에서 5,000엔 | 20% 증가                 |
 | Rakuten    | 12,000엔에서 9,000엔 | 15% 증가                 |
 
-## INSIGHT: CollaboTicket 운영 데이터 기준
-
-| 브랜드         | 플랫폼  | 광고비(만 엔) | CTR (%) | CVR (%) | ROAS (%) | 리뷰 수  |
-|----------------|---------|----------------|---------|---------|----------|--------|
-| 헤어케어 B제품 | Qoo10   | 30             | 2.5     | 2.0     | 350      | 60     |
-| 스킨케어 D제품 | Rakuten | 50             | 2.0     | 3.0     | 320      | 40     |
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: 실행 단계
 1. ACP 및 관세 변수를 깊이 분석하여 가격 전략을 최적화합니다.
@@ -87,5 +82,3 @@ image: >-
 - Qoo10 마케팅 리포트 2024
 - Rakuten 비즈니스 전략 보고서 2024
 - JETRO EC 시장 동향 2024
-
-This report leverages the latest insights into Japan's e-commerce landscape while providing actionable strategies tailored for brands navigating challenges posed by tariffs and market dynamics.

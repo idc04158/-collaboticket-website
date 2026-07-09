@@ -26,5 +26,11 @@ export function sanitizeInsightBody(content: string) {
     "",
   )
 
+  // Generic English boilerplate sometimes appended after References
+  body = body.replace(
+    /\n+This report leverages[\s\S]*?market dynamics\.\s*(?=\n|$)/g,
+    "",
+  )
+
   return body.trimEnd()
 }

@@ -32,7 +32,9 @@ image: >-
 ### Amazon Japan의 물류 및 판매 최적화
 Amazon FBA를 통해 물류 효율성을 높일 수 있으며, 실제로 비용을 30% 줄일 수 있습니다. 또한, 고객 만족도도 증가하며 재구매율이 높아집니다.
 
-## INSIGHT: CollaboTicket 운영 데이터 기준
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: Amazon FBA 온보딩 단계 실행 계획
 1. **시장 조사 및 분석:** 일본 내 경쟁 브랜드와 트렌드 분석.

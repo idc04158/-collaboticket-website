@@ -165,6 +165,7 @@ export const ASSIGNED_CASE_LABELS = {
   "megawari-kpi-seven-metrics": ["헤어케어 B"],
   "japan-logistics-regulation-2026": ["패션 F"],
   "japan-tiktok-shop-entry-ops": ["뷰티 브랜드 A"],
+  "cosme-logo-data-buzz-gap-2026-july": ["스킨케어 D"],
   "yahoo-chou-paypay-festival-2026-july": ["건강기능식품 G"],
 }
 
@@ -173,7 +174,7 @@ export function getUniqueAngle(slug) {
 }
 
 export function getAssignedCases(slug) {
-  return ASSIGNED_CASE_LABELS[slug] || [`${slug.includes("qoo10") ? "스킨케어 D" : slug.includes("rakuten") ? "헤어케어 B" : slug.includes("amazon") ? "생활용품 H" : "패션 F"} 제품`]
+  return ASSIGNED_CASE_LABELS[slug] || []
 }
 
 export function allowsFullPlatformTable(slug) {

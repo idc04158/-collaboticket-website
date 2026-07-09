@@ -28,8 +28,9 @@ image: >-
 | Amazon       | 36              | 150          | 10                 | Statista 2024        |
 | Qoo10        | 7               | 80           | 5                  | Qoo10 분기 보고서 2024 |
 
-## INSIGHT: CollaboTicket 운영 데이터 기준
-### 사례 연구
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: 즉시 실행할 단계
 1. **리뷰 분석**: 현재 리뷰 수와 평균 평점을 분석하고 정리합니다.

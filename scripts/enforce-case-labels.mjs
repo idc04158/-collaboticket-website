@@ -14,8 +14,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BLOG_DIR = path.join(__dirname, "..", "content", "blog")
 
 const CASE_PATTERNS = [
-  { id: "B", re: /헤어케어\s*브랜드\s*B/g },
-  { id: "D", re: /스킨케어\s*브랜드\s*D/g },
+  { id: "B", re: /헤어케어\s*(?:브랜드\s*)?B(?:제품)?/g },
+  { id: "D", re: /스킨케어\s*(?:브랜드\s*)?D(?:제품)?/g },
   { id: "A", re: /건강기능식품\s*브랜드\s*A/g },
   { id: "C", re: /(?:패션\s*브랜드\s*C|더마코스메틱\s*C)/g },
   { id: "F", re: /패션\s*브랜드\s*F/g },
@@ -46,8 +46,8 @@ function assignedIds(slug) {
 }
 
 const CASE_CORES = {
-  B: "헤어케어\\s*브랜드\\s*B",
-  D: "스킨케어\\s*브랜드\\s*D",
+  B: "헤어케어\\s*(?:브랜드\\s*)?B(?:제품)?",
+  D: "스킨케어\\s*(?:브랜드\\s*)?D(?:제품)?",
   A: "건강기능식품\\s*브랜드\\s*A",
   C: "(?:패션\\s*브랜드\\s*C|더마코스메틱\\s*C)",
   F: "패션\\s*브랜드\\s*F",

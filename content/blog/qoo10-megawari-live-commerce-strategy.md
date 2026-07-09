@@ -27,7 +27,9 @@ tags:
 | 메디큐브 메가와리 매출   | 약 250억 원    | ZDNet 2023                   |
 | 고객 재구매율         | 최대 45%      | SQI 2023                     |
 
-## INSIGHT: CollaboTicket 운영 데이터 기준
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: Qoo10 메가와리 활용 방안
 1. **행사 4주 전**: 

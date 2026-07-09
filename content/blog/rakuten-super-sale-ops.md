@@ -30,7 +30,9 @@ image: >-
 | 구매 전환율       | 약 12%                   | Rakuten IR 2024    |
 | 가격 민감도       | 60% 이상의 소비자가 할인에 민감 | CollaboTicket 운영 데이터 기준 |
 
-## INSIGHT: CollaboTicket 운영 데이터
+
+
+운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: 실행 단계 및 프레임워크
 1. **시장 조사 및 경쟁 분석**: 경쟁사 가격, 리뷰, 프로모션 전략을 면밀히 분석합니다.
