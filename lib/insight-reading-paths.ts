@@ -84,6 +84,7 @@ const READING_CHAINS: Record<InsightGroup, readonly string[]> = {
     "japan-review-structure",
     "amazon-japan-review-velocity",
     "cosme-lips-review-operations",
+    "cosme-logo-data-buzz-gap-2026-july",
     "review-proof-report-format",
     "qoo10-launch-checklist-30days",
     "case-study-experience-influencer-43",

@@ -26,6 +26,7 @@ export const INSIGHT_PUBLISH_ORDER = [
   "amazon-japan-review-velocity",
   "japan-review-structure",
   "cosme-lips-review-operations",
+  "cosme-logo-data-buzz-gap-2026-july",
   "review-proof-report-format",
   "japan-ec-ad-creative-patterns",
   "japan-sns-brand-trust",
