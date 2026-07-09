@@ -1,21 +1,73 @@
 // AEO content data — Korean user-facing copy for AI-readable homepage structure
 
 export const brandPositioning =
-  "콜라보티켓은 한국 브랜드의 일본 시장 진출을 A부터 Z까지 실행하는 파트너입니다. 단발성 협찬이 아닌, 브랜드와 오래 함께 성장할 일본 현지 인플루언서를 연결하는 것이 가장 큰 차별점입니다."
+  "콜라보티켓은 Japan Commerce Intelligence & Execution Company입니다. 일본 시장을 분석하고 인사이트를 제공하며, EC·콘텐츠·인플루언서 운영까지 실제로 실행합니다."
 
-export const heroH1 = "한국 브랜드의 일본 시장 진출, A부터 Z까지 실행합니다"
+export const heroH1 = "일본 시장을 분석하고, 실행까지 합니다"
 
 export const heroSubtitle = [
-  "일본 EC·SNS·리뷰·물류를 하나의 팀이 통합 실행합니다.",
-  "일본 현지 인플루언서 네트워크와 데이터 기반 운영이 차별점입니다.",
+  "Japan Commerce Intelligence & Execution.",
+  "매주 업데이트되는 시장 인사이트와 EC·콘텐츠·인플루언서 운영을 한 팀이 수행합니다.",
 ] as const
 
 export const heroBadges = [
-  "일본 현지 운영",
-  "현지 인플루언서",
-  "데이터 기반 운영",
+  "시장 인사이트",
+  "EC 실행",
+  "현지 콘텐츠",
+  "인플루언서 시딩",
   "AI 자동화",
-  "월간 리포트",
+] as const
+
+export const heroNewServiceLaunch = {
+  badge: "NEW",
+  title: "일본 현지 콘텐츠 제작 서비스 런칭",
+  features: [
+    "일본 모델 섭외",
+    "일본 현지 촬영",
+    "UGC 제작",
+    "숏폼 콘텐츠 제작",
+  ],
+  ctaHref: "/contact",
+  ctaLabel: "자세히 보기",
+} as const
+
+export const heroValueCards = [
+  {
+    id: "reviews",
+    emoji: "🇯🇵",
+    title: "일본 리뷰 구축",
+    description: "구매 전환을 만드는 첫 번째 자산",
+  },
+  {
+    id: "content",
+    emoji: "🎥",
+    title: "현지 콘텐츠 제작",
+    description: "일본 모델 · 현지 촬영 · 숏폼 제작",
+  },
+  {
+    id: "ec",
+    emoji: "📈",
+    title: "EC 운영",
+    description: "Qoo10 · Rakuten · Amazon 운영",
+  },
+  {
+    id: "influencer",
+    emoji: "👥",
+    title: "인플루언서 시딩",
+    description: "일본 마이크로 인플루언서 협업",
+  },
+  {
+    id: "insights",
+    emoji: "📊",
+    title: "시장 인사이트",
+    description: "매주 업데이트되는 일본 EC 분석",
+  },
+  {
+    id: "automation",
+    emoji: "🤖",
+    title: "AI 자동화",
+    description: "반복 운영을 자동화하는 시스템",
+  },
 ] as const
 
 export const operatingPrinciples = [

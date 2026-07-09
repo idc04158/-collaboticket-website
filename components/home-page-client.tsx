@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section"
+import { HomeMarketBriefingSection } from "@/components/home-market-briefing-section"
 import { OperatingPrinciplesSection } from "@/components/operating-principles-section"
 import { WhyJapanSection } from "@/components/why-japan-section"
 import { StatsSection } from "@/components/stats-section"
@@ -19,24 +20,38 @@ import { MidCtaSection } from "@/components/mid-cta-section"
 import { CtaSection } from "@/components/cta-section"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import type { InsightMeta } from "@/lib/insights"
+import type { InsightEnriched, InsightMeta } from "@/lib/insights"
 
 type Props = {
+  weeklyBriefing: InsightEnriched[]
   insightTeasers: InsightMeta[]
   totalInsightCount: number
+  weeklyNewCount: number
+  lastUpdated: string
 }
 
-export function HomePageClient({ insightTeasers, totalInsightCount }: Props) {
+export function HomePageClient({
+  weeklyBriefing,
+  insightTeasers,
+  totalInsightCount,
+  weeklyNewCount,
+  lastUpdated,
+}: Props) {
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
 
       <main>
-        <HeroSection />
+        <HeroSection totalInsightCount={totalInsightCount} weeklyNewCount={weeklyNewCount} />
+        <HomeMarketBriefingSection
+          insights={weeklyBriefing}
+          totalCount={totalInsightCount}
+          weeklyNewCount={weeklyNewCount}
+          lastUpdated={lastUpdated}
+        />
         <OperatingPrinciplesSection />
         <WhyJapanSection />
         <StatsSection />
-        <CompanyIntroSection />
         <ServicesSection />
         <InfluencerNetworkSection />
         <StrengthsSection />
@@ -45,6 +60,7 @@ export function HomePageClient({ insightTeasers, totalInsightCount }: Props) {
         <JapanPlatformsSection />
         <InfluencerDataLabSection />
         <TrustHighlightsSection />
+        <CompanyIntroSection />
         <FaqSection />
         <KnowledgeHubSection />
         <InsightsSection teasers={insightTeasers} totalCount={totalInsightCount} />

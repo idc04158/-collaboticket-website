@@ -23,12 +23,12 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="section-label">데이터 인사이트</p>
+            <p className="section-label">아카이브</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight md:text-4xl">
-              데이터 인사이트 & 실행 사례
+              더 많은 시장 리포트
             </h2>
             <p className="mt-4 text-muted-foreground">
-              분석과 실제 성과를 기반으로 일본 시장을 설명합니다.
+              플랫폼·카테고리·실행 가이드까지, 일본 시장 운영에 필요한 분석을 모았습니다.
             </p>
           </div>
           <div className="flex items-center gap-3 rounded-2xl border bg-card px-5 py-3 shadow-sm">
