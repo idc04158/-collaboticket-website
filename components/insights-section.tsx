@@ -1,9 +1,9 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight, FileText } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
 import { Skeleton } from "@/components/ui/skeleton"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
@@ -67,21 +67,13 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
                 key={article.slug}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg"
               >
-                {article.image ? (
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <Image
-                      src={article.image}
-                      alt={`${article.title} 썸네일`}
-                      fill
-                      className="object-cover transition duration-300 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex aspect-[16/9] items-center justify-center bg-muted/40 text-muted-foreground">
-                    <FileText className="size-6" />
-                  </div>
-                )}
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <InsightCoverImage
+                    src={article.image}
+                    alt={`${article.title} 썸네일`}
+                    className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
                 <div className="flex flex-1 flex-col gap-3 p-6">
                   <Badge variant="secondary" className="w-fit text-xs">
                     {getInsightCategoryLabel(article.category)}

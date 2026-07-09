@@ -1,7 +1,7 @@
-import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Calendar, Clock, FileText, Sparkles } from "lucide-react"
+import { ArrowRight, Calendar, Clock, Sparkles } from "lucide-react"
 
+import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Badge } from "@/components/ui/badge"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
 import type { InsightEnriched } from "@/lib/insight-hub"
@@ -14,21 +14,13 @@ export function InsightCard({ post }: Props) {
   return (
     <Link href={`/insights/${post.slug}`} className="group block h-full min-w-0">
       <article className="flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition hover:-translate-y-1 hover:border-brand/30 hover:shadow-lg">
-        {post.image ? (
-          <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted/30">
-            <Image
-              src={post.image}
-              alt={`${post.title} 썸네일`}
-              fill
-              className="object-cover transition duration-300 group-hover:scale-[1.02]"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
-          </div>
-        ) : (
-          <div className="flex aspect-[16/9] items-center justify-center bg-muted/40 text-muted-foreground">
-            <FileText className="size-6" aria-hidden="true" />
-          </div>
-        )}
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted/30">
+          <InsightCoverImage
+            src={post.image}
+            alt={`${post.title} 썸네일`}
+            className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+          />
+        </div>
 
         <div className="flex min-w-0 flex-1 flex-col gap-3 p-5">
           <div className="flex flex-wrap items-center gap-2">

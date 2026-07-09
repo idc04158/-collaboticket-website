@@ -8,6 +8,7 @@ import { InsightCard } from "@/components/insights/insight-card"
 import { InsightArticleJsonLd } from "@/components/insights/insight-article-json-ld"
 import { InsightDiagnosisCta } from "@/components/insights/insight-diagnosis-cta"
 import { InsightEngagementTracker } from "@/components/insights/insight-engagement-tracker"
+import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Badge } from "@/components/ui/badge"
 import {
   getAllEnrichedInsights,
@@ -146,11 +147,11 @@ export default async function InsightDetailPage({ params }: PageProps) {
           </header>
 
           {meta.image && (
-            <figure className="mt-10">
-              <img
+            <figure className="mt-10 overflow-hidden rounded-xl border">
+              <InsightCoverImage
                 src={meta.image}
                 alt={`${meta.title} 대표 이미지`}
-                className="w-full rounded-xl border object-cover"
+                className="aspect-[16/9] w-full object-cover"
               />
             </figure>
           )}
