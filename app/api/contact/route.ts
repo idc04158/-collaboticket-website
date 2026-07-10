@@ -100,22 +100,33 @@ function formatSelfDiagnosisSummary(selfDiagnosis?: SelfDiagnosisInput) {
   return lines.join("\n")
 }
 
+const EMAIL_TIMEOUT_MS = 4_000
+
 async function sendEmail({ to, subject, text }: { to: string; subject: string; text: string }) {
   const apiKey = process.env.RESEND_API_KEY
   const from = process.env.CONTACT_FROM_EMAIL || "CollaboTicket <onboarding@resend.dev>"
 
   if (!apiKey) return false
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ from, to, subject, text }),
-  })
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), EMAIL_TIMEOUT_MS)
 
-  return response.ok
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ from, to, subject, text }),
+      signal: controller.signal,
+    })
+    return response.ok
+  } catch {
+    return false
+  } finally {
+    clearTimeout(timer)
+  }
 }
 
 export async function POST(request: Request) {
@@ -161,7 +172,7 @@ export async function POST(request: Request) {
       })
       .filter((item): item is { slug: string; title: string } => Boolean(item))
 
-    await Promise.allSettled([
+    const notifications = Promise.allSettled([
       notifyDiscordContact({
         id: inquiry.id,
         message: inquiryMessage,
@@ -194,6 +205,11 @@ export async function POST(request: Request) {
         ].join("\n"),
       }),
     ])
+
+    // Never block the user response on Discord/Resend latency.
+    void notifications.catch((error) => {
+      console.error("[contact] notification side effects failed:", error)
+    })
 
     try {
       await appendIntelligenceEvent({

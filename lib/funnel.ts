@@ -53,3 +53,8 @@ export function shouldOfferKakaoFunnel(
   if (dwellOnPageMs < KAKAO_POPUP_DELAY_MS && scrollDepth < KAKAO_POPUP_SCROLL_RATIO) return false
   return true
 }
+
+/** Casual visitors see Kakao entry points; engaged visitors are routed to contact. */
+export function shouldShowKakaoChannel(activity: VisitorActivity, visitCount: number): boolean {
+  return getVisitorSegment(activity, visitCount) === "casual"
+}

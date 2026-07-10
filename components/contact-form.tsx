@@ -79,10 +79,14 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
 
     setLoading(true)
 
+    const controller = new AbortController()
+    const timeout = window.setTimeout(() => controller.abort(), 25_000)
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: controller.signal,
         body: JSON.stringify({
           source: selfDiagnosis ? "self-diagnosis" : "homepage",
           website: formData.get("website"),
@@ -113,7 +117,10 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
       }
 
       if (!response.ok || !result.ok || !result.calendarUrl || !result.kakaoUrl) {
-        alert(result.message || "전송 중 오류가 발생했습니다.")
+        alert(
+          result.message ||
+            `전송에 실패했습니다. 잠시 후 다시 시도해주세요. (오류 코드: ${response.status})`,
+        )
         return
       }
 
@@ -143,9 +150,15 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
       })
       clearSelfDiagnosis()
       setSelfDiagnosis(null)
-    } catch {
-      alert("전송 중 오류가 발생했습니다.")
+    } catch (error) {
+      const timedOut = error instanceof DOMException && error.name === "AbortError"
+      alert(
+        timedOut
+          ? "응답 시간이 초과되었습니다. 네트워크 상태를 확인한 뒤 다시 시도해주세요."
+          : "전송 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.",
+      )
     } finally {
+      window.clearTimeout(timeout)
       setLoading(false)
     }
   }
