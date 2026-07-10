@@ -581,6 +581,7 @@
   color: inherit;
   font-weight: 600;
   text-decoration: none;
+  overflow-anchor: none;
 }
 
 .glossary-tooltip {
@@ -594,6 +595,7 @@
   padding: 0.875rem 1rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   pointer-events: auto;
+  overflow-anchor: none;
 }
 
 .glossary-tooltip::before {
@@ -601,8 +603,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -0.75rem;
-  height: 0.75rem;
+  top: -0.875rem;
+  height: 0.875rem;
 }
 
 .glossary-tooltip-label {

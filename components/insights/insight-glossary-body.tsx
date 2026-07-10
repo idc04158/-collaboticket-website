@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useCallback, useEffect, useRef, useState } from "react"
+import { memo, useCallback, useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 
 import { getGlossaryHref, MARKETING_GLOSSARY_SLUG } from "@/lib/marketing-glossary"
@@ -22,6 +22,59 @@ type Props = {
 
 const HIDE_DELAY_MS = 160
 
+/** Re-render only when html/className change — avoids DOM reset on tooltip toggles. */
+const InsightHtmlSection = memo(function InsightHtmlSection({
+  html,
+  className,
+  sectionRef,
+}: {
+  html: string
+  className?: string
+  sectionRef: React.RefObject<HTMLElement>
+}) {
+  return (
+    <section
+      ref={sectionRef}
+      aria-label="리포트 본문"
+      className={className}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  )
+})
+
+function GlossaryTooltip({
+  tooltip,
+  tooltipRef,
+  onPointerEnter,
+  onPointerLeave,
+  onBlur,
+}: {
+  tooltip: TooltipState
+  tooltipRef: React.RefObject<HTMLDivElement>
+  onPointerEnter: () => void
+  onPointerLeave: () => void
+  onBlur: (event: React.FocusEvent<HTMLDivElement>) => void
+}) {
+  return (
+    <div
+      ref={tooltipRef}
+      className="glossary-tooltip"
+      style={{ left: tooltip.x, top: tooltip.y }}
+      role="tooltip"
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={onPointerLeave}
+      onFocus={onPointerEnter}
+      onBlur={onBlur}
+    >
+      <p className="glossary-tooltip-label">{tooltip.label}</p>
+      <p className="glossary-tooltip-def">{tooltip.definition}</p>
+      <Link href={getGlossaryHref(tooltip.id)} className="glossary-tooltip-link">
+        용어 사전에서 자세히 보기 →
+      </Link>
+    </div>
+  )
+}
+
 export function InsightGlossaryBody({ html, slug, className }: Props) {
   const sectionRef = useRef<HTMLElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
@@ -40,11 +93,6 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
     }
   }, [])
 
-  const hideTooltip = useCallback(() => {
-    cancelHide()
-    setTooltip(null)
-  }, [cancelHide])
-
   const scheduleHide = useCallback(() => {
     cancelHide()
     hideTimerRef.current = setTimeout(() => {
@@ -62,12 +110,24 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
 
       cancelHide()
       const rect = target.getBoundingClientRect()
-      setTooltip({
+      const next: TooltipState = {
         id,
         label,
         definition,
         x: rect.left + rect.width / 2,
-        y: rect.bottom + 6,
+        y: rect.bottom + 2,
+      }
+
+      setTooltip((prev) => {
+        if (
+          prev &&
+          prev.id === next.id &&
+          Math.abs(prev.x - next.x) < 1 &&
+          Math.abs(prev.y - next.y) < 1
+        ) {
+          return prev
+        }
+        return next
       })
     },
     [cancelHide],
@@ -85,16 +145,26 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
     const onPointerOver = (event: PointerEvent) => {
       const target = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
       if (!target || !root.contains(target)) return
+
+      const from = event.relatedTarget
+      if (from instanceof Node && target.contains(from)) return
+
       showTooltip(target)
     }
 
     const onPointerOut = (event: PointerEvent) => {
       const from = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
       if (!from || !root.contains(from)) return
-      if (isMovingToTooltip(event.relatedTarget)) {
-        cancelHide()
-        return
+
+      const to = event.relatedTarget
+      if (to instanceof Node) {
+        if (from.contains(to)) return
+        if (tooltipRef.current?.contains(to)) {
+          cancelHide()
+          return
+        }
       }
+
       scheduleHide()
     }
 
@@ -135,36 +205,27 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
     return () => cancelHide()
   }, [cancelHide])
 
+  const onTooltipBlur = useCallback(
+    (event: React.FocusEvent<HTMLDivElement>) => {
+      if (!isMovingToTooltip(event.relatedTarget)) scheduleHide()
+    },
+    [isMovingToTooltip, scheduleHide],
+  )
+
   return (
     <>
-      <section
-        ref={sectionRef}
-        aria-label="리포트 본문"
-        className={className}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <InsightHtmlSection html={html} className={className} sectionRef={sectionRef} />
 
       {mounted &&
         tooltip &&
         createPortal(
-          <div
-            ref={tooltipRef}
-            className="glossary-tooltip"
-            style={{ left: tooltip.x, top: tooltip.y }}
-            role="tooltip"
+          <GlossaryTooltip
+            tooltip={tooltip}
+            tooltipRef={tooltipRef}
             onPointerEnter={cancelHide}
             onPointerLeave={scheduleHide}
-            onFocus={cancelHide}
-            onBlur={(event) => {
-              if (!isMovingToTooltip(event.relatedTarget)) scheduleHide()
-            }}
-          >
-            <p className="glossary-tooltip-label">{tooltip.label}</p>
-            <p className="glossary-tooltip-def">{tooltip.definition}</p>
-            <Link href={getGlossaryHref(tooltip.id)} className="glossary-tooltip-link">
-              용어 사전에서 자세히 보기 →
-            </Link>
-          </div>,
+            onBlur={onTooltipBlur}
+          />,
           document.body,
         )}
 
