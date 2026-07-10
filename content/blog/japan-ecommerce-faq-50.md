@@ -8,7 +8,7 @@ tags:
   - 운영
 date: '2025-06-11'
 image: >-
-  https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-japan-ecommerce-faq-50-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 일본 이커머스 시장 규모는 2025년 2조 5천억 엔, 전년 대비 약 11.5% 성장 (METI, 2025년)
@@ -17,7 +17,7 @@ image: >-
 ✓ 일본의 모바일 쇼핑 비중이 66%로, 모바일 최적화 필요 (Statista, 2025년)
 ✓ 리뷰 평점이 4.0 이상일 경우 구매 전환율이 58%로 증가 (Rakuten, 2025년)
 
-![일본 이커머스 FAQ 50선](https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80)
+![일본 이커머스 FAQ 50선](https://picsum.photos/seed/ct-fix-japan-ecommerce-faq-50-cover/1400/788)
 
 ## FACT: 일본 이커머스 시장 데이터
 일본 이커머스 시장의 성장은 지속적으로 이루어지고 있으며, 주요 플랫폼별 데이터는 아래와 같습니다:

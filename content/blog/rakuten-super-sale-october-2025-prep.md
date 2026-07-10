@@ -8,7 +8,7 @@ tags:
   - 운영
 date: '2025-10-01'
 image: >-
-  https://images.unsplash.com/photo-1387673909858-4155807e3467?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-rakuten-super-sale-october-2025-prep-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 2025-10-01 기준 10월 세일 사전 준비 국면에서는 단일 할인보다 채널별 메시지 분리 집행이 성과를 안정화합니다.
@@ -18,7 +18,7 @@ image: >-
 ✓ 이 글은 rakuten-super-sale-october-2025-prep 주제에 맞춰 FACT-INSIGHT-ACTION 순으로 우선순위를 제시하며, 실무 팀이 바로 적용할 수 있게 구성했습니다.
 ✓ 결론적으로 쿠폰 전환율 개선은 "한 번의 캠페인"보다 "4주 반복 운영 루프"에서 더 크게 만들어집니다.
 
-![라쿠텐 10월 슈퍼세일 준비 2025: D-14 실행 캘린더](https://images.unsplash.com/photo-1387673909858-4155807e3467?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐 10월 슈퍼세일 준비 2025: D-14 실행 캘린더](https://picsum.photos/seed/ct-fix-rakuten-super-sale-october-2025-prep-cover/1400/788)
 
 ## FACT: 10월 세일 사전 준비 시기 일본 EC 운영 데이터
 

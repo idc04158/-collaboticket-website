@@ -2,7 +2,7 @@ import Link from "next/link"
 import { ArrowRight, Clock } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { getInsightCategoryLabel } from "@/lib/insight-categories"
+import { getBriefingChannelLabel, getBriefingEmoji } from "@/lib/home-weekly-briefing"
 import type { InsightEnriched } from "@/lib/insight-hub"
 
 type Props = {
@@ -10,22 +10,6 @@ type Props = {
   totalCount: number
   weeklyNewCount: number
   lastUpdated: string
-}
-
-function getInsightEmoji(post: InsightEnriched): string {
-  if (post.platforms.includes("Qoo10")) return "💄"
-  if (post.platforms.includes("Rakuten")) return "📈"
-  if (post.platforms.includes("TikTok") || post.topics.includes("SNS")) return "🎥"
-  if (post.industries.includes("건강기능식품")) return "💊"
-  if (post.industries.includes("화장품")) return "🧴"
-  if (post.topics.includes("시장분석")) return "📊"
-  return "🇯🇵"
-}
-
-function getInsightChannelLabel(post: InsightEnriched): string {
-  if (post.platforms.length > 0) return post.platforms[0]
-  if (post.topics.length > 0) return post.topics[0]
-  return getInsightCategoryLabel(post.category)
 }
 
 export function HomeMarketBriefingSection({ insights, totalCount, weeklyNewCount, lastUpdated }: Props) {
@@ -81,12 +65,12 @@ export function HomeMarketBriefingSection({ insights, totalCount, weeklyNewCount
                   className="group flex items-center gap-4 px-5 py-5 transition hover:bg-brand-light/20 sm:gap-6 sm:px-6"
                 >
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-muted/60 text-xl sm:size-12">
-                    {getInsightEmoji(post)}
+                    {getBriefingEmoji(post)}
                   </span>
 
                   <div className="min-w-0 flex-1">
                     <p className="text-xs font-bold uppercase tracking-wide text-brand">
-                      {getInsightChannelLabel(post)}
+                      {getBriefingChannelLabel(post)}
                     </p>
                     <p className="mt-1 line-clamp-2 text-base font-bold leading-snug transition group-hover:text-brand sm:text-lg">
                       {post.title}

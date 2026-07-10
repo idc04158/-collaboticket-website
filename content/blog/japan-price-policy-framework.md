@@ -26,7 +26,7 @@ image: >-
 | Amazon Japan| 25% | 6,800 | 65 |
 | Qoo10 | 13% | 5,000 | 50 |
 
-![일본 가격 정책 프레임워크 본문 이미지](https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80)
+![일본 가격 정책 프레임워크 본문 이미지](https://picsum.photos/seed/ct-fix-japan-price-policy-framework-cover/1400/788)
 
 - 일본 전자상거래 시장 규모는 약 24.8조 엔, 전년 대비 8% 성장 (METI EC Market Survey 2024)
 - 소비자는 가격 변동에 민감하며, 고품질과 저가격을 동시에 기대 (NielsenIQ 2024)
@@ -78,4 +78,4 @@ Rakuten의 포인트 시스템을 활용하여 재구매 유인을 제공하고,
 - NielsenIQ 2024
 - JETRO 2023
 
-Explore more insights on Japanese ecommerce strategies: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024), [일본 이커머스 2025](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).
+Explore more insights on Japanese ecommerce strategies: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026), [일본 이커머스 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap).

@@ -28,7 +28,7 @@ image: >-
 | Amazon Japan| 40% | 8.0% | 8,500엔 | 52% |
 | Qoo10 | 12% | 9.0% | 4,000엔 | 45% |
 
-![일본 EC KPI 대시보드 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-d9a03b072599?auto=format&fit=crop&w=1400&q=80)
+![일본 EC KPI 대시보드 설계 본문 이미지](https://picsum.photos/seed/ct-fix-japan-ec-kpi-dashboard-cover/1400/788)
 
 자료 출처: 경제산업성 METI, 2024, Rakuten IR, 2024, Statista, 2024
 
@@ -104,8 +104,8 @@ image: >-
 - Qoo10 공식 보고서 2024
 
 추가 정보는 아래의 관련 인사이트를 참조하시기 바랍니다:
-- [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2024)
-- [일본 전자상거래 2025](/insights/japan-ecommerce-2024)
+- [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2026)
+- [일본 전자상거래 2025](/insights/japan-ecommerce-2025)
 - [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)
 - [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)
-- [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024)
+- [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2026)

@@ -73,4 +73,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - Amazon IR 2023
 - Qoo10 공식 발표 2024
 
-[일본 FBA와 3PL 비교](/insights/fba-vs-3pl-japan) | [일본의 크로스보더 배송 비용 모델](/insights/cross-border-shipping-cost-model) | [일본 세관 리스크 체크리스트](/insights/customs-risk-checklist-japan) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [2025년 일본 AI 쇼핑 상거래](/insights/ai-shopping-commerce-japan-2025) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity) | [성공적 인플루언서 캠페인 사례](/insights/case-study-experience-influencer-43) | [코스메틱 입술 리뷰 운영](/insights/cosme-lips-review-operations)
+[일본 FBA와 3PL 비교](/insights/fba-vs-3pl-japan) | [일본의 크로스보더 배송 비용 모델](/insights/cross-border-shipping-cost-model) | [일본 세관 리스크 체크리스트](/insights/customs-risk-checklist-japan) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [2025년 일본 AI 쇼핑 상거래](/insights/ai-shopping-commerce-japan-2026) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity) | [성공적 인플루언서 캠페인 사례](/insights/case-study-experience-influencer-43) | [코스메틱 입술 리뷰 운영](/insights/cosme-lips-review-operations)

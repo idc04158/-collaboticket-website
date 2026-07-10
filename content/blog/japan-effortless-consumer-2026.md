@@ -8,7 +8,7 @@ tags:
   - 트렌드
 date: '2025-07-23'
 image: >-
-  https://images.unsplash.com/photo-1556761175-8bdfa46b0500?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-japan-effortless-consumer-2026-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 2025년 일본 소비자 트렌드는 ‘고생 취소’로, 소비자들은 노력을 덜하며 간편한 제품을 선호합니다.
@@ -16,7 +16,7 @@ image: >-
 ✓ 구독형 CRM 모델이 소비자와의 지속적인 관계 구축에 효과적입니다.
 ✓ Qoo10, Rakuten, Amazon 각각에 맞춘 플랫폼 마케팅이 중요합니다.
 
-![2025년 일본 ‘고생 취소’ 소비 트렌드: K브랜드 포지셔닝](https://images.unsplash.com/photo-1556761175-8bdfa46b0500?auto=format&fit=crop&w=1400&q=80)
+![2025년 일본 ‘고생 취소’ 소비 트렌드: K브랜드 포지셔닝](https://picsum.photos/seed/ct-fix-japan-effortless-consumer-2026-cover/1400/788)
 
 ## FACT: 일본 B2C EC 시장 규모
 | 지표 | 2024년 | 성장률 |

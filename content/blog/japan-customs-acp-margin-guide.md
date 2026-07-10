@@ -8,7 +8,7 @@ tags:
   - 메가와리
 date: '2025-08-13'
 image: >-
-  https://images.unsplash.com/photo-1533750348312-6b5b769ede78?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-japan-customs-acp-margin-guide-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 일본 B2C EC 시장 규모는 약 24.8조 엔, 전년 대비 약 9% 성장했습니다. (경제산업성 METI EC Market Survey 2024)
@@ -17,7 +17,7 @@ image: >-
 ✓ Qoo10 플랫폼에서의 리뷰 수는 제품 매출 증대에 실질적인 영향을 미쳤습니다.
 ✓ 실무 기반의 실행 가능한 단계와 팁을 제시합니다.
 
-![일본 관세·ACP와 메가와리 마진: HS·가격 설계](https://images.unsplash.com/photo-1533750348312-6b5b769ede78?auto=format&fit=crop&w=1400&q=80)
+![일본 관세·ACP와 메가와리 마진: HS·가격 설계](https://picsum.photos/seed/ct-fix-japan-customs-acp-margin-guide-cover/1400/788)
 
 ## FACT: 일본 B2C EC 시장 및 관세 영향
 일본 B2C EC 시장 규모는 약 24.8조 엔, 전년 대비 약 9% 성장했습니다 (경제산업성 METI EC Market Survey 2024). ACP 제도의 도입이 진행되고 있으며, 이는 기업들이 수출입 시 관세의 변화에 대응하는 가격 전략을 필수적으로 고려해야 함을 의미합니다. 메가와리 할인은 초기 고객을 유치하는 데 중요한 역할을 합니다. 아래의 표에서 메가와리와 ACP의 영향을 비교해 보겠습니다.

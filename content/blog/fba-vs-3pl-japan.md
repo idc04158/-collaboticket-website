@@ -98,7 +98,7 @@ FBA는 Amazon 플랫폼 내에서 제공되는 서비스로, 빠른 배송과 �
 대부분의 일본 소비자는 신속한 배송을 중요시하며, FBA를 선호하는 경향이 있습니다.
 
 - [검색→전환 흐름](/insights/search-to-conversion-flow-japan)
-- [AI 쇼핑커머스 2025](/insights/ai-shopping-commerce-japan-2025)
+- [AI 쇼핑커머스 2025](/insights/ai-shopping-commerce-japan-2026)
 
 ## References
 - 경제산업성 (METI) 2025

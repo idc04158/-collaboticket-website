@@ -27,7 +27,7 @@ image: >-
 | 마이크로 인플루언서 | 300-500 | 4배 증가 |
 | 메가 인플루언서 | 800-1,000 | - |
 
-![일본 SNS 월간 콘텐츠 캘린더 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-6a56d0bf403e?auto=format&fit=crop&w=1400&q=80)
+![일본 SNS 월간 콘텐츠 캘린더 설계 본문 이미지](https://picsum.photos/seed/ct-fix-japan-sns-content-calendar-cover/1400/788)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
@@ -77,4 +77,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - 경제산업성 METI EC Market Survey 2024
 - JETRO 2025
 
-Explore more insights: [LINE CRM Funnel](/insights/line-official-account-funnel), [LINE X CRM Marketing](/insights/line-x-crm-fan-marketing-japan), [Influencer Brief Template](/insights/influencer-brief-template-jp), [UGC Conversion Playbook](/insights/japan-ugc-conversion-playbook), [AI in Shopping Commerce](/insights/ai-shopping-commerce-japan-2025)
+Explore more insights: [LINE CRM Funnel](/insights/line-official-account-funnel), [LINE X CRM Marketing](/insights/line-x-crm-fan-marketing-japan), [Influencer Brief Template](/insights/influencer-brief-template-jp), [UGC Conversion Playbook](/insights/japan-ugc-conversion-playbook), [AI in Shopping Commerce](/insights/ai-shopping-commerce-japan-2026)

@@ -82,4 +82,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - CJ Logistics 2025
 - JETRO 2024
 
-[역직구 물류 서비스 최적화](/insights/logistics-corporate-ecommerce) | [FBA vs 3PL](/insights/fba-vs-3pl-japan) | [Amazon 일본 FBA 온보딩 가이드](/insights/amazon-japan-fba-onboarding) | [AI 쇼핑 및 전자상거래 미래](/insights/ai-shopping-commerce-japan-2025) | [리뷰 속도 최적화 전략](/insights/amazon-japan-review-velocity)
+[역직구 물류 서비스 최적화](/insights/logistics-corporate-ecommerce) | [FBA vs 3PL](/insights/fba-vs-3pl-japan) | [Amazon 일본 FBA 온보딩 가이드](/insights/amazon-japan-fba-onboarding) | [AI 쇼핑 및 전자상거래 미래](/insights/ai-shopping-commerce-japan-2026) | [리뷰 속도 최적화 전략](/insights/amazon-japan-review-velocity)

@@ -4,7 +4,7 @@ description: '2025년 일본 전자상거래 시장 규모는 27.1조 엔으로,
 category: Insight
 date: '2025-06-04'
 image: >-
-  https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-ai-shopping-commerce-japan-2026-cover/1400/788
 tags:
   - 일본진출
   - 실행
@@ -17,7 +17,7 @@ tags:
 ✓ 일본의 소비자 68%가 질문형 검색을 통해 제품 정보를 탐색하고 있습니다 (Statista 2025).
 ✓ Qoo10에서 메가와리 행사로 매출이 15% 증가했습니다 (Qoo10 공식 통계 2025).
 
-![AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로](https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80)
+![AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로](https://picsum.photos/seed/ct-fix-ai-shopping-commerce-japan-2026-cover/1400/788)
 
 ## FACT: 일본 커머스 시장 데이터
 일본 전자상거래 시장은 AI 기술 발전과 함께 소비자 행동의 큰 변화를 경험하고 있습니다. 다음은 주요 데이터입니다.

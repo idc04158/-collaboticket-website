@@ -34,7 +34,7 @@ tags:
 | Instagram | 3천만 명 | 비주얼 콘텐츠 중심, 인플루언서 마케팅 |
 | Twitter | 2천만 명 | 실시간 소통, 이벤트 홍보 |
 
-![일본 공식 SNS 운영이 매출에 미치는 영향 본문 이미지](https://images.unsplash.com/photo-1387673909858-4155807e3467?auto=format&fit=crop&w=1400&q=80)
+![일본 공식 SNS 운영이 매출에 미치는 영향 본문 이미지](https://picsum.photos/seed/ct-fix-japan-sns-brand-trust-cover/1400/788)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

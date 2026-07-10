@@ -27,7 +27,7 @@ tags:
 | 라쿠텐 | 30% | 9% |
 | 아마존 | 20% | 8% |
 
-![라쿠텐·아마존 재팬 론칭 전 체크리스트 본문 이미지](https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐·아마존 재팬 론칭 전 체크리스트 본문 이미지](https://picsum.photos/seed/ct-fix-rakuten-amazon-launch-basics-cover/1400/788)
 
 - 소비자 리뷰는 구매 결정에 67% 영향을 미치며, 신뢰성 있는 판매자의 거래 선호가 높습니다 (NielsenIQ 2023).
 

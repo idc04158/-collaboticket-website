@@ -8,7 +8,7 @@ tags:
   - 채널
 date: '2025-06-18'
 image: >-
-  https://images.unsplash.com/photo-1556764542-52a584bb7a1f?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-japan-tiktok-shop-entry-ops-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 일본의 TikTok Shop 시장 규모는 약 1조 엔으로, 최근 6개월간 사용자 수가 30% 증가했습니다 (Nikkei 2024).
@@ -16,7 +16,7 @@ image: >-
 ✓ 숏폼 콘텐츠는 고객의 관심을 끌고 전환율(CVR)을 높이는 데 효과적입니다.
 ✓ 라인 CRM을 통해 고객과의 장기적인 관계를 관리하는 것이 가능합니다.
 
-![일본 TikTok Shop 진입: 채널·전환·운영 로드맵](https://images.unsplash.com/photo-1556764542-52a584bb7a1f?auto=format&fit=crop&w=1400&q=80)
+![일본 TikTok Shop 진입: 채널·전환·운영 로드맵](https://picsum.photos/seed/ct-fix-japan-tiktok-shop-entry-ops-cover/1400/788)
 
 ## FACT: 일본의 TikTok Shop B2B EC 시장 현황
 일본 시장에서 TikTok Shop은 현재 약 1조 엔 규모로 성장했으며, 이는 사용자 수가 최근 6개월간 30% 증가한 결과입니다 (Nikkei 2024). 또한, 짧은 동영상 콘텐츠의 사용이 증가하며 전환율(CVR)에 긍정적인 영향을 미치고 있습니다.

@@ -1,6 +1,14 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
+
+import {
+  clearSelfDiagnosis,
+  formatSelfDiagnosisSummary,
+  loadSelfDiagnosis,
+  type SelfDiagnosisResult,
+} from "@/lib/self-diagnosis"
+import { saveInquiryContext, type RecommendedInsight } from "@/lib/visitor-tracking"
 
 type Props = {
   onSuccess?: (result: ContactSubmitResult) => void
@@ -11,6 +19,12 @@ export type ContactSubmitResult = {
   id?: string
   calendarUrl: string
   kakaoUrl: string
+  recommendedArticles?: RecommendedInsight[]
+  profile?: {
+    services: string[]
+    goal: string
+    category: string
+  }
 }
 
 const fieldClass =
@@ -40,6 +54,11 @@ function FieldLabel({ children, required = false }: { children: React.ReactNode;
 
 export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: Props) {
   const [loading, setLoading] = useState(false)
+  const [selfDiagnosis, setSelfDiagnosis] = useState<SelfDiagnosisResult | null>(null)
+
+  useEffect(() => {
+    setSelfDiagnosis(loadSelfDiagnosis())
+  }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -65,7 +84,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          source: "homepage",
+          source: selfDiagnosis ? "self-diagnosis" : "homepage",
           website: formData.get("website"),
           name: formData.get("name"),
           company: formData.get("company"),
@@ -80,17 +99,50 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
           channels: formData.get("channels"),
           goal: formData.get("goal"),
           detail: formData.get("detail"),
+          selfDiagnosis: selfDiagnosis || undefined,
           consent: true,
         }),
       })
-      const result = (await response.json()) as { ok: boolean; id?: string; calendarUrl?: string; kakaoUrl?: string; message?: string }
+      const result = (await response.json()) as {
+        ok: boolean
+        id?: string
+        calendarUrl?: string
+        kakaoUrl?: string
+        message?: string
+        recommendedArticles?: RecommendedInsight[]
+      }
 
       if (!response.ok || !result.ok || !result.calendarUrl || !result.kakaoUrl) {
         alert(result.message || "전송 중 오류가 발생했습니다.")
         return
       }
 
-      onSuccess?.({ id: result.id, calendarUrl: result.calendarUrl, kakaoUrl: result.kakaoUrl })
+      const profile = {
+        services: formData.getAll("services") as string[],
+        goal: String(formData.get("goal") || ""),
+        category: String(formData.get("category") || ""),
+      }
+
+      if (result.id) {
+        saveInquiryContext({
+          id: result.id,
+          services: profile.services,
+          goal: profile.goal,
+          category: profile.category,
+          recommendedSlugs: (result.recommendedArticles || []).map((article) => article.slug),
+          submittedAt: new Date().toISOString(),
+        })
+      }
+
+      onSuccess?.({
+        id: result.id,
+        calendarUrl: result.calendarUrl,
+        kakaoUrl: result.kakaoUrl,
+        recommendedArticles: result.recommendedArticles,
+        profile,
+      })
+      clearSelfDiagnosis()
+      setSelfDiagnosis(null)
     } catch {
       alert("전송 중 오류가 발생했습니다.")
     } finally {
@@ -101,6 +153,15 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <input type="text" name="website" className="hidden" aria-hidden="true" />
+
+      {selfDiagnosis && (
+        <div className="rounded-2xl border border-[#00B140]/25 bg-[#00B140]/5 p-4">
+          <p className="text-sm font-semibold text-[#00B140]">셀프 진단 결과가 함께 전달됩니다</p>
+          <pre className="mt-2 whitespace-pre-wrap text-xs leading-relaxed text-muted-foreground">
+            {formatSelfDiagnosisSummary(selfDiagnosis)}
+          </pre>
+        </div>
+      )}
 
       <div className="grid gap-3 sm:grid-cols-2">
         <label>

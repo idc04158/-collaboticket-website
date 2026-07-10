@@ -1,8 +1,17 @@
 import { promises as fs } from "fs"
 import path from "path"
 
-export const calendarBookingUrl = "https://calendar.app.google/AvDtsHt5273Xxchg9"
-export const kakaoChannelUrl = "http://pf.kakao.com/_cRCVn"
+import { calendarBookingUrl, kakaoChannelUrl } from "@/lib/contact-links"
+
+export { calendarBookingUrl, kakaoChannelUrl }
+
+export type SelfDiagnosisInput = {
+  enteredJapan?: boolean | null
+  concern?: string
+  preStage?: string
+  preInterest?: string
+  completedAt?: string
+}
 
 export type InquiryInput = {
   name: string
@@ -19,6 +28,7 @@ export type InquiryInput = {
   goal: string
   detail?: string
   source?: string
+  selfDiagnosis?: SelfDiagnosisInput
 }
 
 export type Inquiry = InquiryInput & {
@@ -57,7 +67,17 @@ export type CrmTodo = {
   memo?: string
 }
 
-const storagePath = path.join(process.cwd(), "data", "inquiries.json")
+function resolveStoragePath() {
+  if (process.env.INQUIRIES_STORAGE_PATH) {
+    return process.env.INQUIRIES_STORAGE_PATH
+  }
+  if (process.env.VERCEL) {
+    return path.join("/tmp", "collaboticket-inquiries.json")
+  }
+  return path.join(process.cwd(), "data", "inquiries.json")
+}
+
+const storagePath = resolveStoragePath()
 
 async function ensureStorage() {
   await fs.mkdir(path.dirname(storagePath), { recursive: true })
@@ -150,6 +170,21 @@ export async function seedDemoInquiries() {
   return demo
 }
 
+function formatSelfDiagnosisBlock(selfDiagnosis?: SelfDiagnosisInput) {
+  if (!selfDiagnosis) return ""
+
+  const lines: string[] = []
+  if (selfDiagnosis.enteredJapan === true) lines.push("일본 진출: 진행 중")
+  if (selfDiagnosis.enteredJapan === false) lines.push("일본 진출: 준비/검토 단계")
+  if (selfDiagnosis.concern) lines.push(`주요 고민: ${selfDiagnosis.concern}`)
+  if (selfDiagnosis.preStage) lines.push(`현재 단계: ${selfDiagnosis.preStage}`)
+  if (selfDiagnosis.preInterest) lines.push(`관심 영역: ${selfDiagnosis.preInterest}`)
+  if (selfDiagnosis.completedAt) lines.push(`진단 완료: ${selfDiagnosis.completedAt}`)
+
+  if (lines.length === 0) return ""
+  return ["", "[셀프 진단]", ...lines].join("\n")
+}
+
 export function formatInquiryMessage(inquiry: InquiryInput) {
   return [
     `이름: ${inquiry.name}`,
@@ -164,6 +199,7 @@ export function formatInquiryMessage(inquiry: InquiryInput) {
     `희망 시작 시점: ${inquiry.startTiming}`,
     `주요 판매 채널: ${inquiry.channels || "-"}`,
     `가장 중요한 목표: ${inquiry.goal}`,
+    formatSelfDiagnosisBlock(inquiry.selfDiagnosis),
     "",
     `추가 내용:`,
     inquiry.detail || "-",

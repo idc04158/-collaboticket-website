@@ -91,6 +91,6 @@ LINE 플랫폼을 통한 마케팅은 재구매율을 높일 수 있으며, 사�
 [LINE x CRM과 팬 마케팅](/insights/line-x-crm-fan-marketing-japan)
 [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp)
 [일본 UGC 전환 플레이북](/insights/japan-ugc-conversion-playbook)
-[AI 쇼핑 커머스의 미래](/insights/ai-shopping-commerce-japan-2025)
+[AI 쇼핑 커머스의 미래](/insights/ai-shopping-commerce-japan-2026)
 [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding)
 [아마존 일본 리뷰 속도 최적화](/insights/amazon-japan-review-velocity)

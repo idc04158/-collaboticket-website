@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Noto_Sans_KR } from "next/font/google"
 
 import { SiteAnalytics } from "@/components/analytics/site-analytics"
+import { FunnelPopupManager } from "@/components/funnel-popup-manager"
+import { VisitorDiscordNotifier } from "@/components/visitor-discord-notifier"
 
 import "./globals.css"
 
@@ -31,6 +33,8 @@ export default function RootLayout({
       <body className={`${notoSansKR.className} antialiased`}>
         {children}
         <SiteAnalytics />
+        <FunnelPopupManager />
+        <VisitorDiscordNotifier />
       </body>
     </html>
   )

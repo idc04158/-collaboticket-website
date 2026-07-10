@@ -74,4 +74,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - Qoo10 보고서 2024
 - JETRO 고객 서비스 통계 2024
 
-[2025년 일본 EC 시장 트렌드](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025 전망](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2025), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+[2025년 일본 EC 시장 트렌드](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025 전망](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2026), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

@@ -29,7 +29,7 @@ image: >-
 | Amazon Japan | 25% | 4% | 빠른 배송 및 Buy Box 최적화 |
 | Qoo10 | 10% | 6% | 초창기 판매 촉진, 리뷰 테스트 마케팅의 효과 |
 
-![오픈마켓 콘텐츠 재활용 시스템 본문 이미지](https://images.unsplash.com/photo-1504868584809-f2597d062cee?auto=format&fit=crop&w=1400&q=80)
+![오픈마켓 콘텐츠 재활용 시스템 본문 이미지](https://picsum.photos/seed/ct-fix-marketplace-content-reuse-system-cover/1400/788)
 
 일본 B2C EC 시장 규모는 약 25조 엔으로, 전년 대비 약 5% 성장할 것으로 예상됩니다 (경제산업성 METI 2024). 각 플랫폼의 성향에 맞는 전략이 필요합니다.
 
@@ -81,4 +81,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - NielsenIQ 2023
 - Statista 2024
 
-링크: [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2025](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+링크: [일본 EC 시장 트렌드 2025](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2026), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

@@ -84,4 +84,4 @@ LINE을 활용한 쿠폰 발송 및 정기적인 피드백 수집이 중요합�
 - Amazon IR 2024
 - LINE 공식 보고서 2024
 
-[일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2024](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)
+[일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2024](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진입 로드맵](/insights/kbeauty-japan-entry-roadmap)

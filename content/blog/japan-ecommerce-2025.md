@@ -86,4 +86,4 @@ Buy Box 확보 후 검색 광고로 핵심 키워드 5~10개를 테스트해보�
 - Rakuten IR 2024
 - NielsenIQ 2024
 
-[2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ec-market-trends-2024), [일본 B2C EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025 전망](/insights/ai-shopping-commerce-japan-2024)
+[2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ec-market-trends-2026), [일본 B2C EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [AI 쇼핑 커머스 일본 2025 전망](/insights/ai-shopping-commerce-japan-2026)

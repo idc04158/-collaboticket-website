@@ -87,4 +87,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - NielsenIQ 2023
 - JETRO 2023
 
-기타 통합 기사 링크: [일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity).
+기타 통합 기사 링크: [일본 전자상거래 시장 트렌드 2024](/insights/japan-ec-market-trends-2026), [일본 전자상거래 KPI 대시보드](/insights/japan-ec-kpi-dashboard), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap), [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity).

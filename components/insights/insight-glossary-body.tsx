@@ -20,8 +20,12 @@ type Props = {
   className?: string
 }
 
+const HIDE_DELAY_MS = 160
+
 export function InsightGlossaryBody({ html, slug, className }: Props) {
   const sectionRef = useRef<HTMLElement>(null)
+  const tooltipRef = useRef<HTMLDivElement>(null)
+  const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [tooltip, setTooltip] = useState<TooltipState | null>(null)
   const [mounted, setMounted] = useState(false)
 
@@ -29,22 +33,49 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
     setMounted(true)
   }, [])
 
-  const hideTooltip = useCallback(() => setTooltip(null), [])
+  const cancelHide = useCallback(() => {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current)
+      hideTimerRef.current = null
+    }
+  }, [])
 
-  const showTooltip = useCallback((target: HTMLElement) => {
-    const id = target.dataset.glossaryId
-    const label = target.dataset.glossaryLabel
-    const definition = target.dataset.glossaryDef
-    if (!id || !label || !definition) return
+  const hideTooltip = useCallback(() => {
+    cancelHide()
+    setTooltip(null)
+  }, [cancelHide])
 
-    const rect = target.getBoundingClientRect()
-    setTooltip({
-      id,
-      label,
-      definition,
-      x: rect.left + rect.width / 2,
-      y: rect.bottom + 10,
-    })
+  const scheduleHide = useCallback(() => {
+    cancelHide()
+    hideTimerRef.current = setTimeout(() => {
+      setTooltip(null)
+      hideTimerRef.current = null
+    }, HIDE_DELAY_MS)
+  }, [cancelHide])
+
+  const showTooltip = useCallback(
+    (target: HTMLElement) => {
+      const id = target.dataset.glossaryId
+      const label = target.dataset.glossaryLabel
+      const definition = target.dataset.glossaryDef
+      if (!id || !label || !definition) return
+
+      cancelHide()
+      const rect = target.getBoundingClientRect()
+      setTooltip({
+        id,
+        label,
+        definition,
+        x: rect.left + rect.width / 2,
+        y: rect.bottom + 6,
+      })
+    },
+    [cancelHide],
+  )
+
+  const isMovingToTooltip = useCallback((related: EventTarget | null) => {
+    if (!(related instanceof Node)) return false
+    return Boolean(tooltipRef.current?.contains(related))
   }, [])
 
   useEffect(() => {
@@ -57,24 +88,52 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
       showTooltip(target)
     }
 
+    const onPointerOut = (event: PointerEvent) => {
+      const from = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
+      if (!from || !root.contains(from)) return
+      if (isMovingToTooltip(event.relatedTarget)) {
+        cancelHide()
+        return
+      }
+      scheduleHide()
+    }
+
     const onFocusIn = (event: FocusEvent) => {
-      const target = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
-      if (!target || !root.contains(target)) return
-      showTooltip(target)
+      const term = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
+      if (term && root.contains(term)) {
+        showTooltip(term)
+        return
+      }
+      if (isMovingToTooltip(event.target)) {
+        cancelHide()
+      }
+    }
+
+    const onFocusOut = (event: FocusEvent) => {
+      if (isMovingToTooltip(event.relatedTarget)) return
+      const from = (event.target as HTMLElement | null)?.closest<HTMLElement>(".glossary-term")
+      if (from && root.contains(from)) {
+        scheduleHide()
+      }
     }
 
     root.addEventListener("pointerover", onPointerOver)
+    root.addEventListener("pointerout", onPointerOut)
     root.addEventListener("focusin", onFocusIn)
-    root.addEventListener("pointerout", hideTooltip)
-    root.addEventListener("focusout", hideTooltip)
+    root.addEventListener("focusout", onFocusOut)
 
     return () => {
       root.removeEventListener("pointerover", onPointerOver)
+      root.removeEventListener("pointerout", onPointerOut)
       root.removeEventListener("focusin", onFocusIn)
-      root.removeEventListener("pointerout", hideTooltip)
-      root.removeEventListener("focusout", hideTooltip)
+      root.removeEventListener("focusout", onFocusOut)
+      cancelHide()
     }
-  }, [hideTooltip, html, showTooltip])
+  }, [cancelHide, html, isMovingToTooltip, scheduleHide, showTooltip])
+
+  useEffect(() => {
+    return () => cancelHide()
+  }, [cancelHide])
 
   return (
     <>
@@ -89,9 +148,16 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
         tooltip &&
         createPortal(
           <div
+            ref={tooltipRef}
             className="glossary-tooltip"
             style={{ left: tooltip.x, top: tooltip.y }}
             role="tooltip"
+            onPointerEnter={cancelHide}
+            onPointerLeave={scheduleHide}
+            onFocus={cancelHide}
+            onBlur={(event) => {
+              if (!isMovingToTooltip(event.relatedTarget)) scheduleHide()
+            }}
           >
             <p className="glossary-tooltip-label">{tooltip.label}</p>
             <p className="glossary-tooltip-def">{tooltip.definition}</p>

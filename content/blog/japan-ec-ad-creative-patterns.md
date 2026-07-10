@@ -26,7 +26,7 @@ image: >-
 | SNS 광고 투자 규모 | 약 1.5조 엔 (2025년) | Statista 2025 | 소비자의 SNS 사용 증가로 광고효과 극대화 필요 |
 | 주요 플랫폼 광고 비용 | Rakuten 800억 엔, Amazon 600억 엔, Qoo10 400억 엔 | JETRO 2025 | 플랫폼에 따른 광고 비용 차이를 이해하고 전략적으로 예산 배분 필요 |
 
-![일본 EC 광고 크리에이티브 패턴 본문 이미지](https://images.unsplash.com/photo-1397622597469-3306f7ae5487?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 광고 크리에이티브 패턴 본문 이미지](https://picsum.photos/seed/ct-fix-japan-ec-ad-creative-patterns-cover/1400/788)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 
@@ -91,4 +91,4 @@ Qoo10은 초기 세일, Rakuten은 충성 고객 개발, Amazon은 검색 최적
 - Statista 2025
 - JETRO 2025
 
-[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026) | [2025 일본 전자상거래 분석](/insights/japan-ecommerce-2025) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy) | [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2025) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)
+[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026) | [2025 일본 전자상거래 분석](/insights/japan-ecommerce-2025) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy) | [K-Beauty 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2026) | [아마존 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding) | [아마존 일본 리뷰 속도](/insights/amazon-japan-review-velocity)

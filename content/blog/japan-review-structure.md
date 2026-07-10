@@ -78,4 +78,4 @@ A6: 즉각적인 대응 및 해결책을 제공하여 소비자의 불만을 해
 - 한국 소비자포털 2024
 - 라쿠텐 소비자 조사 2024
 
-Explore further insights on this topic: [리뷰 운영 체크리스트](/insights/qoo10-launch-checklist-30days) | [아마존 일본 리뷰 전략](/insights/amazon-japan-review-velocity) | [소비자 경험 기반 마케팅](/insights/case-study-experience-influencer-43) | [AI 쇼핑 트렌드 일본](/insights/ai-shopping-commerce-japan-2024).
+Explore further insights on this topic: [리뷰 운영 체크리스트](/insights/qoo10-launch-checklist-30days) | [아마존 일본 리뷰 전략](/insights/amazon-japan-review-velocity) | [소비자 경험 기반 마케팅](/insights/case-study-experience-influencer-43) | [AI 쇼핑 트렌드 일본](/insights/ai-shopping-commerce-japan-2026).

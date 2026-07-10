@@ -2,7 +2,12 @@
 
 export const VISITOR_COOKIE = "ct_vid"
 export const ACTIVITY_COOKIE = "ct_activity"
+export const VISIT_COUNT_COOKIE = "ct_visit_count"
+export const SESSION_FLAG = "ct_session_started"
 export const POPUP_DISMISS_COOKIE = "ct_popup_dismiss"
+export const KAKAO_POPUP_DISMISS_COOKIE = "ct_kakao_popup_dismiss"
+export const CONTACT_POPUP_DISMISS_COOKIE = "ct_contact_popup_dismiss"
+export const INQUIRY_CONTEXT_KEY = "ct_inquiry_context"
 export const READ_THRESHOLD = 0.5
 export const POPUP_DISMISS_DAYS = 7
 export const COOKIE_MAX_AGE_DAYS = 400
@@ -24,10 +29,27 @@ export type PageVisitRecord = {
 }
 
 export type VisitorActivity = {
-  v: 1
+  v: 2
   reads: Record<string, ArticleReadRecord>
   pageVisits: PageVisitRecord[]
   popupShownAt?: number
+  kakaoPopupShownAt?: number
+  contactPopupShownAt?: number
+  totalDwellMs?: number
+}
+
+export type InquiryContext = {
+  id: string
+  services: string[]
+  goal: string
+  category: string
+  recommendedSlugs: string[]
+  submittedAt: string
+}
+
+export type RecommendedInsight = {
+  slug: string
+  title: string
 }
 
 function isBrowser() {
@@ -66,8 +88,40 @@ export function getOrCreateVisitorId(): string {
   return id
 }
 
+export function getVisitCount(): number {
+  const raw = getCookie(VISIT_COUNT_COOKIE)
+  const count = Number(raw)
+  return Number.isFinite(count) && count > 0 ? Math.floor(count) : 1
+}
+
+export function incrementVisitIfNewSession(): number {
+  if (!isBrowser()) return 1
+
+  if (sessionStorage.getItem(SESSION_FLAG)) {
+    return getVisitCount()
+  }
+
+  sessionStorage.setItem(SESSION_FLAG, "1")
+  const current = Number(getCookie(VISIT_COUNT_COOKIE))
+  const next = Number.isFinite(current) && current > 0 ? current + 1 : 1
+  setCookie(VISIT_COUNT_COOKIE, String(next), COOKIE_MAX_AGE_DAYS)
+  return next
+}
+
 function emptyActivity(): VisitorActivity {
-  return { v: 1, reads: {}, pageVisits: [] }
+  return { v: 2, reads: {}, pageVisits: [], totalDwellMs: 0 }
+}
+
+function migrateActivity(parsed: Partial<VisitorActivity> & { v?: number }): VisitorActivity {
+  return {
+    v: 2,
+    reads: parsed.reads || {},
+    pageVisits: Array.isArray(parsed.pageVisits) ? parsed.pageVisits.slice(-80) : [],
+    popupShownAt: parsed.popupShownAt,
+    kakaoPopupShownAt: parsed.kakaoPopupShownAt,
+    contactPopupShownAt: parsed.contactPopupShownAt,
+    totalDwellMs: parsed.totalDwellMs ?? 0,
+  }
 }
 
 export function loadActivity(): VisitorActivity {
@@ -77,13 +131,8 @@ export function loadActivity(): VisitorActivity {
     const raw = getCookie(ACTIVITY_COOKIE) || localStorage.getItem(ACTIVITY_COOKIE)
     if (!raw) return emptyActivity()
     const parsed = JSON.parse(raw) as VisitorActivity
-    if (parsed?.v !== 1 || !parsed.reads) return emptyActivity()
-    return {
-      v: 1,
-      reads: parsed.reads,
-      pageVisits: Array.isArray(parsed.pageVisits) ? parsed.pageVisits.slice(-80) : [],
-      popupShownAt: parsed.popupShownAt,
-    }
+    if (!parsed?.reads) return emptyActivity()
+    return migrateActivity(parsed)
   } catch {
     return emptyActivity()
   }
@@ -101,10 +150,13 @@ function persistActivity(activity: VisitorActivity) {
     setCookie(ACTIVITY_COOKIE, json, COOKIE_MAX_AGE_DAYS)
   } else {
     const compact: VisitorActivity = {
-      v: 1,
+      v: 2,
       reads: trimmed.reads,
       pageVisits: trimmed.pageVisits.slice(-30),
       popupShownAt: trimmed.popupShownAt,
+      kakaoPopupShownAt: trimmed.kakaoPopupShownAt,
+      contactPopupShownAt: trimmed.contactPopupShownAt,
+      totalDwellMs: trimmed.totalDwellMs,
     }
     const compactJson = JSON.stringify(compact)
     setCookie(ACTIVITY_COOKIE, compactJson, COOKIE_MAX_AGE_DAYS)
@@ -115,6 +167,13 @@ function persistActivity(activity: VisitorActivity) {
 export function recordPageVisit(path: string, title: string) {
   const activity = loadActivity()
   activity.pageVisits.push({ path, title, at: Date.now() })
+  persistActivity(activity)
+}
+
+export function addDwellTime(ms: number) {
+  if (ms <= 0) return
+  const activity = loadActivity()
+  activity.totalDwellMs = (activity.totalDwellMs ?? 0) + ms
   persistActivity(activity)
 }
 
@@ -132,7 +191,7 @@ export function updateArticleProgress(slug: string, title: string, scrollDepth: 
     lastSeen: now,
     maxScroll,
     reachedThreshold: (prev?.reachedThreshold ?? false) || reachedThreshold,
-    visits: prev?.visits ?? 1,
+    visits: (prev?.visits ?? 0) + (prev ? 0 : 1),
   }
 
   persistActivity(activity)
@@ -143,42 +202,82 @@ export function countArticlesAtThreshold(activity: VisitorActivity): number {
   return Object.values(activity.reads).filter((r) => r.reachedThreshold).length
 }
 
-export function isPopupDismissed(): boolean {
-  const until = getCookie(POPUP_DISMISS_COOKIE)
+function isDismissed(cookieName: string) {
+  const until = getCookie(cookieName)
   if (!until) return false
   const ts = Number(until)
   return Number.isFinite(ts) && ts > Date.now()
+}
+
+export function isPopupDismissed() {
+  return isDismissed(POPUP_DISMISS_COOKIE)
+}
+
+export function isKakaoPopupDismissed() {
+  return isDismissed(KAKAO_POPUP_DISMISS_COOKIE)
+}
+
+export function isContactPopupDismissed() {
+  return isDismissed(CONTACT_POPUP_DISMISS_COOKIE)
 }
 
 export function dismissPopup(days = POPUP_DISMISS_DAYS) {
   setCookie(POPUP_DISMISS_COOKIE, String(Date.now() + days * 86400000), days)
 }
 
-export function markPopupShown(activity: VisitorActivity) {
+export function dismissKakaoPopup(days = POPUP_DISMISS_DAYS) {
+  setCookie(KAKAO_POPUP_DISMISS_COOKIE, String(Date.now() + days * 86400000), days)
+}
+
+export function dismissContactPopup(days = POPUP_DISMISS_DAYS) {
+  setCookie(CONTACT_POPUP_DISMISS_COOKIE, String(Date.now() + days * 86400000), days)
+}
+
+export function markKakaoPopupShown(activity: VisitorActivity) {
+  activity.kakaoPopupShownAt = Date.now()
   activity.popupShownAt = Date.now()
   persistActivity(activity)
 }
 
-export function shouldShowConversionPopup(
-  activity: VisitorActivity,
-  currentSlug: string,
-  currentScroll: number,
-): boolean {
-  if (isPopupDismissed()) return false
-  if (currentScroll < READ_THRESHOLD) return false
+export function markContactPopupShown(activity: VisitorActivity) {
+  activity.contactPopupShownAt = Date.now()
+  activity.popupShownAt = Date.now()
+  persistActivity(activity)
+}
 
-  const atThreshold = Object.values(activity.reads).filter((r) => r.reachedThreshold)
-  if (atThreshold.length < 2) return false
+export function saveInquiryContext(context: InquiryContext) {
+  if (!isBrowser()) return
+  try {
+    sessionStorage.setItem(INQUIRY_CONTEXT_KEY, JSON.stringify(context))
+    localStorage.setItem(INQUIRY_CONTEXT_KEY, JSON.stringify(context))
+  } catch {
+    /* ignore */
+  }
+}
 
-  const current = activity.reads[currentSlug]
-  if (!current?.reachedThreshold) return false
+export function loadInquiryContext(): InquiryContext | null {
+  if (!isBrowser()) return null
+  try {
+    const raw = sessionStorage.getItem(INQUIRY_CONTEXT_KEY) || localStorage.getItem(INQUIRY_CONTEXT_KEY)
+    if (!raw) return null
+    return JSON.parse(raw) as InquiryContext
+  } catch {
+    return null
+  }
+}
 
-  return true
+export function getInquiryIdFromUrl(): string | null {
+  if (!isBrowser()) return null
+  const params = new URLSearchParams(window.location.search)
+  return params.get("inquiryId")?.slice(0, 64) || null
 }
 
 export async function sendServerTrackEvent(payload: {
   visitorId: string
   event: string
+  inquiryId?: string
+  segment?: "casual" | "engaged"
+  funnel?: "kakao" | "contact" | "post_submit" | "organic"
   slug?: string
   title?: string
   scrollPct?: number

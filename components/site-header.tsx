@@ -5,6 +5,8 @@ import Link from "next/link"
 import { SiteLogo } from "@/components/site-logo"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { kakaoChannelUrl } from "@/lib/contact-links"
+import { getOrCreateVisitorId, sendServerTrackEvent } from "@/lib/visitor-tracking"
 
 const navItems = [
   { label: "서비스", href: "/#services" },
@@ -82,12 +84,30 @@ export function SiteHeader() {
         </div>
       </header>
 
-      <Link
-        href="/contact"
-        className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-bold text-white shadow-[0_8px_30px_var(--brand-glow)] transition hover:bg-brand-dark md:bottom-8 md:right-8"
-      >
-        상담 신청
-      </Link>
+      <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2 md:bottom-8 md:right-8">
+        <a
+          href={kakaoChannelUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            void sendServerTrackEvent({
+              visitorId: getOrCreateVisitorId(),
+              event: "floating_kakao_click",
+              funnel: "kakao",
+              path: typeof window !== "undefined" ? window.location.pathname : "/",
+            })
+          }}
+          className="flex items-center gap-2 rounded-full bg-[#FEE500] px-4 py-3 text-sm font-bold text-[#191919] shadow-lg transition hover:bg-[#f4dc00]"
+        >
+          카카오 문의
+        </a>
+        <Link
+          href="/contact"
+          className="flex items-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-bold text-white shadow-[0_8px_30px_var(--brand-glow)] transition hover:bg-brand-dark"
+        >
+          상담 신청
+        </Link>
+      </div>
     </>
   )
 }

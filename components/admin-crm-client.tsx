@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 
 import type { ActivityEntry } from "@/lib/crm-activity"
+import { AdminIntelligencePanel } from "@/components/admin-intelligence-panel"
 import type { CrmSettings, EmailTemplate, EmailTemplateCategory } from "@/lib/crm-settings"
 import type { CrmTodo, ImportCustomerRow, Inquiry } from "@/lib/inquiries"
 
@@ -697,6 +698,8 @@ export function AdminCrmClient() {
                   <CrmRow label="판매 채널" value={selectedInquiry.channels || "-"} />
                   <CrmRow label="주요 목표" value={selectedInquiry.goal} />
                 </div>
+
+                <AdminIntelligencePanel inquiryId={selectedInquiry.id} />
 
                 <div className="mt-5">
                   <label className="block text-sm font-bold">명함 이미지</label>

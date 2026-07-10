@@ -108,4 +108,4 @@ LINE은 고객과의 지속적인 소통을, X는 실시간 정보 공유와 트
 - Rakuten IR 2024
 - LINE Official 2025
 
-자세한 소식은 [LINE 공식 계정 프레임워크](/insights/line-official-account-funnel), [일본 SNS 콘텐츠 일정](/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp), [사용자 생성 콘텐츠 전환 플레이북](/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 2025](/insights/ai-shopping-commerce-japan-2025) 등을 참고해보세요.
+자세한 소식은 [LINE 공식 계정 프레임워크](/insights/line-official-account-funnel), [일본 SNS 콘텐츠 일정](/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](/insights/influencer-brief-template-jp), [사용자 생성 콘텐츠 전환 플레이북](/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 2025](/insights/ai-shopping-commerce-japan-2026) 등을 참고해보세요.

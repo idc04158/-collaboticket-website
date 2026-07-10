@@ -98,4 +98,4 @@ Qoo10은 리뷰 중심, Rakuten은 포인트 및 상품 정보 중심, Amazon은
 - CollaboTicket 운영 경험상 자료
 - Statista 2023
 
-[일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2024) | [일본 전자상거래 2024](/insights/japan-ecommerce-2024) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [인공지능 쇼핑 및 상거래 변화](/insights/ai-shopping-commerce-japan-2024)
+[일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2026) | [일본 전자상거래 2024](/insights/japan-ecommerce-2025) | [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) | [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap) | [인공지능 쇼핑 및 상거래 변화](/insights/ai-shopping-commerce-japan-2026)

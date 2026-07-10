@@ -75,4 +75,4 @@ LINE을 활용하여 효율적인 CRM을 구축하고, 재구매를 유도하는
 - NielsenIQ 2023
 - JETRO 2024
 
-웹 검색 결과에 따라 일본의 실행 가이드에 대한 통찰을 제공하고, 추가적인 자료는 [일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2024), [일본 전자상거래 2024](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)에서 확인할 수 있습니다.
+웹 검색 결과에 따라 일본의 실행 가이드에 대한 통찰을 제공하고, 추가적인 자료는 [일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2026), [일본 전자상거래 2024](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)에서 확인할 수 있습니다.

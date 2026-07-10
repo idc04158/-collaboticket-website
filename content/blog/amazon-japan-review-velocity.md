@@ -97,4 +97,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - METI 2024
 - JETRO 2024
 
-Explore further insights: [Amazon FBA 온보딩 과정](/insights/amazon-japan-fba-onboarding), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [Rakuten과 Amazon 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2024), [인플루언서 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan).
+Explore further insights: [Amazon FBA 온보딩 과정](/insights/amazon-japan-fba-onboarding), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [Rakuten과 Amazon 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2026), [인플루언서 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan).

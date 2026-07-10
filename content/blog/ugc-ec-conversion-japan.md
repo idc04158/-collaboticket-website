@@ -29,7 +29,7 @@ tags:
 | Amazon | 70% | 65% | 30% |
 | Qoo10 | 40% | 80% | 20% |
 
-![일본 EC에서 UGC가 전환율을 높이는 이유 본문 이미지](https://images.unsplash.com/photo-1556761175-1c0764a88421?auto=format&fit=crop&w=1400&q=80)
+![일본 EC에서 UGC가 전환율을 높이는 이유 본문 이미지](https://picsum.photos/seed/ct-fix-ugc-ec-conversion-japan-cover/1400/788)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

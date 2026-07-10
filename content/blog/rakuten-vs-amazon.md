@@ -37,7 +37,7 @@ tags:
 | 마케팅 전략 | 브랜드 빌딩 | 광고 최적화 |
 | 재구매 유도 | CRM 중심 | Buy Box 최적화 |
 
-![라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까 본문 이미지](https://images.unsplash.com/photo-1556764542-52a584bb7a1f?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까 본문 이미지](https://picsum.photos/seed/ct-fix-rakuten-vs-amazon-cover/1400/788)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 운영 경험상, 각 플랫폼에서의 실적 차이는 브랜드의 특성과 맞춤형 전략에 의해 강하게 좌우됩니다.
@@ -107,4 +107,4 @@ SNS 및 인플루언서 마케팅을 활용하여 브랜드 인지도를 높일 
 - Rakuten 2024
 - Amazon IR 2024
 
-[라쿠텐 SEO 최적화](/insights/rakuten-seo-title-structure), [라쿠텐 슈퍼 세일 운영 전략](/insights/rakuten-super-sale-ops), [라쿠텐과 Amazon 출시 기본 사항](/insights/rakuten-amazon-launch-basics), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2024), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험에 기반한 사례 연구](/insights/case-study-experience-influencer-43)
+[라쿠텐 SEO 최적화](/insights/rakuten-seo-title-structure), [라쿠텐 슈퍼 세일 운영 전략](/insights/rakuten-super-sale-ops), [라쿠텐과 Amazon 출시 기본 사항](/insights/rakuten-amazon-launch-basics), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑 커머스 일본 2025](/insights/ai-shopping-commerce-japan-2026), [Amazon Japan FBA 온보딩](/insights/amazon-japan-fba-onboarding), [Amazon Japan 리뷰 속도](/insights/amazon-japan-review-velocity), [경험에 기반한 사례 연구](/insights/case-study-experience-influencer-43)

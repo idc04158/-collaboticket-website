@@ -116,7 +116,7 @@ export function extractSummaryParagraph(content: string) {
     return polishInsightCopy(
       aiSummaryMatch[1]
         .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-        .replace(/\[[^\]]*\]\([^)]+\)/g, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
         .replace(/^✓\s*/gm, "")
         .replace(/^-\s*/gm, "")
         .trim(),
@@ -126,7 +126,10 @@ export function extractSummaryParagraph(content: string) {
   const summaryMatch = content.match(/^##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
   if (summaryMatch) {
     return polishInsightCopy(
-      summaryMatch[1].replace(/!\[[^\]]*\]\([^)]+\)/g, "").replace(/\[[^\]]*\]\([^)]+\)/g, "").trim(),
+      summaryMatch[1]
+        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .trim(),
     )
   }
   return ""

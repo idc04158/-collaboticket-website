@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 
 import { getAllEnrichedInsights, getAllInsightSummaries, getHubStats } from "@/lib/insights"
+import { selectDiverseBriefingPosts } from "@/lib/home-weekly-briefing"
 import { HomePageClient } from "@/components/home-page-client"
 import { HomeJsonLd } from "@/components/home-json-ld"
 
@@ -19,8 +20,8 @@ export default function Home() {
   const allInsights = getAllInsightSummaries()
   const enrichedInsights = getAllEnrichedInsights()
   const hubStats = getHubStats(allInsights)
-  const weeklyBriefing = enrichedInsights.slice(0, 5)
-  const insightTeasers = allInsights.slice(0, 3)
+  const weeklyBriefing = selectDiverseBriefingPosts(enrichedInsights, 5)
+  const insightTeasers = selectDiverseBriefingPosts(enrichedInsights, 3)
 
   return (
     <>

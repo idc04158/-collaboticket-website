@@ -28,7 +28,7 @@ image: >-
 | 메시징 앱 점유율 | 65% (NielsenIQ) |
 | 소셜 미디어 광고 지출 | 1.02조 엔 (METI) |
 
-![LINE 공식계정 퍼널 설계 가이드 본문 이미지](https://images.unsplash.com/photo-1556761175-2d0d0be29bb6?auto=format&fit=crop&w=1400&q=80)
+![LINE 공식계정 퍼널 설계 가이드 본문 이미지](https://picsum.photos/seed/ct-fix-line-official-account-funnel-cover/1400/788)
 
 ### 소비자 행동
 - 일본 소비자의 74%가 콘텐츠 질을 중요하게 여긴다는 조사 결과는 브랜드가 LINE을 통한 마케팅 시 콘텐츠 품질에 집중해야 함을 시사합니다 (eMarketer).
@@ -81,4 +81,4 @@ LINE 공식 계정을 만들고 마케팅 목표를 설정한 후, 적합한 콘
 - eMarketer 2025
 - METI 2024
 
-자세한 내용은 [LINE CRM 활용](https://collaboticket/insights/line-x-crm-fan-marketing-japan), [SNS 콘텐츠 계획](https://collaboticket/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](https://collaboticket/insights/influencer-brief-template-jp), [UGC 전환 플레이북](https://collaboticket/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 툴](https://collaboticket/insights/ai-shopping-commerce-japan-2025)에서 확인할 수 있습니다.
+자세한 내용은 [LINE CRM 활용](https://collaboticket/insights/line-x-crm-fan-marketing-japan), [SNS 콘텐츠 계획](https://collaboticket/insights/japan-sns-content-calendar), [인플루언서 브리프 템플릿](https://collaboticket/insights/influencer-brief-template-jp), [UGC 전환 플레이북](https://collaboticket/insights/japan-ugc-conversion-playbook), [AI 쇼핑 커머스 툴](https://collaboticket/insights/ai-shopping-commerce-japan-2026)에서 확인할 수 있습니다.

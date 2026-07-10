@@ -6,8 +6,16 @@ import { Button } from "@/components/ui/button"
 import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty"
 import { Skeleton } from "@/components/ui/skeleton"
+import { getBriefingChannelLabel } from "@/lib/home-weekly-briefing"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
-import type { InsightMeta } from "@/lib/insights"
+import type { InsightEnriched, InsightMeta } from "@/lib/insights"
+
+function getTeaserLabel(post: InsightMeta) {
+  if ("platforms" in post) {
+    return getBriefingChannelLabel(post as InsightEnriched)
+  }
+  return getInsightCategoryLabel(post.category)
+}
 
 type Props = {
   teasers: InsightMeta[]
@@ -74,7 +82,7 @@ export function InsightsSection({ teasers, isLoading = false, totalCount }: Prop
                 </div>
                 <div className="flex flex-1 flex-col gap-3 p-6">
                   <Badge variant="secondary" className="w-fit text-xs">
-                    {getInsightCategoryLabel(article.category)}
+                    {getTeaserLabel(article)}
                   </Badge>
                   <h3 className="type-card-title line-clamp-2 text-lg transition group-hover:text-brand">
                     <Link href={`/insights/${article.slug}`}>{article.title}</Link>

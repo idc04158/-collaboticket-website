@@ -1,25 +1,20 @@
 "use client"
 
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 
 import {
-  trackConversionPopup,
   trackInsightPageView,
   trackInsightReadThreshold,
   trackInsightScroll,
 } from "@/lib/analytics/gtag-client"
 import {
   READ_THRESHOLD,
-  dismissPopup,
+  getInquiryIdFromUrl,
   getOrCreateVisitorId,
-  markPopupShown,
   recordPageVisit,
   sendServerTrackEvent,
-  shouldShowConversionPopup,
   updateArticleProgress,
 } from "@/lib/visitor-tracking"
-
-import { InsightConversionPopup } from "./insight-conversion-popup"
 
 type InsightEngagementTrackerProps = {
   slug: string
@@ -44,18 +39,21 @@ function countAtThreshold(activity: ReturnType<typeof updateArticleProgress>) {
 export function InsightEngagementTracker({ slug, title }: InsightEngagementTrackerProps) {
   const firedMilestones = useRef<Set<number>>(new Set())
   const thresholdSent = useRef(false)
-  const popupTriggered = useRef(false)
-  const [popupOpen, setPopupOpen] = useState(false)
-  const [articlesRead, setArticlesRead] = useState(0)
+  const postSubmitReadSent = useRef(false)
 
   useEffect(() => {
     const visitorId = getOrCreateVisitorId()
+    const inquiryId = getInquiryIdFromUrl() || undefined
+    const funnel = inquiryId ? "post_submit" : "organic"
+
     recordPageVisit(`/insights/${slug}`, title)
     trackInsightPageView(slug, title)
 
     void sendServerTrackEvent({
       visitorId,
-      event: "page_view",
+      inquiryId,
+      event: "insight_page_view",
+      funnel,
       slug,
       title,
       path: `/insights/${slug}`,
@@ -63,7 +61,7 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
 
     firedMilestones.current = new Set()
     thresholdSent.current = false
-    popupTriggered.current = false
+    postSubmitReadSent.current = false
 
     const onScroll = () => {
       const articleEl = document.querySelector("article")
@@ -73,6 +71,7 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
       const pct = Math.round(depth * 100)
       const activity = updateArticleProgress(slug, title, depth)
       const vid = getOrCreateVisitorId()
+      const currentInquiryId = getInquiryIdFromUrl() || undefined
 
       for (const milestone of SCROLL_MILESTONES) {
         if (pct >= milestone && !firedMilestones.current.has(milestone)) {
@@ -80,7 +79,9 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
           trackInsightScroll(slug, milestone)
           void sendServerTrackEvent({
             visitorId: vid,
+            inquiryId: currentInquiryId,
             event: "scroll",
+            funnel: currentInquiryId ? "post_submit" : "organic",
             slug,
             title,
             scrollPct: milestone,
@@ -95,7 +96,9 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
         trackInsightReadThreshold(slug, count)
         void sendServerTrackEvent({
           visitorId: vid,
+          inquiryId: currentInquiryId,
           event: "read_threshold",
+          funnel: currentInquiryId ? "post_submit" : "organic",
           slug,
           title,
           scrollPct: 50,
@@ -104,20 +107,21 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
         })
       }
 
-      if (!popupTriggered.current && shouldShowConversionPopup(activity, slug, depth)) {
-        popupTriggered.current = true
-        const count = countAtThreshold(activity)
-        setArticlesRead(count)
-        markPopupShown(activity)
-        setPopupOpen(true)
-        trackConversionPopup("shown", slug)
+      if (
+        currentInquiryId &&
+        depth >= READ_THRESHOLD &&
+        !postSubmitReadSent.current
+      ) {
+        postSubmitReadSent.current = true
         void sendServerTrackEvent({
           visitorId: vid,
-          event: "popup_shown",
+          inquiryId: currentInquiryId,
+          event: "post_submit_article_read",
+          funnel: "post_submit",
           slug,
           title,
+          scrollPct: 50,
           path: `/insights/${slug}`,
-          meta: { articlesAtThreshold: count },
         })
       }
     }
@@ -132,31 +136,5 @@ export function InsightEngagementTracker({ slug, title }: InsightEngagementTrack
     }
   }, [slug, title])
 
-  const handleDismiss = useCallback(() => {
-    dismissPopup()
-    setPopupOpen(false)
-    trackConversionPopup("dismiss", slug)
-    void sendServerTrackEvent({
-      visitorId: getOrCreateVisitorId(),
-      event: "popup_dismiss",
-      slug,
-      path: `/insights/${slug}`,
-    })
-  }, [slug])
-
-  const handleContinue = useCallback(() => {
-    setPopupOpen(false)
-    trackConversionPopup("continue", slug)
-  }, [slug])
-
-  return (
-    <InsightConversionPopup
-      open={popupOpen}
-      onOpenChange={setPopupOpen}
-      onDismiss={handleDismiss}
-      onContinue={handleContinue}
-      onCtaClick={() => trackConversionPopup("cta_click", slug)}
-      articlesRead={articlesRead}
-    />
-  )
+  return null
 }

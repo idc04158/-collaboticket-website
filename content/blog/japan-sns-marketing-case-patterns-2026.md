@@ -4,7 +4,7 @@ description: '일본 SNS 사용자 수는 약 8,000만 명으로, 브랜드의 �
 category: Case Study
 date: '2025-05-28'
 image: >-
-  https://images.unsplash.com/photo-1521737716862-f4d55f914f0a?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-japan-sns-marketing-case-patterns-2026-cover/1400/788
 tags:
   - 일본진출
   - 실행
@@ -16,7 +16,7 @@ tags:
 ✓ 공감형 콘텐츠 제작 시 소비자 충성도 15% 증가 (Euromonitor 2025)
 ✓ 브랜드 팬 커뮤니티는 재구매율을 30% 향상 (CollaboTicket 운영 데이터 기준)
 
-![일본 SNS 마케팅 사례에서 반복되는 성공 패턴](https://images.unsplash.com/photo-1521737716862-f4d55f914f0a?auto=format&fit=crop&w=1400&q=80)
+![일본 SNS 마케팅 사례에서 반복되는 성공 패턴](https://picsum.photos/seed/ct-fix-japan-sns-marketing-case-patterns-2026-cover/1400/788)
 
 ## FACT: 일본 SNS 마케팅 시장 동향
 일본 SNS 시장은 빠르게 성장하고 있으며, 주요 플랫폼은 LINE, Instagram, Twitter(X), TikTok입니다. 2025년 일본에서의 SNS 사용자 수는 약 8,000만 명에 달하며, 이는 총 인구의 약 63%에 해당합니다 (Statista 2025).

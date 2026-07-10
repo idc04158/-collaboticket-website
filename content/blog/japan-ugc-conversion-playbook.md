@@ -28,7 +28,7 @@ image: >-
 | Qoo10 | 12% | 초기 판매 촉진 및 리뷰 기반 마케팅 전략 |
 | LINE | N/A | 브랜드와 소비자 간 직접 소통 채널 |
 
-![UGC 전환 플레이북: 일본 이커머스편 본문 이미지](https://images.unsplash.com/photo-1556761175-00c6da944b05?auto=format&fit=crop&w=1400&q=80)
+![UGC 전환 플레이북: 일본 이커머스편 본문 이미지](https://picsum.photos/seed/ct-fix-japan-ugc-conversion-playbook-cover/1400/788)
 
 | 플랫폼 | 2024 매출 (엔) | 성장률 (전년 대비) |
 |-------------|----------------|-------------------|
@@ -83,4 +83,4 @@ Rakuten의 포인트 시스템과 SEO 전략을 효과적으로 활용하여 소
 - Social Media Lab 데이터 2024
 - NielsenIQ 2024
 
-자세한 인사이트는 다음 링크에서 확인하세요: [LINE 공식 계정 관련 인사이트](/insights/line-official-account-funnel), [LINE x CRM 마케팅 인사이트](/insights/line-x-crm-fan-marketing-japan), [일본 SNS 콘텐츠 캘린더](/insights/japan-sns-content-calendar), [영향력자 브리프 샘플](/insights/influencer-brief-template-jp), [AI 쇼핑 코머스 관련 인사이트](/insights/ai-shopping-commerce-japan-2025).
+자세한 인사이트는 다음 링크에서 확인하세요: [LINE 공식 계정 관련 인사이트](/insights/line-official-account-funnel), [LINE x CRM 마케팅 인사이트](/insights/line-x-crm-fan-marketing-japan), [일본 SNS 콘텐츠 캘린더](/insights/japan-sns-content-calendar), [영향력자 브리프 샘플](/insights/influencer-brief-template-jp), [AI 쇼핑 코머스 관련 인사이트](/insights/ai-shopping-commerce-japan-2026).

@@ -77,8 +77,8 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - 다마르케트 조사 2024
 - CollaboTicket 운영 데이터 2024
 
-[일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2024)
-[일본 이커머스 2024](/insights/japan-ecommerce-2024)
+[일본 EC 시장 트렌드 2024](/insights/japan-ec-market-trends-2026)
+[일본 이커머스 2024](/insights/japan-ecommerce-2025)
 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)
 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)
 [한국 뷰티 카테고리 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

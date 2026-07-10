@@ -81,4 +81,4 @@ LINE CRM을 통한 지속적인 소통 및 혜택 제공이 필요합니다.
 - NielsenIQ 2024
 - 총무성 2024
 
-내부 링크: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024), [2024년 일본 전자상거래 계획](/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 시장 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)
+내부 링크: [일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026), [2024년 일본 전자상거래 계획](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard), [일본 시장 진입 전략](/insights/japan-ec-channel-entry-strategy), [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

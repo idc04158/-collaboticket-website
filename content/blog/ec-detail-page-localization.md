@@ -30,7 +30,7 @@ image: >-
 | 소비자 전환율 | 약 1.5% | eMarketer 2023 |
 | 성장률 | 5% | Statista 2024 |
 
-![일본 상세페이지 현지화 포인트 12가지 본문 이미지](https://images.unsplash.com/photo-1521737716862-f4d55f914f0a?auto=format&fit=crop&w=1400&q=80)
+![일본 상세페이지 현지화 포인트 12가지 본문 이미지](https://picsum.photos/seed/ct-fix-ec-detail-page-localization-cover/1400/788)
 
 일본의 주요 쇼핑 플랫폼은 Rakuten, Amazon, Yahoo! Shopping 등이며, 특히 Rakuten은 시장 점유율이 높습니다. 소비자는 상세페이지의 품질과 디자인에 민감하게 반응합니다.
 
@@ -80,4 +80,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - Statista 2024
 - JETRO 2023
 
-추가 자료를 원하시면 [일본 EC 시장 트렌드](https://collaboticket.com/insights/japan-ec-market-trends-2024), [일본 eCommerce 2025](https://collaboticket.com/insights/japan-ecommerce-2024), [일본 EC KPI 대시보드](https://collaboticket.com/insights/japan-ec-kpi-dashboard) 등을 참고하세요.
+추가 자료를 원하시면 [일본 EC 시장 트렌드](https://collaboticket.com/insights/japan-ec-market-trends-2026), [일본 eCommerce 2025](https://collaboticket.com/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](https://collaboticket.com/insights/japan-ec-kpi-dashboard) 등을 참고하세요.

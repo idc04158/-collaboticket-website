@@ -3,9 +3,39 @@
 import { useState } from "react"
 
 import { ContactForm, type ContactSubmitResult } from "@/components/contact-form"
+import { ContactPostSubmitInsights } from "@/components/contact-post-submit-insights"
+import { getOrCreateVisitorId, sendServerTrackEvent } from "@/lib/visitor-tracking"
 
 export function ContactPageContent() {
   const [success, setSuccess] = useState<ContactSubmitResult | null>(null)
+
+  function handleSuccess(result: ContactSubmitResult) {
+    setSuccess(result)
+    if (result.id) {
+      void sendServerTrackEvent({
+        visitorId: getOrCreateVisitorId(),
+        inquiryId: result.id,
+        event: "contact_submit_success",
+        funnel: "contact",
+        path: "/contact",
+        meta: {
+          goal: result.profile?.goal,
+          services: result.profile?.services,
+          recommendedCount: result.recommendedArticles?.length || 0,
+        },
+      })
+      if (result.recommendedArticles?.length) {
+        void sendServerTrackEvent({
+          visitorId: getOrCreateVisitorId(),
+          inquiryId: result.id,
+          event: "post_submit_recommendations_shown",
+          funnel: "post_submit",
+          path: "/contact",
+          meta: { slugs: result.recommendedArticles.map((article) => article.slug) },
+        })
+      }
+    }
+  }
 
   if (success) {
     return (
@@ -35,11 +65,26 @@ export function ContactPageContent() {
             href={success.kakaoUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              if (!success.id) return
+              void sendServerTrackEvent({
+                visitorId: getOrCreateVisitorId(),
+                inquiryId: success.id,
+                event: "post_submit_kakao_click",
+                funnel: "post_submit",
+                path: "/contact",
+              })
+            }}
             className="inline-flex rounded-xl bg-[#FEE500] px-6 py-3 text-sm font-bold text-[#191919] transition hover:bg-[#f4dc00]"
           >
             카카오톡으로 상담하기
           </a>
         </div>
+
+        {success.id && success.recommendedArticles && (
+          <ContactPostSubmitInsights inquiryId={success.id} articles={success.recommendedArticles} />
+        )}
+
         <a
           href="/"
           className="mt-5 block text-sm font-medium text-[#00B140] underline-offset-4 hover:underline"
@@ -50,5 +95,5 @@ export function ContactPageContent() {
     )
   }
 
-  return <ContactForm onSuccess={(result) => setSuccess(result)} submitLabel="상담 신청하기" />
+  return <ContactForm onSuccess={handleSuccess} submitLabel="상담 신청하기" />
 }

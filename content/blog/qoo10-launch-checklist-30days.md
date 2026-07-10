@@ -101,4 +101,4 @@ Qoo10의 광고 관리 도구에서 성과 데이터를 분석하여 클릭당 �
 - insights.tridge.com 2024
 - wac-works-ec.jp 2024
 
-자세한 내용은 [Qoo10 메가와리 준비 방안](/insights/qoo10-메가와리-prep-plan), [Qoo10 메가와리 라이브 커머스 전략](/insights/qoo10-메가와리-live-commerce-strategy), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑과 커머스의 미래](/insights/ai-shopping-commerce-japan-2024)에서 확인해보세요.
+자세한 내용은 [Qoo10 메가와리 준비 방안](/insights/qoo10-megawari-prep-plan), [Qoo10 메가와리 라이브 커머스 전략](/insights/qoo10-megawari-live-commerce-strategy), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 쇼핑과 커머스의 미래](/insights/ai-shopping-commerce-japan-2026)에서 확인해보세요.

@@ -28,7 +28,7 @@ image: >-
 | 2023년 1분기 메가와리 | 300 | 20 |
 | 2022년 대비 전체 거래액 | 1200 | 15 |
 
-![Qoo10 메가와리 준비 플랜 본문 이미지](https://images.unsplash.com/photo-1533750348312-6b5b769ede78?auto=format&fit=crop&w=1400&q=80)
+![Qoo10 메가와리 준비 플랜 본문 이미지](https://picsum.photos/seed/ct-fix-qoo10-megawari-prep-plan-cover/1400/788)
 
 | 카테고리 | Qoo10 비율 (%) | 성장률 (%) |
 | -------- | -------------- | ---------- |

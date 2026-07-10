@@ -1,7 +1,9 @@
 ﻿"use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
+
+import { saveSelfDiagnosis } from "@/lib/self-diagnosis"
 
 const step2Options = [
   { label: "매출", desc: "현재 채널에서 매출 상승이 정체된 상태" },
@@ -33,6 +35,18 @@ export function TrustHighlightsSection() {
     setPreStage("")
     setPreInterest("")
   }
+
+  useEffect(() => {
+    if (step === 3 && enteredJapan !== null && concern) {
+      saveSelfDiagnosis({ enteredJapan, concern })
+    }
+  }, [step, enteredJapan, concern])
+
+  useEffect(() => {
+    if (step === 4 && enteredJapan === false && preStage && preInterest) {
+      saveSelfDiagnosis({ enteredJapan, preStage, preInterest })
+    }
+  }, [step, enteredJapan, preStage, preInterest])
 
   return (
     <section className="bg-white py-24 lg:py-32">

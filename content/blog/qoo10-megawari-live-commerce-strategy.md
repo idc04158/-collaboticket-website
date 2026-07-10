@@ -84,4 +84,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - ZDNet 2023
 - SQI 2023
 
-For more insights, refer to [Qoo10 메가와리 사전 준비 계획](/insights/qoo10-메가와리-prep-plan), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 커머스 전망](/insights/ai-shopping-commerce-japan-2024), [Amazon 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [인플루언서 경험 사례](/insights/case-study-experience-influencer-43), [코스메 입술 리뷰 운영](/insights/cosme-lips-review-operations).
+For more insights, refer to [Qoo10 메가와리 사전 준비 계획](/insights/qoo10-megawari-prep-plan), [Qoo10 론칭 체크리스트](/insights/qoo10-launch-checklist-30days), [Amazon 일본 리뷰 속도](/insights/amazon-japan-review-velocity), [일본 리뷰 구조](/insights/japan-review-structure), [AI 커머스 전망](/insights/ai-shopping-commerce-japan-2026), [Amazon 일본 FBA 온보딩](/insights/amazon-japan-fba-onboarding), [인플루언서 경험 사례](/insights/case-study-experience-influencer-43), [코스메 입술 리뷰 운영](/insights/cosme-lips-review-operations).

@@ -8,7 +8,7 @@ tags:
   - Q4
 date: '2025-10-22'
 image: >-
-  https://images.unsplash.com/photo-1556761175-1c0764a88421?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-fix-tiktok-live-q4-japan-2025-cover/1400/788
 ---
 ## AI 30초 요약
 ✓ 2025-10-22 기준 라이브 연동 판매 국면에서는 단일 할인보다 채널별 메시지 분리 집행이 성과를 안정화합니다.
@@ -18,7 +18,7 @@ image: >-
 ✓ 이 글은 tiktok-live-q4-japan-2025 주제에 맞춰 FACT-INSIGHT-ACTION 순으로 우선순위를 제시하며, 실무 팀이 바로 적용할 수 있게 구성했습니다.
 ✓ 결론적으로 방송당 매출 개선은 "한 번의 캠페인"보다 "4주 반복 운영 루프"에서 더 크게 만들어집니다.
 
-![TikTok Live 일본 Q4 2025: 라이브 커머스 운영 스크립트](https://images.unsplash.com/photo-1556761175-1c0764a88421?auto=format&fit=crop&w=1400&q=80)
+![TikTok Live 일본 Q4 2025: 라이브 커머스 운영 스크립트](https://picsum.photos/seed/ct-fix-tiktok-live-q4-japan-2025-cover/1400/788)
 
 ## FACT: 라이브 연동 판매 시기 일본 EC 운영 데이터
 

@@ -27,7 +27,7 @@ image: >-
 | Qoo10 | 0.85 | 10 |
 | 아마존 | 4.2 | 5 |
 
-![라쿠텐 상품명 SEO 구조 실전 가이드 본문 이미지](https://images.unsplash.com/photo-1611229855428-9080f314f04e?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐 상품명 SEO 구조 실전 가이드 본문 이미지](https://picsum.photos/seed/ct-fix-rakuten-seo-title-structure-cover/1400/788)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 사례 A: 스킨케어 브랜드 B제품

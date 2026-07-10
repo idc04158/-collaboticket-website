@@ -27,7 +27,7 @@ image: >-
 | 2024 | 19.2 | 30 | 1,850만 |
 | 2025 | 20.0 | 30 | 2,000만 |
 
-![Amazon Japan FBA 온보딩 가이드 본문 이미지](https://images.unsplash.com/photo-1556761175-4b46a5720a6c?auto=format&fit=crop&w=1400&q=80)
+![Amazon Japan FBA 온보딩 가이드 본문 이미지](https://picsum.photos/seed/ct-fix-amazon-japan-fba-onboarding-cover/1400/788)
 
 (출처: eMarketer 2024, Statista 2024, Nikkei 2024)
 
@@ -81,4 +81,4 @@ FBA를 이용하면 일반적으로 물류비용이 약 30% 감소합니다.
 - Statista 2024
 - Nikkei 2024
 
-내부 링크: [리뷰 속도 최적화](/insights/amazon-japan-review-velocity), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [라쿠텐 대 아마존 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2024), [인플루언서 경험 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan)
+내부 링크: [리뷰 속도 최적화](/insights/amazon-japan-review-velocity), [FBA와 3PL 비교](/insights/fba-vs-3pl-japan), [라쿠텐 대 아마존 비교](/insights/rakuten-vs-amazon), [검색에서 전환 흐름](/insights/search-to-conversion-flow-japan), [AI 쇼핑과 커머스](/insights/ai-shopping-commerce-japan-2026), [인플루언서 경험 사례 연구](/insights/case-study-experience-influencer-43), [코스메 립스 리뷰 운영](/insights/cosme-lips-review-operations), [CRM 후속 템플릿](/insights/crm-followup-template-japan)

@@ -29,7 +29,7 @@ image: >-
 | Amazon Japan | 21% |
 | Yahoo! Shopping | 15% |
 
-![검색 유입에서 구매 전환까지 흐름 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-8bdfa46b0500?auto=format&fit=crop&w=1400&q=80)
+![검색 유입에서 구매 전환까지 흐름 설계 본문 이미지](https://picsum.photos/seed/ct-fix-search-to-conversion-flow-japan-cover/1400/788)
 
 온라인 거래에서 검색 유입이 구매로 전환되는 과정은 평균 5단계로 구성되며, 이 중 검색유입에서 제품 상세정보까지의 이탈율은 60%에 달합니다 (Statista 2024).
 
@@ -78,8 +78,8 @@ LINE을 활용하면 재구매율을 높일 수 있으며, 쿠폰과 프로모�
 - Statista 2024
 - NielsenIQ 2024
 
-[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2024)
-[일본 전자상거래 2025](/insights/japan-ecommerce-2024)
+[일본 전자상거래 시장 동향 2025](/insights/japan-ec-market-trends-2026)
+[일본 전자상거래 2025](/insights/japan-ecommerce-2025)
 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)
 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)
 [K-뷰티 일본 진출 로드맵](/insights/kbeauty-japan-entry-roadmap)

@@ -28,7 +28,7 @@ image: >-
 | Amazon | 36 | 150 | 10 | Statista 2024 |
 | Qoo10 | 7 | 80 | 5 | Qoo10 분기 보고서 2024 |
 
-![리뷰 인증 리포트 포맷 샘플 본문 이미지](https://images.unsplash.com/photo-1407797147364-28505d7c1e0c?auto=format&fit=crop&w=1400&q=80)
+![리뷰 인증 리포트 포맷 샘플 본문 이미지](https://picsum.photos/seed/ct-fix-review-proof-report-format-cover/1400/788)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
@@ -80,4 +80,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 [Amazon 리뷰 최적화](/insights/amazon-japan-review-velocity)
 [일본 리뷰 구조](/insights/japan-review-structure)
 [Qoo10 출시 체크리스트](/insights/qoo10-launch-checklist-30days)
-[AI 기반 쇼핑 트렌드](/insights/ai-shopping-commerce-japan-2025)
+[AI 기반 쇼핑 트렌드](/insights/ai-shopping-commerce-japan-2026)

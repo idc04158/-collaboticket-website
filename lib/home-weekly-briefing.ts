@@ -18,6 +18,7 @@ const BRIEFING_BUCKET_LABELS: Record<string, string> = {
   qoo10: "Qoo10",
   market: "시장 분석",
   strategy: "전략",
+  glossary: "용어·기초",
 }
 
 const BRIEFING_BUCKET_EMOJI: Record<string, string> = {
@@ -36,6 +37,7 @@ const BRIEFING_BUCKET_EMOJI: Record<string, string> = {
   qoo10: "💄",
   market: "📊",
   strategy: "🎯",
+  glossary: "📖",
 }
 
 function postText(post: InsightEnriched) {
@@ -77,6 +79,7 @@ export function getBriefingBucket(post: InsightEnriched): string {
   if (post.topics.includes("시장분석") || post.category === "Market Analysis" || /시장|트렌드|keyword|키워드/.test(text)) {
     return "market"
   }
+  if (/용어\s*사전|glossary/.test(text)) return "glossary"
   if (post.category === "Strategy" || post.category === "Strategy Guide" || /전략|strategy/.test(text)) {
     return "strategy"
   }
@@ -112,12 +115,5 @@ export function selectDiverseBriefingPosts(posts: InsightEnriched[], limit = 5):
     usedBuckets.add(bucket)
   }
 
-  for (const post of sorted) {
-    if (picked.length >= limit) break
-    if (!picked.some((item) => item.slug === post.slug)) {
-      picked.push(post)
-    }
-  }
-
-  return picked.slice(0, limit)
+  return picked
 }
