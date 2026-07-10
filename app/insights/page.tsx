@@ -11,7 +11,7 @@ import { InsightsHubJsonLd } from "@/components/insights/insights-hub-json-ld"
 import { GlossaryHubLink } from "@/components/insights/glossary-hub-link"
 import {
   getAllEnrichedInsights,
-  getFeaturedReport,
+  getFeaturedReports,
   getHubStats,
   getWeeklyBriefLines,
 } from "@/lib/insights"
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function InsightsIndexPage() {
   const posts = getAllEnrichedInsights()
   const stats = getHubStats(posts)
-  const featured = getFeaturedReport(posts)
+  const featuredReports = getFeaturedReports(posts)
   const weeklyBrief = getWeeklyBriefLines(posts)
 
   return (
@@ -38,7 +38,7 @@ export default function InsightsIndexPage() {
       <InsightsHubHero stats={stats} />
 
       <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8 lg:py-16">
-        {featured && <InsightsFeaturedReport report={featured} />}
+        {featuredReports.length > 0 && <InsightsFeaturedReport reports={featuredReports} />}
         <div className="mt-8">
           <GlossaryHubLink />
         </div>

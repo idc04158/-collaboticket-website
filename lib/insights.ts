@@ -20,6 +20,7 @@ export {
   enrichInsight,
   filterInsights,
   getFeaturedReport,
+  getFeaturedReports,
   getHubStats,
   getRelatedInsights,
   getTopicClusterLinks,

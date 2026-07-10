@@ -186,6 +186,10 @@ export function getFeaturedReport(posts: InsightEnriched[]) {
   return posts[0] ?? null
 }
 
+export function getFeaturedReports(posts: InsightEnriched[], limit = 5) {
+  return posts.slice(0, Math.max(1, limit))
+}
+
 export function getWeeklyBriefLines(posts: InsightEnriched[]) {
   const lines = posts.slice(0, 3).map((post) => {
     const platform = post.platforms[0] || getInsightCategoryLabel(post.category)
