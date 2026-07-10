@@ -80,7 +80,7 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
     <>
       <section
         ref={sectionRef}
-        aria-label="??? ??"
+        aria-label="리포트 본문"
         className={className}
         dangerouslySetInnerHTML={{ __html: html }}
       />
@@ -96,7 +96,7 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
             <p className="glossary-tooltip-label">{tooltip.label}</p>
             <p className="glossary-tooltip-def">{tooltip.definition}</p>
             <Link href={getGlossaryHref(tooltip.id)} className="glossary-tooltip-link">
-              ?? ???? ??? ??
+              용어 사전에서 자세히 보기 →
             </Link>
           </div>,
           document.body,
@@ -104,11 +104,11 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
 
       {slug !== MARKETING_GLOSSARY_SLUG && (
         <p className="mt-4 text-xs text-muted-foreground">
-          ??? ??? ???? ??? ??? ??? ? ? ????.{" "}
+          마케팅 용어에 마우스를 올리면 간단한 설명을 볼 수 있습니다.{" "}
           <Link href={getGlossaryHref()} className="font-semibold text-brand underline-offset-4 hover:underline">
-            ?? EC ??? ?? ??
+            일본 EC 마케팅 용어 사전
           </Link>
-          ?? ?? ??? ?????.
+          에서 전체 목록을 확인하세요.
         </p>
       )}
     </>
