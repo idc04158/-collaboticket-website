@@ -15,6 +15,8 @@ export const PUBLISH_START = "2024-07-03"
 export const PUBLISH_INTERVAL_DAYS = 7
 
 /** Chronological publish order: foundational → platform → advanced → year-outlook */
+import { GAP_INSIGHT_SLUGS } from "./seed-gap-insights-2025-2026.mjs"
+
 const YEAR_OUTLOOK_2026 = [
   "japan-ec-market-trends-2026",
   "japan-ec-keyword-map-2026",
@@ -84,6 +86,8 @@ export const PUBLISH_ORDER = [
   "megawari-demand-forecast-playbook",
   "japan-customs-acp-margin-guide",
   "kbeauty-japan-ingredient-compliance",
+  ...GAP_INSIGHT_SLUGS,
+  "cosme-logo-data-buzz-gap-2026-july",
   "yahoo-chou-paypay-festival-2026-july",
 ]
 

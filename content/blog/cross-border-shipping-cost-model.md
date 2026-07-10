@@ -29,13 +29,13 @@ image: >-
 | Amazon Japan | 약 472억 달러 | 5천만 명 |
 | Yahoo! Shopping| 약 200억 달러 | 3천만 명 |
 
+![역직구 배송비 모델링 가이드 본문 이미지](https://picsum.photos/seed/ct-body-cross-border-shipping-cost-model/1400/900)
+
 ### 물류 및 통관 데이터
 | 출처 | 데이터 | 의미 |
 |-------------------|----------------|------------------------------------|
 | CJ Logistics 2025 | 배송비 15% 감소 | 효율적인 물류 운영 시 비용 절감 효과입니다. |
 | JETRO 2024 | 통관 실패율 5% | 통관 절차 복잡성이 문제로 작용하고 있습니다. |
-
-
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

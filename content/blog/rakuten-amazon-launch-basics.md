@@ -4,7 +4,7 @@ description: '일본 전자상거래 시장은 2024년 약 2조 3천억 엔으�
 category: Strategy Guide
 date: '2024-09-25'
 image: >-
-  https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -16,7 +16,7 @@ tags:
 ✓ 소비자 리뷰의 신뢰 수준이 높으며, 세부정보와 신뢰성 있는 판매자를 선호합니다 (NielsenIQ 2023).
 ✓ 초기 브랜드 인지도 구축과 현지화 전략이 필수적입니다 (CollaboTicket 운영 데이터 기준).
 
-![라쿠텐·아마존 재팬 론칭 전 체크리스트](https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐·아마존 재팬 론칭 전 체크리스트](https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 전자상거래 시장 현황
 - 일본의 전자상거래 시장 규모는 2024년 약 2조 3천억 엔으로 예상되며, 현재 연평균 9% 성장 중입니다 (METI 2024).
@@ -27,9 +27,9 @@ tags:
 | 라쿠텐 | 30% | 9% |
 | 아마존 | 20% | 8% |
 
+![라쿠텐·아마존 재팬 론칭 전 체크리스트 본문 이미지](https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80)
+
 - 소비자 리뷰는 구매 결정에 67% 영향을 미치며, 신뢰성 있는 판매자의 거래 선호가 높습니다 (NielsenIQ 2023).
-
-
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

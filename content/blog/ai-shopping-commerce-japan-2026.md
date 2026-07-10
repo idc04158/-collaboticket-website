@@ -4,7 +4,7 @@ description: '2025년 일본 전자상거래 시장 규모는 27.1조 엔으로,
 category: Insight
 date: '2025-06-04'
 image: >-
-  https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -17,7 +17,7 @@ tags:
 ✓ 일본의 소비자 68%가 질문형 검색을 통해 제품 정보를 탐색하고 있습니다 (Statista 2025).
 ✓ Qoo10에서 메가와리 행사로 매출이 15% 증가했습니다 (Qoo10 공식 통계 2025).
 
-![AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로](https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80)
+![AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로](https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 커머스 시장 데이터
 일본 전자상거래 시장은 AI 기술 발전과 함께 소비자 행동의 큰 변화를 경험하고 있습니다. 다음은 주요 데이터입니다.
@@ -29,6 +29,8 @@ tags:
 | 2024 | 26.3 | 4.4 |
 | 2025 | 27.1 | 3.0 |
 
+![AI 쇼핑 시대의 일본 커머스: 검색에서 질문형 구매로 본문 이미지](https://picsum.photos/seed/ct-body-ai-shopping-commerce-japan-2026/1400/900)
+
 ### 플랫폼별 AI 기술 도입 현황
 | 플랫폼 | AI 도입 사례 | 변화 효과 |
 |----------|----------------------------------|----------------------|
@@ -36,8 +38,6 @@ tags:
 | 아마존 | 검색 최적화 및 Buy Box 유도 | 재구매율이 25% 증가했습니다. |
 | Qoo10 | 메가와리 행사 통해 매출 증가 | 15% 매출 증가했습니다. |
 | LINE | CRM 및 쿠폰 제공 | 전환율이 4.3%로 증가했습니다. |
-
-
 
 ## ACTION: 한국 브랜드의 실행 단계
 1. 질문형 검색 최적화: 소비자의 요구와 질문을 반영한 콘텐츠 기획을 해보세요.

@@ -8,7 +8,7 @@ tags:
   - 운영
 date: '2025-06-11'
 image: >-
-  https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 이커머스 시장 규모는 2025년 2조 5천억 엔, 전년 대비 약 11.5% 성장 (METI, 2025년)
@@ -17,7 +17,7 @@ image: >-
 ✓ 일본의 모바일 쇼핑 비중이 66%로, 모바일 최적화 필요 (Statista, 2025년)
 ✓ 리뷰 평점이 4.0 이상일 경우 구매 전환율이 58%로 증가 (Rakuten, 2025년)
 
-![일본 이커머스 FAQ 50선](https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=80)
+![일본 이커머스 FAQ 50선](https://images.unsplash.com/photo-1555421687-50043aa82036?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 이커머스 시장 데이터
 일본 이커머스 시장의 성장은 지속적으로 이루어지고 있으며, 주요 플랫폼별 데이터는 아래와 같습니다:
@@ -28,6 +28,8 @@ image: >-
 | 2023 | 2.35 | 6.8 | 아마존, 라쿠텐, Qoo10 유지 |
 | 2025 | 2.5 | 11.5 | 아마존(31.5), 라쿠텐(23.8), Qoo10(15.0) |
 
+![일본 이커머스 FAQ 50선 본문 이미지](https://picsum.photos/seed/ct-body-japan-ecommerce-faq-50/1400/900)
+
 - 2025년 일본 이커머스 시장 규모는 약 2조 5천억 엔으로 성장할 것으로 예측되며 (METI, 2025년), 모바일 쇼핑 비중은 66%에 달할 것으로 보임 (Statista, 2025년).
 
 | 플랫폼 | 평균 AOV (엔) | ROAS | CVR (%) |
@@ -36,18 +38,12 @@ image: >-
 | 라쿠텐 | 4,500 | 3.8 | 7.5 |
 | Qoo10 | 3,800 | 5.0 | 6.0 |
 
-
-
-
 ## ACTION: 실행 단계
 1. 시장 조사: 경쟁사 분석 및 소비자 선호도를 기반으로 진출 전략 수립.
 2. 플랫폼 선정: 아마존 재팬, 라쿠텐, Qoo10 중 입점할 플랫폼 결정.
 3. 현지화 작업: 제품 상세 페이지, 고객 지원을 일본어로 번역.
 4. 물류 파트너 선정: 일본 내 신뢰할 수 있는 물류 파트너와 협업.
 5. 마케팅 전략 수립: SNS 및 인플루언서 마케팅을 통한 브랜드 인지도 향상.
-
-
-
 
 ## 다음 단계
 Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.

@@ -8,7 +8,7 @@ tags:
   - 일본EC
 date: '2025-07-30'
 image: >-
-  https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1611229855428-9080f314f04e?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 B2C EC 시장 규모는 약 24.8조 엔으로, 2024년에는 약 9% 성장할 전망입니다 (경제산업성 METI EC Market Survey 2024).
@@ -16,7 +16,7 @@ image: >-
 ✓ 운영 경험상, SNS 유입 이후 검색을 통한 구매 전환율이 높아야 합니다.
 ✓ 본 보고서는 일본에서의 성공적인 판매를 위한 구체적인 전략을 제안합니다.
 
-![일본 SNS→검색→구매 3단계 전환 설계](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80)
+![일본 SNS→검색→구매 3단계 전환 설계](https://images.unsplash.com/photo-1611229855428-9080f314f04e?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 B2C EC 시장 동향
 일본 B2C EC 시장 규모는 약 24.8조 엔으로, 2024년에는 약 9% 성장할 것으로 예상되고 있습니다 (출처: 경제산업성 METI EC Market Survey 2024).
@@ -28,6 +28,8 @@ image: >-
 | 검증 | SNS를 통한 정보 탐색 | 60% |
 | 검색 | 검색 엔진을 통한 검색 | 30% |
 | 구매 | 실제 구매 전환 | 10% |
+
+![일본 SNS→검색→구매 3단계 전환 설계 본문 이미지](https://picsum.photos/seed/ct-body-japan-awareness-to-purchase-3step/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 

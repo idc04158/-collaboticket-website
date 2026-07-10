@@ -8,7 +8,7 @@ tags:
   - 콘텐츠
 date: '2025-01-22'
 image: >-
-  https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 SNS 시장에서 인스타그램 사용자 수는 2,758만 명으로 가장 많습니다 (wowtoday.co.kr)
@@ -17,7 +17,7 @@ image: >-
 ✓ 월간 콘텐츠 캘린더 설계는 일본 내 SNS 마케팅 전략 수립에 필수적입니다
 ✓ 효과적인 SNS 콘텐츠 전략은 브랜드 인지도 및 매출 증대에 기여합니다
 
-![일본 SNS 월간 콘텐츠 캘린더 설계](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80)
+![일본 SNS 월간 콘텐츠 캘린더 설계](https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 SNS 플랫폼 현황
 - SNS 사용자 수
@@ -27,7 +27,7 @@ image: >-
 | 마이크로 인플루언서 | 300-500 | 4배 증가 |
 | 메가 인플루언서 | 800-1,000 | - |
 
-
+![일본 SNS 월간 콘텐츠 캘린더 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-6a56d0bf403e?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

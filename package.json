@@ -25,6 +25,8 @@
     "fix:insight-title-years": "node scripts/fix-insight-title-years.mjs",
     "scan:insight-title-years": "node scripts/scan-insight-title-years.mjs",
     "fix:insight-markdown": "node scripts/fix-insight-markdown.mjs",
+    "seed:gap-insights": "node scripts/seed-gap-insights-2025-2026.mjs",
+    "assign:insight-images": "node scripts/assign-unique-insight-images.mjs",
     "scan:insight-markdown": "node scripts/scan-insight-markdown.mjs",
     "check:content-rules": "node scripts/check-content-rules.mjs",
     "list:content-rules": "node scripts/check-content-rules.mjs --list"

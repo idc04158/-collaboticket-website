@@ -6,7 +6,7 @@ description: >-
 category: Strategy
 date: '2024-10-02'
 image: >-
-  https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -20,7 +20,7 @@ tags:
 ✓ 헤어케어 브랜드 B제품은 라쿠텐, 스킨케어 브랜드 D제품은 Amazon에서 성공적인 결과를 도출했습니다.
 ✓ 즉각적인 시장 조사가 필요하며, 현지화 전략과 효율적인 물류 관리가 필수적입니다.
 
-![라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까](https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 전자상거래 시장 현황
 일본 전자상거래 시장의 성장은 뚜렷하게 나타나고 있으며, 한국 브랜드의 메인 플랫폼 선택에 따라 성공적인 전략이 달라질 수 있습니다.
@@ -36,6 +36,8 @@ tags:
 | 사용자 경험 | 상세 정보 강조 | 검색 최적화 |
 | 마케팅 전략 | 브랜드 빌딩 | 광고 최적화 |
 | 재구매 유도 | CRM 중심 | Buy Box 최적화 |
+
+![라쿠텐과 Amazon Japan 비교: 한국 브랜드는 어디서 시작해야 할까 본문 이미지](https://images.unsplash.com/photo-1556764542-52a584bb7a1f?auto=format&fit=crop&w=1400&q=80)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 운영 경험상, 각 플랫폼에서의 실적 차이는 브랜드의 특성과 맞춤형 전략에 의해 강하게 좌우됩니다.

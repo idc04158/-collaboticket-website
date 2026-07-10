@@ -8,7 +8,7 @@ tags:
   - 신뢰
 date: '2025-01-01'
 image: >-
-  https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 B2C EC 시장 규모는 약 25.3조 엔으로, 전년 대비 8% 성장했습니다 (경제산업성 METI EC Market Survey 2024).
@@ -17,7 +17,7 @@ image: >-
 ✓ Rakuten에서 리뷰를 통한 재구매율이 12% 증가한 사례가 있습니다 (Rakuten IR 2024).
 ✓ Amazon 제품 리뷰 수는 평균 150개로, 이는 신뢰도와 직접적인 연관이 있습니다 (Statista 2024).
 
-![리뷰 인증 리포트 포맷 샘플](https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80)
+![리뷰 인증 리포트 포맷 샘플](https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 시장 리뷰 현황
 일본 전자상거래 시장은 지속적으로 성장하고 있으며, 소비자 리뷰는 구매 결정에 큰 영향을 끼칩니다.
@@ -28,7 +28,7 @@ image: >-
 | Amazon | 36 | 150 | 10 | Statista 2024 |
 | Qoo10 | 7 | 80 | 5 | Qoo10 분기 보고서 2024 |
 
-
+![리뷰 인증 리포트 포맷 샘플 본문 이미지](https://images.unsplash.com/photo-1407797147364-28505d7c1e0c?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

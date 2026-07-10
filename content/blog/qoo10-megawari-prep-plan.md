@@ -8,7 +8,7 @@ tags:
   - Amazon
 date: '2024-11-27'
 image: >-
-  https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ Qoo10 '메가와리'는 일본에서 분기별로 진행되는 대규모 할인 행사로, 한국 브랜드에게 매출 증가 기회를 제공합니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 성공 사례로는 VT와 달바가 있으며, 각각 메가와리에서 매출이 150% 증가했습니다 (Ascent Korea).
 ✓ 분기마다 명확한 목표 설정과 전략 수립이 필수입니다.
 
-![Qoo10 메가와리 준비 플랜](https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80)
+![Qoo10 메가와리 준비 플랜](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: Qoo10 메가와리 행사 데이터
 - Qoo10의 2023년 월평균 거래액은 약 1,200억 엔으로, 전년 대비 15% 증가했습니다 (Qoo10 공식 보고서 2023).
@@ -27,6 +27,8 @@ image: >-
 | ------ | ------------- | ---------- |
 | 2023년 1분기 메가와리 | 300 | 20 |
 | 2022년 대비 전체 거래액 | 1200 | 15 |
+
+![Qoo10 메가와리 준비 플랜 본문 이미지](https://images.unsplash.com/photo-1533750348312-6b5b769ede78?auto=format&fit=crop&w=1400&q=80)
 
 | 카테고리 | Qoo10 비율 (%) | 성장률 (%) |
 | -------- | -------------- | ---------- |

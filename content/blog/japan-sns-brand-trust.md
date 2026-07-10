@@ -6,7 +6,7 @@ description: >-
 category: Strategy Guide
 date: '2025-01-15'
 image: >-
-  https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -18,7 +18,7 @@ tags:
 ✓ 헤어케어 브랜드 D제품의 SNS 캠페인 후 CVR이 2배 증가했습니다.
 ✓ 스킨케어 브랜드 B제품은 인플루언서 협업 후 AOV가 30% 상승했습니다.
 
-![일본 공식 SNS 운영이 매출에 미치는 영향](https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80)
+![일본 공식 SNS 운영이 매출에 미치는 영향](https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 공식 SNS 운영 및 매출 데이터
 1. 일본 전자상거래 시장 규모: 약 2조 3천억 엔, 2025년 예상입니다 (경제산업성 METI).
@@ -34,7 +34,7 @@ tags:
 | Instagram | 3천만 명 | 비주얼 콘텐츠 중심, 인플루언서 마케팅 |
 | Twitter | 2천만 명 | 실시간 소통, 이벤트 홍보 |
 
-
+![일본 공식 SNS 운영이 매출에 미치는 영향 본문 이미지](https://images.unsplash.com/photo-1387673909858-4155807e3467?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

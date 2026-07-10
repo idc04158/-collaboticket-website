@@ -12,7 +12,7 @@ tags:
   - 버즈 이탈
 date: '2026-07-09'
 image: >-
-  https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-cover-cosme-logo-data-buzz-gap-2026-july/1400/788
 ---
 ## AI 30초 요약
 ✓ istyle(@cosme for BUSINESS)는 2026년 7월 21·23·28일(화·목) 13:00~13:20 JST에 로고·데이터 이용 20분 웨비나를 3회 개최합니다 ([공식 안내](https://business.cosme.net/webinar/260721_dataservice)).
@@ -21,7 +21,7 @@ image: >-
 ✓ @cosme에 축적된 실제 이용자 목소리·평가를 자사 프로모션·크리에이티브·매장 POP에 활용하는 것이 핵심 프레임입니다.
 ✓ CollaboTicket은 K-Beauty 브랜드의 @cosme 리뷰 확보와 로고·데이터 반영 소재를 Qoo10·자사몰·광고에 연결해 운영합니다.
 
-![@cosme 로고·데이터 활용: 버즈 이탈 시대의 구매 전환](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80)
+![@cosme 로고·데이터 활용: 「이슈는 됐는데 안 써본다」를 해결하는 법](https://picsum.photos/seed/ct-cover-cosme-logo-data-buzz-gap-2026-july/1400/788)
 
 ## FACT: @cosme for BUSINESS 웨비나 & 시장 맥락
 
@@ -36,6 +36,8 @@ istyle(아이스타일) @cosme for BUSINESS가 안내한 2026년 7월 웨비나 
 | 시장 트렌드 | 젊은 층 중심 버즈 이탈 — 「막연히 유행해서」만으로는 구매하지 않음 |
 | 활용 채널 | 자사 EC·디지털 광고·매장 판촉 크리에이티브 |
 | 추천 대상 | @cosme 데이터 활용 관심 브랜드, SNS 화제 대비 구매 미연결 브랜드 |
+
+![@cosme 로고·데이터 활용: 「이슈는 됐는데 안 써본다」를 해결하는 법 본문 이미지](https://picsum.photos/seed/ct-body-cosme-logo-data-buzz-gap-2026-july/1400/900)
 
 ### 왜 객관적 평가인가?
 

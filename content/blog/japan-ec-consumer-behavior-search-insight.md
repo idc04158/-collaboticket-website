@@ -4,7 +4,7 @@ description: '일본 EC 시장 규모는 2024년 약 21.4조 엔으로 예상되
 category: Insight
 date: '2024-07-10'
 image: >-
-  https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -16,7 +16,7 @@ tags:
 ✓ Rakuten의 공식 판매처를 통한 신뢰 구축이 구매 전환율을 25% 증가시켰습니다 (운영 데이터 기준)
 ✓ 인플루언서 마케팅의 ROI는 평균 7배로 확인되었습니다 (사례 연구)
 
-![일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 EC 시장 및 플랫폼 데이터
 - 일본 EC 시장 규모는 2024년 약 21.4조 엔으로 예상되며, 2023년 대비 약 5.3% 성장합니다 (경제산업성 METI)
@@ -29,7 +29,7 @@ tags:
 | Qoo10 | 15 | 3.21 | 5 |
 | 기타 | 15 | 3.12 | 4 |
 
-
+![일본 EC 소비자 행동 변화: 구매 전환을 만드는 신뢰 신호 본문 이미지](https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80)
 
 ## ACTION: 실행 단계
 1. 시장 조사 실시: 일본 소비자의 선호도 및 행동 패턴을 분석합니다.

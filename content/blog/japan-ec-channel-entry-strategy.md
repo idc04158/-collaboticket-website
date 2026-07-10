@@ -4,7 +4,7 @@ description: '일본 전자상거래 시장은 2024년까지 약 1조 5천억 �
 category: Strategy
 date: '2024-07-17'
 image: >-
-  https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -16,13 +16,15 @@ tags:
 ✓ Amazon Japan은 전체 시장의 30% 점유율을 차지할 것으로 보입니다 (2024년 데이터 기반)
 ✓ 각 플랫폼에 맞춘 맞춤형 전략이 필요합니다
 
-![Qoo10·라쿠텐·Amazon Japan: 일본 EC 채널별 진입 전략](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80)
+![Qoo10·라쿠텐·Amazon Japan: 일본 EC 채널별 진입 전략](https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 전자상거래 플랫폼 데이터
 
 일본의 전자상거래 시장 규모는 2024년 약 1조 5천억 엔에 이를 것으로 전망됩니다. 이는 연평균 7.1% 성장에 해당합니다 (METI EC Market Survey 2024).
 
 | 플랫폼 | 2023년 사용자 수 | 2024년 사용자 수 | 시장 점유율 |
+
+![Qoo10·라쿠텐·Amazon Japan: 일본 EC 채널별 진입 전략 본문 이미지](https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=1400&q=80)
 
 ### 주요 통계
 - Qoo10 K-제품 소비 증가율은 54%로 예상됩니다 (2024년 2월 기준, donga.com)

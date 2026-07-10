@@ -4,7 +4,7 @@ description: 일본 EC 시장에서 UGC는 전환율을 평균 30% 증가시키�
 category: Insight
 date: '2025-02-05'
 image: >-
-  https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -16,7 +16,7 @@ tags:
 ✓ Amazon Japan에서는 70%의 소비자가 리뷰를 기반으로 구매를 결정하고 있습니다 (Statista 2024)
 ✓ Qoo10에서 운영되는 UGC 캠페인은 클릭률을 40% 향상시키는 성과를 보이고 있습니다 (Qoo10 공식 자료 2025)
 
-![일본 EC에서 UGC가 전환율을 높이는 이유](https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80)
+![일본 EC에서 UGC가 전환율을 높이는 이유](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 시장에서 UGC의 역할
 - 일본의 전자상거래 시장 규모는 약 24.8조 엔으로, 2024년 대비 약 9% 성장하고 있습니다 (경제산업성 METI EC Market Survey 2025)
@@ -29,7 +29,7 @@ tags:
 | Amazon | 70% | 65% | 30% |
 | Qoo10 | 40% | 80% | 20% |
 
-
+![일본 EC에서 UGC가 전환율을 높이는 이유 본문 이미지](https://images.unsplash.com/photo-1556761175-1c0764a88421?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

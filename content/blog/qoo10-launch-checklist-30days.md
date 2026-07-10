@@ -8,7 +8,7 @@ tags:
   - Amazon
 date: '2024-10-09'
 image: >-
-  https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ Qoo10은 일본의 온라인 뷰티 시장에서 30% 이상의 점유율을 기록하고 있으며, 사용자 수는 월 3,500만 명입니다 (finner.co.jp).
@@ -17,7 +17,7 @@ image: >-
 ✓ Qoo10은 매년 2자리 수 성장률을 기록하고 있어 지속적인 시장 확장이 예상됩니다 (wac-works-ec.jp).
 ✓ 브랜드 입점을 위해 체크리스트와 실행 계획이 필수적이며, 30일 내 성과 분석이 중요합니다.
 
-![Qoo10 입점 30일 체크리스트](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80)
+![Qoo10 입점 30일 체크리스트](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: Qoo10 일본 시장 데이터
 - 일본 Qoo10 월간 활성 사용자 수는 35,000,000명입니다 (finner.co.jp).
@@ -30,6 +30,8 @@ image: >-
 | 2022 | 1.2 | - |
 | 2023 | 1.3 | 8.3 |
 | 2024 | 1.4 | 7.7 |
+
+![Qoo10 입점 30일 체크리스트 본문 이미지](https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80)
 
 ### Qoo10 사용자층 분석
 | 연령대 | 비율 (%) | 특징 |

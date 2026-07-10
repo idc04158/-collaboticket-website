@@ -8,14 +8,14 @@ tags:
   - 운영
 date: '2024-09-18'
 image: >-
-  https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 전자상거래 시장 규모는 24.8조 엔, 2023년 대비 8% 성장 (METI EC Market Survey 2024)
 ✓ Qoo10의 프로모션 기간에 판매량 40% 증가 (Qoo10 Sales Report 2024 기준)
 ✓ Rakuten에서 기준가격에 맞춘 가격 대폭 조정 시 CVR 15% 증가
 
-![일본 가격 정책 프레임워크](https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1400&q=80)
+![일본 가격 정책 프레임워크](https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 가격 정책 현황
 일본의 전자상거래 시장은 지속적으로 성장하고 있으며, 가격 책정과 소비자 반응은 플랫폼에 따라 다릅니다. 아래 표는 주요 플랫폼의 가격 책정 통계를 보여줍니다.
@@ -26,11 +26,10 @@ image: >-
 | Amazon Japan| 25% | 6,800 | 65 |
 | Qoo10 | 13% | 5,000 | 50 |
 
+![일본 가격 정책 프레임워크 본문 이미지](https://images.unsplash.com/photo-1551836022-deb4988ff7a0?auto=format&fit=crop&w=1400&q=80)
+
 - 일본 전자상거래 시장 규모는 약 24.8조 엔, 전년 대비 8% 성장 (METI EC Market Survey 2024)
 - 소비자는 가격 변동에 민감하며, 고품질과 저가격을 동시에 기대 (NielsenIQ 2024)
-
-
-
 
 ## ACTION: 실행 단계
 1. 시장 조사 및 분석: 경쟁사 가격 데이터 수집 및 소비자 피드백 분석.
@@ -40,9 +39,6 @@ image: >-
  - Rakuten: 포인트 및 CRM을 활용한 가격 책정
 4. 브랜드 메시지 개발: 일본 시장 맞춤형 브랜드 스토리 및 메시지 구성.
 5. 모니터링 및 조정: 판매 데이터 기반으로 정기적인 가격 조정.
-
-
-
 
 ## 다음 단계
 Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
@@ -65,22 +61,17 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 ### 일본 시장의 가격 민감도는 어떤가요?
 일본 소비자들은 가격과 품질 모두를 고려하는 경향이 강하며, 가격이 높아질수록 품질에 대한 기대치도 상승합니다.
 
-
 ### 어떤 프로모션이 효과적인가요?
 Qoo10의 메가와리 기간에 할인과 함께 리뷰 유도를 하면 초기 판매에 긍정적인 영향을 미칩니다.
-
 
 ### 브랜드 로열티를 어떻게 강화하나요?
 Rakuten의 포인트 시스템을 활용하여 재구매 유인을 제공하고, 지속적인 고객 관계 관리를 통해 브랜드 인지도를 높입니다.
 
-
 ### 일본 시장에서 성공적인 가격 책정은?
 경쟁사 분석을 바탕으로 가격을 설정하고, 소비자 피드백을 통해 지속적으로 최적화해야 합니다.
 
-
 ### 소비자 피드백을 어떻게 수집하나요?
 소셜 미디어와 리뷰 플랫폼을 통해 실행 가능하며, 고객 설문조사를 통해 추가적인 데이터를 얻을 수 있습니다.
-
 
 ## References
 - 경제산업성 METI EC Market Survey 2024

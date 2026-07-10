@@ -8,13 +8,15 @@ tags:
   - Amazon
 date: '2024-11-13'
 image: >-
-  https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 라쿠텐 상품명에서 키워드 최적화는 소비자 클릭률을 25% 증가시키며, 구매 전환율은 15% 높이는 효과가 있습니다 (CollaboTicket 운영 데이터)
 ✓ 일본 소비자의 75%가 상품명에 포함된 브랜드명을 중요하게 고려합니다 (NielsenIQ 2024)
 ✓ 2024년 상반기 데이터에 따라, 최적화된 상품명은 평균 20% 높은 광고 수익률(ROAS)을 유지합니다 (Rakuten IR 2024)
 ✓ 라쿠텐 판매자 중 60%가 SEO 최적화를 통한 매출 상승을 경험했습니다 (JETRO 2024)
+
+![라쿠텐 상품명 SEO 구조 실전 가이드](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 오픈 마켓 시장 데이터
 일본 오픈 마켓은 계속해서 성장하고 있으며, 2024년까지 총 거래액은 약 17.5조 엔에 이를 것으로 예상됩니다. 라쿠텐은 이 중 20%를 차지하며, Qoo10과 함께 시장의 주요 플레이어입니다.
@@ -24,6 +26,8 @@ image: >-
 | 라쿠텐 | 3.6 | 8 |
 | Qoo10 | 0.85 | 10 |
 | 아마존 | 4.2 | 5 |
+
+![라쿠텐 상품명 SEO 구조 실전 가이드 본문 이미지](https://images.unsplash.com/photo-1611229855428-9080f314f04e?auto=format&fit=crop&w=1400&q=80)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 사례 A: 스킨케어 브랜드 B제품

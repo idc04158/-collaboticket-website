@@ -8,7 +8,7 @@ tags:
   - 콘텐츠
 date: '2025-03-05'
 image: >-
-  https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 SNS 사용자는 약 8천만 명입니다 (LINE, 2025년)
@@ -19,14 +19,15 @@ image: >-
 ✓ 각 플랫폼의 알고리즘과 특성에 맞춘 콘텐츠 전략이 필요합니다.
 ✓ 성공적인 브랜드를 위한 투명한 정보 제공이 필수적입니다.
 
-![일본 인플루언서 브리프 템플릿](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80)
+![일본 인플루언서 브리프 템플릿](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 SNS 및 인플루언서 마케팅 데이터
 - 일본 인스타그램 사용자 수는 약 3천만 명입니다 (2025년 기준, noahgroup.co.kr)
+
+![일본 인플루언서 브리프 템플릿 본문 이미지](https://picsum.photos/seed/ct-body-influencer-brief-template-jp/1400/900)
+
 - 일본 유튜브 사용자 수는 약 6천만 명입니다 (2025년 기준, NielsenIQ)
 - LINE 월간 활성 사용자 수는 약 8천만 명입니다 (2025년 기준, LINE 공식 자료)
-
-
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

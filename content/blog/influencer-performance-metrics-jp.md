@@ -8,7 +8,7 @@ tags:
   - 콘텐츠
 date: '2025-03-12'
 image: >-
-  https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 인플루언서 캠페인 KPI는 ER·CPA·ROAS·속성 전환 4축으로 정의합니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ TikTok·Instagram·LINE마다 ER 벤치마크와 전환 추적 방식이 다릅니다.
 ✓ 매칭 스코어카드는 [인플루언서 매칭 지표](/insights/influencer-matching-metrics)를 참고하세요.
 
-![일본 인플루언서 성과 지표 표준](https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80)
+![일본 인플루언서 성과 지표 표준](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 채널별 KPI 벤치마크
 
@@ -27,6 +27,8 @@ image: >-
 | TikTok | 5.0~9.0% | 2.0~4.0% | 2,000~3,500엔 | 280~400% |
 | LINE OA | 8.0~15% (오픈) | 4.0~7.0% | 1,800~3,000엔 | 320~480% |
 | X (프로모) | 1.5~3.0% | 1.2~2.5% | 3,000~5,000엔 | 220~350% |
+
+![일본 인플루언서 성과 지표 표준 본문 이미지](https://picsum.photos/seed/ct-body-influencer-performance-metrics-jp/1400/900)
 
 측정 주기: 캠페인 1~2주차는 ER·CTR, 3~4주차는 CPA·ROAS, 8주차 이후 속성 전환·재구매를 봅니다.
 

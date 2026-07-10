@@ -8,7 +8,7 @@ tags:
   - 신뢰
 date: '2024-12-25'
 image: >-
-  https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ @cosme와 LIPS는 일본의 주요 뷰티 리뷰 플랫폼으로, 월간 방문자는 @cosme 1,000만, LIPS 500만 (2024년 기준, JETRO)입니다.
@@ -17,10 +17,12 @@ image: >-
 ✓ 리뷰 수집 및 관리를 위한 프로모션 전략이 필수적입니다.
 ✓ 부정적인 리뷰에 신속히 대응하여 브랜드 이미지를 보호해야 합니다.
 
-![@cosme/LIPS 리뷰 운영 기준](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80)
+![@cosme/LIPS 리뷰 운영 기준](https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 뷰티 리뷰 플랫폼 데이터
 일본 뷰티 시장에서 @cosme와 LIPS는 소비자 구매 결정에 큰 영향을 미칩니다. 다음은 이들 플랫폼에 대한 데이터입니다.
+
+![@cosme/LIPS 리뷰 운영 기준 본문 이미지](https://images.unsplash.com/photo-1416331108674-37159f7e0d07?auto=format&fit=crop&w=1400&q=80)
 
 일본 뷰티 시장 규모는 약 3.5조 엔으로 예상되며, 전년 대비 약 4.5% 성장할 것으로 보입니다 (JETRO, 2024). 소비자들은 리뷰를 구매 결정 시 가장 중요한 요소로 보고 있습니다.
 

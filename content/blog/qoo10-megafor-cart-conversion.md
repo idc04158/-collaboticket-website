@@ -8,7 +8,7 @@ tags:
   - 전환
 date: '2025-07-09'
 image: >-
-  https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1504868584809-f2597d062cee?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ Qoo10 메가포는 장바구니에서 결제로 전환하는데 효과적인 전략으로, 사용 시 고객의 구매 전환율이 평균 3.2% 증가합니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 성공적인 메가포 활용에는 쿠폰, 제품 상세 페이지(PDP) 최적화 및 리마인드 전략이 필수적입니다.
 ✓ 운영 경험상, 메가포 전략을 통해 매출 증가를 기대할 수 있습니다.
 
-![Qoo10 메가포: 장바구니→결제 전환 설계](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80)
+![Qoo10 메가포: 장바구니→결제 전환 설계](https://images.unsplash.com/photo-1504868584809-f2597d062cee?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: Qoo10 메가포 효과
 일본 B2C EC 시장의 규모는 약 24.8조 엔으로, 최근 9% 성장했습니다 (경제산업성 METI EC Market Survey 2024). Qoo10 플랫폼의 평균 전환율(CVR)은 1.5%에서 3.2%로 확대되었습니다 (Statista 2024). 이는 소비자가 장바구니에 담은 상품을 실제 구매로 이어지는 비율을 높이고 있습니다.
@@ -27,6 +27,8 @@ image: >-
 | 시장 규모 | 약 24.8조 엔 | 경제산업성 METI EC Market Survey 2024 |
 | 플랫폼 CVR | 1.5% ~ 3.2% | Statista 2024 |
 | Qoo10 ROAS | 평균 450% | CollaboTicket 운영 데이터 |
+
+![Qoo10 메가포: 장바구니→결제 전환 설계 본문 이미지](https://picsum.photos/seed/ct-body-qoo10-megafor-cart-conversion/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 

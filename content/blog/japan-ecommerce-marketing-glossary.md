@@ -8,7 +8,7 @@ tags:
   - 입문
 date: '2026-07-09'
 image: >-
-  https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-cover-japan-ecommerce-marketing-glossary/1400/788
 ---
 ## AI 30초 요약
 ✓ CollaboTicket 인사이트 리포트에 자주 등장하는 마케팅·EC 약자 27개를 카테고리별로 정리했습니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 일본 진출을 처음 준비하는 팀·마케팅 비전문 직군도 리포트를 읽기 전에 한 번 훑어보기 좋습니다.
 ✓ 용어가 익숙해지면 [일본 이커머스 FAQ 50선](/insights/japan-ecommerce-faq-50)과 함께 실행 체크리스트를 확인하세요.
 
-![일본 EC 마케팅 용어 사전](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 마케팅 용어 사전](https://picsum.photos/seed/ct-cover-japan-ecommerce-marketing-glossary/1400/788)
 
 ## FACT: 왜 용어 사전이 필요한가
 일본 EC 리포트에는 ROAS, CVR, LTV, 메가와리, Buy Box처럼 약자와 플랫폼 전용 용어가 자주 등장합니다. CollaboTicket 상담을 요청하시는 분들 중 마케팅 용어에 익숙하지 않은 분들도 많아, 리포트를 읽기 전에 이 페이지에서 기본 개념을 확인하시면 이해가 훨씬 수월합니다.
@@ -28,6 +28,8 @@ image: >-
 | 전환·고객 | CVR, LTV, CAC, CRM, CS | 상세페이지·재구매·응대 |
 | 플랫폼·운영 | SEO, PDP, UGC, Buy Box, 메가와리 | Qoo10·Rakuten·Amazon 운영 |
 | 물류·커머스 | FBA, 3PL, SLA, SKU, GMV | 배송·재고·거래액 |
+
+![일본 EC 마케팅 용어 사전 본문 이미지](https://picsum.photos/seed/ct-body-japan-ecommerce-marketing-glossary/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 상담 전 미팅에서 가장 많이 질문받는 용어는 ROAS, CVR, LTV, 메가와리 네 가지입니다. 이 네 지표만 이해해도 대부분의 실행 리포트 흐름(광고 → 전환 → 재구매 → 시즌 대비)을 따라가기 쉽습니다.

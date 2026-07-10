@@ -4,7 +4,7 @@ description: 일본 뷰티 시장에서 한국 브랜드가 체험단과 인플�
 category: Case Study
 date: '2025-03-26'
 image: >-
-  https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -15,10 +15,13 @@ tags:
 ✓ 결정적인 퍼포먼스 메트릭: CVR 3.5%, ROAS 450% 기록했습니다.
 ✓ 성공적인 마케팅 캠페인을 위해 소비자 행동 분석이 필수적입니다.
 
-![체험단 + 인플루언서 결합으로 매출 43% 상승 사례](https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80)
+![체험단 + 인플루언서 결합으로 매출 43% 상승 사례](https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 뷰티 시장과 전자상거래 플랫폼 데이터
 - 일본 뷰티 시장의 규모는 약 4조 엔이며, 전년 대비 10% 성장했습니다 (경제산업성 METI 2025).
+
+![체험단 + 인플루언서 결합으로 매출 43% 상승 사례 본문 이미지](https://picsum.photos/seed/ct-body-case-study-experience-influencer-43/1400/900)
+
 - 일본 내 온라인 쇼핑 시장은 2025년까지 약 20조 엔에 이를 것으로 예상됩니다 (METI 2025).
 
 ## INSIGHT: CollaboTicket 운영 데이터

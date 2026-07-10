@@ -28,7 +28,7 @@ image: >-
 | Qoo10 첫 분기 성장률 | 15% 성장 (2024) | Qoo10 보고서 2024 |
 | 고객 만족도 목표 | 90% 이상 | JETRO 고객 서비스를 기반으로 한 목표 |
 
-
+![일본 고객응대 SOP 기본안 본문 이미지](https://picsum.photos/seed/ct-body-jp-customer-support-sop/1400/900)
 
 ## ACTION: 일본 시장 고객응대 실행 단계
 

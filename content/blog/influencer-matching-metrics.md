@@ -4,7 +4,7 @@ description: '일본 인플루언서 마케팅 시장 규모는 약 500억 엔�
 category: Market Analysis
 date: '2025-02-26'
 image: >-
-  https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80
 tags:
   - 시장분석
   - 일본EC
@@ -18,7 +18,7 @@ tags:
 ✓ LINE 플랫폼 이용 시 재구매율이 30% 증가했습니다 (LINE 공식 발표 2024).
 ✓ Qoo10의 메가와리 프로모션을 통해 고객의 구매 전환율이 15% 증가했습니다 (Qoo10 보고서 2025).
 
-![일본 인플루언서 매칭 시 봐야 할 데이터 지표](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80)
+![일본 인플루언서 매칭 시 봐야 할 데이터 지표](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 인플루언서 마케팅 시장 데이터
 - 일본 인플루언서 마케팅 시장 규모는 약 500억 엔입니다 (Statista 2025).
@@ -29,6 +29,8 @@ tags:
 |---------------------|-----------------|-----------------|
 | 인플루언서 마케팅 시장 규모 | 450억 엔 | 500억 엔 |
 | 소비자 구매 경험 | 68% | 71% |
+
+![일본 인플루언서 매칭 시 봐야 할 데이터 지표 본문 이미지](https://picsum.photos/seed/ct-body-influencer-matching-metrics/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 

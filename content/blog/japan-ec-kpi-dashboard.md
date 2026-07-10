@@ -8,7 +8,7 @@ tags:
   - 데이터
 date: '2024-10-30'
 image: >-
-  https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 전자상거래 시장 규모는 약 29.7조 엔으로, 2023년 대비 약 7.5% 성장했습니다 (경제산업성 METI, 2024).
@@ -16,7 +16,7 @@ image: >-
 ✓ Qoo10의 메가와리 프로모션은 신상품 매출을 월평균 35% 증가시킵니다 (Qoo10 공식 보고서, 2024).
 ✓ 일본 소비자의 재구매율은 약 52%로, CRM 전략의 필요성을 이끌어내고 있습니다 (Statista, 2024).
 
-![일본 EC KPI 대시보드 설계](https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80)
+![일본 EC KPI 대시보드 설계](https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 EC KPI 데이터
 
@@ -27,6 +27,8 @@ image: >-
 | Rakuten | 27% | 6.5% | 6,000엔 | 60% |
 | Amazon Japan| 40% | 8.0% | 8,500엔 | 52% |
 | Qoo10 | 12% | 9.0% | 4,000엔 | 45% |
+
+![일본 EC KPI 대시보드 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-d9a03b072599?auto=format&fit=crop&w=1400&q=80)
 
 자료 출처: 경제산업성 METI, 2024, Rakuten IR, 2024, Statista, 2024
 

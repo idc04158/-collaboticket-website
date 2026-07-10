@@ -8,7 +8,7 @@ tags:
   - 운영
 date: '2024-07-31'
 image: >-
-  https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본의 K-Beauty 시장은 2024년까지 약 2.1조 엔 규모로 성장할 것으로 예상됩니다 (JETRO, 2024).
@@ -17,7 +17,7 @@ image: >-
 ✓ Qoo10에서의 고객 리뷰 수가 증가함에 따라 광고 성과가 15% 상승합니다 (Qoo10 공식 보고서, 2024).
 ✓ LINE을 통한 사용자 유입은 월평균 10만 명 이상 기록하고 있으며, 지속적인 CRM 강화가 필요합니다 (LINE IR, 2023).
 
-![K-Beauty 일본 진출 로드맵](https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80)
+![K-Beauty 일본 진출 로드맵](https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 K-Beauty 시장 분석
 일본 K-Beauty 시장은 2024년까지 약 2.1조 엔 규모로 성장할 것으로 예상되며, 이는 전년 대비 8% 증가한 수치입니다 (JETRO, 2024). 주요 플랫폼별 데이터는 다음과 같습니다:
@@ -29,11 +29,11 @@ image: >-
 | Qoo10 | 15 | 5,800 | 3.0 |
 | LINE | 10 | 4,200 | 2.5 |
 
+![K-Beauty 일본 진출 로드맵 본문 이미지](https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1400&q=80)
+
 ### 성과 측정 관련 데이터
 - 광고비 지출: Rakuten에서는 평균 30만 엔의 광고비 지출이 필요하며, 이로 인해 기대되는 수익은 약 120만 엔입니다 (경제산업성 METI, 2023).
 - 리뷰 수: Qoo10의 경우, 리뷰 수가 120개 이상일 때 전환율이 평균 15% 증가합니다 (Qoo10 공식 보고서, 2024).
-
-
 
 ## ACTION: 실행 계획
 1. 현황 진단: K-Beauty 제품군에 대한 현재의 판매 채널, 제품 리뷰, 물류 현황을 점검합니다.

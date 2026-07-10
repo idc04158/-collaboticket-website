@@ -8,7 +8,7 @@ tags:
   - 프로모션
 date: '2025-07-16'
 image: >-
-  https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556761175-d9a03b072599?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본의 메가와리 할인 행사 종료 직전 7일 동안 매출 증대를 위해 수립한 집중 마케팅 전략을 분석합니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 각 플랫폼별 맞춤형 광고 전략을 제시합니다.
 ✓ 효과적인 매출 성과를 위해 고객 유치 및 재구매 관리를 강조해야 합니다.
 
-![메가와리 종료 직전 7일: 매출 뒤집기 운영 런북](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80)
+![메가와리 종료 직전 7일: 매출 뒤집기 운영 런북](https://images.unsplash.com/photo-1556761175-d9a03b072599?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 메가와리 행사 기간 중 광고 성과 및 시장 동향
 일본 B2C 전자상거래 시장 규모는 약 24.8조 엔으로, 전년 대비 약 9% 성장했습니다 (경제산업성 METI EC Market Survey 2024). 메가와리 종료 직전의 7일 동안 집중적인 마케팅 활동이 매출 증대에 미치는 영향은 뚜렷합니다.
@@ -26,6 +26,8 @@ image: >-
 | -------------- | --------- | -------- | -------- | ----------- |
 | 1개월 | 15~70만 | 1.5~4.0 | 1.5~4.0 | 15~120 |
 | 메가와리 직전 | 50만 | 2.8 | 3.5 | 80 |
+
+![메가와리 종료 직전 7일: 매출 뒤집기 운영 런북 본문 이미지](https://picsum.photos/seed/ct-body-megawari-closing-week-ops/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터 기준
 

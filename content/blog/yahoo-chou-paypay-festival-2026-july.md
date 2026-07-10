@@ -10,7 +10,7 @@ tags:
   - 일본EC
 date: '2026-07-09'
 image: >-
-  https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80
+  https://picsum.photos/seed/ct-cover-yahoo-chou-paypay-festival-2026-july/1400/788
 ---
 ## AI 30초 요약
 ✓ 2026년 7월 超PayPay祭 본편은 7/10(금) 0:00 ~ 7/12(일) 25:59이며, 종료 2시간 연장으로 마감 직전 수요가 큽니다 (LY Corporation 셀러 브리핑 2026.06.23).
@@ -20,7 +20,7 @@ image: >-
 ✓ CollaboTicket은 대형 세일 전 태그·키워드·입찰·일예산을 스토어별 체크리스트로 관리합니다.
 ✓ 공식 자료는 [Yahoo! 쇼핑 광고 다운로드](https://store-info.yahoo.co.jp/shopping/ad/download/index.html)에서 최신본을 확인하세요.
 
-![2026년 7월 초페이페이 마츠리(超PayPay祭): 입점 브랜드 필수 세팅 체크리스트](https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80)
+![2026년 7월 초페이페이 마츠리(超PayPay祭): 입점 브랜드 필수 세팅 체크리스트](https://picsum.photos/seed/ct-cover-yahoo-chou-paypay-festival-2026-july/1400/788)
 
 ## FACT: 2026년 7월 超PayPay祭 일정·혜택 구조
 
@@ -31,6 +31,8 @@ LY Corporation(구 LINE Yahoo) 셀러 브리핑 기준, 7월 초페이페이 마
 | 준비기간 | 6/26(금) 12:00 ~ 7/9(목) 23:59 | 상품 태그·키워드·입찰 세팅 |
 | 추첨권 획득 기간 | 7/1(수) 12:00 ~ 7/9(목) 23:59 | 1,000~80,000엔 구매 시추첨권(사전 수요) |
 | 본편 3일간 | 7/10(금) 0:00 ~ 7/12(일) 25:59 | 광고·재고·CS 집중 구간 |
+
+![2026년 7월 초페이페이 마츠리(超PayPay祭): 입점 브랜드 필수 세팅 체크리스트 본문 이미지](https://picsum.photos/seed/ct-body-yahoo-chou-paypay-festival-2026-july/1400/900)
 
 ### 사용자 PayPay 포인트(본편 3일간, 요약)
 
@@ -95,22 +97,17 @@ Yahoo! 채널이 처음이라면 [일본 EC 채널 진입 전략](/insights/japa
 ### 상품 태그 ppf202607은 어디에 입력하나요?
 Yahoo! 쇼핑 스토어크리에이터 Pro의 상품 편집 화면에서 상품 태그 필드에 입력합니다. SKU별로 저장 후 전용슬롯 집계에 반영되는지 다음 날 리포트로 확인하세요.
 
-
 ### 검색 키워드와 상품명 둘 다 필요한가요?
 브리핑상 상품 태그와 검색 키워드「超PayPay祭」 모두 필요합니다. 상품명에 기획명을 포함하고, 키워드 필드에도 동일하게 등록하는 것을 권장합니다.
-
 
 ### 프로모션패키지 미가입 스토어도 노출되나요?
 아이템리치 전용슬롯은 프로모션패키지가입 + 아이템리치입찰 중 스토어가 대상입니다. 본편 3일간 +7% 특전도 가입 스토어 구매분에만 적용됩니다.
 
-
 ### 본편 3일 광고 예산은 얼마나 올리나요?
 LY 가이드는 일예산 평시 약 3배, 입찰가 +5~10엔을 참고치로 제시합니다. 브랜드 ROAS·재고에 맞춰 단계적으로 올리세요.
 
-
 ### 공식 자료는 어디서 받나요?
 [Yahoo! 쇼핑 광고 다운로드](https://store-info.yahoo.co.jp/shopping/ad/download/index.html)에서 7월 초페이페이 마츠리(超PayPay祭) 최신 셀러 자료를 확인하세요. CollaboTicket은 파트너 스토어에 변경 시마다 체크리스트 diff를 공유합니다.
-
 
 ## References
 - LY Corporation, 2026년 7월 超PayPay祭 셀러 브리핑 (2026.06.23 갱신)

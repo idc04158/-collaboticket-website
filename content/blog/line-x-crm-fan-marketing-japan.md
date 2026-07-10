@@ -4,7 +4,7 @@ description: '일본 SNS 시장에서 LINE 사용자는 8천만 명, X는 4천�
 category: Insight
 date: '2025-02-19'
 image: >-
-  https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -16,10 +16,13 @@ tags:
 ✓ X 활용 캠페인에서의 클릭률은 2.5%이며, 브랜드 인지도가 25% 향상되었습니다 (브랜드 B)
 ✓ CRM 전략으로 고객 전환율이 3% 개선되었습니다 (브랜드 C)
 
-![LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80)
+![LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략](https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 SNS 및 전자상거래 시장 데이터
 - 일본의 SNS 플랫폼 사용자 통계:
+
+![LINE과 X로 일본 팬을 만드는 CRM형 SNS 전략 본문 이미지](https://picsum.photos/seed/ct-body-line-x-crm-fan-marketing-japan/1400/900)
+
  | 플랫폼 | 월간 활성 사용자 수 | 비율(%) |
  | ------- | ------------------ | ------- |
  | LINE | 80M | 62 |

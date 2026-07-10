@@ -8,7 +8,7 @@ tags:
   - KPI
 date: '2025-07-02'
 image: >-
-  https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1556761175-4b46a5720a6c?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 B2C EC 시장의 메가와리에서 가장 중요한 KPI는 ROAS, CVR, 장바구니 전환율 및 재고 관리입니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 첫 한 달 내 적절한 리뷰 수 확보가 매출 상승에 긍정적인 영향을 미치고 있습니다.
 ✓ 고객 신뢰를 구축하기 위해 재고 정보 및 신속한 배송 옵션이 필수적입니다.
 
-![메가와리 성과를 가르는 KPI 7가지: 대시보드 설계](https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1400&q=80)
+![메가와리 성과를 가르는 KPI 7가지: 대시보드 설계](https://images.unsplash.com/photo-1556761175-4b46a5720a6c?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 B2C EC 메가와리 시장 KPI 현황
 일본 B2C EC 시장 규모는 약 24.8조 엔, 전년 대비 약 9% 성장 (경제산업성 METI EC Market Survey 2024).
@@ -31,6 +31,8 @@ Qoo10에서 장바구니 전환율 증가율은 평균 2%에서 5%까지 보강�
 | 1개월 | 25 | 50 | 320 | 2.8 | 2.5 |
 | 3개월 | 40 | 80 | 350 | 3.1 | 2.8 |
 | 6개월 | 55 | 120 | 400 | 3.4 | 3.0 |
+
+![메가와리 성과를 가르는 KPI 7가지: 대시보드 설계 본문 이미지](https://picsum.photos/seed/ct-body-megawari-kpi-seven-metrics/1400/900)
 
 ### 광고 성과 분석
 

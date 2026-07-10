@@ -4,7 +4,7 @@ description: '일본 전자상거래 시장은 2025년 약 2조 5천억 엔에 �
 category: Case Study
 date: '2025-03-19'
 image: >-
-  https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -18,7 +18,7 @@ tags:
 ✓ 효과적인 인플루언서를 선정하기 위해서는 브랜드 관련성과 콘텐츠 품질이 중요합니다.
 ✓ 실질적인 캠페인 성과 측정을 위해 전환율 및 방문자 수 분석이 필요합니다.
 
-![일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법](https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1400&q=80)
+![일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법](https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 인플루언서 마케팅 시장 현황
 일본 전자상거래 시장은 매년 성장하고 있으며, 인플루언서 마케팅 또한 중요한 채널로 자리잡고 있습니다. 2025년 기준 일본 전자상거래 시장 규모는 약 2조 5천억 엔에 이를 것으로 예상됩니다 (METI EC Market Survey 2025).
@@ -28,6 +28,8 @@ tags:
 | 일본 전자상거래 시장 규모 | 약 2조 5천억 엔 | METI EC Market Survey 2025 |
 | 소비자의 인플루언서 추천 신뢰 비율 | 66% | Statista 2025 |
 | 인플루언서 마케팅 ROI | 평균 7배 | Rakuten Marketing Report 2024 |
+
+![일본 인플루언서 마케팅 사례를 실행 전략으로 바꾸는 방법 본문 이미지](https://picsum.photos/seed/ct-body-japan-influencer-marketing-case-framework/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 운영 경험상, 인플루언서 마케팅은 일본 시장에서 높은 ROI를 제공합니다. 아래 두 개의 사례에서 효과를 확인할 수 있습니다.

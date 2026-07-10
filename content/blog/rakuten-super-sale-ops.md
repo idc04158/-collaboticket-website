@@ -8,7 +8,7 @@ tags:
   - Amazon
 date: '2024-11-20'
 image: >-
-  https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 라쿠텐 슈퍼세일은 일본에서 연 4회 진행되며, 월간 활성 사용자 수는 약 1,500만 명으로 추정됩니다 (2024년 예상, Rakuten IR).
@@ -17,7 +17,7 @@ image: >-
 ✓ 가격 민감도가 높은 일본 소비자들을 겨냥한 경쟁력 있는 가격 설정이 필수적입니다.
 ✓ 물류 준비가 적절하지 않을 경우, 고객 이탈률이 최대 25%까지 증가할 수 있습니다 (운영 경험상).
 
-![라쿠텐 슈퍼세일 운영 체크포인트](https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80)
+![라쿠텐 슈퍼세일 운영 체크포인트](https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 라쿠텐 슈퍼세일 현황
 - 일본 e커머스 시장 내 라쿠텐의 시장 점유율은 약 27%로, 강력한 B2C 플랫폼으로 자리잡고 있습니다 (JETRO 2024).
@@ -30,7 +30,7 @@ image: >-
 | 구매 전환율 | 약 12% | Rakuten IR 2024 |
 | 가격 민감도 | 60% 이상의 소비자가 할인에 민감 | CollaboTicket 운영 데이터 기준 |
 
-
+![라쿠텐 슈퍼세일 운영 체크포인트 본문 이미지](https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

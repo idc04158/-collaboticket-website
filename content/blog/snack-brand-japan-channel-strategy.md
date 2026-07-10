@@ -8,7 +8,7 @@ tags:
   - 데이터
 date: '2024-08-21'
 image: >-
-  https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 전자상거래 시장 2024년 약 20조 엔 규모 예상 (METI 2024)
@@ -16,10 +16,13 @@ image: >-
 ✓ 일본 소비자는 브랜드 신뢰성 및 고객 서비스를 중시합니다 (NielsenIQ 2023)
 ✓ 소비자 반응 조사 후 채널 전략 수립이 필수적입니다.
 
-![식품 브랜드 일본 채널 전략](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80)
+![식품 브랜드 일본 채널 전략](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 전자상거래 시장 데이터
 - 일본 전자상거래 시장 규모: 2024년 약 20조 엔 예상, 연평균 성장률 5%입니다 (경제산업성 METI 2024)
+
+![식품 브랜드 일본 채널 전략 본문 이미지](https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80)
+
 - 소비자 구매 결정 요소: 검색 27%, 리뷰 25%, 가격 24%입니다 (NielsenIQ 2023)
 - 주요 플랫폼별 점유율:
  | 플랫폼 | 시장 점유율 (%) |
@@ -29,8 +32,6 @@ image: >-
  | Qoo10 | 15 |
  | 메르카리 | 10 |
  | 야후 쇼핑 | 9 |
-
-
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

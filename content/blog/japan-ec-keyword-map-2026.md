@@ -8,7 +8,7 @@ tags:
   - 데이터
 date: '2025-05-21'
 image: >-
-  https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 EC 검색은 카테고리마다 의도 클러스터(고민·비교·후기·성분)가 다릅니다.
@@ -17,7 +17,7 @@ image: >-
 ✓ 스킨케어 D제품은 Qoo10 메가와리 전 「후기 敏感肌」 키워드군에 PDP를 맞춘 뒤 CVR 3.2%를 기록했습니다.
 ✓ 시장 규모·플랫폼 점유율은 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)에서 확인하세요.
 
-![일본 EC 키워드 맵: 카테고리별 검색 의도 정리](https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 키워드 맵: 카테고리별 검색 의도 정리](https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 카테고리×검색 의도 매트릭스
 
@@ -26,6 +26,8 @@ image: >-
 | 스킨케어 | 肌荒れ, 毛穴 | 化粧水 비교, ランキング | 敏感肌 후기 | セラミド, ヒアルロン酸 |
 | 패션 | 体型 カバー | ブランド 비교 | 着用 レビュー | サイズ, 素材 |
 | 건강기능식품 | 疲労 回復 | サプリ 비교 | 効果 후기 | 成分 表示, GMP |
+
+![일본 EC 키워드 맵: 카테고리별 검색 의도 정리 본문 이미지](https://picsum.photos/seed/ct-body-japan-ec-keyword-map-2026/1400/900)
 
 검색 의도 비율(운영 샘플, n=120 PDP):
 

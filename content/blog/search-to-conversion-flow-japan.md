@@ -8,7 +8,7 @@ tags:
   - 데이터
 date: '2024-11-06'
 image: >-
-  https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 전자상거래 시장은 2024년 약 20조 엔으로 예상됩니다 (eMarketer 2024).
@@ -18,7 +18,7 @@ image: >-
 ✓ LINE 플랫폼을 활용할 경우 재구매율이 40% 증가합니다 (NielsenIQ 2024).
 ✓ 일본 소비자는 검색 유입 후 구매 결정까지 평균 5단계를 경유합니다 (Statista 2024).
 
-![검색 유입에서 구매 전환까지 흐름 설계](https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1400&q=80)
+![검색 유입에서 구매 전환까지 흐름 설계](https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 전자상거래 시장 현황
 2024년 일본의 전자상거래 시장 규모는 약 20조 엔으로 예상되며, 이는 2023년에 비해 약 10% 성장할 것으로 보입니다 (eMarketer 2024). 주요 플랫폼의 시장 점유율은 다음과 같습니다:
@@ -29,12 +29,12 @@ image: >-
 | Amazon Japan | 21% |
 | Yahoo! Shopping | 15% |
 
+![검색 유입에서 구매 전환까지 흐름 설계 본문 이미지](https://images.unsplash.com/photo-1556761175-8bdfa46b0500?auto=format&fit=crop&w=1400&q=80)
+
 온라인 거래에서 검색 유입이 구매로 전환되는 과정은 평균 5단계로 구성되며, 이 중 검색유입에서 제품 상세정보까지의 이탈율은 60%에 달합니다 (Statista 2024).
 
 ### 일본 소비자 행동 분석
 - 구매 결정 경로: 일본 소비자들은 리뷰와 상세페이지 정보를 중요시하며, 검색유입 후 약 71%가 제품 정보를 비교한 후 최종 구매를 결정합니다 (NielsenIQ 2024).
-
-
 
 ## ACTION: 실행 단계 및 프레임워크
 1. 현황 진단: 기존 채널, 상품, 리뷰를 시장 데이터로 정리합니다.

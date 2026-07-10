@@ -4,7 +4,7 @@ description: '일본 K-뷰티 시장 점유율은 2024년 32.6%로 예상되며,
 category: Strategy
 date: '2024-08-07'
 image: >-
-  https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80
 tags:
   - 일본진출
   - 실행
@@ -17,7 +17,7 @@ tags:
 ✓ Amazon의 광고 효율, ROAS는 평균 400%로 2023년부터 향상되었습니다 (NielsenIQ 2024)
 ✓ LINE의 기프트 시스템을 활용한 마케팅 성과는 LTV가 30% 증가했습니다 (CollaboTicket 운영 데이터)
 
-![K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80)
+![K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로](https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 K-뷰티 시장 데이터
 - 일본 K-뷰티 시장 규모는 2024년에는 약 1.5억 엔으로 추정되며, 특히 2024년에는 32.6%의 시장 점유율을 기록할 것으로 예상됩니다 (Nikkei 2024).
@@ -33,7 +33,7 @@ tags:
 | 2023 | 1.2 | 33.3 |
 | 2024 | 1.5 | 25.0 |
 
-
+![K-Beauty 일본 진출 SEO 플레이북: 검색어에서 실행 콘텐츠로 본문 이미지](https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80)
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 

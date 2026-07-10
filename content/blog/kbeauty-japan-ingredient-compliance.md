@@ -8,7 +8,7 @@ tags:
   - 현지화
 date: '2025-08-20'
 image: >-
-  https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
 ✓ 일본 B2C 화장품 시장 규모는 약 3조 엔, 성장률은 6.2%입니다. (총무성 2024)
@@ -16,7 +16,7 @@ image: >-
 ✓ 첫 달 평균 ROAS는 350%로, 광고비에 따라 큰 차이를 보입니다.
 ✓ 소비자 테스트 마케팅이 효과적이며, 광고 성과 최적화가 필요합니다.
 
-![K-Beauty 일본 성분·표시 컴플라이언스 체크리스트](https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80)
+![K-Beauty 일본 성분·표시 컴플라이언스 체크리스트](https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 화장품 시장 데이터
 일본 B2C 화장품 시장규모는 약 3조 엔에 달하며, 이는 전년 대비 6.2% 성장한 수치입니다. 소비자로서의 신뢰와 법적 요구 사항에 따른 성분 표시가 소비자 선택에 큰 영향을 미치고 있습니다.
@@ -26,6 +26,8 @@ image: >-
 | B2C 화장품 시장 규모 | 약 3조 엔 | 총무성 2024 |
 | 연평균 성장률 | 6.2% | 총무성 2024 |
 | 평균 CVR | 3.0% | 운영 데이터 기준 |
+
+![K-Beauty 일본 성분·표시 컴플라이언스 체크리스트 본문 이미지](https://picsum.photos/seed/ct-body-kbeauty-japan-ingredient-compliance/1400/900)
 
 ## INSIGHT: CollaboTicket 운영 데이터
 

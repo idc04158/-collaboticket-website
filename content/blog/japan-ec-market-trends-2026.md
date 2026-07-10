@@ -4,7 +4,7 @@ description: 2025년 기준 일본 EC 시장 데이터와 2025년 채널별 전�
 category: Market Analysis
 date: '2025-05-14'
 image: >-
-  https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80
+  https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=80
 tags:
   - 시장분석
   - 일본EC
@@ -17,7 +17,7 @@ tags:
 ✓ 고객 생애 가치(LTV)는 꾸준히 증가하고 있으며, 재구매율도 25%로 안정적입니다 (CollaboTicket 운영 데이터)
 ✓ 콘텐츠 최적화를 통해 SEO 순위를 높이는 전략이 필요합니다 (Statista 2024)
 
-![일본 EC 시장 트렌드 2025: 성장률보다 중요한 채널별 전환 전략](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80)
+![일본 EC 시장 트렌드 2025: 성장률보다 중요한 채널별 전환 전략](https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 EC 시장 데이터
 - 일본 EC 시장 규모는 2025년 약 20조 엔으로 예상되며, 지속적인 성장이 기대됩니다 (METI EC Market Survey 2024)
@@ -28,6 +28,8 @@ tags:
 | 라쿠텐 | 2.5% | 28% | 12,000엔 |
 | 아마존 재팬 | 3.8% | 30% | 15,500엔 |
 | Qoo10 | 2.0% | 22% | 10,000엔 |
+
+![일본 EC 시장 트렌드 2025: 성장률보다 중요한 채널별 전환 전략 본문 이미지](https://picsum.photos/seed/ct-body-japan-ec-market-trends-2026/1400/900)
 
 (출처: METI, eMarketer 2024)
 
