@@ -265,12 +265,19 @@
   }
 
   .type-lead,
-  .type-body,
-  .type-faq-question {
+  .type-body {
     word-break: keep-all;
     overflow-wrap: anywhere;
     line-break: strict;
     text-wrap: pretty;
+    hyphens: none;
+  }
+
+  .type-faq-question {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    line-break: auto;
+    text-wrap: wrap;
     hyphens: none;
   }
 
@@ -338,33 +345,37 @@
   margin-top: 1rem;
 }
 
+.insight-body h2,
+.insight-body h3,
+.insight-body h3.insight-faq-question {
+  max-width: none;
+  overflow-wrap: normal;
+  line-break: auto;
+  text-wrap: wrap;
+  hyphens: none;
+  word-break: keep-all;
+}
+
 .insight-body h2 {
   margin-top: 2.75rem;
   scroll-margin-top: 6rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
-  max-width: var(--type-section-max);
   font-size: var(--type-section-size);
   line-height: var(--type-section-lh);
   font-weight: 800;
   letter-spacing: var(--type-section-ls);
   color: var(--foreground);
-  text-wrap: pretty;
-  word-break: keep-all;
-  line-break: strict;
 }
 
 .insight-body h3 {
   margin-top: 1.75rem;
   scroll-margin-top: 6rem;
-  max-width: var(--type-section-max);
   font-size: 1.05rem;
   line-height: var(--type-card-lh);
   font-weight: 700;
   letter-spacing: var(--type-card-ls);
   color: var(--foreground);
-  text-wrap: pretty;
-  word-break: keep-all;
 }
 
 .insight-body p {

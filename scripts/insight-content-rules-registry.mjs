@@ -119,6 +119,17 @@ export const CONTENT_RULE_REGISTRY = [
     fix: ["fix:insight-markdown"],
   },
   {
+    id: "heading-faq-single-line",
+    title: "소제목·FAQ 질문 단일 줄",
+    summary:
+      "FACT/INSIGHT/ACTION ## 제목과 FAQ ### 질문은 마크다운 한 줄로 작성합니다. 렌더 시 em max-width·pretty wrap으로 불필요하게 줄바꿈되지 않도록 CSS를 적용합니다.",
+    module: "app/globals.css",
+    generation: true,
+    runtime: true,
+    enforce: ["scan:insight-markdown"],
+    fix: ["fix:insight-markdown"],
+  },
+  {
     id: "sanitize-output-hygiene",
     title: "본문 후처리·누수 제거",
     summary:

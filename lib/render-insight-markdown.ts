@@ -178,6 +178,37 @@ function openExternalLinksInNewTab(html: string) {
   })
 }
 
+function markFaqQuestionHeadings(html: string) {
+  const parts = html.split(/(<h2\b[^>]*>[\s\S]*?<\/h2>)/gi)
+  let inFaq = false
+
+  return parts
+    .map((part) => {
+      if (/^<h2\b/i.test(part)) {
+        const text = part.replace(/<[^>]+>/g, "").trim()
+        inFaq = text === "FAQ"
+        return part
+      }
+
+      if (inFaq) {
+        return part.replace(/<h3(\s[^>]*)?>/gi, (match, attrs = "") => {
+          if (/\bclass=/i.test(attrs)) {
+            return match.replace(/\bclass=(["'])([^"']*)\1/i, (_full, quote, classes) => {
+              const next = classes.includes("insight-faq-question")
+                ? classes
+                : `${classes} insight-faq-question`.trim()
+              return `class=${quote}${next}${quote}`
+            })
+          }
+          return `<h3 class="insight-faq-question"${attrs}>`
+        })
+      }
+
+      return part
+    })
+    .join("")
+}
+
 function addHeadingIds(html: string) {
   const toc: InsightTocItem[] = []
   const usedIds = new Map<string, number>()
@@ -201,7 +232,8 @@ export async function renderInsightMarkdown(rawBody: string, slug?: string) {
   const body = normalizeReadableMarkdown(stripSectionsForRender(rawBody))
   const parsed = await marked.parse(escapeNumericRangeTildes(body))
   const wrapped = wrapTables(splitCheckmarkParagraphs(openExternalLinksInNewTab(parsed)))
-  const highlighted = applyGlossaryHighlights(wrapped, slug)
+  const withFaqHeadings = markFaqQuestionHeadings(wrapped)
+  const highlighted = applyGlossaryHighlights(withFaqHeadings, slug)
   return addHeadingIds(highlighted)
 }
 
