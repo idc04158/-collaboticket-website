@@ -8,9 +8,13 @@ export const metadata: Metadata = {
   title: "상담 신청 | CollaboTicket",
   description:
     "일본 진출·인플루언서·체험단·SNS 운영 등 실행 전략 상담을 신청하세요. 제출 후 1영업일 이내 연락드립니다.",
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "상담 신청 | CollaboTicket",
     description: "데이터 기반 일본 시장 실행 전략 상담을 신청하세요.",
+    url: "/contact",
   },
 }
 

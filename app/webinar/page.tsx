@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "웨비나 | CollaboTicket",
   description:
     "일본 이커머스·인플루언서·데이터 전략을 다루는 웨비나 일정과 다시 보기 요약을 안내합니다.",
+  alternates: {
+    canonical: "/webinar",
+  },
 }
 
 export default function WebinarPage() {

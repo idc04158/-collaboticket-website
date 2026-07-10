@@ -4,6 +4,7 @@ import { Noto_Sans_KR } from "next/font/google"
 import { SiteAnalytics } from "@/components/analytics/site-analytics"
 import { FunnelPopupManager } from "@/components/funnel-popup-manager"
 import { VisitorDiscordNotifier } from "@/components/visitor-discord-notifier"
+import { SITE_URL } from "@/lib/site-url"
 
 import "./globals.css"
 
@@ -13,6 +14,7 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "CollaboTicket | 데이터로 설계하는 일본 시장 진출 전략",
   description:
     "콜라보티켓은 한국 브랜드의 일본 진출을 전략적으로 설계하는 글로벌 마케팅 파트너입니다.",

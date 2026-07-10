@@ -71,9 +71,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${result.title} | CollaboTicket`,
     description: result.aiSummary || result.description,
+    alternates: {
+      canonical: `/insights/${params.slug}`,
+    },
     openGraph: {
       title: result.title,
       description: result.aiSummary || result.description,
+      url: `/insights/${params.slug}`,
       images: result.image ? [{ url: result.image }] : undefined,
     },
   }

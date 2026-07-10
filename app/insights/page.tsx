@@ -20,9 +20,13 @@ export const metadata: Metadata = {
   title: "일본 시장 인사이트 | CollaboTicket",
   description:
     "일본 EC, SNS, 소비자 트렌드, 광고 데이터, 플랫폼 변화, 성공 사례를 분석한 일본 시장 데이터 센터입니다.",
+  alternates: {
+    canonical: "/insights",
+  },
   openGraph: {
     title: "일본 시장 인사이트 | CollaboTicket",
     description: "실행 가능한 일본 시장 데이터와 인사이트를 매주 업데이트합니다.",
+    url: "/insights",
   },
 }
 
