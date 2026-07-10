@@ -41,7 +41,7 @@ image: >-
 4. TikTok Shop에서의 성과를 지속적으로 분석하여 향후 마케팅 전략을 조정합니다.
 
 ## 다음 단계
-TikTok Shop 진입 후, 성과를 정기적으로 검토하여 필요시 마케팅 전략을 조정하는 것이 중요합니다. 추가로, [라인 CRM을 활용하여 고객 관계 관리의 효율성을 높이는 방법](https://collaboticket.com/insights/line-official-account-funnel)을 고려해 보세요.
+TikTok Shop 진입 후, 성과를 정기적으로 검토하여 필요시 마케팅 전략을 조정하는 것이 중요합니다. 추가로, [라인 CRM을 활용하여 고객 관계 관리의 효율성을 높이는 방법](/insights/line-official-account-funnel)을 고려해 보세요.
 
 ## 실행 체크리스트
 - [ ] 광고비 예산 설정 (30~50만 엔)

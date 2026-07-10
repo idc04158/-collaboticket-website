@@ -4,7 +4,7 @@ import path from "path"
 const ROOT = process.cwd()
 const BLOG_DIR = path.join(ROOT, "content", "blog")
 
-const MARKDOWN_LINK_RE = /\[([^\]]*)\]\((\/[^)\s#]+)(#[^)\s]+)?\)/g
+const MARKDOWN_LINK_RE = /\[([^\]]*)\]\(([^)\s#]+)(#[^)\s]+)?\)/g
 const RAW_PATH_RE = /(?<![(\["'`])(\/insights\/[a-z0-9-]+)/gi
 const HREF_RE = /href=["'](\/[^"'#?]+)(#[^"'?]+)?["']/g
 
@@ -40,6 +40,8 @@ function collectLinks(filePath, content) {
   const links = []
 
   for (const match of content.matchAll(MARKDOWN_LINK_RE)) {
+    const href = match[2]
+    if (!href.startsWith("/") && !/^https?:\/\//i.test(href)) continue
     links.push({
       file: rel,
       text: match[1],
@@ -76,19 +78,48 @@ function collectLinks(filePath, content) {
   return links
 }
 
+function normalizeInternalHref(href) {
+  const trimmed = href.trim()
+  if (trimmed.startsWith("/")) return trimmed
+
+  const malformed = trimmed.match(/^https?:\/\/collaboticket(\/insights\/[a-z0-9-]+)/i)
+  if (malformed) return malformed[1]
+
+  try {
+    const url = new URL(trimmed)
+    const host = url.hostname.toLowerCase()
+    if (host === "collaboticket.com" || host === "www.collaboticket.com") {
+      return url.pathname
+    }
+    if (host === "collaboticket") {
+      return url.pathname
+    }
+  } catch {
+    return null
+  }
+
+  return null
+}
+
 function validateLink(link, insightSlugs) {
   const issues = []
   const { path: href, hash } = link
 
-  if (!href.startsWith("/")) {
+  const internalPath = normalizeInternalHref(href)
+  if (internalPath === null) {
+    if (/^https?:\/\//i.test(href)) return issues
     issues.push("not-internal")
     return issues
   }
 
-  if (STATIC_ROUTES.has(href)) return issues
+  if (STATIC_ROUTES.has(internalPath)) return issues
 
-  if (href.startsWith("/insights/")) {
-    const slug = href.slice("/insights/".length)
+  if (/^https?:\/\/collaboticket\//i.test(href)) {
+    issues.push("malformed-host")
+  }
+
+  if (internalPath.startsWith("/insights/")) {
+    const slug = internalPath.slice("/insights/".length)
     if (!/^[a-z0-9-]+$/.test(slug)) {
       issues.push("invalid-slug-characters")
     }
@@ -102,7 +133,7 @@ function validateLink(link, insightSlugs) {
     return issues
   }
 
-  if (href.startsWith("/#")) {
+  if (internalPath.startsWith("/#")) {
     return issues
   }
 

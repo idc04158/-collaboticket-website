@@ -81,13 +81,33 @@ export function normalizeCheckmarkBullets(text: string) {
   return result.join("\n")
 }
 
+function ensureBlankLineBeforeTableBlocks(text: string) {
+  const lines = text.replace(/\r\n/g, "\n").split("\n")
+  const result: string[] = []
+
+  for (const line of lines) {
+    const trimmed = line.trim()
+    const isTableRow = trimmed.startsWith("|") && trimmed.endsWith("|")
+    const prev = result[result.length - 1]
+    const prevIsTableRow = prev !== undefined && prev.trim().startsWith("|") && prev.trim().endsWith("|")
+
+    if (isTableRow && !prevIsTableRow && prev !== undefined && prev.trim() !== "") {
+      result.push("")
+    }
+
+    result.push(line)
+  }
+
+  return result.join("\n")
+}
+
 function normalizeReadableMarkdown(body: string) {
   let next = normalizeCheckmarkBullets(body)
 
   // Blank line before headings and block elements for clearer section breaks.
   next = next.replace(/([^\n])\n(#{1,3}\s)/g, "$1\n\n$2")
   next = next.replace(/([^\n])\n(>\s)/g, "$1\n\n$2")
-  next = next.replace(/([^\n])\n(\|[^\n]+\|)/g, "$1\n\n$2")
+  next = ensureBlankLineBeforeTableBlocks(next)
 
   return next
 }

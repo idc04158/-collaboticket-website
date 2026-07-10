@@ -80,4 +80,4 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - Statista 2024
 - JETRO 2023
 
-추가 자료를 원하시면 [일본 EC 시장 트렌드](https://collaboticket.com/insights/japan-ec-market-trends-2026), [일본 eCommerce 2025](https://collaboticket.com/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](https://collaboticket.com/insights/japan-ec-kpi-dashboard) 등을 참고하세요.
+추가 자료를 원하시면 [일본 EC 시장 트렌드](/insights/japan-ec-market-trends-2026), [일본 eCommerce 2025](/insights/japan-ecommerce-2025), [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard) 등을 참고하세요.
