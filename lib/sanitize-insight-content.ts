@@ -1,10 +1,11 @@
 import { normalizeInsightKorean } from "@/lib/insight-language-rules.mjs"
 import { fixMarkdownHygiene } from "@/lib/insight-markdown-hygiene.mjs"
+import { polishInsightCopy } from "@/lib/insight-plaintext-polish.mjs"
 
 /** Remove leaked metadata / markup that should never appear in rendered insight bodies. */
 /** @see scripts/insight-content-rules-registry.mjs — id: sanitize-output-hygiene */
 export function sanitizeInsightBody(content: string) {
-  let body = fixMarkdownHygiene(normalizeInsightKorean(content))
+  let body = polishInsightCopy(fixMarkdownHygiene(normalizeInsightKorean(content)))
 
   // Trailing JSON description leaked from rewrite prompts
   body = body.replace(/^\s*\{"description"\s*:\s*"[\s\S]*?"\}\s*$/gm, "")

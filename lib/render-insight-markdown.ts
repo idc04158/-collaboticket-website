@@ -1,5 +1,6 @@
 import { marked } from "marked"
 import { applyGlossaryHighlights } from "@/lib/apply-glossary-highlights"
+import { polishInsightCopy } from "@/lib/insight-plaintext-polish.mjs"
 
 export type InsightTocItem = {
   id: string
@@ -70,7 +71,7 @@ export async function renderInsightMarkdown(rawBody: string, slug?: string) {
 }
 
 export function splitSummaryBullets(summary: string) {
-  return summary
+  return polishInsightCopy(summary)
     .split(/\n+/)
     .map((line) => line.replace(/^[\s•✓\-*]+\s*/, "").trim())
     .filter((line) => line.length > 0)

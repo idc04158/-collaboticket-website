@@ -1,7 +1,7 @@
 import type { InsightMeta } from "@/lib/insights"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
-
 import { getFollowUpInsights } from "@/lib/insight-reading-paths"
+import { polishInsightCopy } from "@/lib/insight-plaintext-polish.mjs"
 
 export type InsightDifficulty = "입문" | "실무" | "전문가"
 
@@ -113,17 +113,21 @@ export function estimateReadingTime(content: string, description: string) {
 export function extractSummaryParagraph(content: string) {
   const aiSummaryMatch = content.match(/^##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
   if (aiSummaryMatch) {
-    return aiSummaryMatch[1]
-      .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-      .replace(/\[[^\]]*\]\([^)]+\)/g, "")
-      .replace(/^✓\s*/gm, "")
-      .replace(/^-\s*/gm, "")
-      .trim()
+    return polishInsightCopy(
+      aiSummaryMatch[1]
+        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+        .replace(/\[[^\]]*\]\([^)]+\)/g, "")
+        .replace(/^✓\s*/gm, "")
+        .replace(/^-\s*/gm, "")
+        .trim(),
+    )
   }
 
   const summaryMatch = content.match(/^##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
   if (summaryMatch) {
-    return summaryMatch[1].replace(/!\[[^\]]*\]\([^)]+\)/g, "").replace(/\[[^\]]*\]\([^)]+\)/g, "").trim()
+    return polishInsightCopy(
+      summaryMatch[1].replace(/!\[[^\]]*\]\([^)]+\)/g, "").replace(/\[[^\]]*\]\([^)]+\)/g, "").trim(),
+    )
   }
   return ""
 }

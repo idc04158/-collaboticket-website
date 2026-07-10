@@ -11,32 +11,32 @@ image: >-
   https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80
 ---
 ## AI 30초 요약
-✓ 일본 B2C EC 시장 규모는 약 25.3조 엔으로, 전년 대비 8% 성장했습니다 (경제산업성 METI EC Market Survey 2024).  
-✓ 소비자의 82%가 제품 구매 시 리뷰를 중요하게 고려합니다 (NielsenIQ 2024).  
-✓ Qoo10 플랫폼에서 리뷰어의 평균 믿음도 스코어는 4.7점입니다 (Qoo10 분기 보고서 2024).  
-✓ Rakuten에서 리뷰를 통한 재구매율이 12% 증가한 사례가 있습니다 (Rakuten IR 2024).  
-✓ Amazon 제품 리뷰 수는 평균 150개로, 이는 신뢰도와 직접적인 연관이 있습니다 (Statista 2024).  
+✓ 일본 B2C EC 시장 규모는 약 25.3조 엔으로, 전년 대비 8% 성장했습니다 (경제산업성 METI EC Market Survey 2024).
+✓ 소비자의 82%가 제품 구매 시 리뷰를 중요하게 고려합니다 (NielsenIQ 2024).
+✓ Qoo10 플랫폼에서 리뷰어의 평균 믿음도 스코어는 4.7점입니다 (Qoo10 분기 보고서 2024).
+✓ Rakuten에서 리뷰를 통한 재구매율이 12% 증가한 사례가 있습니다 (Rakuten IR 2024).
+✓ Amazon 제품 리뷰 수는 평균 150개로, 이는 신뢰도와 직접적인 연관이 있습니다 (Statista 2024).
 
 ![리뷰 인증 리포트 포맷 샘플](https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80)
 
 ## FACT: 일본 시장 리뷰 현황
 일본 전자상거래 시장은 지속적으로 성장하고 있으며, 소비자 리뷰는 구매 결정에 큰 영향을 끼칩니다.
 
-| 플랫폼       | 시장 점유율 (%) | 리뷰 수 평균 | 재구매율(% 증가) | 출처                 |
+| 플랫폼 | 시장 점유율 (%) | 리뷰 수 평균 | 재구매율(% 증가) | 출처 |
 |--------------|-----------------|--------------|--------------------|----------------------|
-| Rakuten      | 27              | 200          | 12                 | Rakuten IR 2024      |
-| Amazon       | 36              | 150          | 10                 | Statista 2024        |
-| Qoo10        | 7               | 80           | 5                  | Qoo10 분기 보고서 2024 |
+| Rakuten | 27 | 200 | 12 | Rakuten IR 2024 |
+| Amazon | 36 | 150 | 10 | Statista 2024 |
+| Qoo10 | 7 | 80 | 5 | Qoo10 분기 보고서 2024 |
 
 
 
 운영 지표·벤치마크가 필요하면 [일본 EC KPI 대시보드](/insights/japan-ec-kpi-dashboard)를 참고하세요.
 
 ## ACTION: 즉시 실행할 단계
-1. **리뷰 분석**: 현재 리뷰 수와 평균 평점을 분석하고 정리합니다.
-2. **고객 피드백 루프 설정**: 소비자 피드백을 정기적으로 수집하여 개선 사항을 반영합니다.
-3. **플랫폼 맞춤 전략 마련**: 각 플랫폼에 맞는 리뷰 확보 및 인증 방안을 설계합니다.
-4. **4주 실행 계획 수립**: 주차별 목표, 담당자, 성과 지표를 설정합니다.
+1. 리뷰 분석: 현재 리뷰 수와 평균 평점을 분석하고 정리합니다.
+2. 고객 피드백 루프 설정: 소비자 피드백을 정기적으로 수집하여 개선 사항을 반영합니다.
+3. 플랫폼 맞춤 전략 마련: 각 플랫폼에 맞는 리뷰 확보 및 인증 방안을 설계합니다.
+4. 4주 실행 계획 수립: 주차별 목표, 담당자, 성과 지표를 설정합니다.
 
 ## 다음 단계
 Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입 전략](/insights/japan-ec-channel-entry-strategy)에서 확인하세요. 시장 규모·거시 지표는 [2024년 일본 이커머스 시장 트렌드 분석](/insights/japan-ecommerce-2025)를 참고하세요.
@@ -49,9 +49,9 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 - [ ] 월간 리포트에서 KPI 및 의사결정 기준을 명확히 설정합니다.
 
 ## 실무 TIP
-1. **리뷰 확보 방식**: 제품 출시 초기에는 인플루언서를 활용하여 리뷰 수를 신속히 확보합니다.  
-2. **정기적인 피드백 수집**: 고객 피드백을 정기적으로 분석하여 제품 개선안으로 반영하는 루프를 설정합니다.  
-3. **KPI 설정**: 리뷰 수와 평점을 KPI로 설정하여 성과를 지속적으로 모니터링합니다.  
+1. 리뷰 확보 방식: 제품 출시 초기에는 인플루언서를 활용하여 리뷰 수를 신속히 확보합니다.
+2. 정기적인 피드백 수집: 고객 피드백을 정기적으로 분석하여 제품 개선안으로 반영하는 루프를 설정합니다.
+3. KPI 설정: 리뷰 수와 평점을 KPI로 설정하여 성과를 지속적으로 모니터링합니다.
 
 ## FAQ
 ### 리뷰 수집에서 주의할 점은 무엇인가요?
@@ -70,14 +70,14 @@ Qoo10·Rakuten·Amazon·LINE 역할과 진입 순서는 [일본 EC 채널 진입
 고객 응대 프로세스를 정리하고, 정기적인 교육을 통해 서비스 품질을 높일 수 있습니다.
 
 ## References
-- 경제산업성 METI 2024  
-- NielsenIQ 2024  
-- Rakuten IR 2024  
-- Statista 2024  
-- Qoo10 분기 보고서 2024  
+- 경제산업성 METI 2024
+- NielsenIQ 2024
+- Rakuten IR 2024
+- Statista 2024
+- Qoo10 분기 보고서 2024
 
-[스킨케어 브랜드 성공 사례](/insights/cosme-lips-review-operations)  
-[Amazon 리뷰 최적화](/insights/amazon-japan-review-velocity)  
-[일본 리뷰 구조](/insights/japan-review-structure)  
-[Qoo10 출시 체크리스트](/insights/qoo10-launch-checklist-30days)  
+[스킨케어 브랜드 성공 사례](/insights/cosme-lips-review-operations)
+[Amazon 리뷰 최적화](/insights/amazon-japan-review-velocity)
+[일본 리뷰 구조](/insights/japan-review-structure)
+[Qoo10 출시 체크리스트](/insights/qoo10-launch-checklist-30days)
 [AI 기반 쇼핑 트렌드](/insights/ai-shopping-commerce-japan-2025)

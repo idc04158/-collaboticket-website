@@ -87,6 +87,17 @@ export const CONTENT_RULE_REGISTRY = [
     fix: ["fix:insight-language"],
   },
   {
+    id: "plaintext-polish",
+    title: "플레인텍스트 정리 (**·일본 조사 누수)",
+    summary:
+      "제목·요약·본문에 ** 마크다운이 그대로 노출되거나 한국어 문장에 を·バズ離れ 등 일본어 조사·표현이 섞이지 않게 정리합니다.",
+    module: "lib/insight-plaintext-polish.mjs",
+    generation: true,
+    runtime: true,
+    enforce: ["scan:insight-language"],
+    fix: ["fix:insight-language"],
+  },
+  {
     id: "title-publish-year-alignment",
     title: "제목·업로드 날짜·본문 연도 정합",
     summary:

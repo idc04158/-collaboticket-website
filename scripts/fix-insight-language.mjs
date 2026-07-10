@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Normalize Korean insight copy and fix common JP/KR mixing in markdown sources.
+ * Normalize Korean insight copy, unwrap leaked ** bold, fix JP/KR mixing.
  *
  * Usage:
  *   node scripts/fix-insight-language.mjs
@@ -11,7 +11,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { fileURLToPath } from "url"
-import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
+import { polishInsightCopy, polishInsightTags } from "../lib/insight-plaintext-polish.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BLOG_DIR = path.join(__dirname, "..", "content", "blog")
@@ -24,10 +24,11 @@ function fixFile(filePath) {
   const { data, content } = matter(raw)
 
   const nextData = { ...data }
-  if (typeof nextData.title === "string") nextData.title = normalizeInsightKorean(nextData.title)
-  if (typeof nextData.description === "string") nextData.description = normalizeInsightKorean(nextData.description)
+  if (typeof nextData.title === "string") nextData.title = polishInsightCopy(nextData.title)
+  if (typeof nextData.description === "string") nextData.description = polishInsightCopy(nextData.description)
+  if (Array.isArray(nextData.tags)) nextData.tags = polishInsightTags(nextData.tags)
 
-  const nextContent = normalizeInsightKorean(content)
+  const nextContent = polishInsightCopy(content)
   const nextRaw = matter.stringify(nextContent, nextData)
 
   if (nextRaw === raw) return false
