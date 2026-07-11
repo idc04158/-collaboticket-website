@@ -30,10 +30,10 @@ type PageProps = {
 
 const preConsultationHeading = "상담 전에 준비하면 좋은 자료"
 const diagnosisCtaHtml = `
-<aside class="my-10 rounded-[1.75rem] border border-[#00B140]/20 bg-[#00B140]/5 p-6">
+<aside class="my-10 rounded-[1.75rem] border border-[#00B140]/20 bg-[#00B140]/5 p-6 text-center">
   <p class="text-sm font-semibold text-[#00B140]">무료 진단</p>
-  <h2 class="mt-2 text-2xl font-bold tracking-tight text-foreground">우리 브랜드도 일본 시장에서 가능성이 있을까요?</h2>
-  <p class="mt-3 text-sm leading-relaxed text-muted-foreground">현재 상품, 채널, 예산만 알려주시면 일본 진출 가능성과 우선 실행 과제를 무료로 정리해 드립니다.</p>
+  <h2 class="mx-auto mt-2 max-w-2xl text-2xl font-bold tracking-tight text-foreground">우리 브랜드도 일본 시장에서 가능성이 있을까요?</h2>
+  <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">현재 상품, 채널, 예산만 알려주시면 일본 진출 가능성과 우선 실행 과제를 무료로 정리해 드립니다.</p>
   <a href="/contact?topic=diagnosis" class="mt-5 inline-flex rounded-xl bg-[#00B140] px-6 py-3 text-sm font-bold text-white">무료 일본 진출 진단 받기</a>
 </aside>
 `

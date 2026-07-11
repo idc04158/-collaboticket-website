@@ -10,7 +10,7 @@ export function InsightDiagnosisCta() {
       className="mt-12 rounded-[2rem] border border-brand/25 bg-brand-light/50 p-8 text-center sm:p-10"
     >
       <p className="text-sm font-semibold text-brand">무료 진단</p>
-      <h2 id="diagnosis-cta-title" className="type-section-title mt-3">
+      <h2 id="diagnosis-cta-title" className="type-section-title type-section-title--center mt-3">
         우리 브랜드도 일본 시장에서 가능성이 있을까요?
       </h2>
       <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
