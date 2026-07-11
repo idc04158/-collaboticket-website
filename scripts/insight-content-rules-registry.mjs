@@ -120,9 +120,9 @@ export const CONTENT_RULE_REGISTRY = [
   },
   {
     id: "heading-faq-single-line",
-    title: "소제목·FAQ 질문 단일 줄",
+    title: "제목·소제목·FAQ 질문 자연 줄바꿈",
     summary:
-      "FACT/INSIGHT/ACTION ## 제목과 FAQ ### 질문은 마크다운 한 줄로 작성합니다. 렌더 시 em max-width·pretty wrap으로 불필요하게 줄바꿈되지 않도록 CSS를 적용합니다.",
+      "기사 H1(title)·FACT/INSIGHT/ACTION ## 제목·FAQ ### 질문은 한 줄로 작성합니다. 렌더 시 em max-width·pretty wrap으로 불필요하게 줄바꿈되지 않도록 CSS를 적용합니다.",
     module: "app/globals.css",
     generation: true,
     runtime: true,

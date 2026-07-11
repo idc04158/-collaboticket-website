@@ -27,7 +27,9 @@ Bad:
 ## Always do
 
 - Write headings as **one natural Korean sentence** (meaning unit).
-- Control wrapping with CSS only: `max-width` (**em** for Korean — not `ch`), `line-height`, `letter-spacing`, `text-wrap: pretty`, `word-break: keep-all`, `line-break: strict`.
+- Control wrapping with CSS only: `line-height`, `letter-spacing`, `word-break: keep-all`. Prefer natural wrap over early breaks.
+- For **article H1**, **insight body h2/h3**, and **FAQ questions**: do **not** use narrow `em` max-width or `text-wrap: pretty` — use `max-width: none`, `text-wrap: wrap`, `line-break: auto` so titles wrap only when the viewport is actually too narrow.
+- For hero / section / lead copy, `max-width` (**em** for Korean — not `ch`) and `text-wrap: pretty` are still OK.
 - Use shared classes from `lib/typography.ts` and `app/globals.css`:
 
 | Role | Class |
@@ -49,7 +51,7 @@ Add `type-section-title--center` and `type-lead--center` when the block is text-
 
 ## Insight markdown
 
-Article headings in `.insight-body` inherit typography tokens automatically. Do not inject `<br>` into markdown titles.
+Article titles (`type-article-title`) and headings in `.insight-body` wrap naturally. Do not inject `<br>` into markdown titles or FAQ questions.
 
 ## Design tone
 

@@ -217,8 +217,7 @@
   .type-hero,
   .type-display,
   .type-section-title,
-  .type-card-title,
-  .type-article-title {
+  .type-card-title {
     font-weight: 800;
     color: inherit;
     word-break: keep-all;
@@ -258,10 +257,17 @@
   }
 
   .type-article-title {
-    max-width: var(--type-article-max);
+    max-width: none;
     font-size: var(--type-article-size);
     line-height: var(--type-article-lh);
     letter-spacing: var(--type-article-ls);
+    font-weight: 800;
+    color: inherit;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    line-break: auto;
+    text-wrap: wrap;
+    hyphens: none;
   }
 
   .type-lead,
