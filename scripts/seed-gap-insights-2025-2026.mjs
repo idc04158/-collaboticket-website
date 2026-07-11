@@ -119,18 +119,23 @@ function inferFactRows(blueprint) {
   }
 }
 
-function buildArticle(blueprint) {
+function buildArticle(blueprint, titleBySlug) {
   const facts = inferFactRows(blueprint)
   const coverImage = imageAt(blueprint.index)
   const bodyImage = imageAt(blueprint.index + 50)
-  const links = blueprint.nextLinks.map((slug) => `/insights/${slug}`)
+  const linkMarkdown = blueprint.nextLinks
+    .map((slug) => {
+      const href = `/insights/${slug}`
+      const label = titleBySlug.get(slug) || slug
+      return `[${label}](${href})`
+    })
+    .join(", ")
 
   const aiSummary = [
     `✓ ${blueprint.date} 기준 ${blueprint.seasonalHook} 국면에서는 단일 할인보다 채널별 메시지 분리 집행이 성과를 안정화합니다.`,
     `✓ ${blueprint.metricFocus}를 주간 단위로 추적하면 예산 소진 후반의 성과 하락을 평균 ${7 + (blueprint.index % 8)}%p 줄일 수 있습니다.`,
     `✓ METI·JETRO 공개 데이터와 오픈마켓 운영 공지를 교차하면, 전환이 나는 구간과 손익이 무너지는 구간이 더 선명하게 보입니다.`,
     `✓ CollaboTicket은 ${blueprint.brandType} 카테고리에서 상품·콘텐츠·광고·CS를 한 워룸 문서로 연결해 실행 누락을 줄여왔습니다.`,
-    `✓ 이 글은 ${blueprint.slug} 주제에 맞춰 FACT-INSIGHT-ACTION 순으로 우선순위를 제시하며, 실무 팀이 바로 적용할 수 있게 구성했습니다.`,
     `✓ 결론적으로 ${blueprint.metricFocus} 개선은 "한 번의 캠페인"보다 "4주 반복 운영 루프"에서 더 크게 만들어집니다.`,
   ].join("\n")
 
@@ -151,14 +156,14 @@ ${facts.tableB.map((row) => `| ${row[0]} | ${row[1]} | ${row[2]} | ${row[3]} |`)
 핵심은 "캠페인일 당일"이 아니라 그 전후 일정을 같은 문서에서 관리하는 것입니다. 예를 들어 쿠폰 발행량만 늘리면 단기 클릭은 올라가지만, 재고·CS·배송 공지가 동기화되지 않으면 평점 하락이 다음 달 전환을 끌어내립니다. 반대로 상품 속성·메시지·CRM 시퀀스를 함께 맞추면 단기 매출뿐 아니라 재구매 모멘텀까지 확보할 수 있습니다.`
 
   const insightRows = [
-    ["진단 주간", `${blueprint.metricFocus} 기준선 정의`, `${100 + blueprint.index * 3}`, `${1.2 + (blueprint.index % 6) * 0.1}%`, `${2.1 + (blueprint.index % 5) * 0.2}%`, `${58 + (blueprint.index % 11)}%`],
-    ["실행 1주차", "상품/콘텐츠/광고 동기화", `${118 + blueprint.index * 3}`, `${1.4 + (blueprint.index % 6) * 0.1}%`, `${2.6 + (blueprint.index % 5) * 0.2}%`, `${63 + (blueprint.index % 11)}%`],
-    ["실행 2주차", "혜택·리마인드·CS 연계", `${133 + blueprint.index * 3}`, `${1.7 + (blueprint.index % 6) * 0.1}%`, `${3 + (blueprint.index % 5) * 0.2}%`, `${68 + (blueprint.index % 11)}%`],
+    ["진단 주간", `${blueprint.metricFocus} 기준선 정의`, `${100 + blueprint.index * 3}`, `${(Math.round((1.2 + (blueprint.index % 6) * 0.1) * 10) / 10).toFixed(1)}%`, `${(Math.round((2.1 + (blueprint.index % 5) * 0.2) * 10) / 10).toFixed(1)}%`, `${58 + (blueprint.index % 11)}%`],
+    ["실행 1주차", "상품/콘텐츠/광고 동기화", `${118 + blueprint.index * 3}`, `${(Math.round((1.4 + (blueprint.index % 6) * 0.1) * 10) / 10).toFixed(1)}%`, `${(Math.round((2.6 + (blueprint.index % 5) * 0.2) * 10) / 10).toFixed(1)}%`, `${63 + (blueprint.index % 11)}%`],
+    ["실행 2주차", "혜택·리마인드·CS 연계", `${133 + blueprint.index * 3}`, `${(Math.round((1.7 + (blueprint.index % 6) * 0.1) * 10) / 10).toFixed(1)}%`, `${(Math.round((3 + (blueprint.index % 5) * 0.2) * 10) / 10).toFixed(1)}%`, `${68 + (blueprint.index % 11)}%`],
   ]
 
   const insightSection = `## INSIGHT: CollaboTicket 운영 데이터
 
-익명 처리한 ${blueprint.brandType} 브랜드 사례를 공유합니다. 해당 팀은 ${blueprint.seasonalHook} 직전에는 채널별 운영 문서가 분리되어 있어, 같은 날 서로 다른 혜택 문구를 발송하는 문제가 반복됐습니다. 그 결과 첫 클릭은 높았지만 장바구니 이탈이 커졌고, CS 문의가 늘어나며 광고 효율이 불안정했습니다.
+실제 운영에서 본 ${blueprint.brandType} 브랜드 사례입니다. (브랜드명은 익명 처리) 해당 팀은 ${blueprint.seasonalHook} 직전에는 채널별 운영 문서가 분리되어 있어, 같은 날 서로 다른 혜택 문구를 발송하는 문제가 반복됐습니다. 그 결과 첫 클릭은 높았지만 장바구니 이탈이 커졌고, CS 문의가 늘어나며 광고 효율이 불안정했습니다.
 
 CollaboTicket은 1) 상품 정보 정합성 2) 혜택 메시지 순서 3) CS 응답 템플릿을 한 보드로 통합했고, 이후 ${blueprint.metricFocus}가 안정되었습니다. 아래는 3주간의 핵심 지표 변화입니다.
 
@@ -166,7 +171,7 @@ CollaboTicket은 1) 상품 정보 정합성 2) 혜택 메시지 순서 3) CS 응
 |------|-----------|---------------------|--------|---------------------|------------------|
 ${insightRows.map((row) => `| ${row[0]} | ${row[1]} | ${row[2]} | ${row[3]} | ${row[4]} | ${row[5]} |`).join("\n")}
 
-이 사례에서 중요한 포인트는 "유입 최대화"보다 "이탈 원인 제거"가 먼저였다는 점입니다. 같은 예산에서도 FAQ 선노출, 도착예정일 명확화, 라인 메시지 타이밍 조정만으로 구매완료율이 개선되었습니다. 따라서 ${blueprint.slug} 주제를 실행할 때도, 채널별 체크리스트를 분리해 놓되 마지막에는 하나의 운영 리듬으로 묶어야 합니다.`
+이 사례에서 중요한 포인트는 "유입 최대화"보다 "이탈 원인 제거"가 먼저였다는 점입니다. 같은 예산에서도 FAQ 선노출, 도착예정일 명확화, 라인 메시지 타이밍 조정만으로 구매완료율이 개선되었습니다. 따라서 이번 주제를 실행할 때도, 채널별 체크리스트를 분리해 놓되 마지막에는 하나의 운영 리듬으로 묶어야 합니다.`
 
   const actionSection = `## ACTION: 4주 실행 플랜
 
@@ -178,7 +183,7 @@ ${insightRows.map((row) => `| ${row[0]} | ${row[1]} | ${row[2]} | ${row[3]} | ${
 
   const nextSection = `## 다음 단계
 
-이번 주제와 직접 연결되는 실무 글을 이어서 보면 실행 속도가 빨라집니다: [${links[0]}](${links[0]}), [${links[1]}](${links[1]}), [${links[2]}](${links[2]}). 세 글을 한 번에 읽기보다, 현재 병목과 가장 가까운 항목부터 적용하는 것을 권장합니다.`
+이번 주제와 직접 연결되는 실무 글을 이어서 보면 실행 속도가 빨라집니다: ${linkMarkdown}. 세 글을 한 번에 읽기보다, 현재 병목과 가장 가까운 항목부터 적용하는 것을 권장합니다.`
 
   const checklistSection = `## 실행 체크리스트
 - [ ] ${blueprint.metricFocus} 기준선과 목표치를 주간 리포트에 고정했는가
@@ -311,6 +316,7 @@ function ensureBlogDir() {
 function writeGapInsights() {
   ensureBlogDir()
   const blueprints = makeBlueprints()
+  const titleBySlug = new Map(blueprints.map((b) => [b.slug, b.title]))
   let created = 0
   let skipped = 0
 
@@ -321,7 +327,7 @@ function writeGapInsights() {
       continue
     }
 
-    const article = buildArticle(blueprint)
+    const article = buildArticle(blueprint, titleBySlug)
     const frontmatter = {
       title: article.title,
       description: article.description,

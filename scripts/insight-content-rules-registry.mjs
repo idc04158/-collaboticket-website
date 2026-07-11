@@ -130,6 +130,16 @@ export const CONTENT_RULE_REGISTRY = [
     fix: ["fix:insight-markdown"],
   },
   {
+    id: "insight-quality-hygiene",
+    title: "수치·링크·번역체 품질 위생",
+    summary:
+      "표 수치 float 노이즈(1.7999…%), 내부 링크 핸들 노출, '익명 처리한…공유합니다' 번역체 오프너, 본문 slug 누수를 금지합니다. 런타임 sanitize + fix:insight-quality로 일괄 정리합니다.",
+    module: "lib/insight-quality-hygiene.mjs",
+    generation: true,
+    runtime: true,
+    fix: ["fix:insight-quality"],
+  },
+  {
     id: "sanitize-output-hygiene",
     title: "본문 후처리·누수 제거",
     summary:

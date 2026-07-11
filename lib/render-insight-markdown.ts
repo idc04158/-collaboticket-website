@@ -156,6 +156,29 @@ function isExternalHref(href: string) {
   }
 }
 
+function resolveInsightLinkLabels(html: string, titleBySlug?: Map<string, string>) {
+  if (!titleBySlug || titleBySlug.size === 0) return html
+
+  return html.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (full, attrs: string, inner: string) => {
+    const hrefMatch = attrs.match(/\bhref=["'](\/insights\/([^"'/#?]+))["']/i)
+    if (!hrefMatch) return full
+
+    const slug = hrefMatch[2]
+    const title = titleBySlug.get(slug)
+    if (!title) return full
+
+    const text = inner.replace(/<[^>]*>/g, "").trim()
+    const isPathLike =
+      text === `/insights/${slug}` ||
+      text === slug ||
+      text === `insights/${slug}` ||
+      /^\/insights\//.test(text)
+
+    if (!isPathLike) return full
+    return `<a${attrs}>${title}</a>`
+  })
+}
+
 function openExternalLinksInNewTab(html: string) {
   return html.replace(/<a\b([^>]*)>/gi, (match, attrs: string) => {
     const hrefMatch = attrs.match(/\bhref=["']([^"']+)["']/i)
@@ -228,13 +251,32 @@ function addHeadingIds(html: string) {
   return { html: withIds, toc }
 }
 
-export async function renderInsightMarkdown(rawBody: string, slug?: string) {
+export async function renderInsightMarkdown(
+  rawBody: string,
+  slug?: string,
+  titleBySlug?: Map<string, string>,
+) {
   const body = normalizeReadableMarkdown(stripSectionsForRender(rawBody))
   const parsed = await marked.parse(escapeNumericRangeTildes(body))
-  const wrapped = wrapTables(splitCheckmarkParagraphs(openExternalLinksInNewTab(parsed)))
+  const withLinks = resolveInsightLinkLabels(openExternalLinksInNewTab(parsed), titleBySlug)
+  const wrapped = wrapTables(splitCheckmarkParagraphs(withLinks))
   const withFaqHeadings = markFaqQuestionHeadings(wrapped)
-  const highlighted = applyGlossaryHighlights(withFaqHeadings, slug)
+  const withMidCta = injectMidCtaMarker(withFaqHeadings)
+  const highlighted = applyGlossaryHighlights(withMidCta, slug)
   return addHeadingIds(highlighted)
+}
+
+/** Marker consumed by InsightGlossaryBody to place a mid-article inquiry CTA. */
+export const INSIGHT_MID_CTA_MARKER = "<!--INSIGHT_MID_CTA-->"
+
+function injectMidCtaMarker(html: string) {
+  if (html.includes(INSIGHT_MID_CTA_MARKER)) return html
+  // Place CTA just before ACTION / 다음 단계 so readers convert after the case study.
+  const replaced = html.replace(
+    /(<h2\b[^>]*>\s*(?:ACTION:|다음 단계)[\s\S]*?<\/h2>)/i,
+    `${INSIGHT_MID_CTA_MARKER}$1`,
+  )
+  return replaced === html ? `${html}${INSIGHT_MID_CTA_MARKER}` : replaced
 }
 
 export function splitSummaryBullets(summary: string) {

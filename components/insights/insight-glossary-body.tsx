@@ -1,10 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { memo, useCallback, useEffect, useRef, useState } from "react"
+import { memo, useCallback, useEffect, useRef, useState, type ReactNode } from "react"
 import { createPortal } from "react-dom"
 
 import { getGlossaryHref, MARKETING_GLOSSARY_SLUG } from "@/lib/marketing-glossary"
+import { INSIGHT_MID_CTA_MARKER } from "@/lib/render-insight-markdown"
 
 type TooltipState = {
   id: string
@@ -18,28 +19,21 @@ type Props = {
   html: string
   slug?: string
   className?: string
+  midCta?: ReactNode
 }
 
 const HIDE_DELAY_MS = 160
 
 /** Re-render only when html/className change — avoids DOM reset on tooltip toggles. */
-const InsightHtmlSection = memo(function InsightHtmlSection({
+const InsightHtmlBlock = memo(function InsightHtmlBlock({
   html,
   className,
-  sectionRef,
 }: {
   html: string
   className?: string
-  sectionRef: React.RefObject<HTMLElement>
 }) {
-  return (
-    <section
-      ref={sectionRef}
-      aria-label="리포트 본문"
-      className={className}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  )
+  if (!html) return null
+  return <div className={className} dangerouslySetInnerHTML={{ __html: html }} />
 })
 
 function GlossaryTooltip({
@@ -75,12 +69,16 @@ function GlossaryTooltip({
   )
 }
 
-export function InsightGlossaryBody({ html, slug, className }: Props) {
+export function InsightGlossaryBody({ html, slug, className, midCta }: Props) {
   const sectionRef = useRef<HTMLElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
   const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [tooltip, setTooltip] = useState<TooltipState | null>(null)
   const [mounted, setMounted] = useState(false)
+
+  const markerIndex = html.indexOf(INSIGHT_MID_CTA_MARKER)
+  const beforeHtml = markerIndex >= 0 ? html.slice(0, markerIndex) : html
+  const afterHtml = markerIndex >= 0 ? html.slice(markerIndex + INSIGHT_MID_CTA_MARKER.length) : ""
 
   useEffect(() => {
     setMounted(true)
@@ -214,7 +212,11 @@ export function InsightGlossaryBody({ html, slug, className }: Props) {
 
   return (
     <>
-      <InsightHtmlSection html={html} className={className} sectionRef={sectionRef} />
+      <section ref={sectionRef} aria-label="리포트 본문" className={className}>
+        <InsightHtmlBlock html={beforeHtml} />
+        {midCta}
+        <InsightHtmlBlock html={afterHtml} />
+      </section>
 
       {mounted &&
         tooltip &&

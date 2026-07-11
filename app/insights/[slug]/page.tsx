@@ -9,6 +9,7 @@ import { InsightArticleJsonLd } from "@/components/insights/insight-article-json
 import { InsightDiagnosisCta } from "@/components/insights/insight-diagnosis-cta"
 import { InsightEngagementTracker } from "@/components/insights/insight-engagement-tracker"
 import { InsightGlossaryBody } from "@/components/insights/insight-glossary-body"
+import { InsightMidCta } from "@/components/insights/insight-mid-cta"
 import { InsightCoverImage } from "@/components/insights/insight-cover-image"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -41,8 +42,15 @@ function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
 }
 
-function prepareInsightContent(content: string, image?: string) {
-  let body = sanitizeInsightBody(content.replace(/<!-- expanded-blog-body-v2 -->\n?/g, ""))
+function prepareInsightContent(
+  content: string,
+  image?: string,
+  titleBySlug: Map<string, string> = new Map(),
+) {
+  let body = sanitizeInsightBody(
+    content.replace(/<!-- expanded-blog-body-v2 -->\n?/g, ""),
+    titleBySlug,
+  )
   body = body.replace(
     new RegExp(`^##\\s+${escapeRegExp(preConsultationHeading)}\\s*$`, "m"),
     `${diagnosisCtaHtml}\n## ${preConsultationHeading}`,
@@ -89,8 +97,9 @@ export default async function InsightDetailPage({ params }: PageProps) {
 
   const { content, ...meta } = result
   const allEnriched = getAllEnrichedInsights()
-  const preparedBody = prepareInsightContent(content, meta.image)
-  const { html, toc } = await renderInsightMarkdown(preparedBody, meta.slug)
+  const titleBySlug = new Map(allEnriched.map((post) => [post.slug, post.title]))
+  const preparedBody = prepareInsightContent(content, meta.image, titleBySlug)
+  const { html, toc } = await renderInsightMarkdown(preparedBody, meta.slug, titleBySlug)
   const summaryBullets = splitSummaryBullets(meta.aiSummary)
   const tocItems =
     toc.filter((item) => item.level === 2).length > 0
@@ -212,7 +221,12 @@ export default async function InsightDetailPage({ params }: PageProps) {
             </nav>
           )}
 
-          <InsightGlossaryBody html={html} slug={meta.slug} className="insight-body mt-12" />
+          <InsightGlossaryBody
+            html={html}
+            slug={meta.slug}
+            className="insight-body mt-12"
+            midCta={<InsightMidCta />}
+          />
 
           {meta.checklist.length > 0 && (
             <aside
