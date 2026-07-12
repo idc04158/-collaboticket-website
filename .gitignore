@@ -19,6 +19,8 @@ public/uploads/insights/*
 
 # Editorial learning session log (rules JSON is committed)
 content/editorial/edit-sessions.jsonl
+content/editorial/learning-log.jsonl
+content/editorial/backups/
 
 # Local script run artifacts
 scripts/*.log

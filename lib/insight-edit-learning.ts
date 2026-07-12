@@ -4,6 +4,7 @@ import {
   loadLearnedRulesStore,
   mergeLearnedRules,
   saveLearnedRulesStore,
+  writeEditorialLocalBackup,
 } from "@/lib/insight-learned-rules.mjs"
 
 type LearnedRule = {
@@ -33,12 +34,32 @@ export type LearnFromEditInput = {
   chat?: Array<{ role: string; content: string }>
 }
 
+export type EditorialBackupPayload = {
+  kind: "collaboticket-editorial-backup"
+  version: 1
+  at: string
+  sessionId: string
+  slug: string
+  title?: string
+  instruction: string
+  summary?: string
+  chat?: Array<{ role: string; content: string }>
+  before: string
+  after: string
+  added: LearnedRule[]
+  rulesStore: { version: number; updatedAt: string | null; rules: LearnedRule[] }
+  ephemeral: boolean
+  localBackupFiles?: string[]
+}
+
 export type LearnFromEditResult = {
   sessionId: string
   added: LearnedRule[]
   storePersisted: boolean
   ephemeral: boolean
   message: string
+  backup: EditorialBackupPayload
+  localBackupFiles: string[]
 }
 
 function excerpt(text: string, max = 3500) {
@@ -216,21 +237,50 @@ Only keep rules that are supported by the diff (pass=true). Drop vague or unsupp
 export async function learnFromAcceptedEdit(input: LearnFromEditInput): Promise<LearnFromEditResult> {
   const sessionId = `edit-${Date.now().toString(36)}`
   const ephemeral = Boolean(process.env.VERCEL) && !process.env.EDITORIAL_LEARNING_PATH
+  const now = new Date().toISOString()
 
-  if (!input.before.trim() || !input.after.trim() || input.before === input.after) {
+  const emptyBackup = async (
+    added: LearnedRule[],
+    message: string,
+    storePersisted: boolean,
+  ): Promise<LearnFromEditResult> => {
+    const store = await loadLearnedRulesStore()
+    const backup: EditorialBackupPayload = {
+      kind: "collaboticket-editorial-backup",
+      version: 1,
+      at: now,
+      sessionId,
+      slug: input.slug,
+      title: input.title,
+      instruction: input.instruction,
+      summary: input.summary,
+      chat: input.chat,
+      before: input.before,
+      after: input.after,
+      added,
+      rulesStore: store,
+      ephemeral,
+    }
+    const local = await writeEditorialLocalBackup(backup)
+    backup.localBackupFiles = local.written
     return {
       sessionId,
-      added: [],
-      storePersisted: false,
+      added,
+      storePersisted,
       ephemeral,
-      message: "변경 내용이 없어 학습을 건너뛰었습니다.",
+      message,
+      backup,
+      localBackupFiles: local.written,
     }
+  }
+
+  if (!input.before.trim() || !input.after.trim() || input.before === input.after) {
+    return emptyBackup([], "변경 내용이 없어 학습을 건너뛰었습니다.", false)
   }
 
   const extracted = await extractRuleHypotheses(input)
   const verified = await verifyRulesAgainstDiff(input, extracted)
 
-  const now = new Date().toISOString()
   const learned: LearnedRule[] = verified.map((item) => ({
     id: slugifyRuleId(item.rule),
     rule: item.rule,
@@ -262,27 +312,60 @@ export async function learnFromAcceptedEdit(input: LearnFromEditInput): Promise<
   })
 
   if (learned.length === 0) {
-    return {
-      sessionId,
-      added: [],
-      storePersisted: true,
-      ephemeral,
-      message: "세션은 기록했지만, 재사용 가능한 규칙으로 승격할 패턴은 없었습니다.",
+    const result = await emptyBackup(
+      [],
+      "세션은 기록했지만, 재사용 가능한 규칙으로 승격할 패턴은 없었습니다.",
+      true,
+    )
+    if (result.localBackupFiles.length) {
+      result.message += ` 로컬 백업: ${result.localBackupFiles[0]}`
+    } else {
+      result.message += " 브라우저로 백업 파일을 자동 저장합니다."
     }
+    return result
   }
 
   const store = await loadLearnedRulesStore()
   const merged = mergeLearnedRules(store.rules, learned)
-  await saveLearnedRulesStore({ ...store, rules: merged })
+  const saved = await saveLearnedRulesStore({ ...store, rules: merged })
+
+  const backup: EditorialBackupPayload = {
+    kind: "collaboticket-editorial-backup",
+    version: 1,
+    at: now,
+    sessionId,
+    slug: input.slug,
+    title: input.title,
+    instruction: input.instruction,
+    summary: input.summary,
+    chat: input.chat,
+    before: input.before,
+    after: input.after,
+    added: learned,
+    rulesStore: saved,
+    ephemeral,
+  }
+  const local = await writeEditorialLocalBackup(backup)
+  backup.localBackupFiles = local.written
+
+  let message = ephemeral
+    ? `규칙 ${learned.length}개를 학습했습니다. 서버 저장은 휘발될 수 있어 로컬/브라우저 백업을 남깁니다.`
+    : `규칙 ${learned.length}개를 학습·검증 후 learned-rules에 반영했습니다.`
+
+  if (local.written.length) {
+    message += ` 로컬 백업 ${local.written.length}건 저장.`
+  } else {
+    message += " 브라우저 다운로드로 백업합니다."
+  }
 
   return {
     sessionId,
     added: learned,
     storePersisted: true,
     ephemeral,
-    message: ephemeral
-      ? `규칙 ${learned.length}개를 학습했습니다. Vercel에서는 저장이 휘발될 수 있어, 로컬에서 같은 수정을 한 뒤 content/editorial/learned-rules.json을 커밋하세요.`
-      : `규칙 ${learned.length}개를 학습·검증 후 learned-rules에 반영했습니다. 다음 글 작성/AI 수정에 자동 적용됩니다.`,
+    message,
+    backup,
+    localBackupFiles: local.written,
   }
 }
 

@@ -3,6 +3,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import Link from "next/link"
 
+import {
+  backupLearnResultToBrowser,
+  readRulesFromLocalStorage,
+} from "@/lib/editorial-backup-client"
 import type { InsightMeta } from "@/lib/insights"
 
 type EditableInsight = InsightMeta & { content: string }
@@ -83,7 +87,16 @@ export function AdminInsightsClient() {
       ok: boolean
       rules?: Array<{ id: string; rule: string; hypothesis?: string; confidence?: number; hitCount?: number }>
     }
-    if (data.ok && data.rules) setLearnedRules(data.rules)
+    const local = readRulesFromLocalStorage()
+    if (data.ok && data.rules?.length) {
+      const map = new Map(data.rules.map((r) => [r.id, r]))
+      for (const r of local) {
+        if (!map.has(r.id)) map.set(r.id, r)
+      }
+      setLearnedRules([...map.values()].slice(0, 40))
+      return
+    }
+    if (local.length) setLearnedRules(local.slice(0, 40))
   }, [])
 
   const login = useCallback(
@@ -283,11 +296,32 @@ export function AdminInsightsClient() {
       const data = (await res.json()) as {
         ok: boolean
         message?: string
-        added?: Array<{ id: string; rule: string; hypothesis?: string }>
+        sessionId?: string
+        added?: Array<{ id: string; rule: string; hypothesis?: string; confidence?: number; hitCount?: number }>
         ephemeral?: boolean
+        backup?: unknown
+        localBackupFiles?: string[]
       }
       if (data.ok) {
-        setLearnNote(data.message || "학습 완료")
+        let note = data.message || "학습 완료"
+        try {
+          const file = backupLearnResultToBrowser({
+            sessionId: data.sessionId || `edit-${Date.now().toString(36)}`,
+            slug: selected.slug || "draft",
+            backup: data.backup,
+            added: data.added,
+            localBackupFiles: data.localBackupFiles,
+            ephemeral: data.ephemeral,
+          })
+          if (data.localBackupFiles?.length) {
+            note += ` · 디스크: ${data.localBackupFiles[0]}`
+          } else if (file) {
+            note += ` · 브라우저 백업 다운로드: ${file}`
+          }
+        } catch {
+          note += " · 브라우저 백업 저장 실패"
+        }
+        setLearnNote(note)
         if (data.added?.length) {
           setLearnedRules((prev) => {
             const ids = new Set(prev.map((r) => r.id))
@@ -729,7 +763,8 @@ export function AdminInsightsClient() {
                         학습된 작성 규칙 ({learnedRules.length})
                       </p>
                       <p className="mt-0.5 text-[11px] text-muted-foreground">
-                        다음 인사이트 생성·AI 수정에 자동으로 참고합니다.
+                        다음 인사이트 생성·AI 수정에 자동 참고합니다. 적용 시
+                        content/editorial/backups + 브라우저 다운로드로 자동 백업됩니다.
                       </p>
                       <ul className="mt-2 max-h-40 space-y-1.5 overflow-auto text-xs leading-relaxed">
                         {learnedRules.slice(0, 12).map((rule) => (
