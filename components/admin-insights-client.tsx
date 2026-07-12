@@ -7,6 +7,20 @@ import type { InsightMeta } from "@/lib/insights"
 
 type EditableInsight = InsightMeta & { content: string }
 
+type AiChatItem = {
+  role: "user" | "assistant"
+  content: string
+  applied?: boolean
+}
+
+type CoverCandidate = {
+  id: string
+  url: string
+  thumb: string
+  photographer?: string
+  source: "unsplash" | "pool"
+}
+
 export function AdminInsightsClient() {
   const [authChecked, setAuthChecked] = useState(false)
   const [loggedIn, setLoggedIn] = useState(false)
@@ -19,6 +33,14 @@ export function AdminInsightsClient() {
   const [uploading, setUploading] = useState(false)
   const [error, setError] = useState("")
   const [saved, setSaved] = useState("")
+  const [imageKeyword, setImageKeyword] = useState("")
+  const [imageResults, setImageResults] = useState<CoverCandidate[]>([])
+  const [imageSearching, setImageSearching] = useState(false)
+  const [imageProvider, setImageProvider] = useState<"unsplash" | "pool" | "">("")
+  const [aiInput, setAiInput] = useState("")
+  const [aiBusy, setAiBusy] = useState(false)
+  const [aiChat, setAiChat] = useState<AiChatItem[]>([])
+  const [pendingAiContent, setPendingAiContent] = useState<string | null>(null)
 
   const isNew = !selected?.slug
   const tagString = useMemo(() => selected?.tags.join(", ") || "", [selected?.tags])
@@ -113,6 +135,98 @@ export function AdminInsightsClient() {
     }
     setSelected(data.insight as EditableInsight)
     setSaved("")
+    setAiChat([])
+    setPendingAiContent(null)
+    setImageResults([])
+    setImageKeyword("")
+  }
+
+  async function searchCoverImages() {
+    const q = imageKeyword.trim() || selected?.title || selected?.tags?.[0] || ""
+    if (!q) {
+      setError("이미지 검색 키워드를 입력해주세요.")
+      return
+    }
+    setImageSearching(true)
+    setError("")
+    const res = await fetch(`/api/admin/insights/images?q=${encodeURIComponent(q)}`, {
+      credentials: "include",
+    })
+    const data = (await res.json()) as {
+      ok: boolean
+      images?: CoverCandidate[]
+      provider?: "unsplash" | "pool"
+      message?: string
+    }
+    setImageSearching(false)
+    if (!data.ok || !data.images) {
+      setError(data.message || "이미지 검색 실패")
+      return
+    }
+    setImageResults(data.images)
+    setImageProvider(data.provider || "")
+  }
+
+  async function askAi() {
+    if (!selected || !aiInput.trim()) return
+    const instruction = aiInput.trim()
+    setAiBusy(true)
+    setError("")
+    setAiChat((prev) => [...prev, { role: "user", content: instruction }])
+    setAiInput("")
+
+    const res = await fetch("/api/admin/insights/ai", {
+      method: "POST",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: selected.title,
+        description: selected.description,
+        content: selected.content,
+        instruction,
+        history: aiChat.slice(-6),
+      }),
+    })
+    const data = (await res.json()) as {
+      ok: boolean
+      reply?: string
+      content?: string
+      title?: string
+      description?: string
+      message?: string
+    }
+    setAiBusy(false)
+
+    if (!data.ok || !data.reply) {
+      setError(data.message || "AI 요청 실패")
+      setAiChat((prev) => [...prev, { role: "assistant", content: data.message || "요청에 실패했습니다." }])
+      return
+    }
+
+    setAiChat((prev) => [...prev, { role: "assistant", content: data.reply || "" }])
+
+    if (data.content) {
+      setPendingAiContent(data.content)
+    }
+    if (data.title || data.description) {
+      setSelected((prev) =>
+        prev
+          ? {
+              ...prev,
+              title: data.title || prev.title,
+              description: data.description || prev.description,
+            }
+          : prev,
+      )
+    }
+  }
+
+  function applyAiContent() {
+    if (!selected || !pendingAiContent) return
+    setSelected({ ...selected, content: pendingAiContent })
+    setPendingAiContent(null)
+    setSaved("AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.")
+    setTimeout(() => setSaved(""), 4000)
   }
 
   async function saveInsight() {
@@ -347,13 +461,33 @@ export function AdminInsightsClient() {
                   <p className="text-xs font-bold text-muted-foreground">커버 이미지</p>
                   <input
                     className="mt-2 w-full rounded-xl border p-3 text-sm"
-                    placeholder="이미지 URL (또는 아래에서 업로드)"
+                    placeholder="이미지 URL (검색·업로드로도 설정 가능)"
                     value={selected.image || ""}
                     onChange={(e) => setSelected({ ...selected, image: e.target.value })}
                   />
-                  <div className="mt-2 flex flex-wrap items-center gap-3">
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                    <input
+                      className="min-w-[12rem] flex-1 rounded-xl border p-2.5 text-sm"
+                      placeholder="키워드 검색 (예: japan ecommerce beauty)"
+                      value={imageKeyword}
+                      onChange={(e) => setImageKeyword(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                          e.preventDefault()
+                          void searchCoverImages()
+                        }
+                      }}
+                    />
+                    <button
+                      type="button"
+                      disabled={imageSearching}
+                      onClick={() => void searchCoverImages()}
+                      className="rounded-xl border px-3 py-2 text-xs font-bold hover:border-[#00B140] disabled:opacity-50"
+                    >
+                      {imageSearching ? "검색 중..." : "푸티지 8개 검색"}
+                    </button>
                     <label className="inline-flex cursor-pointer rounded-xl border px-3 py-2 text-xs font-bold hover:border-[#00B140]">
-                      {uploading ? "업로드 중..." : "이미지 파일 업로드"}
+                      {uploading ? "업로드 중..." : "파일 업로드"}
                       <input
                         type="file"
                         accept="image/jpeg,image/png,image/webp"
@@ -375,6 +509,37 @@ export function AdminInsightsClient() {
                       />
                     )}
                   </div>
+                  {imageResults.length > 0 && (
+                    <div className="mt-3">
+                      <p className="mb-2 text-[11px] text-muted-foreground">
+                        검색 결과 중 선택
+                        {imageProvider ? ` · ${imageProvider === "unsplash" ? "Unsplash" : "내부 풀"}` : ""}
+                      </p>
+                      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                        {imageResults.map((item) => {
+                          const active = selected.image === item.url
+                          return (
+                            <button
+                              key={item.id}
+                              type="button"
+                              onClick={() => setSelected({ ...selected, image: item.url })}
+                              className={`overflow-hidden rounded-xl border text-left transition hover:border-[#00B140] ${
+                                active ? "border-[#00B140] ring-2 ring-[#00B140]/30" : ""
+                              }`}
+                            >
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img src={item.thumb} alt="" className="aspect-video w-full object-cover" />
+                              {item.photographer && (
+                                <p className="truncate px-2 py-1 text-[10px] text-muted-foreground">
+                                  {item.photographer}
+                                </p>
+                              )}
+                            </button>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {!isNew && (
@@ -386,11 +551,78 @@ export function AdminInsightsClient() {
                 <div>
                   <p className="mb-1.5 text-xs font-bold text-muted-foreground">본문 (Markdown)</p>
                   <textarea
-                    className="min-h-[420px] w-full rounded-xl border p-3 font-mono text-xs leading-relaxed"
+                    className="min-h-[320px] w-full rounded-xl border p-3 font-mono text-xs leading-relaxed"
                     value={selected.content}
                     onChange={(e) => setSelected({ ...selected, content: e.target.value })}
                     spellCheck={false}
                   />
+                </div>
+
+                <div className="rounded-xl border border-[#00B140]/20 bg-[#00B140]/5 p-3">
+                  <p className="text-xs font-bold text-[#00B140]">본문 AI 수정 (대화형)</p>
+                  <p className="mt-1 text-[11px] text-muted-foreground">
+                    예: 「ACTION을 더 실무적으로」「번역체 문장 다듬어줘」「FAQ 2개 추가」
+                  </p>
+                  <div className="mt-3 max-h-56 space-y-2 overflow-auto rounded-xl bg-white/80 p-3">
+                    {aiChat.length === 0 && (
+                      <p className="text-xs text-muted-foreground">아직 대화가 없습니다. 요청을 입력해 보세요.</p>
+                    )}
+                    {aiChat.map((msg, index) => (
+                      <div
+                        key={`${msg.role}-${index}`}
+                        className={`rounded-lg px-3 py-2 text-xs leading-relaxed ${
+                          msg.role === "user" ? "bg-[#00B140]/10 text-foreground" : "bg-muted/60 text-foreground"
+                        }`}
+                      >
+                        <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-muted-foreground">
+                          {msg.role === "user" ? "요청" : "AI"}
+                        </p>
+                        <p className="whitespace-pre-wrap">{msg.content}</p>
+                      </div>
+                    ))}
+                  </div>
+                  {pendingAiContent && (
+                    <div className="mt-2 flex flex-wrap items-center gap-2 rounded-lg border border-[#00B140]/30 bg-white p-2">
+                      <p className="text-xs text-muted-foreground">AI가 새 본문 초안을 만들었습니다.</p>
+                      <button
+                        type="button"
+                        onClick={applyAiContent}
+                        className="rounded-lg bg-[#00B140] px-3 py-1.5 text-xs font-bold text-white"
+                      >
+                        본문에 적용
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPendingAiContent(null)}
+                        className="rounded-lg border px-3 py-1.5 text-xs font-bold"
+                      >
+                        무시
+                      </button>
+                    </div>
+                  )}
+                  <div className="mt-2 flex gap-2">
+                    <input
+                      className="flex-1 rounded-xl border bg-white p-2.5 text-sm"
+                      placeholder="본문 수정 요청을 입력하세요"
+                      value={aiInput}
+                      disabled={aiBusy}
+                      onChange={(e) => setAiInput(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                          e.preventDefault()
+                          void askAi()
+                        }
+                      }}
+                    />
+                    <button
+                      type="button"
+                      disabled={aiBusy || !aiInput.trim()}
+                      onClick={() => void askAi()}
+                      className="rounded-xl bg-[#00B140] px-4 py-2 text-sm font-bold text-white disabled:opacity-50"
+                    >
+                      {aiBusy ? "생성 중..." : "요청"}
+                    </button>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
