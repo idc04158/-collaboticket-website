@@ -6,6 +6,7 @@ import {
   COOKIE_NAME,
   crmSessionCookieOptions,
   signCrmSessionToken,
+  verifyAdminCredentials,
   verifyAdminPassword,
   verifyCrmSessionToken,
 } from "@/lib/crm-auth"
@@ -21,11 +22,24 @@ export async function GET() {
 export async function POST(request: Request) {
   const body = await request.json().catch(() => null)
   const password = body && typeof body.password === "string" ? body.password : ""
+  const username =
+    body && typeof body.username === "string"
+      ? body.username
+      : body && typeof body.id === "string"
+        ? body.id
+        : "admin"
 
-  const ok = await verifyAdminPassword(password)
+  const hasExplicitUser =
+    Boolean(body && typeof body.username === "string" && body.username.trim()) ||
+    Boolean(body && typeof body.id === "string" && body.id.trim())
+
+  const ok = hasExplicitUser
+    ? await verifyAdminCredentials(username, password)
+    : await verifyAdminPassword(password)
+
   if (!ok) {
     await appendActivity({ actor: "unknown", action: "crm_login_failed" }).catch(() => {})
-    return NextResponse.json({ ok: false, message: "비밀번호가 올바르지 않습니다." }, { status: 401 })
+    return NextResponse.json({ ok: false, message: "아이디 또는 비밀번호가 올바르지 않습니다." }, { status: 401 })
   }
 
   const token = await signCrmSessionToken()

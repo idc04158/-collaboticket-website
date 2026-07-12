@@ -12,6 +12,26 @@ function getJwtSecret() {
 
 export { COOKIE_NAME }
 
+export function getAdminUsername() {
+  return (
+    process.env.CRM_ADMIN_USERNAME?.trim() ||
+    process.env.CRM_ADMIN_ID?.trim() ||
+    process.env.ADMIN_USERNAME?.trim() ||
+    "admin"
+  )
+}
+
+function safeEqualString(a: string, b: string) {
+  const left = Buffer.from(a, "utf8")
+  const right = Buffer.from(b, "utf8")
+  if (left.length !== right.length) return false
+  return timingSafeEqual(left, right)
+}
+
+export async function verifyAdminUsername(username: string): Promise<boolean> {
+  return safeEqualString(username.trim(), getAdminUsername())
+}
+
 export async function verifyAdminPassword(password: string): Promise<boolean> {
   const hash = process.env.CRM_ADMIN_PASSWORD_HASH
   const plain = process.env.CRM_ADMIN_PASSWORD
@@ -25,10 +45,7 @@ export async function verifyAdminPassword(password: string): Promise<boolean> {
   }
 
   if (plain) {
-    const a = Buffer.from(password, "utf8")
-    const b = Buffer.from(plain, "utf8")
-    if (a.length !== b.length) return false
-    return timingSafeEqual(a, b)
+    return safeEqualString(password, plain)
   }
 
   if (process.env.NODE_ENV !== "production") {
@@ -36,6 +53,12 @@ export async function verifyAdminPassword(password: string): Promise<boolean> {
   }
 
   return false
+}
+
+export async function verifyAdminCredentials(username: string, password: string): Promise<boolean> {
+  const userOk = await verifyAdminUsername(username)
+  const passOk = await verifyAdminPassword(password)
+  return userOk && passOk
 }
 
 export async function signCrmSessionToken() {

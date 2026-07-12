@@ -11,10 +11,11 @@ export const runtime = "nodejs"
 const MAX_BYTES = 5 * 1024 * 1024
 const ALLOWED = new Set(["image/jpeg", "image/png", "image/webp"])
 
-const uploadDir = path.join(process.cwd(), "data", "uploads")
+const privateUploadDir = path.join(process.cwd(), "data", "uploads")
+const publicInsightUploadDir = path.join(process.cwd(), "public", "uploads", "insights")
 
-async function ensureDir() {
-  await fs.mkdir(uploadDir, { recursive: true })
+async function ensureDir(dir: string) {
+  await fs.mkdir(dir, { recursive: true })
 }
 
 export async function GET(request: Request) {
@@ -30,7 +31,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: false, message: "잘못된 파일명입니다." }, { status: 400 })
   }
 
-  const filePath = path.join(uploadDir, name)
+  const filePath = path.join(privateUploadDir, name)
   try {
     const buf = await fs.readFile(filePath)
     const ext = name.toLowerCase()
@@ -100,6 +101,7 @@ export async function POST(request: Request) {
   const file = form.get("file")
   const inquiryId = typeof form.get("inquiryId") === "string" ? (form.get("inquiryId") as string) : ""
   const wantOcr = form.get("ocr") === "true"
+  const purpose = typeof form.get("purpose") === "string" ? (form.get("purpose") as string) : "crm"
 
   if (!file || !(file instanceof Blob)) {
     return NextResponse.json({ ok: false, message: "파일이 필요합니다." }, { status: 400 })
@@ -117,11 +119,22 @@ export async function POST(request: Request) {
   const ext = mime === "image/png" ? ".png" : mime === "image/webp" ? ".webp" : ".jpg"
   const id = crypto.randomUUID()
   const filename = `${id}${ext}`
-
-  await ensureDir()
   const arrayBuf = await file.arrayBuffer()
   const buffer = Buffer.from(arrayBuf)
-  const filePath = path.join(uploadDir, filename)
+
+  if (purpose === "insight") {
+    await ensureDir(publicInsightUploadDir)
+    const filePath = path.join(publicInsightUploadDir, filename)
+    await fs.writeFile(filePath, buffer)
+    return NextResponse.json({
+      ok: true,
+      filename,
+      url: `/uploads/insights/${filename}`,
+    })
+  }
+
+  await ensureDir(privateUploadDir)
+  const filePath = path.join(privateUploadDir, filename)
   await fs.writeFile(filePath, buffer)
 
   let ocr: Record<string, string> | null = null
