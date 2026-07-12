@@ -42,6 +42,12 @@ export function AdminInsightsClient() {
   const [aiChat, setAiChat] = useState<AiChatItem[]>([])
   const [pendingAiContent, setPendingAiContent] = useState<string | null>(null)
   const [pendingAiSummary, setPendingAiSummary] = useState<string | null>(null)
+  const [aiSessionBaseContent, setAiSessionBaseContent] = useState<string | null>(null)
+  const [learningBusy, setLearningBusy] = useState(false)
+  const [learnedRules, setLearnedRules] = useState<
+    Array<{ id: string; rule: string; hypothesis?: string; confidence?: number; hitCount?: number }>
+  >([])
+  const [learnNote, setLearnNote] = useState("")
 
   const isNew = !selected?.slug
   const tagString = useMemo(() => selected?.tags.join(", ") || "", [selected?.tags])
@@ -71,6 +77,15 @@ export function AdminInsightsClient() {
     if (data.ok) setInsights(data.insights as InsightMeta[])
   }, [])
 
+  const loadLearnedRules = useCallback(async () => {
+    const res = await fetch("/api/admin/insights/learn", { credentials: "include" })
+    const data = (await res.json()) as {
+      ok: boolean
+      rules?: Array<{ id: string; rule: string; hypothesis?: string; confidence?: number; hitCount?: number }>
+    }
+    if (data.ok && data.rules) setLearnedRules(data.rules)
+  }, [])
+
   const login = useCallback(
     async (id: string, pw: string) => {
       setLoading(true)
@@ -90,9 +105,10 @@ export function AdminInsightsClient() {
       }
       setLoggedIn(true)
       await loadList()
+      void loadLearnedRules()
       return true
     },
-    [loadList],
+    [loadList, loadLearnedRules],
   )
 
   useEffect(() => {
@@ -114,9 +130,12 @@ export function AdminInsightsClient() {
       const data = (await res.json()) as { ok: boolean }
       setLoggedIn(Boolean(data.ok))
       setAuthChecked(true)
-      if (data.ok) await loadList()
+      if (data.ok) {
+        await loadList()
+        void loadLearnedRules()
+      }
     })()
-  }, [loadList, login])
+  }, [loadList, loadLearnedRules, login])
 
   async function logout() {
     await fetch("/api/admin/auth", { method: "DELETE", credentials: "include" })
@@ -139,8 +158,11 @@ export function AdminInsightsClient() {
     setAiChat([])
     setPendingAiContent(null)
     setPendingAiSummary(null)
+    setAiSessionBaseContent(null)
+    setLearnNote("")
     setImageResults([])
     setImageKeyword("")
+    void loadLearnedRules()
   }
 
   async function searchCoverImages() {
@@ -212,6 +234,7 @@ export function AdminInsightsClient() {
     if (data.content) {
       setPendingAiContent(data.content)
       setPendingAiSummary(data.summary?.trim() || data.reply.trim())
+      setAiSessionBaseContent((prev) => prev ?? selected.content)
     }
     if (data.title || data.description) {
       setSelected((prev) =>
@@ -226,18 +249,75 @@ export function AdminInsightsClient() {
     }
   }
 
-  function applyAiContent() {
+  async function applyAiContent() {
     if (!selected || !pendingAiContent) return
-    setSelected({ ...selected, content: pendingAiContent })
+    const before = aiSessionBaseContent ?? selected.content
+    const after = pendingAiContent
+    const lastUser = [...aiChat].reverse().find((m) => m.role === "user")
+    const instruction = lastUser?.content || "본문 AI 수정 적용"
+    const summary = pendingAiSummary || ""
+
+    setSelected({ ...selected, content: after })
     setPendingAiContent(null)
     setPendingAiSummary(null)
-    setSaved("AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.")
-    setTimeout(() => setSaved(""), 4000)
+    setAiSessionBaseContent(null)
+    setSaved("AI 본문을 에디터에 반영했습니다. 학습 중… 저장을 눌러 확정하세요.")
+
+    setLearningBusy(true)
+    setLearnNote("")
+    try {
+      const res = await fetch("/api/admin/insights/learn", {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          slug: selected.slug || "draft",
+          title: selected.title,
+          instruction,
+          summary,
+          before,
+          after,
+          chat: aiChat.slice(-10),
+        }),
+      })
+      const data = (await res.json()) as {
+        ok: boolean
+        message?: string
+        added?: Array<{ id: string; rule: string; hypothesis?: string }>
+        ephemeral?: boolean
+      }
+      if (data.ok) {
+        setLearnNote(data.message || "학습 완료")
+        if (data.added?.length) {
+          setLearnedRules((prev) => {
+            const ids = new Set(prev.map((r) => r.id))
+            const next = [...data.added!.filter((r) => !ids.has(r.id)), ...prev]
+            return next.slice(0, 40)
+          })
+        } else {
+          void loadLearnedRules()
+        }
+        setSaved(
+          data.added?.length
+            ? `본문 반영 + 규칙 ${data.added.length}개 학습. 저장을 눌러 확정하세요.`
+            : "AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.",
+        )
+      } else {
+        setLearnNote(data.message || "학습 요청 실패 (본문 반영은 유지됩니다)")
+        setSaved("AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.")
+      }
+    } catch {
+      setLearnNote("학습 요청 중 오류 (본문 반영은 유지됩니다)")
+      setSaved("AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.")
+    }
+    setLearningBusy(false)
+    setTimeout(() => setSaved(""), 6000)
   }
 
   function discardAiContent() {
     setPendingAiContent(null)
     setPendingAiSummary(null)
+    setAiSessionBaseContent(null)
   }
 
   async function saveInsight() {
@@ -618,22 +698,49 @@ export function AdminInsightsClient() {
                       <div className="flex flex-wrap items-center gap-2">
                         <button
                           type="button"
-                          onClick={applyAiContent}
-                          className="rounded-lg bg-[#00B140] px-3 py-1.5 text-xs font-bold text-white"
+                          onClick={() => void applyAiContent()}
+                          disabled={learningBusy}
+                          className="rounded-lg bg-[#00B140] px-3 py-1.5 text-xs font-bold text-white disabled:opacity-50"
                         >
-                          본문에 적용
+                          {learningBusy ? "적용·학습 중..." : "본문에 적용 + 학습"}
                         </button>
                         <button
                           type="button"
                           onClick={discardAiContent}
-                          className="rounded-lg border px-3 py-1.5 text-xs font-bold"
+                          disabled={learningBusy}
+                          className="rounded-lg border px-3 py-1.5 text-xs font-bold disabled:opacity-50"
                         >
                           초안 버리기
                         </button>
                         <p className="text-[11px] text-muted-foreground">
-                          추가 수정이 필요하면 아래에 이어서 요청하세요.
+                          적용 시 수정 전후를 비교해 규칙을 가설·검증합니다. 추가 수정은 아래에 이어서 요청하세요.
                         </p>
                       </div>
+                    </div>
+                  )}
+
+                  {learnNote && (
+                    <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">{learnNote}</p>
+                  )}
+
+                  {learnedRules.length > 0 && (
+                    <div className="mt-3 rounded-xl border bg-white/90 p-3">
+                      <p className="text-xs font-bold text-foreground">
+                        학습된 작성 규칙 ({learnedRules.length})
+                      </p>
+                      <p className="mt-0.5 text-[11px] text-muted-foreground">
+                        다음 인사이트 생성·AI 수정에 자동으로 참고합니다.
+                      </p>
+                      <ul className="mt-2 max-h-40 space-y-1.5 overflow-auto text-xs leading-relaxed">
+                        {learnedRules.slice(0, 12).map((rule) => (
+                          <li key={rule.id} className="rounded-lg bg-muted/40 px-2.5 py-1.5">
+                            <p>{rule.rule}</p>
+                            {rule.hypothesis && (
+                              <p className="mt-0.5 text-[10px] text-muted-foreground">가설: {rule.hypothesis}</p>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
 

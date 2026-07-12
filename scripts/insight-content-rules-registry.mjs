@@ -8,11 +8,12 @@
 import { INSIGHT_LANGUAGE_RULES_PROMPT } from "../lib/insight-language-rules.mjs"
 import { TITLE_YEAR_RULES_PROMPT } from "../lib/insight-title-year-rules.mjs"
 import { MARKDOWN_HYGIENE_RULES_PROMPT } from "../lib/insight-markdown-hygiene.mjs"
+import { buildLearnedRulesPromptSync } from "../lib/insight-learned-rules.mjs"
 import { OPERATIONAL_DATA_RULES } from "./insight-operational-data-rules.mjs"
 import { CANONICAL_HUBS } from "./insight-unique-angles.mjs"
 
 /** rewrite/import progress 파일과 맞춰야 재생성 트리거가 동작합니다 */
-export const CONTENT_RULES_VERSION = "v3-managed"
+export const CONTENT_RULES_VERSION = "v3-learned"
 
 /**
  * @typedef {Object} ContentRuleEntry
@@ -181,6 +182,14 @@ export const CONTENT_RULE_REGISTRY = [
     module: "lib/home-weekly-briefing.ts",
     runtime: true,
   },
+  {
+    id: "learned-from-edits",
+    title: "어드민 수정 학습 룰",
+    summary:
+      "어드민에서 AI 본문 수정을 적용하면 수정 전후를 비교해 규칙을 가설·검증하고 content/editorial/learned-rules.json에 누적합니다. 다음 글 생성·AI 수정 프롬프트에 자동 주입됩니다.",
+    module: "lib/insight-learned-rules.mjs",
+    generation: true,
+  },
 ]
 
 /** 생성 프롬프트: INSIGHT 포함 여부 */
@@ -226,6 +235,14 @@ export const CONTENT_RULE_CHECKS = [
 /** 버전별 변경 이력 (운영 참고용) */
 export const CONTENT_RULES_CHANGELOG = [
   {
+    version: "v3-learned",
+    date: "2026-07-12",
+    changes: [
+      "어드민 AI 수정 전후 학습 → content/editorial/learned-rules.json 누적",
+      "가설·검증 후 active 룰을 생성/수정 프롬프트에 자동 주입",
+    ],
+  },
+  {
     version: "v3-managed",
     date: "2026-07-09",
     changes: [
@@ -269,5 +286,6 @@ export function buildManagedRulePromptBlocks() {
     markdownHygiene: MARKDOWN_HYGIENE_RULES_PROMPT,
     sanitizeOutput: SANITIZE_OUTPUT_RULES_PROMPT,
     antiDuplication: buildAntiDuplicationPrompt(),
+    learnedFromEdits: buildLearnedRulesPromptSync(),
   }
 }

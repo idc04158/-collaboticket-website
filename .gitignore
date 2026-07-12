@@ -17,6 +17,9 @@ public/uploads/insights/*
 .data/
 .vercel
 
+# Editorial learning session log (rules JSON is committed)
+content/editorial/edit-sessions.jsonl
+
 # Local script run artifacts
 scripts/*.log
 scripts/.*-progress.json

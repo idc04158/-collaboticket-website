@@ -1,3 +1,5 @@
+import { buildLearnedRulesPrompt } from "@/lib/insight-learned-rules.mjs"
+
 type ChatMessage = { role: "user" | "assistant"; content: string }
 
 type AiEditInput = {
@@ -20,6 +22,8 @@ export async function reviseInsightWithAi(input: AiEditInput): Promise<AiEditRes
   const apiKey = process.env.OPENAI_API_KEY
   if (!apiKey) return null
 
+  const learned = await buildLearnedRulesPrompt()
+
   const system = `You are CollaboTicket's insight article editor assistant.
 CollaboTicket helps Korean brands execute Japan EC (Qoo10, Rakuten, Amazon, LINE, influencer, reviews).
 
@@ -34,7 +38,8 @@ Rules:
 - Natural Korean (토스형), no translation-ese, no forced line breaks, no slug handles as link text.
 - Preserve existing internal links as [readable title](/insights/slug).
 - Do not invent fake METI/JETRO numbers; keep or lightly polish existing figures.
-- Keep markdown tables valid (no blank lines between table rows).`
+- Keep markdown tables valid (no blank lines between table rows).
+${learned ? `\n${learned}` : ""}`
 
   const context = [
     `Current title: ${input.title || "(empty)"}`,

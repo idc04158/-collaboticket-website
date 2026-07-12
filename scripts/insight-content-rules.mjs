@@ -163,6 +163,7 @@ ${rules.markdownHygiene}
 
 ${SANITIZE_OUTPUT_RULES_PROMPT}
 
+${rules.learnedFromEdits ? `${rules.learnedFromEdits}\n` : ""}
 Tone: Toss-style Korean UX writing — warm, clear, polite. Prefer ~합니다 / ~했습니다 / ~해요 / ~입니다.
 - NEVER use plain report style: ~한다, ~했다, ~된다, ~이다, ~하라, ~함, ~됨, ~임
 - ✓ summary bullets must be complete polite sentences with numbers preserved
