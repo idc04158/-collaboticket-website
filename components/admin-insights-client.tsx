@@ -41,6 +41,7 @@ export function AdminInsightsClient() {
   const [aiBusy, setAiBusy] = useState(false)
   const [aiChat, setAiChat] = useState<AiChatItem[]>([])
   const [pendingAiContent, setPendingAiContent] = useState<string | null>(null)
+  const [pendingAiSummary, setPendingAiSummary] = useState<string | null>(null)
 
   const isNew = !selected?.slug
   const tagString = useMemo(() => selected?.tags.join(", ") || "", [selected?.tags])
@@ -137,6 +138,7 @@ export function AdminInsightsClient() {
     setSaved("")
     setAiChat([])
     setPendingAiContent(null)
+    setPendingAiSummary(null)
     setImageResults([])
     setImageKeyword("")
   }
@@ -170,6 +172,7 @@ export function AdminInsightsClient() {
   async function askAi() {
     if (!selected || !aiInput.trim()) return
     const instruction = aiInput.trim()
+    const baseContent = pendingAiContent ?? selected.content
     setAiBusy(true)
     setError("")
     setAiChat((prev) => [...prev, { role: "user", content: instruction }])
@@ -182,7 +185,7 @@ export function AdminInsightsClient() {
       body: JSON.stringify({
         title: selected.title,
         description: selected.description,
-        content: selected.content,
+        content: baseContent,
         instruction,
         history: aiChat.slice(-6),
       }),
@@ -190,6 +193,7 @@ export function AdminInsightsClient() {
     const data = (await res.json()) as {
       ok: boolean
       reply?: string
+      summary?: string
       content?: string
       title?: string
       description?: string
@@ -207,6 +211,7 @@ export function AdminInsightsClient() {
 
     if (data.content) {
       setPendingAiContent(data.content)
+      setPendingAiSummary(data.summary?.trim() || data.reply.trim())
     }
     if (data.title || data.description) {
       setSelected((prev) =>
@@ -225,8 +230,14 @@ export function AdminInsightsClient() {
     if (!selected || !pendingAiContent) return
     setSelected({ ...selected, content: pendingAiContent })
     setPendingAiContent(null)
+    setPendingAiSummary(null)
     setSaved("AI 본문을 에디터에 반영했습니다. 저장을 눌러 확정하세요.")
     setTimeout(() => setSaved(""), 4000)
+  }
+
+  function discardAiContent() {
+    setPendingAiContent(null)
+    setPendingAiSummary(null)
   }
 
   async function saveInsight() {
@@ -563,7 +574,7 @@ export function AdminInsightsClient() {
                   <p className="mt-1 text-[11px] text-muted-foreground">
                     예: 「ACTION을 더 실무적으로」「번역체 문장 다듬어줘」「FAQ 2개 추가」
                   </p>
-                  <div className="mt-3 max-h-56 space-y-2 overflow-auto rounded-xl bg-white/80 p-3">
+                  <div className="mt-3 max-h-40 space-y-2 overflow-auto rounded-xl bg-white/80 p-3">
                     {aiChat.length === 0 && (
                       <p className="text-xs text-muted-foreground">아직 대화가 없습니다. 요청을 입력해 보세요.</p>
                     )}
@@ -581,29 +592,59 @@ export function AdminInsightsClient() {
                       </div>
                     ))}
                   </div>
+
                   {pendingAiContent && (
-                    <div className="mt-2 flex flex-wrap items-center gap-2 rounded-lg border border-[#00B140]/30 bg-white p-2">
-                      <p className="text-xs text-muted-foreground">AI가 새 본문 초안을 만들었습니다.</p>
-                      <button
-                        type="button"
-                        onClick={applyAiContent}
-                        className="rounded-lg bg-[#00B140] px-3 py-1.5 text-xs font-bold text-white"
-                      >
-                        본문에 적용
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setPendingAiContent(null)}
-                        className="rounded-lg border px-3 py-1.5 text-xs font-bold"
-                      >
-                        무시
-                      </button>
+                    <div className="mt-3 space-y-3 rounded-xl border border-[#00B140]/30 bg-white p-3">
+                      <div>
+                        <p className="text-xs font-bold text-foreground">수정 요약</p>
+                        <div className="mt-1.5 whitespace-pre-wrap rounded-lg bg-muted/40 px-3 py-2 text-xs leading-relaxed text-foreground">
+                          {pendingAiSummary || "변경 사항이 반영된 초안입니다. 아래에서 전체를 확인하세요."}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="mb-1.5 flex items-center justify-between gap-2">
+                          <p className="text-xs font-bold text-foreground">전체 초안 (확인용)</p>
+                          <p className="text-[10px] text-muted-foreground">
+                            {pendingAiContent.length.toLocaleString()}자 · 아직 본문에 반영되지 않음
+                          </p>
+                        </div>
+                        <textarea
+                          readOnly
+                          className="max-h-[420px] min-h-[220px] w-full resize-y rounded-xl border bg-muted/20 p-3 font-mono text-xs leading-relaxed"
+                          value={pendingAiContent}
+                          spellCheck={false}
+                        />
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={applyAiContent}
+                          className="rounded-lg bg-[#00B140] px-3 py-1.5 text-xs font-bold text-white"
+                        >
+                          본문에 적용
+                        </button>
+                        <button
+                          type="button"
+                          onClick={discardAiContent}
+                          className="rounded-lg border px-3 py-1.5 text-xs font-bold"
+                        >
+                          초안 버리기
+                        </button>
+                        <p className="text-[11px] text-muted-foreground">
+                          추가 수정이 필요하면 아래에 이어서 요청하세요.
+                        </p>
+                      </div>
                     </div>
                   )}
+
                   <div className="mt-2 flex gap-2">
                     <input
                       className="flex-1 rounded-xl border bg-white p-2.5 text-sm"
-                      placeholder="본문 수정 요청을 입력하세요"
+                      placeholder={
+                        pendingAiContent
+                          ? "추가 수정 요청 (이 초안을 기준으로 이어집니다)"
+                          : "본문 수정 요청을 입력하세요"
+                      }
                       value={aiInput}
                       disabled={aiBusy}
                       onChange={(e) => setAiInput(e.target.value)}
@@ -620,7 +661,7 @@ export function AdminInsightsClient() {
                       onClick={() => void askAi()}
                       className="rounded-xl bg-[#00B140] px-4 py-2 text-sm font-bold text-white disabled:opacity-50"
                     >
-                      {aiBusy ? "생성 중..." : "요청"}
+                      {aiBusy ? "생성 중..." : pendingAiContent ? "추가 수정" : "요청"}
                     </button>
                   </div>
                 </div>
