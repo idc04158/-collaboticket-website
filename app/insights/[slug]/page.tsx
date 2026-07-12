@@ -221,12 +221,7 @@ export default async function InsightDetailPage({ params }: PageProps) {
             </nav>
           )}
 
-          <InsightGlossaryBody
-            html={html}
-            slug={meta.slug}
-            className="insight-body mt-12"
-            midCta={<InsightMidCta />}
-          />
+          <InsightGlossaryBody html={html} slug={meta.slug} midCta={<InsightMidCta />} />
 
           {meta.checklist.length > 0 && (
             <aside

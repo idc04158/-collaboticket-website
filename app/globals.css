@@ -439,6 +439,19 @@
   text-underline-offset: 3px;
 }
 
+/* Mid-article CTA sits near body copy but must not inherit prose link/list styles */
+.insight-body .insight-mid-cta a,
+.insight-mid-cta a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.insight-body .insight-mid-cta ul:not(.contains-task-list) > li::before,
+.insight-mid-cta ul:not(.contains-task-list) > li::before {
+  content: none;
+  display: none;
+}
+
 .insight-body .insight-table-wrap {
   display: block;
   width: fit-content;

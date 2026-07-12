@@ -212,10 +212,12 @@ export function InsightGlossaryBody({ html, slug, className, midCta }: Props) {
 
   return (
     <>
-      <section ref={sectionRef} aria-label="리포트 본문" className={className}>
-        <InsightHtmlBlock html={beforeHtml} />
+      <section ref={sectionRef} aria-label="리포트 본문" className="mt-12">
+        {/* Keep markdown HTML inside .insight-body; mid CTA must stay outside
+            so list ::before checks and link color overrides do not apply. */}
+        <InsightHtmlBlock html={beforeHtml} className="insight-body" />
         {midCta}
-        <InsightHtmlBlock html={afterHtml} />
+        <InsightHtmlBlock html={afterHtml} className="insight-body" />
       </section>
 
       {mounted &&
