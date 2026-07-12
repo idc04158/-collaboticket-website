@@ -43,7 +43,7 @@ export function InsightsNewsletter() {
             aria-label="이메일 주소"
             className="h-11 rounded-xl bg-white"
           />
-          <Button type="submit" className="btn-brand h-11 shrink-0 rounded-xl px-6">
+          <Button type="submit" className="h-11 shrink-0 rounded-xl bg-brand px-6 font-semibold text-white hover:bg-brand-dark hover:text-white">
             구독하기
           </Button>
         </form>

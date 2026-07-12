@@ -55,9 +55,27 @@ function FieldLabel({ children, required = false }: { children: React.ReactNode;
 export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: Props) {
   const [loading, setLoading] = useState(false)
   const [selfDiagnosis, setSelfDiagnosis] = useState<SelfDiagnosisResult | null>(null)
+  const [email, setEmail] = useState("")
+  const [detail, setDetail] = useState("")
+  const [inquirySource, setInquirySource] = useState("homepage")
 
   useEffect(() => {
     setSelfDiagnosis(loadSelfDiagnosis())
+
+    const params = new URLSearchParams(window.location.search)
+    const emailFromQuery = params.get("email")?.trim() || ""
+    const topicFromQuery = params.get("topic")?.trim() || ""
+
+    if (emailFromQuery) setEmail(emailFromQuery)
+
+    if (topicFromQuery === "newsletter") {
+      setInquirySource("newsletter")
+      setDetail((prev) => prev || "인사이트 뉴스레터 구독을 신청합니다. 매주 일본 시장 데이터 메일 수신을 원합니다.")
+    } else if (topicFromQuery === "insight-mid" || topicFromQuery === "diagnosis") {
+      setInquirySource(topicFromQuery)
+    } else if (topicFromQuery) {
+      setInquirySource(topicFromQuery)
+    }
   }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -88,7 +106,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
         body: JSON.stringify({
-          source: selfDiagnosis ? "self-diagnosis" : "homepage",
+          source: selfDiagnosis ? "self-diagnosis" : inquirySource,
           website: formData.get("website"),
           name: formData.get("name"),
           company: formData.get("company"),
@@ -187,7 +205,16 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
         </label>
         <label>
           <FieldLabel required>이메일</FieldLabel>
-          <input name="email" required type="email" placeholder="이메일" className={fieldClass} />
+          <input
+            name="email"
+            required
+            type="email"
+            placeholder="이메일"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            className={fieldClass}
+            autoComplete="email"
+          />
         </label>
         <label>
           <FieldLabel required>연락처</FieldLabel>
@@ -304,6 +331,8 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
         <FieldLabel>추가 문의 내용</FieldLabel>
         <textarea
           name="detail"
+          value={detail}
+          onChange={(event) => setDetail(event.target.value)}
           placeholder="현재 고민, 목표 매출, 보유 자료, 참고 브랜드, 희망 일정 등을 자유롭게 적어주세요."
           className="min-h-28 rounded-lg border border-input bg-background p-3 text-sm shadow-xs outline-none transition focus-visible:ring-2 focus-visible:ring-[#00B140]/30"
         />
