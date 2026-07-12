@@ -140,6 +140,43 @@ function splitCheckmarkParagraphs(html: string) {
   })
 }
 
+/** Mark list items that already have a meaningful bullet so CSS does not add a second check. */
+function markNativeBulletListItems(html: string) {
+  // <li>★ tip...</li>
+  let next = html.replace(
+    /<li(\b[^>]*)>(\s*)([★☆✦✧•●○◆◇▪▫■□▶▷])\s+/g,
+    (_full, attrs = "", space, bullet) => {
+      if (/\binsight-native-bullet\b/.test(attrs)) {
+        return `<li${attrs}>${space}${bullet} `
+      }
+      const nextAttrs = /\bclass=/.test(attrs)
+        ? attrs.replace(/\bclass=(["'])([^"']*)\1/, (_m: string, q: string, classes: string) => {
+            return `class=${q}${`${classes} insight-native-bullet`.trim()}${q}`
+          })
+        : `${attrs} class="insight-native-bullet"`
+      return `<li${nextAttrs}>${space}<span class="insight-native-bullet-mark" aria-hidden="true">${bullet}</span> `
+    },
+  )
+
+  // <li><p>★ tip...</p></li>
+  next = next.replace(
+    /<li(\b[^>]*)>(\s*)<p>(\s*)([★☆✦✧•●○◆◇▪▫■□▶▷])\s+/g,
+    (_full, attrs = "", space1, space2, bullet) => {
+      if (/\binsight-native-bullet\b/.test(attrs)) {
+        return `<li${attrs}>${space1}<p>${space2}${bullet} `
+      }
+      const nextAttrs = /\bclass=/.test(attrs)
+        ? attrs.replace(/\bclass=(["'])([^"']*)\1/, (_m: string, q: string, classes: string) => {
+            return `class=${q}${`${classes} insight-native-bullet`.trim()}${q}`
+          })
+        : `${attrs} class="insight-native-bullet"`
+      return `<li${nextAttrs}>${space1}<p>${space2}<span class="insight-native-bullet-mark" aria-hidden="true">${bullet}</span> `
+    },
+  )
+
+  return next
+}
+
 const INTERNAL_HOSTS = new Set(["collaboticket.com", "www.collaboticket.com", "localhost"])
 
 function isExternalHref(href: string) {
@@ -260,7 +297,8 @@ export async function renderInsightMarkdown(
   const parsed = await marked.parse(escapeNumericRangeTildes(body))
   const withLinks = resolveInsightLinkLabels(openExternalLinksInNewTab(parsed), titleBySlug)
   const wrapped = wrapTables(splitCheckmarkParagraphs(withLinks))
-  const withFaqHeadings = markFaqQuestionHeadings(wrapped)
+  const withNativeBullets = markNativeBulletListItems(wrapped)
+  const withFaqHeadings = markFaqQuestionHeadings(withNativeBullets)
   const withMidCta = injectMidCtaMarker(withFaqHeadings)
   const highlighted = applyGlossaryHighlights(withMidCta, slug)
   return addHeadingIds(highlighted)

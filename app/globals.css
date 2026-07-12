@@ -521,7 +521,8 @@
   color: var(--muted-foreground);
 }
 
-.insight-body ul:not(.contains-task-list) > li::before {
+/* Default green check — only for plain bullets without their own marker */
+.insight-body ul:not(.contains-task-list) > li:not(.insight-native-bullet):not(.task-list-item):not(:has(> input[type="checkbox"]))::before {
   content: "✓";
   position: absolute;
   left: 0;
@@ -538,24 +539,23 @@
   font-weight: 800;
 }
 
-.insight-body ul.contains-task-list li::before,
-.insight-body li:has(> input[type="checkbox"])::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0.15rem;
-  display: inline-flex;
-  width: 1.1rem;
-  height: 1.1rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  background: color-mix(in oklab, #00b140 12%, transparent);
-  color: #00b140;
-  font-size: 0.72rem;
-  font-weight: 800;
+/* ★ / • already in content — keep that marker, never stack a check on top */
+.insight-body ul > li.insight-native-bullet {
+  padding-left: 0;
 }
 
+.insight-body ul > li.insight-native-bullet::before {
+  content: none !important;
+  display: none !important;
+}
+
+.insight-body .insight-native-bullet-mark {
+  margin-right: 0.35rem;
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+/* Task checklists: one checkbox only — no CSS check overlay */
 .insight-body ul.contains-task-list {
   display: grid;
   gap: 0.625rem;
@@ -563,11 +563,21 @@
   list-style: none;
 }
 
+.insight-body ul.contains-task-list > li::before,
+.insight-body li.task-list-item::before,
+.insight-body li:has(input[type="checkbox"])::before {
+  content: none !important;
+  display: none !important;
+}
+
 .insight-body ul.contains-task-list li,
-.insight-body li:has(> input[type="checkbox"]) {
+.insight-body li.task-list-item,
+.insight-body li:has(input[type="checkbox"]) {
   position: relative;
-  display: block;
-  padding: 0 0 0 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0;
   border: none;
   border-radius: 0;
   background: transparent;
@@ -575,8 +585,14 @@
 }
 
 .insight-body ul.contains-task-list input[type="checkbox"],
-.insight-body li:has(> input[type="checkbox"]) input[type="checkbox"] {
-  display: none;
+.insight-body li.task-list-item input[type="checkbox"],
+.insight-body li:has(input[type="checkbox"]) input[type="checkbox"] {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.2rem;
+  accent-color: #00b140;
 }
 
 .insight-body ol {
