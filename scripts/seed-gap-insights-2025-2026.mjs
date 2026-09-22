@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { fileURLToPath } from "url"
 
 import { imageAt } from "./insight-image-pool.mjs"
 import { polishInsightCopy } from "../lib/insight-plaintext-polish.mjs"
@@ -344,4 +345,10 @@ function writeGapInsights() {
   console.log(`Created ${created} gap insights (skipped ${skipped}).`)
 }
 
-writeGapInsights()
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
+
+if (isMain) {
+  writeGapInsights()
+}

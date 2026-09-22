@@ -1,0 +1,223 @@
+{
+  "generatedAt": "2026-07-26T12:00:23.649Z",
+  "mode": "backfill",
+  "count": 12,
+  "items": [
+    {
+      "slug": "amazon-japan-buy-box-defense-2026-jun",
+      "slugBase": "amazon-japan-buy-box-defense",
+      "title": "Amazon Japan Buy Box를 뺏겼다면 가격보다 먼저 볼 3가지",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "Buy Box",
+        "운영"
+      ],
+      "angle": "Buy Box 점유율 방어를 위한 가격·재고·배송 SLA 삼각 운영. 프라임 세일 런북·FBA 입고 가이드 반복 금지.",
+      "brandType": "생활용품",
+      "date": "2026-06-15",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-prime-day-ops-2026-jun",
+      "slugBase": "amazon-japan-prime-day-ops",
+      "title": "Amazon Japan 프라임데이 전에 재고·딜·광고를 맞추는 운영 순서",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "Prime",
+        "세일"
+      ],
+      "angle": "프라임데이·대형 딜의 준비-본편-후속 3구간. 2025 가을 Prime 글과 중복되는 재고 일반론 금지.",
+      "brandType": "가전소형",
+      "date": "2026-06-18",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-fee-margin-2026-jun",
+      "slugBase": "amazon-japan-fee-margin",
+      "title": "Amazon Japan에서 팔수록 손해 날 때 수수료·광고·FBA비를 같이 보는 법",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "마진",
+        "수수료"
+      ],
+      "angle": "추천수수료·FBA비·광고비를 한 시트에서 보는 마진 재설계. ACP/관세 가이드 수치 복붙 금지.",
+      "brandType": "헤어케어",
+      "date": "2026-06-22",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-review-trust-ops-2026-jun",
+      "slugBase": "amazon-japan-review-trust-ops",
+      "title": "Amazon Japan 평점이 흔들릴 때 Vine보다 먼저 손볼 운영 포인트",
+      "category": "Review Strategy",
+      "tags": [
+        "Amazon",
+        "리뷰",
+        "신뢰"
+      ],
+      "angle": "Vine/사진리뷰/평점 방어의 주간 리듬. review-velocity 글의 30/60/90 목표표 재사용 금지.",
+      "brandType": "뷰티",
+      "date": "2026-06-25",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-catalog-hijack-2026-jun",
+      "slugBase": "amazon-japan-catalog-hijack",
+      "title": "Amazon Japan 카탈로그가 뚫렸을 때 Brand Registry로 대응하는 순서",
+      "category": "Execution Guide",
+      "tags": [
+        "Amazon",
+        "Brand Registry",
+        "카탈로그"
+      ],
+      "angle": "카탈로그 하이재킹·무단 판매자 대응과 Brand Registry 운영. 듀얼입점 체크리스트 반복 금지.",
+      "brandType": "더마코스메틱",
+      "date": "2026-06-29",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-aplus-content-2026-jul",
+      "slugBase": "amazon-japan-aplus-content",
+      "title": "Amazon Japan A+는 예쁘게만 쓰는 게 아니다. 전환을 만드는 배치 순서",
+      "category": "Execution Guide",
+      "tags": [
+        "Amazon",
+        "A+",
+        "PDP"
+      ],
+      "angle": "A+/Brand Story 모듈 배치와 PDP FAQ. 범용 PDP 12포인트 체크 전체 재나열 금지.",
+      "brandType": "뷰티툴",
+      "date": "2026-07-02",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-crossborder-ops-2026-jul",
+      "slugBase": "amazon-japan-crossborder-ops",
+      "title": "Amazon Japan 역직구에서 지연 문의가 늘 때 배송약속·CS부터 고치는 법",
+      "category": "Logistics",
+      "tags": [
+        "Amazon",
+        "크로스보더",
+        "배송"
+      ],
+      "angle": "역직구/크로스보더의 배송약속·통관·일본어 CS. 일반 물류 규제 리포트 복붙 금지.",
+      "brandType": "패션잡화",
+      "date": "2026-07-06",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-fba-capacity-2026-jul",
+      "slugBase": "amazon-japan-fba-capacity",
+      "title": "Amazon Japan FBA 입고가 막혔을 때 SKU 우선순위를 정하는 법",
+      "category": "Logistics",
+      "tags": [
+        "Amazon",
+        "FBA",
+        "재고"
+      ],
+      "angle": "FBA 용량/입고 제한 시 SKU 우선순위·대체 3PL 분기. 기본 FBA 온보딩 단계 반복 금지.",
+      "brandType": "리빙",
+      "date": "2026-07-09",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-lightning-deal-2026-jul",
+      "slugBase": "amazon-japan-lightning-deal",
+      "title": "Amazon Japan 라이트닝딜 할인폭을 키우기 전에 막을 리뷰·재고 리스크",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "딜",
+        "쿠폰"
+      ],
+      "angle": "라이트닝딜/쿠폰의 할인폭·재고·리뷰 리스크 균형. 프라임데이 전체 런북과 분리.",
+      "brandType": "스낵·식품",
+      "date": "2026-07-13",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-atoz-claim-defense-2026-jul",
+      "slugBase": "amazon-japan-atoz-claim-defense",
+      "title": "Amazon Japan A-to-Z 클레임이 늘 때 반품 사유별로 막는 방법",
+      "category": "Logistics",
+      "tags": [
+        "Amazon",
+        "반품",
+        "CS"
+      ],
+      "angle": "A-to-Z 클레임 사유별 CS·증빙 템플릿. 반품 운영 2026 글의 리뷰 리스크 프레임 반복 금지.",
+      "brandType": "패션",
+      "date": "2026-07-16",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-search-ranking-2026-jul",
+      "slugBase": "amazon-japan-search-ranking",
+      "title": "Amazon Japan 검색 순위가 갑자기 떨어졌다면 가장 먼저 확인할 5가지",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "검색",
+        "SEO"
+      ],
+      "angle": "Amazon 검색 랭킹을 위한 타이틀/백엔드키워드/CVR 동기화. 라쿠텐 SEO 규칙 전용 표 금지.",
+      "brandType": "건강기능식품",
+      "date": "2026-07-20",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    },
+    {
+      "slug": "amazon-japan-sponsored-ads-roi-2026-jul",
+      "slugBase": "amazon-japan-sponsored-ads-roi",
+      "title": "Amazon Japan 광고비는 쓰는데 매출이 안 오를 때 예산 배분 순서",
+      "category": "Open Market",
+      "tags": [
+        "Amazon",
+        "광고",
+        "ROAS"
+      ],
+      "angle": "Sponsored Products/Brands/Display 예산 배분과 ACOS 방어. 범용 Meta Ads 예산론 금지.",
+      "brandType": "스킨케어",
+      "date": "2026-07-23",
+      "sourceTitles": [],
+      "sourcePublishers": [],
+      "sourceNote": "Restored from generated backfill batch.",
+      "newsScore": 0
+    }
+  ]
+}

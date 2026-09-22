@@ -118,7 +118,10 @@ function stripSectionsForRender(body: string) {
   next = next.replace(/^##\s+요약\s*\n+[\s\S]*?(?=\n##\s+|\n!\[|\n*$)/m, "")
   next = next.replace(/^##\s+실행 체크리스트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
   next = next.replace(/^##\s+관련 리포트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
-  next = next.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
+  next = next.replace(
+    /^##\s+(?:참고\s*출처|참고한\s*자료|이\s*글의\s*근거\s*자료|References)[\s\S]*?(?=^##\s+|(?![\s\S]))/gim,
+    "",
+  )
   return next.trim()
 }
 
@@ -246,7 +249,7 @@ function markFaqQuestionHeadings(html: string) {
     .map((part) => {
       if (/^<h2\b/i.test(part)) {
         const text = part.replace(/<[^>]+>/g, "").trim()
-        inFaq = text === "FAQ"
+        inFaq = text === "FAQ" || text === "자주 묻는 질문"
         return part
       }
 

@@ -1,5 +1,23 @@
 /** One unique focus angle per insight — prevents corpus-wide duplication */
 
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+function loadAmazonAnglesPatch() {
+  try {
+    const p = path.join(__dirname, "amazon-unique-angles.json")
+    if (!fs.existsSync(p)) return { UNIQUE_ANGLES: {}, ASSIGNED_CASE_LABELS: {} }
+    return JSON.parse(fs.readFileSync(p, "utf8"))
+  } catch {
+    return { UNIQUE_ANGLES: {}, ASSIGNED_CASE_LABELS: {} }
+  }
+}
+
+const AMAZON_PATCH = loadAmazonAnglesPatch()
+
 export const CANONICAL_HUBS = {
   marketData: "japan-ecommerce-2025",
   platformRoles: "japan-ec-channel-entry-strategy",
@@ -130,6 +148,7 @@ export const UNIQUE_ANGLES = {
     "K-Beauty 성분·표시·医薬部外品 컴플라이언스.",
   "yahoo-chou-paypay-festival-2026-july":
     "2026년 7月 Yahoo 超PayPay祭 태그·키워드·아이템리치 세팅. 유일하게 ppf202607 체크리스트.",
+  ...(AMAZON_PATCH.UNIQUE_ANGLES || {}),
 }
 
 /** Case study labels assigned per slug — no B+D pair reuse */
@@ -167,6 +186,7 @@ export const ASSIGNED_CASE_LABELS = {
   "japan-tiktok-shop-entry-ops": ["뷰티 브랜드 A"],
   "cosme-logo-data-buzz-gap-2026-july": ["스킨케어 D"],
   "yahoo-chou-paypay-festival-2026-july": ["건강기능식품 G"],
+  ...(AMAZON_PATCH.ASSIGNED_CASE_LABELS || {}),
 }
 
 export function getUniqueAngle(slug) {

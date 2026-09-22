@@ -30,7 +30,10 @@ function stripSectionsForRender(body) {
   next = next.replace(/^##\s+요약\s*\n+[\s\S]*?(?=\n##\s+|\n!\[|\n*$)/m, "")
   next = next.replace(/^##\s+실행 체크리스트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
   next = next.replace(/^##\s+관련 리포트\s*\n+[\s\S]*?(?=\n##\s+|\n*$)/m, "")
-  next = next.replace(/^##\s+참고\s*출처[\s\S]*?(?=^##\s+|(?![\s\S]))/gm, "")
+  next = next.replace(
+    /^##\s+(?:참고\s*출처|참고한\s*자료|이\s*글의\s*근거\s*자료|References)[\s\S]*?(?=^##\s+|(?![\s\S]))/gim,
+    "",
+  )
   return next.trim()
 }
 

@@ -12,6 +12,8 @@ export type InsightMeta = {
   tags: string[]
   date: string
   image?: string
+  /** brand = default cover; diagram = use meta.image as hero media */
+  heroMode?: "brand" | "diagram"
 }
 
 export { getInsightCategoryLabel, insightCategoryLabels } from "@/lib/insight-categories"
@@ -23,6 +25,7 @@ export {
   getFeaturedReports,
   getHubStats,
   getRelatedInsights,
+  getRelatedInsightsWithReasons,
   getTopicClusterLinks,
   getWeeklyBriefLines,
   INSIGHT_FILTER_GROUPS,
@@ -45,6 +48,7 @@ function readMetaFromFile(fileName: string): InsightMeta | null {
     tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
     date: (data.date as string) || "",
     image: data.image as string | undefined,
+    heroMode: data.heroMode === "diagram" ? "diagram" : "brand",
   }
 }
 
@@ -105,6 +109,7 @@ export function getInsightBySlug(slug: string): {
       tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
       date: (data.date as string) || "",
       image: data.image as string | undefined,
+      heroMode: data.heroMode === "diagram" ? "diagram" : "brand",
     }
     return { meta, content }
   } catch {

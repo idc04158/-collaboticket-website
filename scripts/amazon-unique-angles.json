@@ -1,0 +1,54 @@
+{
+  "UNIQUE_ANGLES": {
+    "amazon-japan-buy-box-defense-2026-jun": "Buy Box 점유율 방어를 위한 가격·재고·배송 SLA 삼각 운영. 프라임 세일 런북·FBA 입고 가이드 반복 금지.",
+    "amazon-japan-prime-day-ops-2026-jun": "프라임데이·대형 딜의 준비-본편-후속 3구간. 2025 가을 Prime 글과 중복되는 재고 일반론 금지.",
+    "amazon-japan-fee-margin-2026-jun": "추천수수료·FBA비·광고비를 한 시트에서 보는 마진 재설계. ACP/관세 가이드 수치 복붙 금지.",
+    "amazon-japan-review-trust-ops-2026-jun": "Vine/사진리뷰/평점 방어의 주간 리듬. review-velocity 글의 30/60/90 목표표 재사용 금지.",
+    "amazon-japan-catalog-hijack-2026-jun": "카탈로그 하이재킹·무단 판매자 대응과 Brand Registry 운영. 듀얼입점 체크리스트 반복 금지.",
+    "amazon-japan-aplus-content-2026-jul": "A+/Brand Story 모듈 배치와 PDP FAQ. 범용 PDP 12포인트 체크 전체 재나열 금지.",
+    "amazon-japan-crossborder-ops-2026-jul": "역직구/크로스보더의 배송약속·통관·일본어 CS. 일반 물류 규제 리포트 복붙 금지.",
+    "amazon-japan-fba-capacity-2026-jul": "FBA 용량/입고 제한 시 SKU 우선순위·대체 3PL 분기. 기본 FBA 온보딩 단계 반복 금지.",
+    "amazon-japan-lightning-deal-2026-jul": "라이트닝딜/쿠폰의 할인폭·재고·리뷰 리스크 균형. 프라임데이 전체 런북과 분리.",
+    "amazon-japan-atoz-claim-defense-2026-jul": "A-to-Z 클레임 사유별 CS·증빙 템플릿. 반품 운영 2026 글의 리뷰 리스크 프레임 반복 금지.",
+    "amazon-japan-search-ranking-2026-jul": "Amazon 검색 랭킹을 위한 타이틀/백엔드키워드/CVR 동기화. 라쿠텐 SEO 규칙 전용 표 금지.",
+    "amazon-japan-sponsored-ads-roi-2026-jul": "Sponsored Products/Brands/Display 예산 배분과 ACOS 방어. 범용 Meta Ads 예산론 금지."
+  },
+  "ASSIGNED_CASE_LABELS": {
+    "amazon-japan-buy-box-defense-2026-jun": [
+      "생활용품 브랜드"
+    ],
+    "amazon-japan-prime-day-ops-2026-jun": [
+      "가전소형 브랜드"
+    ],
+    "amazon-japan-fee-margin-2026-jun": [
+      "헤어케어 브랜드"
+    ],
+    "amazon-japan-review-trust-ops-2026-jun": [
+      "뷰티 브랜드"
+    ],
+    "amazon-japan-catalog-hijack-2026-jun": [
+      "더마코스메틱 브랜드"
+    ],
+    "amazon-japan-aplus-content-2026-jul": [
+      "뷰티툴 브랜드"
+    ],
+    "amazon-japan-crossborder-ops-2026-jul": [
+      "패션잡화 브랜드"
+    ],
+    "amazon-japan-fba-capacity-2026-jul": [
+      "리빙 브랜드"
+    ],
+    "amazon-japan-lightning-deal-2026-jul": [
+      "스낵·식품 브랜드"
+    ],
+    "amazon-japan-atoz-claim-defense-2026-jul": [
+      "패션 브랜드"
+    ],
+    "amazon-japan-search-ranking-2026-jul": [
+      "건강기능식품 브랜드"
+    ],
+    "amazon-japan-sponsored-ads-roi-2026-jul": [
+      "스킨케어 브랜드"
+    ]
+  }
+}

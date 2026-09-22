@@ -1,57 +1,19 @@
-import Link from "next/link"
-import { ArrowRight, CheckCircle2 } from "lucide-react"
+import { InsightNextStepCta } from "@/components/insights/insight-next-step-cta"
 
-const TRUST_POINTS = [
-  "채널·SKU·예산 기준 우선순위",
-  "1영업일 내 회신",
-  "영업 압박 없음",
-] as const
+type Props = {
+  slug?: string
+  title?: string
+}
 
-/** Mid-article inquiry CTA — placed after INSIGHT / before ACTION. */
-export function InsightMidCta() {
+/** Mid-article CTA — same card language as Next Step */
+export function InsightMidCta({ slug, title }: Props) {
   return (
-    <aside
-      aria-labelledby="insight-mid-cta-title"
-      className="insight-mid-cta my-12 overflow-hidden rounded-2xl border border-brand/25 bg-gradient-to-br from-brand-light/80 via-white to-brand-light/40 shadow-[0_8px_30px_var(--brand-glow)]"
-    >
-      <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-8">
-        <div className="min-w-0 flex-1">
-          <p className="text-xs font-bold tracking-[0.14em] text-brand uppercase">무료 진단</p>
-          <h2
-            id="insight-mid-cta-title"
-            className="mt-2 text-xl font-extrabold tracking-tight text-foreground sm:text-2xl"
-          >
-            이 글의 실행 항목, 우리 브랜드엔 뭐부터일까요?
-          </h2>
-          <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            채널·SKU·예산만 알려주시면, 지금 읽은 내용을 기준으로 우선 손댈 과제를 무료로 정리해 드립니다.
-          </p>
-          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
-            {TRUST_POINTS.map((point) => (
-              <span
-                key={point}
-                className="inline-flex items-center gap-1.5 text-xs font-medium text-foreground/80"
-              >
-                <CheckCircle2 className="size-3.5 shrink-0 text-brand" aria-hidden="true" />
-                {point}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
-          <Link
-            href="/contact?topic=insight-mid&source=insight-body"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-6 py-3.5 text-sm font-semibold whitespace-nowrap text-white no-underline shadow-[0_8px_30px_var(--brand-glow)] transition hover:bg-brand-dark hover:text-white hover:no-underline"
-          >
-            무료로 우선순위 받기
-            <ArrowRight className="size-4 shrink-0 text-white" aria-hidden="true" />
-          </Link>
-          <p className="text-center text-[11px] text-muted-foreground sm:text-right">
-            약 2분 · 상담 신청 폼
-          </p>
-        </div>
-      </div>
-    </aside>
+    <InsightNextStepCta
+      slug={slug}
+      title={title}
+      heading="실행 순서 확인하기"
+      body="이 글의 체크 항목을 우리 상품 기준으로 다시 정리해 드립니다. 광고처럼 보이지 않게, 다음 단계만 제안합니다."
+      ctaLabel="우선순위 받기"
+    />
   )
 }

@@ -15,13 +15,16 @@ import { fileURLToPath } from "url"
 import { imageForIndex } from "./insight-images.mjs"
 import {
   assignPublishDate,
-  buildContentSystemPrompt,
+  buildArticlePrompt,
   PUBLISH_ORDER,
   pickRelatedSlugs,
 } from "./insight-content-rules.mjs"
 import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
 import { getUniqueAngle } from "./insight-unique-angles.mjs"
-import { OPERATIONAL_DATA_RULES } from "./insight-operational-data-rules.mjs"
+import {
+  buildInsightResponsesPayload,
+  resolveInsightBodyModel,
+} from "../lib/ai/prompts/prompt-builder.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BLOG_DIR = path.join(__dirname, "..", "content", "blog")
@@ -29,7 +32,7 @@ const MANIFEST = path.join(__dirname, "poomgo-import-manifest.json")
 const POOMGO_JSON = path.join(__dirname, "poomgo-japan-articles.json")
 const PROGRESS = path.join(__dirname, ".poomgo-import-progress.json")
 
-const MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini"
+const MODEL = resolveInsightBodyModel(process.env.OPENAI_MODEL)
 const DELAY_MS = Number(process.env.POOMGO_IMPORT_DELAY_MS || 5000)
 
 function sleep(ms) {
@@ -71,66 +74,61 @@ function sanitizeBody(body) {
 }
 
 function buildPoomgoPrompt(item, poomgoMeta, publishDate, relatedSlugs) {
-  const angle = getUniqueAngle(item.slug)
-  const links = relatedSlugs.slice(0, 6).map((s) => `/insights/${s}`).join(", ")
-
-  return `${buildContentSystemPrompt()}
-
----
-
-SOURCE BRIEF (Poomgo logistics blog — DO NOT copy sentences; use only as topic reference):
+  const sourceBrief = `SOURCE BRIEF (Poomgo logistics blog — DO NOT copy sentences; topic reference only):
 - Original title: ${poomgoMeta?.title || item.title}
 - Original summary: ${poomgoMeta?.description || ""}
-- CollaboTicket rewrite note: ${item.sourceNote}
+- CollaboTicket rewrite note: ${item.sourceNote || ""}
 - Source URL (reference only, do not link): ${poomgoMeta?.url || ""}
 
 CRITICAL angle shift:
-- Poomgo writes for fulfillment/logistics buyers. CollaboTicket writes for brand EC/marketing operators.
-- Replace "use our fulfillment" with actionable channel, conversion, PDP, CRM, ad ops advice.
-- Never mention 품고, Poomgo, 풀필먼트 vendor names, or 칸닷슈 as a service pitch.
-- Mention logistics only where it affects CVR, ROAS, or customer trust — keep brief.
+- Poomgo audience = fulfillment buyers. CollaboTicket audience = brand EC/marketing operators.
+- Replace "use our fulfillment" with channel / conversion / PDP / CRM / ad ops advice.
+- Never pitch 품고, Poomgo, or other fulfillment vendors.
+- Logistics only when it affects CVR, ROAS, or trust — keep brief.`
 
-This article:
-- slug: ${item.slug}
-- title: ${item.title}
-- publish date context: ${publishDate}
-- unique angle: ${angle}
-- internal link hints: ${links}
-
-Required sections in order:
-## AI 30초 요약
-![${item.title}](IMAGE_PLACEHOLDER)
-## FACT: ...
-## INSIGHT: CollaboTicket 운영 데이터
-## ACTION: ...
-## 다음 단계 (2-3 sentences + links to channel strategy / market hub — NOT full platform table)
-## 실행 체크리스트
-## 실무 TIP
-## FAQ (exactly 5 topic-specific questions)
-## References
-
-${OPERATIONAL_DATA_RULES}
-
-Output ONLY markdown body. Replace IMAGE_PLACEHOLDER with nothing (image is in frontmatter).`
+  return buildArticlePrompt({
+    meta: {
+      slug: item.slug,
+      title: item.title,
+      category: item.category || "물류·운영",
+      tags: item.tags || [],
+    },
+    publishDate,
+    relatedSlugs,
+    existingExcerpt: "(없음 — 소스 브리프만으로 Insight Engine v2 구조로 작성)",
+    sourceBrief,
+    uniqueAngle: getUniqueAngle(item.slug),
+  })
 }
 
 async function generateBody(item, poomgoMeta, publishDate, relatedSlugs) {
   const prompt = buildPoomgoPrompt(item, poomgoMeta, publishDate, relatedSlugs)
 
-  const res = await fetch("https://api.openai.com/v1/responses", {
+  const payload = buildInsightResponsesPayload({
+    model: MODEL,
+    prompt,
+    reasoningEffort: process.env.INSIGHT_REASONING_EFFORT || "high",
+  })
+  let res = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      model: MODEL,
-      tools: [{ type: "web_search_preview" }],
-      input: prompt,
-    }),
+    body: JSON.stringify(payload),
   })
-
-  const data = await res.json()
+  let data = await res.json()
+  if (!res.ok && /reasoning|effort|unsupported|unknown/i.test(data.error?.message || "")) {
+    res = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(buildInsightResponsesPayload({ model: MODEL, prompt, reasoningEffort: null })),
+    })
+    data = await res.json()
+  }
   if (!res.ok) throw new Error(data.error?.message || `OpenAI ${res.status}`)
   return sanitizeBody(extractResponseText(data))
 }

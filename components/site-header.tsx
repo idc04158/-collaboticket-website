@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { SiteLogo } from "@/components/site-logo"
+import { LanguageSwitch } from "@/components/language-switch"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { kakaoChannelUrl } from "@/lib/contact-links"
@@ -58,28 +59,22 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-2 lg:flex">
-            <Link
-              href="/en"
-              hrefLang="en"
-              lang="en"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+          <div className="flex items-center gap-2">
+            <LanguageSwitch current="ko" />
+            <div className="hidden lg:block">
+              <Link href="/contact" className="btn-brand px-5 py-2.5 text-sm">
+                상담 신청
+              </Link>
+            </div>
+            <button
+              type="button"
+              className="flex size-10 items-center justify-center rounded-lg border border-border lg:hidden"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "메뉴 닫기" : "메뉴 열기"}
             >
-              EN
-            </Link>
-            <Link href="/contact" className="btn-brand px-5 py-2.5 text-sm">
-              상담 신청
-            </Link>
+              {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
           </div>
-
-          <button
-            type="button"
-            className="flex size-10 items-center justify-center rounded-lg border border-border lg:hidden"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "메뉴 닫기" : "메뉴 열기"}
-          >
-            {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
         </div>
 
         <div
@@ -99,15 +94,6 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/en"
-              hrefLang="en"
-              lang="en"
-              className="rounded-lg px-3 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-              onClick={() => setMobileOpen(false)}
-            >
-              English
-            </Link>
             <div className="mt-3 px-3">
               <Link
                 href="/contact"

@@ -1,0 +1,768 @@
+{
+  "fetchedAt": "2026-07-26T11:50:01.731Z",
+  "source": "google-news-rss-fallback",
+  "queries": [
+    "アマゾン",
+    "Amazon Japan",
+    "Amazon.co.jp"
+  ],
+  "locale": {
+    "hl": "ja-JP",
+    "gl": "JP",
+    "ceid": "JP:ja"
+  },
+  "timeRange": "30d",
+  "count": 75,
+  "articles": [
+    {
+      "title": "ウクライナ軍がロシア版「アマゾン」倉庫を狙う理由 1週間で9カ所を破壊 #エキスパートトピ（佐々木正明） - エキスパート",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-24T23:44:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR1E5OG5Remd5ak42dEZxQmRyT2h3T29iaFlicC1uWlEtMEdBNG9qNjFDQjZMdkc5QzFWcXF0SVRidWxWNDNJSmxReHllMmdlNzNDQUVqa2V6WFBFWGtrTVVueFNiekc5bl9SZFkwbXlPWGFfdzB5ZlVUM2tMOHphVUItTTBpRWIy?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR1E5OG5Remd5ak42dEZxQmRyT2h3T29iaFlicC1uWlEtMEdBNG9qNjFDQjZMdkc5QzFWcXF0SVRidWxWNDNJSmxReHllMmdlNzNDQUVqa2V6WFBFWGtrTVVueFNiekc5bl9SZFkwbXlPWGFfdzB5ZlVUM2tMOHphVUItTTBpRWIy?oc=5\" target=\"_blank\"&gt;ウクライナ軍がロシア版「アマゾン」倉庫を狙う理由 1週間で9カ所を破壊 #エキスパートトピ（佐々木正明） - エキスパート&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR1E5OG5Remd5ak42dEZxQmRyT2h3T29iaFlicC1uWlEtMEdBNG9qNjFDQjZMdkc5QzFWcXF0SVRidWxWNDNJSmxReHllMmdlNzNDQUVqa2V6WFBFWGtrTVVueFNiekc5bl9SZFkwbXlPWGFfdzB5ZlVUM2tMOHphVUItTTBpRWIy?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ウクライナがドローン攻撃、「ロシアのアマゾン」倉庫で火災",
+      "publisherName": "AFPBB News",
+      "publishedAt": "2026-07-24T05:58:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yeFBiLWFuTkVXbUJ5S0lWd0Y0a1FQOGxTdWZWQ2wwMnMzYmFZUUFFZEZ5YlpwYXR5SjZvOWZZbGlRUlQtRk1TNEdVeWd3OGJ5UVHSAVRBVV95cUxNT1h3eVpWZjBvSDY4cUtXQUJxdURnel8tdmZCa1YzM2lKcnZobks1LWlnTG9UeFFKbDJrZlRxY21QcWN4dVNob2xJR0JoWlFPcTRlOHc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yeFBiLWFuTkVXbUJ5S0lWd0Y0a1FQOGxTdWZWQ2wwMnMzYmFZUUFFZEZ5YlpwYXR5SjZvOWZZbGlRUlQtRk1TNEdVeWd3OGJ5UVHSAVRBVV95cUxNT1h3eVpWZjBvSDY4cUtXQUJxdURnel8tdmZCa1YzM2lKcnZobks1LWlnTG9UeFFKbDJrZlRxY21QcWN4dVNob2xJR0JoWlFPcTRlOHc?oc=5\" target=\"_blank\"&gt;ウクライナがドローン攻撃、「ロシアのアマゾン」倉庫で火災&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;AFPBB News&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yeFBiLWFuTkVXbUJ5S0lWd0Y0a1FQOGxTdWZWQ2wwMnMzYmFZUUFFZEZ5YlpwYXR5SjZvOWZZbGlRUlQtRk1TNEdVeWd3OGJ5UVHSAVRBVV95cUxNT1h3eVpWZjBvSDY4cUtXQUJxdURnel8tdmZCa1YzM2lKcnZobks1LWlnTG9UeFFKbDJrZlRxY21QcWN4dVNob2xJR0JoWlFPcTRlOHc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目",
+      "publisherName": "ロイター",
+      "publishedAt": "2026-07-24T14:33:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV2ZLb29wb3VVbkhEMG5wanZXRkF2cVF4Z1JBUHJ6MzdGUTYxU1pvb1RqZW9MTXRCME9sSXJzMkl2c3UxZjM1N2tQNTRSa1B1RWN1S19jYWFkRjZBY3FXWHprY2gtaFFsbHFna1VzbHF4Nm9pUWpNUWZWVHhHWFYwTA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQV2ZLb29wb3VVbkhEMG5wanZXRkF2cVF4Z1JBUHJ6MzdGUTYxU1pvb1RqZW9MTXRCME9sSXJzMkl2c3UxZjM1N2tQNTRSa1B1RWN1S19jYWFkRjZBY3FXWHprY2gtaFFsbHFna1VzbHF4Nm9pUWpNUWZWVHhHWFYwTA?oc=5\" target=\"_blank\"&gt;ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ロイター&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV2ZLb29wb3VVbkhEMG5wanZXRkF2cVF4Z1JBUHJ6MzdGUTYxU1pvb1RqZW9MTXRCME9sSXJzMkl2c3UxZjM1N2tQNTRSa1B1RWN1S19jYWFkRjZBY3FXWHprY2gtaFFsbHFna1VzbHF4Nm9pUWpNUWZWVHhHWFYwTA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "“ロシア版アマゾン”の倉庫を狙った攻撃相次ぐ ウクライナ軍の無人機か 市民生活への影響も",
+      "publisherName": "日テレNEWS NNN",
+      "publishedAt": "2026-07-24T23:43:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMk56bXN6aHZOdjFBeWRxTEdFRXQ0UzdOX3ZwSTJfalRobnc4aUgzc0FyYmNjaFJUSHpfc1Y2elVncUdseTJycDBqbFNzalhfOGx4UnZCZUFRNUhIWlJtWE5ieXNCQWs2cXN5dVZIVWx3bnUtUGVfaEdnMm5ocGN5X2tRR2g?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOMk56bXN6aHZOdjFBeWRxTEdFRXQ0UzdOX3ZwSTJfalRobnc4aUgzc0FyYmNjaFJUSHpfc1Y2elVncUdseTJycDBqbFNzalhfOGx4UnZCZUFRNUhIWlJtWE5ieXNCQWs2cXN5dVZIVWx3bnUtUGVfaEdnMm5ocGN5X2tRR2g?oc=5\" target=\"_blank\"&gt;“ロシア版アマゾン”の倉庫を狙った攻撃相次ぐ ウクライナ軍の無人機か 市民生活への影響も&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;日テレNEWS NNN&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMk56bXN6aHZOdjFBeWRxTEdFRXQ0UzdOX3ZwSTJfalRobnc4aUgzc0FyYmNjaFJUSHpfc1Y2elVncUdseTJycDBqbFNzalhfOGx4UnZCZUFRNUhIWlJtWE5ieXNCQWs2cXN5dVZIVWx3bnUtUGVfaEdnMm5ocGN5X2tRR2g?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "フジロック2026、Amazon Primeで独占生配信が決定！ タイムテーブル、必見アーティストを徹底ガイド",
+      "publisherName": "Vogue Japan",
+      "publishedAt": "2026-07-23T08:12:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrcFp0NlNqRUVSdlIyNjg5T0hNVTlITENLRDA1UExMekZmVmdtSTdRNC1kQ0hyUEZaR2VackJEWklQSDBlbWhVamdnWUN3QXgyOWVnVnhvcWRSZHlOTEk1bzRtUGQyMlU?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrcFp0NlNqRUVSdlIyNjg5T0hNVTlITENLRDA1UExMekZmVmdtSTdRNC1kQ0hyUEZaR2VackJEWklQSDBlbWhVamdnWUN3QXgyOWVnVnhvcWRSZHlOTEk1bzRtUGQyMlU?oc=5\" target=\"_blank\"&gt;フジロック2026、Amazon Primeで独占生配信が決定！ タイムテーブル、必見アーティストを徹底ガイド&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Vogue Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrcFp0NlNqRUVSdlIyNjg5T0hNVTlITENLRDA1UExMekZmVmdtSTdRNC1kQ0hyUEZaR2VackJEWklQSDBlbWhVamdnWUN3QXgyOWVnVnhvcWRSZHlOTEk1bzRtUGQyMlU?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "『Prime Video Boxing 16』をPrime Video（プライム・ビデオ）で9月27日（日）独占ライブ配信",
+      "publisherName": "About Amazon Japan",
+      "publishedAt": "2026-07-23T08:04:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxYnNFclVZRDJJdDlZRWpHUDRKV1E5RDJtZkY1dF9Selp6VmtEZmN6bnhha0JjUkNEb1FDSVRKMU9OMmM2RGh6SnU1VWNUTjFUZUVfS1RNSnhZRlNHTk1IbVBNX0doSFYtRGVqUUtn?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTFBxYnNFclVZRDJJdDlZRWpHUDRKV1E5RDJtZkY1dF9Selp6VmtEZmN6bnhha0JjUkNEb1FDSVRKMU9OMmM2RGh6SnU1VWNUTjFUZUVfS1RNSnhZRlNHTk1IbVBNX0doSFYtRGVqUUtn?oc=5\" target=\"_blank\"&gt;『Prime Video Boxing 16』をPrime Video（プライム・ビデオ）で9月27日（日）独占ライブ配信&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;About Amazon Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxYnNFclVZRDJJdDlZRWpHUDRKV1E5RDJtZkY1dF9Selp6VmtEZmN6bnhha0JjUkNEb1FDSVRKMU9OMmM2RGh6SnU1VWNUTjFUZUVfS1RNSnhZRlNHTk1IbVBNX0doSFYtRGVqUUtn?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "「仮面ライダー」全部揃えたい！アマゾン、アギト、ディケイド…箱パッケージ入りソフビのミニチュアが登場",
+      "publisherName": "Excite エキサイト",
+      "publishedAt": "2026-07-26T00:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vNm9CeGRwa0prbUtGbjZUWl9LYzUwZVM5RkVLcE5EUkU5V3VCREZsTV9ScG5hcnQ1ZHV0Ui1JSEI0aVE0cFFPSEhiVUZVVFJ6UzlaRHJna2U5Y2lpVmVKVkpabHh0dw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vNm9CeGRwa0prbUtGbjZUWl9LYzUwZVM5RkVLcE5EUkU5V3VCREZsTV9ScG5hcnQ1ZHV0Ui1JSEI0aVE0cFFPSEhiVUZVVFJ6UzlaRHJna2U5Y2lpVmVKVkpabHh0dw?oc=5\" target=\"_blank\"&gt;「仮面ライダー」全部揃えたい！アマゾン、アギト、ディケイド…箱パッケージ入りソフビのミニチュアが登場&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Excite エキサイト&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vNm9CeGRwa0prbUtGbjZUWl9LYzUwZVM5RkVLcE5EUkU5V3VCREZsTV9ScG5hcnQ1ZHV0Ui1JSEI0aVE0cFFPSEhiVUZVVFJ6UzlaRHJna2U5Y2lpVmVKVkpabHh0dw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "65%オフも！Amazonタイムセールで「水筒」や「テント」が今ならお買い得ですよ",
+      "publisherName": "ROOMIE（ルーミー）",
+      "publishedAt": "2026-07-24T01:00:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QOWFKMS14MEU3LUlJalNRdS1WbTktTWpJSGRZQ1ltQUtvZ3FCZXlLbk5mamJDNlJVUzNiNVI5dUhKSENWN290MVBWSmpvSFU?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QOWFKMS14MEU3LUlJalNRdS1WbTktTWpJSGRZQ1ltQUtvZ3FCZXlLbk5mamJDNlJVUzNiNVI5dUhKSENWN290MVBWSmpvSFU?oc=5\" target=\"_blank\"&gt;65%オフも！Amazonタイムセールで「水筒」や「テント」が今ならお買い得ですよ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ROOMIE（ルーミー）&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QOWFKMS14MEU3LUlJalNRdS1WbTktTWpJSGRZQ1ltQUtvZ3FCZXlLbk5mamJDNlJVUzNiNVI5dUhKSENWN290MVBWSmpvSFU?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "『Prime Video Boxing 16』あの激闘再び、井上拓真対那須川天心によるWBC世界バンタム級タイトルマッチ決定！",
+      "publisherName": "PR TIMES",
+      "publishedAt": "2026-07-23T08:00:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BR3NIXzlXM3JkTWRod1VYdjBUdlhkUXlIc1B0SUhEVGdxZmhuUjBKUzh5RUVHTmdaeDU5dmY3SDNzN2xQanlQY3R1cllBQjZQSkMwcWdGLS1UN1M4b3k2UWNmSzZTV2FyeGc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE5BR3NIXzlXM3JkTWRod1VYdjBUdlhkUXlIc1B0SUhEVGdxZmhuUjBKUzh5RUVHTmdaeDU5dmY3SDNzN2xQanlQY3R1cllBQjZQSkMwcWdGLS1UN1M4b3k2UWNmSzZTV2FyeGc?oc=5\" target=\"_blank\"&gt;『Prime Video Boxing 16』あの激闘再び、井上拓真対那須川天心によるWBC世界バンタム級タイトルマッチ決定！&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;PR TIMES&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BR3NIXzlXM3JkTWRod1VYdjBUdlhkUXlIc1B0SUhEVGdxZmhuUjBKUzh5RUVHTmdaeDU5dmY3SDNzN2xQanlQY3R1cllBQjZQSkMwcWdGLS1UN1M4b3k2UWNmSzZTV2FyeGc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、株価に下落リスク 30日決算 割安感でも財務に不安",
+      "publisherName": "ig.com",
+      "publishedAt": "2026-07-23T06:04:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkZNZUtSWXFqTFMxOUNZRnRoQnp5c2hlWkhUYUlWZzN1SHVUc1RuUnBhRGgySjNDWXdCSTR3ZVpPZlJIbzJ3SzlqSTVjTkhzQmEydWY1LVRVY1NTVDZfU25zenNKTE9tR0t4dXNFSW11eHp0bFltNVphdnpWREl3T1VRUUIwaEpBUkxER0FKT19IekUz?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkZNZUtSWXFqTFMxOUNZRnRoQnp5c2hlWkhUYUlWZzN1SHVUc1RuUnBhRGgySjNDWXdCSTR3ZVpPZlJIbzJ3SzlqSTVjTkhzQmEydWY1LVRVY1NTVDZfU25zenNKTE9tR0t4dXNFSW11eHp0bFltNVphdnpWREl3T1VRUUIwaEpBUkxER0FKT19IekUz?oc=5\" target=\"_blank\"&gt;アマゾン、株価に下落リスク 30日決算 割安感でも財務に不安&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ig.com&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkZNZUtSWXFqTFMxOUNZRnRoQnp5c2hlWkhUYUlWZzN1SHVUc1RuUnBhRGgySjNDWXdCSTR3ZVpPZlJIbzJ3SzlqSTVjTkhzQmEydWY1LVRVY1NTVDZfU25zenNKTE9tR0t4dXNFSW11eHp0bFltNVphdnpWREl3T1VRUUIwaEpBUkxER0FKT19IekUz?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アイシン、補修部品・用品の供給に「アマゾンビジネス」活用 部品商への卸売り強化でアフター売り上げ倍増へ",
+      "publisherName": "netdenjd.com",
+      "publishedAt": "2026-07-24T23:38:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KcTlQanFnLVFfOWxzOVloYUtaRlBFMDRkb1oxVDFoSTZoMTd5a1ZCcDFvNTVkTEFPT1B4YkZEVmNhWnp4MlZocWN6OEl3aEdvSGc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KcTlQanFnLVFfOWxzOVloYUtaRlBFMDRkb1oxVDFoSTZoMTd5a1ZCcDFvNTVkTEFPT1B4YkZEVmNhWnp4MlZocWN6OEl3aEdvSGc?oc=5\" target=\"_blank\"&gt;アイシン、補修部品・用品の供給に「アマゾンビジネス」活用 部品商への卸売り強化でアフター売り上げ倍増へ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;netdenjd.com&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KcTlQanFnLVFfOWxzOVloYUtaRlBFMDRkb1oxVDFoSTZoMTd5a1ZCcDFvNTVkTEFPT1B4YkZEVmNhWnp4MlZocWN6OEl3aEdvSGc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン「Prime Video」、心理アクション・スリラー映画「ザ・ランナー」9月2日～独占配信",
+      "publisherName": "ケータイ Watch",
+      "publishedAt": "2026-07-21T15:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1Ynd1RUEwZ3FQaFVwbUJPd3JqQld0V3hQNVpta1M0ekZ0dUFQdWxSSklDemF0QzQ2WTJYa1ZzWFhjYUk2Qlp3aS01QWh3VEhXWFBDVDE3cUQtU3JyekZSXzMtU0FhNms?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1Ynd1RUEwZ3FQaFVwbUJPd3JqQld0V3hQNVpta1M0ekZ0dUFQdWxSSklDemF0QzQ2WTJYa1ZzWFhjYUk2Qlp3aS01QWh3VEhXWFBDVDE3cUQtU3JyekZSXzMtU0FhNms?oc=5\" target=\"_blank\"&gt;アマゾン「Prime Video」、心理アクション・スリラー映画「ザ・ランナー」9月2日～独占配信&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ケータイ Watch&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1Ynd1RUEwZ3FQaFVwbUJPd3JqQld0V3hQNVpta1M0ekZ0dUFQdWxSSklDemF0QzQ2WTJYa1ZzWFhjYUk2Qlp3aS01QWh3VEhXWFBDVDE3cUQtU3JyekZSXzMtU0FhNms?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "【アマプラ】『仮面ライダー』シリーズ146作品分が8月29日より見放題。Vシネ『ファイズ パラリゲ』や配信オリジナル含む過去最多",
+      "publisherName": "ファミ通",
+      "publishedAt": "2026-07-26T00:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9oSHJOVENtMXo4WlM5OHE3T3BaQ05DQ3A5azd0aDdlZ3hvanRNMlRXa09kSUxoOUlGR25TT2IwajJtV2ZJb0lob28xQlRsRlEtcFFDamlZbw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE9oSHJOVENtMXo4WlM5OHE3T3BaQ05DQ3A5azd0aDdlZ3hvanRNMlRXa09kSUxoOUlGR25TT2IwajJtV2ZJb0lob28xQlRsRlEtcFFDamlZbw?oc=5\" target=\"_blank\"&gt;【アマプラ】『仮面ライダー』シリーズ146作品分が8月29日より見放題。Vシネ『ファイズ パラリゲ』や配信オリジナル含む過去最多&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ファミ通&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9oSHJOVENtMXo4WlM5OHE3T3BaQ05DQ3A5azd0aDdlZ3hvanRNMlRXa09kSUxoOUlGR25TT2IwajJtV2ZJb0lob28xQlRsRlEtcFFDamlZbw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンの現場マネージャーが「人員配置AIを無視」し続ける理由…同社はマネージャーの裁量を「障害」だとみなしはじめている",
+      "publisherName": "Business Insider Japan",
+      "publishedAt": "2026-07-21T21:35:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUjhwX2VCbnUyRFVWTjZlbHNlX0NQMm5sNDl4R2lKQVRiMFMwbmVjbHRmOEN5a04xQ1gtLW9OZjI3enJmWC14SDZhaWFCZkhFNTdMbU50Ti13LWxkTUpwd0I0U2pTYW1UbzhrYVk4U2o4dHloejRxOTI3ckprb0p5V1NoMWdGNG1XbWpNYlJwbmFaZnN5emo0N0gzZ2dNX0x3eFRzYkJVQkQ3T1llblE?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQUjhwX2VCbnUyRFVWTjZlbHNlX0NQMm5sNDl4R2lKQVRiMFMwbmVjbHRmOEN5a04xQ1gtLW9OZjI3enJmWC14SDZhaWFCZkhFNTdMbU50Ti13LWxkTUpwd0I0U2pTYW1UbzhrYVk4U2o4dHloejRxOTI3ckprb0p5V1NoMWdGNG1XbWpNYlJwbmFaZnN5emo0N0gzZ2dNX0x3eFRzYkJVQkQ3T1llblE?oc=5\" target=\"_blank\"&gt;アマゾンの現場マネージャーが「人員配置AIを無視」し続ける理由…同社はマネージャーの裁量を「障害」だとみなしはじめている&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Business Insider Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUjhwX2VCbnUyRFVWTjZlbHNlX0NQMm5sNDl4R2lKQVRiMFMwbmVjbHRmOEN5a04xQ1gtLW9OZjI3enJmWC14SDZhaWFCZkhFNTdMbU50Ti13LWxkTUpwd0I0U2pTYW1UbzhrYVk4U2o4dHloejRxOTI3ckprb0p5V1NoMWdGNG1XbWpNYlJwbmFaZnN5emo0N0gzZ2dNX0x3eFRzYkJVQkQ3T1llblE?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "イラン、バーレーンの米アマゾン施設や各国の米軍基地を攻撃（ロイター）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-21T11:04:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNQWVDUVRaMjhKdUk2M3lfQ1lpY2xLSGxKU1lCckliUVhMRkk2cGpsaHhHcE52MUo1Wjd0aEJLVTZNY0VBbUtYLTZGMHQzV0l2dUluTlIwMEFZcDhCdDg4Q1BBSnFzWXFUVy1KaHpreEliZlh4clZPM0wyQnZhdGc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBNQWVDUVRaMjhKdUk2M3lfQ1lpY2xLSGxKU1lCckliUVhMRkk2cGpsaHhHcE52MUo1Wjd0aEJLVTZNY0VBbUtYLTZGMHQzV0l2dUluTlIwMEFZcDhCdDg4Q1BBSnFzWXFUVy1KaHpreEliZlh4clZPM0wyQnZhdGc?oc=5\" target=\"_blank\"&gt;イラン、バーレーンの米アマゾン施設や各国の米軍基地を攻撃（ロイター）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNQWVDUVRaMjhKdUk2M3lfQ1lpY2xLSGxKU1lCckliUVhMRkk2cGpsaHhHcE52MUo1Wjd0aEJLVTZNY0VBbUtYLTZGMHQzV0l2dUluTlIwMEFZcDhCdDg4Q1BBSnFzWXFUVy1KaHpreEliZlh4clZPM0wyQnZhdGc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "来週の米主要企業決算 マイクロソフト、メタ、アップル、アマゾン",
+      "publisherName": "みんかぶ FX/為替",
+      "publishedAt": "2026-07-24T22:39:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QY3J6c0xuMnhqNlo1M1N0M0VWYTJpQnpQZ2VCZERhUGpZZHJyY0RaVDFOeWd3YzR5RWFDUlVZTUR1bDZQcTlMTA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QY3J6c0xuMnhqNlo1M1N0M0VWYTJpQnpQZ2VCZERhUGpZZHJyY0RaVDFOeWd3YzR5RWFDUlVZTUR1bDZQcTlMTA?oc=5\" target=\"_blank\"&gt;来週の米主要企業決算 マイクロソフト、メタ、アップル、アマゾン&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;みんかぶ FX/為替&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QY3J6c0xuMnhqNlo1M1N0M0VWYTJpQnpQZ2VCZERhUGpZZHJyY0RaVDFOeWd3YzR5RWFDUlVZTUR1bDZQcTlMTA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "【Live配信】 フジロック 2026 放送 TV放送・ネット配信・見逃し配信 2026年7月26日",
+      "publisherName": "scchr.jp",
+      "publishedAt": "2026-07-26T00:44:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOVlFQcjRSb2JfTUQ2bFJkWmNSXzN4OTk1NUJNUUZuV1BkQnlrQ0hMcC1Cd2NjTkhXR2ZCSUZ4Ym9uYUJXMmV6SjBhanhGTy04MnVTU1JJQkI1alhIeXRIOF91Mk81YW1XS3VDMkZtMldyZ3ZyenVMenFMMV9pTEpwNndZQXJqZVFHZ1hrdTdfTzY1ZU1rZ294T19JZXRMeHp4SVdWVXVENGRqcnFiLWxuMGxmZjBsa0luWXptWWg2NHl3NHdEdG5FcXFEaWpsQnREVk5BZ19vU0J3NTZxa2FuMXRxNkZBTmI5aXY0SjFPYXhUZERVVFpMMmVab2gzYzRfMjRfa2lSd2d4RWEyREUzMklqUHpVUDFyZDlXRUEzT3RDcnlVb0VBSHd1MU5WUWpaS0ZkN2ZHTlNrN3FHWXNoS2w0TFNaRi1IVFFYUmUwNkttbmNpODhkcXBEZHhPaWNuYThoajZEZGhnY1ZiZmZLZWFSLVdRR1hqWVVxYWg1WQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMi_wJBVV95cUxOVlFQcjRSb2JfTUQ2bFJkWmNSXzN4OTk1NUJNUUZuV1BkQnlrQ0hMcC1Cd2NjTkhXR2ZCSUZ4Ym9uYUJXMmV6SjBhanhGTy04MnVTU1JJQkI1alhIeXRIOF91Mk81YW1XS3VDMkZtMldyZ3ZyenVMenFMMV9pTEpwNndZQXJqZVFHZ1hrdTdfTzY1ZU1rZ294T19JZXRMeHp4SVdWVXVENGRqcnFiLWxuMGxmZjBsa0luWXptWWg2NHl3NHdEdG5FcXFEaWpsQnREVk5BZ19vU0J3NTZxa2FuMXRxNkZBTmI5aXY0SjFPYXhUZERVVFpMMmVab2gzYzRfMjRfa2lSd2d4RWEyREUzMklqUHpVUDFyZDlXRUEzT3RDcnlVb0VBSHd1MU5WUWpaS0ZkN2ZHTlNrN3FHWXNoS2w0TFNaRi1IVFFYUmUwNkttbmNpODhkcXBEZHhPaWNuYThoajZEZGhnY1ZiZmZLZWFSLVdRR1hqWVVxYWg1WQ?oc=5\" target=\"_blank\"&gt;【Live配信】 フジロック 2026 放送 TV放送・ネット配信・見逃し配信 2026年7月26日&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;scchr.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxOVlFQcjRSb2JfTUQ2bFJkWmNSXzN4OTk1NUJNUUZuV1BkQnlrQ0hMcC1Cd2NjTkhXR2ZCSUZ4Ym9uYUJXMmV6SjBhanhGTy04MnVTU1JJQkI1alhIeXRIOF91Mk81YW1XS3VDMkZtMldyZ3ZyenVMenFMMV9pTEpwNndZQXJqZVFHZ1hrdTdfTzY1ZU1rZ294T19JZXRMeHp4SVdWVXVENGRqcnFiLWxuMGxmZjBsa0luWXptWWg2NHl3NHdEdG5FcXFEaWpsQnREVk5BZ19vU0J3NTZxa2FuMXRxNkZBTmI5aXY0SjFPYXhUZERVVFpMMmVab2gzYzRfMjRfa2lSd2d4RWEyREUzMklqUHpVUDFyZDlXRUEzT3RDcnlVb0VBSHd1MU5WUWpaS0ZkN2ZHTlNrN3FHWXNoS2w0TFNaRi1IVFFYUmUwNkttbmNpODhkcXBEZHhPaWNuYThoajZEZGhnY1ZiZmZLZWFSLVdRR1hqWVVxYWg1WQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ワーナー・ブラザーズ・ディスカバリーがアマゾンを提訴、契約違反と人材引き抜きを主張",
+      "publisherName": "Межа. Новини України.",
+      "publishedAt": "2026-07-25T21:40:38.000Z",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5URkV5VGRtYjVtQWRMeEhneHhSS0Q4SEdXVk5GajJwd0xXal9MNVdmTHo2OWFJdVdrMTk5b0hfZHMtNGJqMWx4M1E3N0JRSVZxS0RoVE5jSlozR1JLLW5fT1JYSUZ0aXNTczdZ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE5URkV5VGRtYjVtQWRMeEhneHhSS0Q4SEdXVk5GajJwd0xXal9MNVdmTHo2OWFJdVdrMTk5b0hfZHMtNGJqMWx4M1E3N0JRSVZxS0RoVE5jSlozR1JLLW5fT1JYSUZ0aXNTczdZ?oc=5\" target=\"_blank\"&gt;ワーナー・ブラザーズ・ディスカバリーがアマゾンを提訴、契約違反と人材引き抜きを主張&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Межа. Новини України.&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5URkV5VGRtYjVtQWRMeEhneHhSS0Q4SEdXVk5GajJwd0xXal9MNVdmTHo2OWFJdVdrMTk5b0hfZHMtNGJqMWx4M1E3N0JRSVZxS0RoVE5jSlozR1JLLW5fT1JYSUZ0aXNTczdZ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、汎用ＡＩ部門で人員削減 顧客向けに重点シフト",
+      "publisherName": "ロイター",
+      "publishedAt": "2026-07-22T23:27:44.000Z",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LSEZhTmx2SHdPekI5QXlocHRRWlRncE81YW5yY2hFaGZiRjV5V3V6UWJZVEE5OUNudldtajhKQXBJbGZObFRNY3g2UjRmZGdoVURJbkJhSlpydzlYTXhuNGc2NnY4VlVEZl9rUE5oYkF3UDJEWXg2UQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE9LSEZhTmx2SHdPekI5QXlocHRRWlRncE81YW5yY2hFaGZiRjV5V3V6UWJZVEE5OUNudldtajhKQXBJbGZObFRNY3g2UjRmZGdoVURJbkJhSlpydzlYTXhuNGc2NnY4VlVEZl9rUE5oYkF3UDJEWXg2UQ?oc=5\" target=\"_blank\"&gt;アマゾン、汎用ＡＩ部門で人員削減 顧客向けに重点シフト&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ロイター&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LSEZhTmx2SHdPekI5QXlocHRRWlRncE81YW5yY2hFaGZiRjV5V3V6UWJZVEE5OUNudldtajhKQXBJbGZObFRNY3g2UjRmZGdoVURJbkJhSlpydzlYTXhuNGc2NnY4VlVEZl9rUE5oYkF3UDJEWXg2UQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Prime Video、ライセンス映画・シリーズの一部に日本語字幕パイロットプログラム開始",
+      "publisherName": "About Amazon Japan",
+      "publishedAt": "2026-07-23T01:09:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNUXpLZm5YeXRRd3o4enh4SUdTSlZDcFEzc3lyTHJBYV9QMmszRUZHd1RoOXBuREhYVE5xN1puclFEdUxNMmF1Ry1mQ2ZVN0NhTHh3bWs2T3l4V2FleVIxUHk4NGozZXp6NmJ0cnhwbWVoTThvTmxjNnk4eE1jY2hMYmJpeU52TjRsbXlMdTBEN3pSSXlhbDkwOW1obzh6SlhhcVgwRkZKRDZPczJReTFvelFYMHdHWDZYelp2RUJ1aWpTYm94bHU3cUJVeXdPQlRjb2xfYTc5LUhmUjAybEVVWS1US0JXQTlXenNEMXJfUjlYbE5kcGVMNUFWb21EdDVueGt1V1FWZFN1bVVROV92YVdSMmhRS2Y4Uk5Lc3dweG5yYmtfdXhEdQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAJBVV95cUxNUXpLZm5YeXRRd3o4enh4SUdTSlZDcFEzc3lyTHJBYV9QMmszRUZHd1RoOXBuREhYVE5xN1puclFEdUxNMmF1Ry1mQ2ZVN0NhTHh3bWs2T3l4V2FleVIxUHk4NGozZXp6NmJ0cnhwbWVoTThvTmxjNnk4eE1jY2hMYmJpeU52TjRsbXlMdTBEN3pSSXlhbDkwOW1obzh6SlhhcVgwRkZKRDZPczJReTFvelFYMHdHWDZYelp2RUJ1aWpTYm94bHU3cUJVeXdPQlRjb2xfYTc5LUhmUjAybEVVWS1US0JXQTlXenNEMXJfUjlYbE5kcGVMNUFWb21EdDVueGt1V1FWZFN1bVVROV92YVdSMmhRS2Y4Uk5Lc3dweG5yYmtfdXhEdQ?oc=5\" target=\"_blank\"&gt;Prime Video、ライセンス映画・シリーズの一部に日本語字幕パイロットプログラム開始&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;About Amazon Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNUXpLZm5YeXRRd3o4enh4SUdTSlZDcFEzc3lyTHJBYV9QMmszRUZHd1RoOXBuREhYVE5xN1puclFEdUxNMmF1Ry1mQ2ZVN0NhTHh3bWs2T3l4V2FleVIxUHk4NGozZXp6NmJ0cnhwbWVoTThvTmxjNnk4eE1jY2hMYmJpeU52TjRsbXlMdTBEN3pSSXlhbDkwOW1obzh6SlhhcVgwRkZKRDZPczJReTFvelFYMHdHWDZYelp2RUJ1aWpTYm94bHU3cUJVeXdPQlRjb2xfYTc5LUhmUjAybEVVWS1US0JXQTlXenNEMXJfUjlYbE5kcGVMNUFWb21EdDVueGt1V1FWZFN1bVVROV92YVdSMmhRS2Y4Uk5Lc3dweG5yYmtfdXhEdQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目（ロイター）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-24T14:32:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zRDRUQ25TLTAyaVU4YkhiMUtXOWlTR1daOEJLc1dKOXdMelZINFdXcS1VQ0JZRW5EOFJxOWRjZ3Z2aFNDQ3I2bmp2NUFFVXE1M0JvYXRCdjU5V20wNkp5TEpRWkttYmE4XzY2NVFYYld4VmxETUVfR2M5TkFUNzA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9zRDRUQ25TLTAyaVU4YkhiMUtXOWlTR1daOEJLc1dKOXdMelZINFdXcS1VQ0JZRW5EOFJxOWRjZ3Z2aFNDQ3I2bmp2NUFFVXE1M0JvYXRCdjU5V20wNkp5TEpRWkttYmE4XzY2NVFYYld4VmxETUVfR2M5TkFUNzA?oc=5\" target=\"_blank\"&gt;ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目（ロイター）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zRDRUQ25TLTAyaVU4YkhiMUtXOWlTR1daOEJLc1dKOXdMelZINFdXcS1VQ0JZRW5EOFJxOWRjZ3Z2aFNDQ3I2bmp2NUFFVXE1M0JvYXRCdjU5V20wNkp5TEpRWkttYmE4XzY2NVFYYld4VmxETUVfR2M5TkFUNzA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "イラン、バーレーンの米アマゾン施設や各国の米軍基地を攻撃",
+      "publisherName": "ロイター",
+      "publishedAt": "2026-07-21T11:05:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhQVcycnd6eDBUYUZZcllWNmx5UmJodXV3MWpza0ZUbHJlZzJuaF9nODdhWEQwcC1CeGRVMjNLSkRBemk1ZkdCTHB6MVA4YnN4a01obGxNdUxYN3A4b3NfcFFFRXJGSXowMU53eW0wUTUxWUFHUzROYVNB?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTFBhQVcycnd6eDBUYUZZcllWNmx5UmJodXV3MWpza0ZUbHJlZzJuaF9nODdhWEQwcC1CeGRVMjNLSkRBemk1ZkdCTHB6MVA4YnN4a01obGxNdUxYN3A4b3NfcFFFRXJGSXowMU53eW0wUTUxWUFHUzROYVNB?oc=5\" target=\"_blank\"&gt;イラン、バーレーンの米アマゾン施設や各国の米軍基地を攻撃&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ロイター&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhQVcycnd6eDBUYUZZcllWNmx5UmJodXV3MWpza0ZUbHJlZzJuaF9nODdhWEQwcC1CeGRVMjNLSkRBemk1ZkdCTHB6MVA4YnN4a01obGxNdUxYN3A4b3NfcFFFRXJGSXowMU53eW0wUTUxWUFHUzROYVNB?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンのベゾス氏、ＡＩ導入で「プライム・ビデオ」刷新を計画＝関係筋",
+      "publisherName": "ロイター",
+      "publishedAt": "2026-07-24T04:37:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vZ0lFUXlLUHRueWZvMWlEM1JjM1liajN2VEdlcHpnd1hMX1hkTG1IRkJGdGc2V1RNc25KY1FXRmdvM2poRUxPZmg4eWZxRVpsYklpUFkxd1EyWGNtZDZDNGNuLVVyajlabFpRcWJNV2NVa281QWc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5vZ0lFUXlLUHRueWZvMWlEM1JjM1liajN2VEdlcHpnd1hMX1hkTG1IRkJGdGc2V1RNc25KY1FXRmdvM2poRUxPZmg4eWZxRVpsYklpUFkxd1EyWGNtZDZDNGNuLVVyajlabFpRcWJNV2NVa281QWc?oc=5\" target=\"_blank\"&gt;アマゾンのベゾス氏、ＡＩ導入で「プライム・ビデオ」刷新を計画＝関係筋&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ロイター&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vZ0lFUXlLUHRueWZvMWlEM1JjM1liajN2VEdlcHpnd1hMX1hkTG1IRkJGdGc2V1RNc25KY1FXRmdvM2poRUxPZmg4eWZxRVpsYklpUFkxd1EyWGNtZDZDNGNuLVVyajlabFpRcWJNV2NVa281QWc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目 (ロイター)",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-24T14:32:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONTNoUzRUZ1BhN2Eyd3N4dU1rb0pZOW5BeXpZdUp2T3NxdmlETnhwblcyZmlWQXBLOTJkSWk3Z1N0d0lHWnFCUTdpNFl6eEdiZVl6MGNLcXVHVFJMZUt1SFctQlQ3RVhxMHVIUnptaWlXTVhLeUNZbHZzcGl2bGxkTWM2dnVqeS03QUJEcFhB?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxONTNoUzRUZ1BhN2Eyd3N4dU1rb0pZOW5BeXpZdUp2T3NxdmlETnhwblcyZmlWQXBLOTJkSWk3Z1N0d0lHWnFCUTdpNFl6eEdiZVl6MGNLcXVHVFJMZUt1SFctQlQ3RVhxMHVIUnptaWlXTVhLeUNZbHZzcGl2bGxkTWM2dnVqeS03QUJEcFhB?oc=5\" target=\"_blank\"&gt;ウクライナ軍、ロシア版「アマゾン」倉庫攻撃 先週末以降4回目 (ロイター)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONTNoUzRUZ1BhN2Eyd3N4dU1rb0pZOW5BeXpZdUp2T3NxdmlETnhwblcyZmlWQXBLOTJkSWk3Z1N0d0lHWnFCUTdpNFl6eEdiZVl6MGNLcXVHVFJMZUt1SFctQlQ3RVhxMHVIUnptaWlXTVhLeUNZbHZzcGl2bGxkTWM2dnVqeS03QUJEcFhB?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンがアレクサ部門の幹部を、衛星事業Leoの初代財務担当VPに起用",
+      "publisherName": "Business Insider Japan",
+      "publishedAt": "2026-07-22T22:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdXNickZ2WkczN1VaZmplNWR3MkJfTi1veHVqd2tpNHdhYmdpUEVQV0lEOTBMN1p1Zy05WEFJTmdIb2VBWllTUWgzOWNLdm5sTFFyM3BiZHh2cV9vMzRPUzlYV2JmVjBZX2JEYVFDWmJPM0pNa3RQYjZrbTV5NWFUa0VRbUstMFJrZHd6czlaSWtLUkNBa0RIT29tNlRxZw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOdXNickZ2WkczN1VaZmplNWR3MkJfTi1veHVqd2tpNHdhYmdpUEVQV0lEOTBMN1p1Zy05WEFJTmdIb2VBWllTUWgzOWNLdm5sTFFyM3BiZHh2cV9vMzRPUzlYV2JmVjBZX2JEYVFDWmJPM0pNa3RQYjZrbTV5NWFUa0VRbUstMFJrZHd6czlaSWtLUkNBa0RIT29tNlRxZw?oc=5\" target=\"_blank\"&gt;アマゾンがアレクサ部門の幹部を、衛星事業Leoの初代財務担当VPに起用&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Business Insider Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdXNickZ2WkczN1VaZmplNWR3MkJfTi1veHVqd2tpNHdhYmdpUEVQV0lEOTBMN1p1Zy05WEFJTmdIb2VBWllTUWgzOWNLdm5sTFFyM3BiZHh2cV9vMzRPUzlYV2JmVjBZX2JEYVFDWmJPM0pNa3RQYjZrbTV5NWFUa0VRbUstMFJrZHd6czlaSWtLUkNBa0RIT29tNlRxZw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ウクライナがドローン攻撃、「ロシアのアマゾン」倉庫で火災（ＡＦＰ＝時事）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-24T05:58:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yYVFjQmNZcEJtNmNtVGhNcG1EV0tMaEdOMmI2OVRDMTFKOEFfUzVWZVJvRE1qdTdfMnBzQnlBVGFKa0tHLWxkRlhQWTRhb0JoMXdYX3F0UVhhUnYxYUs3VDh0b3JNTGtuWWpWYlBrM2RxaUs4UjRPb2dKVXRzbU0?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE8yYVFjQmNZcEJtNmNtVGhNcG1EV0tMaEdOMmI2OVRDMTFKOEFfUzVWZVJvRE1qdTdfMnBzQnlBVGFKa0tHLWxkRlhQWTRhb0JoMXdYX3F0UVhhUnYxYUs3VDh0b3JNTGtuWWpWYlBrM2RxaUs4UjRPb2dKVXRzbU0?oc=5\" target=\"_blank\"&gt;ウクライナがドローン攻撃、「ロシアのアマゾン」倉庫で火災（ＡＦＰ＝時事）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yYVFjQmNZcEJtNmNtVGhNcG1EV0tMaEdOMmI2OVRDMTFKOEFfUzVWZVJvRE1qdTdfMnBzQnlBVGFKa0tHLWxkRlhQWTRhb0JoMXdYX3F0UVhhUnYxYUs3VDh0b3JNTGtuWWpWYlBrM2RxaUs4UjRPb2dKVXRzbU0?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Amazonでの家電・デジタル機器のお買い物にさらなる安心を。新しい延長保証サービス「Amazon製品保証」の提供を開始",
+      "publisherName": "About Amazon Japan",
+      "publishedAt": "2026-07-15T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZktuZ251S2FMZ3JYbnRQenJSeDVXZzVmT25RQUw5TkZXTWtDMmNuTGRUem95TnJaNEtGUWt0dzg1M1RoZklncHJsU2k3enFZLTVucUtzSHB4WGhiczdmRkEwanVndmJOQjB1UWRvNXpweHlTZ0VjZ0FRLXhnajhLOHpaNGk1eTZL?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZktuZ251S2FMZ3JYbnRQenJSeDVXZzVmT25RQUw5TkZXTWtDMmNuTGRUem95TnJaNEtGUWt0dzg1M1RoZklncHJsU2k3enFZLTVucUtzSHB4WGhiczdmRkEwanVndmJOQjB1UWRvNXpweHlTZ0VjZ0FRLXhnajhLOHpaNGk1eTZL?oc=5\" target=\"_blank\"&gt;Amazonでの家電・デジタル機器のお買い物にさらなる安心を。新しい延長保証サービス「Amazon製品保証」の提供を開始&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;About Amazon Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZktuZ251S2FMZ3JYbnRQenJSeDVXZzVmT25RQUw5TkZXTWtDMmNuTGRUem95TnJaNEtGUWt0dzg1M1RoZklncHJsU2k3enFZLTVucUtzSHB4WGhiczdmRkEwanVndmJOQjB1UWRvNXpweHlTZ0VjZ0FRLXhnajhLOHpaNGk1eTZL?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、AGI部門で人員削減－戦略転換で株価は続落",
+      "publisherName": "BigGo ファイナンス",
+      "publishedAt": "2026-07-22T18:28:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxQWtNY3B3YUxrQW5CNHpJdzBrNm5zdW5qQVMzUkItQUwwZ19mazE4a2lJZUx5bnN1V2M1aHg0M1VvVWE1WDJySDdaa2xUSjFqN05DTWJ1Qm5zaFg1clRDX2RzWkdZdFFoaUtyV005cVBZVE12?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTFBxQWtNY3B3YUxrQW5CNHpJdzBrNm5zdW5qQVMzUkItQUwwZ19mazE4a2lJZUx5bnN1V2M1aHg0M1VvVWE1WDJySDdaa2xUSjFqN05DTWJ1Qm5zaFg1clRDX2RzWkdZdFFoaUtyV005cVBZVE12?oc=5\" target=\"_blank\"&gt;アマゾン、AGI部門で人員削減－戦略転換で株価は続落&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BigGo ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxQWtNY3B3YUxrQW5CNHpJdzBrNm5zdW5qQVMzUkItQUwwZ19mazE4a2lJZUx5bnN1V2M1aHg0M1VvVWE1WDJySDdaa2xUSjFqN05DTWJ1Qm5zaFg1clRDX2RzWkdZdFFoaUtyV005cVBZVE12?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、欧州ビューティEC市場で首位固め 「TikTok Shop」など新興勢力が市場を揺るがす",
+      "publisherName": "WWDJAPAN",
+      "publishedAt": "2026-07-21T23:03:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE05ekZaRGxNaUw2S1lWVnZlM2NFbTZEOEJZWHRUYUp5SWx3RDk5amdJY3lNVENPakhpXzYtcmlVYTkzZjhiTTlueVYwYzQ0MTM1OGd3?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE05ekZaRGxNaUw2S1lWVnZlM2NFbTZEOEJZWHRUYUp5SWx3RDk5amdJY3lNVENPakhpXzYtcmlVYTkzZjhiTTlueVYwYzQ0MTM1OGd3?oc=5\" target=\"_blank\"&gt;アマゾン、欧州ビューティEC市場で首位固め 「TikTok Shop」など新興勢力が市場を揺るがす&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;WWDJAPAN&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE05ekZaRGxNaUw2S1lWVnZlM2NFbTZEOEJZWHRUYUp5SWx3RDk5amdJY3lNVENPakhpXzYtcmlVYTkzZjhiTTlueVYwYzQ0MTM1OGd3?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンのベゾス氏、ＡＩ導入で「プライム・ビデオ」刷新を計画＝関係筋（ロイター）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-24T04:35:27.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HT0pvdHlnSzZDaERWRFc1NjVaR2R4Z2hIOE0ydGJVeElaaHRYc255N2FkcGlKVkFRWUFHcjczOTBuZy1iQlZYOUZrRTQwQnRBZk9zaWp6UEp4dzlCQVpYVWFjU2lCUjZfNW9JM2EzY3VZcGZENUcxU3BWYWZnV3c?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1HT0pvdHlnSzZDaERWRFc1NjVaR2R4Z2hIOE0ydGJVeElaaHRYc255N2FkcGlKVkFRWUFHcjczOTBuZy1iQlZYOUZrRTQwQnRBZk9zaWp6UEp4dzlCQVpYVWFjU2lCUjZfNW9JM2EzY3VZcGZENUcxU3BWYWZnV3c?oc=5\" target=\"_blank\"&gt;アマゾンのベゾス氏、ＡＩ導入で「プライム・ビデオ」刷新を計画＝関係筋（ロイター）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HT0pvdHlnSzZDaERWRFc1NjVaR2R4Z2hIOE0ydGJVeElaaHRYc255N2FkcGlKVkFRWUFHcjczOTBuZy1iQlZYOUZrRTQwQnRBZk9zaWp6UEp4dzlCQVpYVWFjU2lCUjZfNW9JM2EzY3VZcGZENUcxU3BWYWZnV3c?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンAGIラボのアンテ・バース氏：AIエージェントに必要なのは「大きな頭脳」ではなく「共有コンテキスト」",
+      "publisherName": "BigGo ファイナンス",
+      "publishedAt": "2026-07-23T17:09:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YQVlqckwzdGdoenF6Zi1IWENwMHBWcnk1b3RNMzBYNUZ3OVJwNWp3UW5NV09ZOEVVeEVyQmRranBaV0hYb2h1MmtHa3NYTFRlV1RySWNfVmR4Zw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YQVlqckwzdGdoenF6Zi1IWENwMHBWcnk1b3RNMzBYNUZ3OVJwNWp3UW5NV09ZOEVVeEVyQmRranBaV0hYb2h1MmtHa3NYTFRlV1RySWNfVmR4Zw?oc=5\" target=\"_blank\"&gt;アマゾンAGIラボのアンテ・バース氏：AIエージェントに必要なのは「大きな頭脳」ではなく「共有コンテキスト」&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BigGo ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YQVlqckwzdGdoenF6Zi1IWENwMHBWcnk1b3RNMzBYNUZ3OVJwNWp3UW5NV09ZOEVVeEVyQmRranBaV0hYb2h1MmtHa3NYTFRlV1RySWNfVmR4Zw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ベゾス氏、アマゾン・プライム・ビデオの全面AI刷新を指示——約32.8兆円の巨額投資をアピール",
+      "publisherName": "BigGo ファイナンス",
+      "publishedAt": "2026-07-23T18:27:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01eENWWXVWNVB6a1FaRWxzTDNtUGRkODNQN3RNV1RJTGxMOVZma1dXdEdyMnV3Ym9MWGEyNlFFTEVuMTNFUEswTEkyS0o5ZnF2U2hRUTNaWk5UblR2QU5FbG8xcnpXNjN3MFM3TGt2SUtBX1Qz?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE01eENWWXVWNVB6a1FaRWxzTDNtUGRkODNQN3RNV1RJTGxMOVZma1dXdEdyMnV3Ym9MWGEyNlFFTEVuMTNFUEswTEkyS0o5ZnF2U2hRUTNaWk5UblR2QU5FbG8xcnpXNjN3MFM3TGt2SUtBX1Qz?oc=5\" target=\"_blank\"&gt;ベゾス氏、アマゾン・プライム・ビデオの全面AI刷新を指示——約32.8兆円の巨額投資をアピール&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BigGo ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01eENWWXVWNVB6a1FaRWxzTDNtUGRkODNQN3RNV1RJTGxMOVZma1dXdEdyMnV3Ym9MWGEyNlFFTEVuMTNFUEswTEkyS0o5ZnF2U2hRUTNaWk5UblR2QU5FbG8xcnpXNjN3MFM3TGt2SUtBX1Qz?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "米決算発表予定（7/27-7/31）－来週はメタ、アマゾン、クアルコム、マイクロソフト、アップルなど(トレーダーズ・ウェブ)",
+      "publisherName": "Yahoo!ファイナンス",
+      "publishedAt": "2026-07-24T05:20:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUVkzUHhzcEJ3dnh0bnZ1TUl5QUlwWHFSYlBOOHpLOV9PanNTM0c3ZWxEUzJ5ZU9FdFpGMmdVMkxfNVBfbzBmMnhqaUozNnd0bXlQRDFxNi1JMEUyS3k1Z0dReF9RM1B2TDRsazN6cTdWUmlZVnNCbVgxcHo0Nl92cGVjTWZEdE0?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPUVkzUHhzcEJ3dnh0bnZ1TUl5QUlwWHFSYlBOOHpLOV9PanNTM0c3ZWxEUzJ5ZU9FdFpGMmdVMkxfNVBfbzBmMnhqaUozNnd0bXlQRDFxNi1JMEUyS3k1Z0dReF9RM1B2TDRsazN6cTdWUmlZVnNCbVgxcHo0Nl92cGVjTWZEdE0?oc=5\" target=\"_blank\"&gt;米決算発表予定（7/27-7/31）－来週はメタ、アマゾン、クアルコム、マイクロソフト、アップルなど(トレーダーズ・ウェブ)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUVkzUHhzcEJ3dnh0bnZ1TUl5QUlwWHFSYlBOOHpLOV9PanNTM0c3ZWxEUzJ5ZU9FdFpGMmdVMkxfNVBfbzBmMnhqaUozNnd0bXlQRDFxNi1JMEUyS3k1Z0dReF9RM1B2TDRsazN6cTdWUmlZVnNCbVgxcHo0Nl92cGVjTWZEdE0?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、AI投資拡大の一方でAGI部門を戦略的縮小",
+      "publisherName": "BigGo ファイナンス",
+      "publishedAt": "2026-07-22T17:44:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1fT3diYTBUN0R5elJQS29paFpKalByRnk1LVBMUzBGOVdlaEdSMmxKbllvYWVkblFuTDRsOGFGQ0lFZXQzTExKNTJmSnptRHpNay0yWEg4dFhCZDhta2RYRXAxeVZnM3JEemIxX0FYNkp6aVEx?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE1fT3diYTBUN0R5elJQS29paFpKalByRnk1LVBMUzBGOVdlaEdSMmxKbllvYWVkblFuTDRsOGFGQ0lFZXQzTExKNTJmSnptRHpNay0yWEg4dFhCZDhta2RYRXAxeVZnM3JEemIxX0FYNkp6aVEx?oc=5\" target=\"_blank\"&gt;アマゾン、AI投資拡大の一方でAGI部門を戦略的縮小&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BigGo ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1fT3diYTBUN0R5elJQS29paFpKalByRnk1LVBMUzBGOVdlaEdSMmxKbllvYWVkblFuTDRsOGFGQ0lFZXQzTExKNTJmSnptRHpNay0yWEg4dFhCZDhta2RYRXAxeVZnM3JEemIxX0FYNkp6aVEx?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンは「書けるKindle」で何を狙うのか",
+      "publisherName": "日経クロストレンド",
+      "publishedAt": "2026-07-15T15:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rTnBYVjAwZnppMmtsQnJKT08xUTdQRkI0RVVDa2o1R29BNnozYmVycnFZcGtiVEs3NFNzcUY1SnUxcGVmX0dLQWwtSUpMak9MR1VWMlF3LUp2MFVEUkJKeFFQXzZsNzFveUE?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE1rTnBYVjAwZnppMmtsQnJKT08xUTdQRkI0RVVDa2o1R29BNnozYmVycnFZcGtiVEs3NFNzcUY1SnUxcGVmX0dLQWwtSUpMak9MR1VWMlF3LUp2MFVEUkJKeFFQXzZsNzFveUE?oc=5\" target=\"_blank\"&gt;アマゾンは「書けるKindle」で何を狙うのか&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;日経クロストレンド&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rTnBYVjAwZnppMmtsQnJKT08xUTdQRkI0RVVDa2o1R29BNnozYmVycnFZcGtiVEs3NFNzcUY1SnUxcGVmX0dLQWwtSUpMak9MR1VWMlF3LUp2MFVEUkJKeFFQXzZsNzFveUE?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "来週の決算発表を前にアマゾンのチャートが示唆すること",
+      "publisherName": "Moomoo",
+      "publishedAt": "2026-07-24T14:05:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeERna3B3bGVzTkJ6b1NLVTdBSFg1dnp6eTBwbV9HSWhuU1o5V283d1BrTnNCVDVLZkxSQWVXb1p6TnNIbW5yNncwR0ZEbjFSRkNzMUpaaWEwR3Y4UG9vZlNRclNJN2V0WTNfU0d4QTJkU1RUZVppbmJMZDVBNjdJa1pLSS0xaEYzU0FDYldDb2hWc1JiQXJuZjN4OHhYNURLdFFwOXRn?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNeERna3B3bGVzTkJ6b1NLVTdBSFg1dnp6eTBwbV9HSWhuU1o5V283d1BrTnNCVDVLZkxSQWVXb1p6TnNIbW5yNncwR0ZEbjFSRkNzMUpaaWEwR3Y4UG9vZlNRclNJN2V0WTNfU0d4QTJkU1RUZVppbmJMZDVBNjdJa1pLSS0xaEYzU0FDYldDb2hWc1JiQXJuZjN4OHhYNURLdFFwOXRn?oc=5\" target=\"_blank\"&gt;来週の決算発表を前にアマゾンのチャートが示唆すること&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Moomoo&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeERna3B3bGVzTkJ6b1NLVTdBSFg1dnp6eTBwbV9HSWhuU1o5V283d1BrTnNCVDVLZkxSQWVXb1p6TnNIbW5yNncwR0ZEbjFSRkNzMUpaaWEwR3Y4UG9vZlNRclNJN2V0WTNfU0d4QTJkU1RUZVppbmJMZDVBNjdJa1pLSS0xaEYzU0FDYldDb2hWc1JiQXJuZjN4OHhYNURLdFFwOXRn?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、汎用人工知能（AGI）部門での人員削減を実施",
+      "publisherName": "FashionNetwork France",
+      "publishedAt": "2026-07-23T11:32:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPUnYtUVB1dS1yaDV5S1dpRFNSMWZHUVIyS2M2UEFDczVXRWY2dE9rd3Y1OV96dGtQSXh2aXE0bFcyaGN6VkRTNGNYSlFWbUptOHlPR25Vc3NRNk91cU9aU19Cc1YxeTFTOWxUdkxzU1hIX1c1azVUODBKbEN5Y3Jqcm9oM01zNTc0X3pMdXNFSFVmQ2U4YThULUdpaGpwTjNOM2NFX0RPZHhjLUJERUJ1dnd1QWJISndXT0RPVG5sRjFKQUxZRHFrR3BLcXk2b0hsc3ExdHpyQU1DRDV1NmxEd3UtTG41X1lxZnZLeHlqUVdaN1lpdzhjQ3I2MS1jY3lnbjV6SVJfRTduM1JXZDF5M1UtWG1QVmU2Z1haTDJQYTVWaGhoYWNYNkN6TXJYYUdvU1BEMVJzdHpibUtPU0ZCOHRmY1hRVm1wS2cxcERmbW1GQ1VSMU5RWk5vYjFkU2o2?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMi4AJBVV95cUxPUnYtUVB1dS1yaDV5S1dpRFNSMWZHUVIyS2M2UEFDczVXRWY2dE9rd3Y1OV96dGtQSXh2aXE0bFcyaGN6VkRTNGNYSlFWbUptOHlPR25Vc3NRNk91cU9aU19Cc1YxeTFTOWxUdkxzU1hIX1c1azVUODBKbEN5Y3Jqcm9oM01zNTc0X3pMdXNFSFVmQ2U4YThULUdpaGpwTjNOM2NFX0RPZHhjLUJERUJ1dnd1QWJISndXT0RPVG5sRjFKQUxZRHFrR3BLcXk2b0hsc3ExdHpyQU1DRDV1NmxEd3UtTG41X1lxZnZLeHlqUVdaN1lpdzhjQ3I2MS1jY3lnbjV6SVJfRTduM1JXZDF5M1UtWG1QVmU2Z1haTDJQYTVWaGhoYWNYNkN6TXJYYUdvU1BEMVJzdHpibUtPU0ZCOHRmY1hRVm1wS2cxcERmbW1GQ1VSMU5RWk5vYjFkU2o2?oc=5\" target=\"_blank\"&gt;アマゾン、汎用人工知能（AGI）部門での人員削減を実施&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;FashionNetwork France&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPUnYtUVB1dS1yaDV5S1dpRFNSMWZHUVIyS2M2UEFDczVXRWY2dE9rd3Y1OV96dGtQSXh2aXE0bFcyaGN6VkRTNGNYSlFWbUptOHlPR25Vc3NRNk91cU9aU19Cc1YxeTFTOWxUdkxzU1hIX1c1azVUODBKbEN5Y3Jqcm9oM01zNTc0X3pMdXNFSFVmQ2U4YThULUdpaGpwTjNOM2NFX0RPZHhjLUJERUJ1dnd1QWJISndXT0RPVG5sRjFKQUxZRHFrR3BLcXk2b0hsc3ExdHpyQU1DRDV1NmxEd3UtTG41X1lxZnZLeHlqUVdaN1lpdzhjQ3I2MS1jY3lnbjV6SVJfRTduM1JXZDF5M1UtWG1QVmU2Z1haTDJQYTVWaGhoYWNYNkN6TXJYYUdvU1BEMVJzdHpibUtPU0ZCOHRmY1hRVm1wS2cxcERmbW1GQ1VSMU5RWk5vYjFkU2o2?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンジャパンが日本企業を対象とした対面イベント「JAPAN STORE EXPO 2026」を開催(日本) | ビジネス短信",
+      "publisherName": "jetro.go.jp",
+      "publishedAt": "2026-07-12T15:01:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WTHd5bktTLTFRbTRNaWI0MDR3ZDFLdElLaVJKUmxlMUFYTkFHa1pqQ2pLRmJWRTNsaktYUmxUMWRIOS1mMVQxRm9KN2FWZi1TRHpkTFlJQUVnMU1VN0ZJMXg2Sll3Wm1GMlFKcUpR?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE9WTHd5bktTLTFRbTRNaWI0MDR3ZDFLdElLaVJKUmxlMUFYTkFHa1pqQ2pLRmJWRTNsaktYUmxUMWRIOS1mMVQxRm9KN2FWZi1TRHpkTFlJQUVnMU1VN0ZJMXg2Sll3Wm1GMlFKcUpR?oc=5\" target=\"_blank\"&gt;アマゾンジャパンが日本企業を対象とした対面イベント「JAPAN STORE EXPO 2026」を開催(日本) | ビジネス短信&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;jetro.go.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WTHd5bktTLTFRbTRNaWI0MDR3ZDFLdElLaVJKUmxlMUFYTkFHa1pqQ2pLRmJWRTNsaktYUmxUMWRIOS1mMVQxRm9KN2FWZi1TRHpkTFlJQUVnMU1VN0ZJMXg2Sll3Wm1GMlFKcUpR?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンで整備済みiPhoneやiPadがポイント2倍に",
+      "publisherName": "ケータイ Watch",
+      "publishedAt": "2026-07-21T08:07:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uVHR0RGRWY3dQYklXUjJwazJXWjlIQkU4RVdvWnVCRzd0Mm9RRlBCRFkzc3VqOVRtMDlJdmYzTm1HTDlUMV9kekY2YXQyb1NVVVJqNTNYb3lMdXhUdUZ0UE02S0lpcVhqTUh4SmZR?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5uVHR0RGRWY3dQYklXUjJwazJXWjlIQkU4RVdvWnVCRzd0Mm9RRlBCRFkzc3VqOVRtMDlJdmYzTm1HTDlUMV9kekY2YXQyb1NVVVJqNTNYb3lMdXhUdUZ0UE02S0lpcVhqTUh4SmZR?oc=5\" target=\"_blank\"&gt;アマゾンで整備済みiPhoneやiPadがポイント2倍に&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ケータイ Watch&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uVHR0RGRWY3dQYklXUjJwazJXWjlIQkU4RVdvWnVCRzd0Mm9RRlBCRFkzc3VqOVRtMDlJdmYzTm1HTDlUMV9kekY2YXQyb1NVVVJqNTNYb3lMdXhUdUZ0UE02S0lpcVhqTUh4SmZR?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、汎用ＡＩ部門で人員削減 顧客向けに重点シフト（ロイター）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-22T23:27:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92dHhnLXlKczVqbVgybXNOUEpnZF90Q2E1clFPQXd1aEI4OERCUk9mRW1tMFZHeUZEM0dRTG95cVYyOWIycmc3eUxyYWI1dmYtUG9kd3pfS2V2NUE2dEo0Z0dIS1czRi1aQzRsQTA4amswc0RibUR2VWxsZEVOcFk?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE92dHhnLXlKczVqbVgybXNOUEpnZF90Q2E1clFPQXd1aEI4OERCUk9mRW1tMFZHeUZEM0dRTG95cVYyOWIycmc3eUxyYWI1dmYtUG9kd3pfS2V2NUE2dEo0Z0dIS1czRi1aQzRsQTA4amswc0RibUR2VWxsZEVOcFk?oc=5\" target=\"_blank\"&gt;アマゾン、汎用ＡＩ部門で人員削減 顧客向けに重点シフト（ロイター）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92dHhnLXlKczVqbVgybXNOUEpnZF90Q2E1clFPQXd1aEI4OERCUk9mRW1tMFZHeUZEM0dRTG95cVYyOWIycmc3eUxyYWI1dmYtUG9kd3pfS2V2NUE2dEo0Z0dIS1czRi1aQzRsQTA4amswc0RibUR2VWxsZEVOcFk?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン 2026年第2四半期決算説明会",
+      "publisherName": "Moomoo",
+      "publishedAt": "2026-07-22T11:40:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0VNdWpvUi0zZEFkclhhQXdkS0hzOEo4MVdXVDdBWHlieXlzNDgwYnhKNjhNMGIyOFprZENOb2FvN29kc3RPa1Q4ZXBGWW9XbGJDTEpJY3NreFoxVlMzYkkzbG80NGFacU5oSmZ4aU9odUdrMHFPMW1IZGxfM3VUc0VUYlFLUDl6REllVHVLYXJabDZEcWE2Ul9CbEg?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0VNdWpvUi0zZEFkclhhQXdkS0hzOEo4MVdXVDdBWHlieXlzNDgwYnhKNjhNMGIyOFprZENOb2FvN29kc3RPa1Q4ZXBGWW9XbGJDTEpJY3NreFoxVlMzYkkzbG80NGFacU5oSmZ4aU9odUdrMHFPMW1IZGxfM3VUc0VUYlFLUDl6REllVHVLYXJabDZEcWE2Ul9CbEg?oc=5\" target=\"_blank\"&gt;アマゾン 2026年第2四半期決算説明会&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Moomoo&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0VNdWpvUi0zZEFkclhhQXdkS0hzOEo4MVdXVDdBWHlieXlzNDgwYnhKNjhNMGIyOFprZENOb2FvN29kc3RPa1Q4ZXBGWW9XbGJDTEpJY3NreFoxVlMzYkkzbG80NGFacU5oSmZ4aU9odUdrMHFPMW1IZGxfM3VUc0VUYlFLUDl6REllVHVLYXJabDZEcWE2Ul9CbEg?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "AZ丸和がJPYCに10億円出資、アマゾン配送網にステーブルコイン決済導入へ",
+      "publisherName": "BigGo ファイナンス",
+      "publishedAt": "2026-07-22T16:30:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94OFhwTlVDcS1xYl80cUF3bngtT2pSZUl5cE85cGRmMVNIaHBUUXR0WHZtOTlJTmhmbU1wdlhEaTFCTmd2UlVvQVdLQl9adWowSnJxTDZDYkYtNXZtdVJnX1dJRDFSdzNOalN1akdfMU9wLXdZ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE94OFhwTlVDcS1xYl80cUF3bngtT2pSZUl5cE85cGRmMVNIaHBUUXR0WHZtOTlJTmhmbU1wdlhEaTFCTmd2UlVvQVdLQl9adWowSnJxTDZDYkYtNXZtdVJnX1dJRDFSdzNOalN1akdfMU9wLXdZ?oc=5\" target=\"_blank\"&gt;AZ丸和がJPYCに10億円出資、アマゾン配送網にステーブルコイン決済導入へ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BigGo ファイナンス&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94OFhwTlVDcS1xYl80cUF3bngtT2pSZUl5cE85cGRmMVNIaHBUUXR0WHZtOTlJTmhmbU1wdlhEaTFCTmd2UlVvQVdLQl9adWowSnJxTDZDYkYtNXZtdVJnX1dJRDFSdzNOalN1akdfMU9wLXdZ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "この季節は持ってると安心。虫刺され対策の救急セットを手元に用意しておこう",
+      "publisherName": "ライフハッカー",
+      "publishedAt": "2026-07-26T10:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9UTlVPbmJFVjVibjlYbkFydU1XczZ1OE5wWHF5dV9oRkFObFlBWndFZHJ2b3UwQUdIWWhReThHTXpRekRkeWl5cHBqem51UjdycTI1SW9SZkhuUWtISnhqM0VNR1ZrMW9fYXA4ZmM5WQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9UTlVPbmJFVjVibjlYbkFydU1XczZ1OE5wWHF5dV9oRkFObFlBWndFZHJ2b3UwQUdIWWhReThHTXpRekRkeWl5cHBqem51UjdycTI1SW9SZkhuUWtISnhqM0VNR1ZrMW9fYXA4ZmM5WQ?oc=5\" target=\"_blank\"&gt;この季節は持ってると安心。虫刺され対策の救急セットを手元に用意しておこう&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ライフハッカー&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9UTlVPbmJFVjVibjlYbkFydU1XczZ1OE5wWHF5dV9oRkFObFlBWndFZHJ2b3UwQUdIWWhReThHTXpRekRkeWl5cHBqem51UjdycTI1SW9SZkhuUWtISnhqM0VNR1ZrMW9fYXA4ZmM5WQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "57%オフも！Amazonタイムセールで「アウトドアテーブル」や「スキレット」が今ならお買い得ですよ",
+      "publisherName": "ROOMIE（ルーミー）",
+      "publishedAt": "2026-07-23T01:00:41.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9SeGRHSmVaS01GMkFnbEprRDZ6bWFqeTF6Z0lnQlhfSGhWS1lMZGlyTVN1bEJ5TC1PRUxDRVJwNFFKSzk2V3Y5S2o4b3c1R2M?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE9SeGRHSmVaS01GMkFnbEprRDZ6bWFqeTF6Z0lnQlhfSGhWS1lMZGlyTVN1bEJ5TC1PRUxDRVJwNFFKSzk2V3Y5S2o4b3c1R2M?oc=5\" target=\"_blank\"&gt;57%オフも！Amazonタイムセールで「アウトドアテーブル」や「スキレット」が今ならお買い得ですよ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ROOMIE（ルーミー）&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9SeGRHSmVaS01GMkFnbEprRDZ6bWFqeTF6Z0lnQlhfSGhWS1lMZGlyTVN1bEJ5TC1PRUxDRVJwNFFKSzk2V3Y5S2o4b3c1R2M?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Amazon Music（アマゾンミュージック）、今年も「FUJI ROCK FESTIVAL ’26」（フジロックフェスティバル ‘26）を全世界無料独占ライブ配信",
+      "publisherName": "About Amazon Japan",
+      "publishedAt": "2026-07-14T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQeDY1MlZvZ0tFTEtKSTZCT2pnRXVkY09ITHhCektZVFJPMTBwdDdwYW5iN2NfUGEybGl5YWhMNUV2Vy1MTENTcHFCWjBiZ1FVWUxRZGJHenZ3VkQ1eGQ3eWs0RHRlOWVsZ1did3pjSzdDUmhOc2RjZkg5QVJpaWdVeWJPMGl6WF9qX3VWTFc4Q3RieTM5U1BPVlNqQ3FYTU5YRGNjdDJtVVhqcUE5ZnF4QzhoX0JTQzRZRHUwaEs5X2dEaHZib0c2MzZ3eTFjdC1YdERya2RtOHY5c0pXWlRlRDlHVHV6ZFZIZFplVmhudllMT21waUI0Zi1tTTFZdjZlV3JfaA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxQeDY1MlZvZ0tFTEtKSTZCT2pnRXVkY09ITHhCektZVFJPMTBwdDdwYW5iN2NfUGEybGl5YWhMNUV2Vy1MTENTcHFCWjBiZ1FVWUxRZGJHenZ3VkQ1eGQ3eWs0RHRlOWVsZ1did3pjSzdDUmhOc2RjZkg5QVJpaWdVeWJPMGl6WF9qX3VWTFc4Q3RieTM5U1BPVlNqQ3FYTU5YRGNjdDJtVVhqcUE5ZnF4QzhoX0JTQzRZRHUwaEs5X2dEaHZib0c2MzZ3eTFjdC1YdERya2RtOHY5c0pXWlRlRDlHVHV6ZFZIZFplVmhudllMT21waUI0Zi1tTTFZdjZlV3JfaA?oc=5\" target=\"_blank\"&gt;Amazon Music（アマゾンミュージック）、今年も「FUJI ROCK FESTIVAL ’26」（フジロックフェスティバル ‘26）を全世界無料独占ライブ配信&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;About Amazon Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQeDY1MlZvZ0tFTEtKSTZCT2pnRXVkY09ITHhCektZVFJPMTBwdDdwYW5iN2NfUGEybGl5YWhMNUV2Vy1MTENTcHFCWjBiZ1FVWUxRZGJHenZ3VkQ1eGQ3eWs0RHRlOWVsZ1did3pjSzdDUmhOc2RjZkg5QVJpaWdVeWJPMGl6WF9qX3VWTFc4Q3RieTM5U1BPVlNqQ3FYTU5YRGNjdDJtVVhqcUE5ZnF4QzhoX0JTQzRZRHUwaEs5X2dEaHZib0c2MzZ3eTFjdC1YdERya2RtOHY5c0pXWlRlRDlHVHV6ZFZIZFplVmhudllMT21waUI0Zi1tTTFZdjZlV3JfaA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Amazon Stock Slides After Trimming Jobs In AI Unit",
+      "publisherName": "TIKR.com",
+      "publishedAt": "2026-07-23T20:10:07.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORThzckhjSUY0WklvQmUzMkRsaW8ydmkxS1d5SUhBWHhpTVlacnJrdUFtSFh2UTg0Tk5DQ2RHT1ZFRENmZmp3aUt3NUd2TXlDMEZIZE83RmdhTEg4bTlITzlKNHFWME92Sk92THp2c01yckJZM3o5aGI0VjBxY18zanRiSVQ0YXQ2MWVGREFGRWNiaC1T?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxORThzckhjSUY0WklvQmUzMkRsaW8ydmkxS1d5SUhBWHhpTVlacnJrdUFtSFh2UTg0Tk5DQ2RHT1ZFRENmZmp3aUt3NUd2TXlDMEZIZE83RmdhTEg4bTlITzlKNHFWME92Sk92THp2c01yckJZM3o5aGI0VjBxY18zanRiSVQ0YXQ2MWVGREFGRWNiaC1T?oc=5\" target=\"_blank\"&gt;Amazon Stock Slides After Trimming Jobs In AI Unit&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;TIKR.com&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORThzckhjSUY0WklvQmUzMkRsaW8ydmkxS1d5SUhBWHhpTVlacnJrdUFtSFh2UTg0Tk5DQ2RHT1ZFRENmZmp3aUt3NUd2TXlDMEZIZE83RmdhTEg4bTlITzlKNHFWME92Sk92THp2c01yckJZM3o5aGI0VjBxY18zanRiSVQ0YXQ2MWVGREFGRWNiaC1T?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アメリカ兵100人近く負傷 イランはアマゾンのデータセンター攻撃主張 応酬続く",
+      "publisherName": "FNNプライムオンライン",
+      "publishedAt": "2026-07-21T16:20:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBwM0F2NmRSSnE5alhacmtnSjRhRzdPN2lNUGlJYkZsWk1LVkhqV1VkU2ZPRGN5Zks3NWUzYm1yY2wxQ1ZBMVFVWnk0eXBlUQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTFBwM0F2NmRSSnE5alhacmtnSjRhRzdPN2lNUGlJYkZsWk1LVkhqV1VkU2ZPRGN5Zks3NWUzYm1yY2wxQ1ZBMVFVWnk0eXBlUQ?oc=5\" target=\"_blank\"&gt;アメリカ兵100人近く負傷 イランはアマゾンのデータセンター攻撃主張 応酬続く&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;FNNプライムオンライン&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBwM0F2NmRSSnE5alhacmtnSjRhRzdPN2lNUGlJYkZsWk1LVkhqV1VkU2ZPRGN5Zks3NWUzYm1yY2wxQ1ZBMVFVWnk0eXBlUQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "法医学を用いて、ブラジル・アマゾン産の金の起源を突き止める。",
+      "publisherName": "Vietnam.vn",
+      "publishedAt": "2026-07-25T10:53:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa00wV0RrdEtpLWxEQmRhY3M2bGVHb3JQYzJOUFJFWm95RzFfbDhnQ1NRNUx5NEctazNJVEdRa0hreXB0NzI0MHRaUnJYN3lsMWVzYXJxYVo3RnRocWwxV3dTM3pfS3dhM0JaRzdQNFJlWlJaLUZGYUdrQ1RoNDMteGd3ZUJQNEJsRGp2RHA2YUY3TkU?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQa00wV0RrdEtpLWxEQmRhY3M2bGVHb3JQYzJOUFJFWm95RzFfbDhnQ1NRNUx5NEctazNJVEdRa0hreXB0NzI0MHRaUnJYN3lsMWVzYXJxYVo3RnRocWwxV3dTM3pfS3dhM0JaRzdQNFJlWlJaLUZGYUdrQ1RoNDMteGd3ZUJQNEJsRGp2RHA2YUY3TkU?oc=5\" target=\"_blank\"&gt;法医学を用いて、ブラジル・アマゾン産の金の起源を突き止める。&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Vietnam.vn&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa00wV0RrdEtpLWxEQmRhY3M2bGVHb3JQYzJOUFJFWm95RzFfbDhnQ1NRNUx5NEctazNJVEdRa0hreXB0NzI0MHRaUnJYN3lsMWVzYXJxYVo3RnRocWwxV3dTM3pfS3dhM0JaRzdQNFJlWlJaLUZGYUdrQ1RoNDMteGd3ZUJQNEJsRGp2RHA2YUY3TkU?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、新たな社債発行で250億ドル調達へ ＡＩ投資の一環",
+      "publisherName": "ロイター",
+      "publishedAt": "2026-07-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSjlDYnd5YUZSOTlkUnlQZHlCZThoV01haUN2cGtzVnc1YXVySHdnbk51Vy1QaGxWY052U0YzOGRqb0g0WUZURWJtYVUxVmZjQ3VfamRHeFZxQjNPS2xPbHBFZWplZUtobWw0b0k0UWVLUUtJZUdFOHN2MVpNeWZqcA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNSjlDYnd5YUZSOTlkUnlQZHlCZThoV01haUN2cGtzVnc1YXVySHdnbk51Vy1QaGxWY052U0YzOGRqb0g0WUZURWJtYVUxVmZjQ3VfamRHeFZxQjNPS2xPbHBFZWplZUtobWw0b0k0UWVLUUtJZUdFOHN2MVpNeWZqcA?oc=5\" target=\"_blank\"&gt;アマゾン、新たな社債発行で250億ドル調達へ ＡＩ投資の一環&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ロイター&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSjlDYnd5YUZSOTlkUnlQZHlCZThoV01haUN2cGtzVnc1YXVySHdnbk51Vy1QaGxWY052U0YzOGRqb0g0WUZURWJtYVUxVmZjQ3VfamRHeFZxQjNPS2xPbHBFZWplZUtobWw0b0k0UWVLUUtJZUdFOHN2MVpNeWZqcA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ロシア版「アマゾン」と称されるWildberries、ウクライナの攻撃の標的に",
+      "publisherName": "FashionNetwork France",
+      "publishedAt": "2026-07-22T16:15:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxQMmFXeWRBU29JZFk3Nkd0d05VNzUyZ2xScFVVTG9SNWZyVEQyLW9KM0V0ekVLMjBpU2tBc0VpU21QclJqQnNjVXJNdTY5RTB2MmdsYVlMX1M1ZDRZMmo5eDJOWUtnczRYQWRIR082eURGeEYzWkJTMV8xZHlUdnE0eEszSXdDRjFuTl9XdWtkOE5PQ1djSS1hZHVPOHotbDl6MU91UTFGRjJ4dmV1V2xYLWJDcW9IVmlLUEEzUWk2cERGaFltMEtwQ1VEUU5DclVoUWZMYXpnVUIwUUo4THgteFpxcGxXSHp4RjhzS194c01TbE0wMW5aOTVielFneWxoLTliSEVkTmFCS3p5a05tWHVxQ1ZjQVRjekJXaGxyUGxWWWFjaHBOU1RhZnE1WmQ2NHYzV3otUS1VS0tpeEstRFBFc3pxYzRoM3NWSHZSbThVUm5HeXlNTEVrUEIwaERCS3hfVXVTN2gzR2FPQ0ZaZF9mSGxiVklqb3h2Ql9hUlZ1VFBSZThKQ0Q0ZkxTYmZnTE1XLUFPa1h4UWc?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwNBVV95cUxQMmFXeWRBU29JZFk3Nkd0d05VNzUyZ2xScFVVTG9SNWZyVEQyLW9KM0V0ekVLMjBpU2tBc0VpU21QclJqQnNjVXJNdTY5RTB2MmdsYVlMX1M1ZDRZMmo5eDJOWUtnczRYQWRIR082eURGeEYzWkJTMV8xZHlUdnE0eEszSXdDRjFuTl9XdWtkOE5PQ1djSS1hZHVPOHotbDl6MU91UTFGRjJ4dmV1V2xYLWJDcW9IVmlLUEEzUWk2cERGaFltMEtwQ1VEUU5DclVoUWZMYXpnVUIwUUo4THgteFpxcGxXSHp4RjhzS194c01TbE0wMW5aOTVielFneWxoLTliSEVkTmFCS3p5a05tWHVxQ1ZjQVRjekJXaGxyUGxWWWFjaHBOU1RhZnE1WmQ2NHYzV3otUS1VS0tpeEstRFBFc3pxYzRoM3NWSHZSbThVUm5HeXlNTEVrUEIwaERCS3hfVXVTN2gzR2FPQ0ZaZF9mSGxiVklqb3h2Ql9hUlZ1VFBSZThKQ0Q0ZkxTYmZnTE1XLUFPa1h4UWc?oc=5\" target=\"_blank\"&gt;ロシア版「アマゾン」と称されるWildberries、ウクライナの攻撃の標的に&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;FashionNetwork France&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMimwNBVV95cUxQMmFXeWRBU29JZFk3Nkd0d05VNzUyZ2xScFVVTG9SNWZyVEQyLW9KM0V0ekVLMjBpU2tBc0VpU21QclJqQnNjVXJNdTY5RTB2MmdsYVlMX1M1ZDRZMmo5eDJOWUtnczRYQWRIR082eURGeEYzWkJTMV8xZHlUdnE0eEszSXdDRjFuTl9XdWtkOE5PQ1djSS1hZHVPOHotbDl6MU91UTFGRjJ4dmV1V2xYLWJDcW9IVmlLUEEzUWk2cERGaFltMEtwQ1VEUU5DclVoUWZMYXpnVUIwUUo4THgteFpxcGxXSHp4RjhzS194c01TbE0wMW5aOTVielFneWxoLTliSEVkTmFCS3p5a05tWHVxQ1ZjQVRjekJXaGxyUGxWWWFjaHBOU1RhZnE1WmQ2NHYzV3otUS1VS0tpeEstRFBFc3pxYzRoM3NWSHZSbThVUm5HeXlNTEVrUEIwaERCS3hfVXVTN2gzR2FPQ0ZaZF9mSGxiVklqb3h2Ql9hUlZ1VFBSZThKQ0Q0ZkxTYmZnTE1XLUFPa1h4UWc?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "小型軽量タブレットお探しなら8.7型・LTE対応で31,290円。Amazon限定128GBの「Lenovo Tab One」が21％オフ",
+      "publisherName": "週刊アスキー",
+      "publishedAt": "2026-07-24T11:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1HbEIwWGZRMjk0ekV6cmZ3ZXQ3VVA3akE1dG1TaTNaYUxIZ3k4Ry1WbDIyZVlPUGp3M2hjX1VBd1dsbzhiVnd1N01FbEJUaFFnSTNKZ0VRQmIteVpwa0E?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE1HbEIwWGZRMjk0ekV6cmZ3ZXQ3VVA3akE1dG1TaTNaYUxIZ3k4Ry1WbDIyZVlPUGp3M2hjX1VBd1dsbzhiVnd1N01FbEJUaFFnSTNKZ0VRQmIteVpwa0E?oc=5\" target=\"_blank\"&gt;小型軽量タブレットお探しなら8.7型・LTE対応で31,290円。Amazon限定128GBの「Lenovo Tab One」が21％オフ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;週刊アスキー&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1HbEIwWGZRMjk0ekV6cmZ3ZXQ3VVA3akE1dG1TaTNaYUxIZ3k4Ry1WbDIyZVlPUGp3M2hjX1VBd1dsbzhiVnd1N01FbEJUaFFnSTNKZ0VRQmIteVpwa0E?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "7月23日のAmazon.com Inc (AMZN) 値動きは3.73%下落：どのようなシグナルを示しているのか？",
+      "publisherName": "TradingKey",
+      "publishedAt": "2026-07-23T14:16:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVnVHVkN1X09rd3kyeU9sNjJBekhfQTBPVWRnNTdycTBzNVlYNHFuUjJERzdFMDRMZzE4b3AzaXE0OVZNMmNQVkZlRVM4SG1XeXpUckluX2YzZy1tU0dpYTIwbmtOVWFoRWUyTFRLQ0loRWVDR2JmQklxa1d2T3JLT1hSZXRmUUF2UG5VWGdyOA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxNVnVHVkN1X09rd3kyeU9sNjJBekhfQTBPVWRnNTdycTBzNVlYNHFuUjJERzdFMDRMZzE4b3AzaXE0OVZNMmNQVkZlRVM4SG1XeXpUckluX2YzZy1tU0dpYTIwbmtOVWFoRWUyTFRLQ0loRWVDR2JmQklxa1d2T3JLT1hSZXRmUUF2UG5VWGdyOA?oc=5\" target=\"_blank\"&gt;7月23日のAmazon.com Inc (AMZN) 値動きは3.73%下落：どのようなシグナルを示しているのか？&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;TradingKey&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVnVHVkN1X09rd3kyeU9sNjJBekhfQTBPVWRnNTdycTBzNVlYNHFuUjJERzdFMDRMZzE4b3AzaXE0OVZNMmNQVkZlRVM4SG1XeXpUckluX2YzZy1tU0dpYTIwbmtOVWFoRWUyTFRLQ0loRWVDR2JmQklxa1d2T3JLT1hSZXRmUUF2UG5VWGdyOA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "$アマゾン･ドットコム (AMZN.US)$ 決算発表に幸運を祈ります。",
+      "publisherName": "Moomoo",
+      "publishedAt": "2026-07-23T07:03:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSUE1UndoSFVSR3BFQjk3WE1LOE9LcXI5MGRVaEVHb0tZXzFsWHpsZUJ1bkUtYkd5Vk1ubTRYY3VwQV9DMmtpWF9lZ0t4ZWFURDdudk9tdFRxX0J6SmJUOEtfS1hNcFZaRDVQek1YZmxScWRNOVBMOS1jclNHaEtMTEhjMEh1TThJN0J4YU5aQTNWVm5zNDktbw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQSUE1UndoSFVSR3BFQjk3WE1LOE9LcXI5MGRVaEVHb0tZXzFsWHpsZUJ1bkUtYkd5Vk1ubTRYY3VwQV9DMmtpWF9lZ0t4ZWFURDdudk9tdFRxX0J6SmJUOEtfS1hNcFZaRDVQek1YZmxScWRNOVBMOS1jclNHaEtMTEhjMEh1TThJN0J4YU5aQTNWVm5zNDktbw?oc=5\" target=\"_blank\"&gt;$アマゾン･ドットコム (AMZN.US)$ 決算発表に幸運を祈ります。&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Moomoo&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSUE1UndoSFVSR3BFQjk3WE1LOE9LcXI5MGRVaEVHb0tZXzFsWHpsZUJ1bkUtYkd5Vk1ubTRYY3VwQV9DMmtpWF9lZ0t4ZWFURDdudk9tdFRxX0J6SmJUOEtfS1hNcFZaRDVQek1YZmxScWRNOVBMOS1jclNHaEtMTEhjMEh1TThJN0J4YU5aQTNWVm5zNDktbw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン配送大手のAZ-COM丸和、協力会社2300社への支払いにJPYC導入へ=日経（NADA NEWS）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-20T12:38:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RT1Y2OTloUllUY2NxalFtcmtHLUpRQW5IT3N5dVdaUTRzRTZ2bWZreEpuczR1SmJfQVpmNmNDZ1NNSnZMYk5KNnhZcnNGZ3JBSWhQNnc3eW1XeTNBNEE1c0FhOG1MR3B1MXBTdDAyS1ZNZ1JDVmVfQlB1VWdGSEU?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9RT1Y2OTloUllUY2NxalFtcmtHLUpRQW5IT3N5dVdaUTRzRTZ2bWZreEpuczR1SmJfQVpmNmNDZ1NNSnZMYk5KNnhZcnNGZ3JBSWhQNnc3eW1XeTNBNEE1c0FhOG1MR3B1MXBTdDAyS1ZNZ1JDVmVfQlB1VWdGSEU?oc=5\" target=\"_blank\"&gt;アマゾン配送大手のAZ-COM丸和、協力会社2300社への支払いにJPYC導入へ=日経（NADA NEWS）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RT1Y2OTloUllUY2NxalFtcmtHLUpRQW5IT3N5dVdaUTRzRTZ2bWZreEpuczR1SmJfQVpmNmNDZ1NNSnZMYk5KNnhZcnNGZ3JBSWhQNnc3eW1XeTNBNEE1c0FhOG1MR3B1MXBTdDAyS1ZNZ1JDVmVfQlB1VWdGSEU?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Amazon Musicが2026年上半期 Top 50を発表、日本で最も再生された楽曲1位は米津玄師「IRIS OUT」",
+      "publisherName": "About Amazon Japan",
+      "publishedAt": "2026-07-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOX1ZrLVo5b1MtRHdPMHlqcUNobGo3c3JUMUtGcmpxUTI0RDZvaXVDdlV1OW53dHhqczlBdWJxZm9IMDE3bDBOWk5nREh1dXg3eURkeHpLeDl3MWJfUFhlR0xqVm13QmNBZURpaFlNbW9iejBSZmxPNEdiaXQtbW93Z1NWR3pPSFN3aDdRNDNOcHdmUFRBc1B5a1JpTlE2Si1zdTVtRFFaZzhkWTJaNmdORkEyWnpYVEV0LVg2NU83X3l6OHNkSzBpMjYxd2xQb21RdmVqU2ozcWhPU0Y5eVV3VkthbFRtU1JYTkNkQ1oxVTN5M3JYSEtrZTRmR2diNkRXR2hRNFhBRHY2bFpTTlZZMXE2SmFmOHM?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwJBVV95cUxOX1ZrLVo5b1MtRHdPMHlqcUNobGo3c3JUMUtGcmpxUTI0RDZvaXVDdlV1OW53dHhqczlBdWJxZm9IMDE3bDBOWk5nREh1dXg3eURkeHpLeDl3MWJfUFhlR0xqVm13QmNBZURpaFlNbW9iejBSZmxPNEdiaXQtbW93Z1NWR3pPSFN3aDdRNDNOcHdmUFRBc1B5a1JpTlE2Si1zdTVtRFFaZzhkWTJaNmdORkEyWnpYVEV0LVg2NU83X3l6OHNkSzBpMjYxd2xQb21RdmVqU2ozcWhPU0Y5eVV3VkthbFRtU1JYTkNkQ1oxVTN5M3JYSEtrZTRmR2diNkRXR2hRNFhBRHY2bFpTTlZZMXE2SmFmOHM?oc=5\" target=\"_blank\"&gt;Amazon Musicが2026年上半期 Top 50を発表、日本で最も再生された楽曲1位は米津玄師「IRIS OUT」&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;About Amazon Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOX1ZrLVo5b1MtRHdPMHlqcUNobGo3c3JUMUtGcmpxUTI0RDZvaXVDdlV1OW53dHhqczlBdWJxZm9IMDE3bDBOWk5nREh1dXg3eURkeHpLeDl3MWJfUFhlR0xqVm13QmNBZURpaFlNbW9iejBSZmxPNEdiaXQtbW93Z1NWR3pPSFN3aDdRNDNOcHdmUFRBc1B5a1JpTlE2Si1zdTVtRFFaZzhkWTJaNmdORkEyWnpYVEV0LVg2NU83X3l6OHNkSzBpMjYxd2xQb21RdmVqU2ozcWhPU0Y5eVV3VkthbFRtU1JYTkNkQ1oxVTN5M3JYSEtrZTRmR2diNkRXR2hRNFhBRHY2bFpTTlZZMXE2SmFmOHM?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "〈テック社会の罠〉偽装USB、アマゾンに流通 出品審査に抜け穴 容量不足報告、推薦品の2割",
+      "publisherName": "日本経済新聞",
+      "publishedAt": "2026-07-10T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tZjFjSzBBX3VJaVQ3SHFvR0p6bHY5WnJuLVhBMjZMeE0tNkNWbUtlTGEyUmY5V0d6Sk9UX0ZfR25ITnk2cmJXYnhqNndaZVlSVmpBZTdxMUd2NEJwOTBKMm5VckdLd2c5WlRKcg?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE0tZjFjSzBBX3VJaVQ3SHFvR0p6bHY5WnJuLVhBMjZMeE0tNkNWbUtlTGEyUmY5V0d6Sk9UX0ZfR25ITnk2cmJXYnhqNndaZVlSVmpBZTdxMUd2NEJwOTBKMm5VckdLd2c5WlRKcg?oc=5\" target=\"_blank\"&gt;〈テック社会の罠〉偽装USB、アマゾンに流通 出品審査に抜け穴 容量不足報告、推薦品の2割&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;日本経済新聞&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tZjFjSzBBX3VJaVQ3SHFvR0p6bHY5WnJuLVhBMjZMeE0tNkNWbUtlTGEyUmY5V0d6Sk9UX0ZfR25ITnk2cmJXYnhqNndaZVlSVmpBZTdxMUd2NEJwOTBKMm5VckdLd2c5WlRKcg?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、英国で「ドローン配送」開始 最新鋭機が2時間以内で自宅の庭へ",
+      "publisherName": "日経ビジネス電子版",
+      "publishedAt": "2026-07-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwUU1HeUh4aGVaSERPY0FnaWRoS3hmY2tZaG1NTGRWRDV4T2dlNUE1Qm5TbjNTb2tZV3RPbnAwcDkzTkN4X0tlUUFFZFJ4cTZ5cy1obTBLa0tESnFoaFNzSkZTcVdzemM?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwUU1HeUh4aGVaSERPY0FnaWRoS3hmY2tZaG1NTGRWRDV4T2dlNUE1Qm5TbjNTb2tZV3RPbnAwcDkzTkN4X0tlUUFFZFJ4cTZ5cy1obTBLa0tESnFoaFNzSkZTcVdzemM?oc=5\" target=\"_blank\"&gt;アマゾン、英国で「ドローン配送」開始 最新鋭機が2時間以内で自宅の庭へ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;日経ビジネス電子版&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwUU1HeUh4aGVaSERPY0FnaWRoS3hmY2tZaG1NTGRWRDV4T2dlNUE1Qm5TbjNTb2tZV3RPbnAwcDkzTkN4X0tlUUFFZFJ4cTZ5cy1obTBLa0tESnFoaFNzSkZTcVdzemM?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン株が本日下落している理由とは 執筆 - Investing.com",
+      "publisherName": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+      "publishedAt": "2026-07-23T11:35:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NNjNtNFpwY21kMG9CT3RRMy1oU3RoNGhCZFhrMmg0X0ZYcWtsenllbDB3N0FicS1yR1NJUFlwWThfYm9xRDJiNGlwMmFJOXRFWEVleTluSWNPM29PS28yZkxPUDh5RHVfNWJiMjQ3bmx5X29GRWUw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE1NNjNtNFpwY21kMG9CT3RRMy1oU3RoNGhCZFhrMmg0X0ZYcWtsenllbDB3N0FicS1yR1NJUFlwWThfYm9xRDJiNGlwMmFJOXRFWEVleTluSWNPM29PS28yZkxPUDh5RHVfNWJiMjQ3bmx5X29GRWUw?oc=5\" target=\"_blank\"&gt;アマゾン株が本日下落している理由とは 執筆&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NNjNtNFpwY21kMG9CT3RRMy1oU3RoNGhCZFhrMmg0X0ZYcWtsenllbDB3N0FicS1yR1NJUFlwWThfYm9xRDJiNGlwMmFJOXRFWEVleTluSWNPM29PS28yZkxPUDh5RHVfNWJiMjQ3bmx5X29GRWUw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン株、7月30日の決算発表で6.4%変動の可能性 執筆 - Investing.com",
+      "publisherName": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+      "publishedAt": "2026-07-23T14:38:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zaUhzX0tmWGtuNWdidV92N2ZONFVBQlZHNWhvLVBiRzF2OW1TY2ZYR2NqaTZTWkZDZS16Q3BULW9PbGNrREwtYkhpZTM1eWZBa29zczEzaTJ5RmR2cDlXRVdvUVFpeVFnTElSd193OGMtajZudTRF?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE1zaUhzX0tmWGtuNWdidV92N2ZONFVBQlZHNWhvLVBiRzF2OW1TY2ZYR2NqaTZTWkZDZS16Q3BULW9PbGNrREwtYkhpZTM1eWZBa29zczEzaTJ5RmR2cDlXRVdvUVFpeVFnTElSd193OGMtajZudTRF?oc=5\" target=\"_blank\"&gt;アマゾン株、7月30日の決算発表で6.4%変動の可能性 執筆&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zaUhzX0tmWGtuNWdidV92N2ZONFVBQlZHNWhvLVBiRzF2OW1TY2ZYR2NqaTZTWkZDZS16Q3BULW9PbGNrREwtYkhpZTM1eWZBa29zczEzaTJ5RmR2cDlXRVdvUVFpeVFnTElSd193OGMtajZudTRF?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、人工知能研究部門で人員削減を実施 執筆 - Investing.com",
+      "publisherName": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+      "publishedAt": "2026-07-22T14:31:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5jWDA0aTVVeHVVdHFFSTFlTlRTYlhCOUkwMDFVbGJZaUl3TlpsOTluME40engyZWgxaHRCR3NHX0tZNHdURDR3VlBXQ01ZNE9LaVQ1NWNCajg5aEMxTHpjUHA0N1Z6Y0ZvbzJRVUNhSUNnOWhmbjBv?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE5jWDA0aTVVeHVVdHFFSTFlTlRTYlhCOUkwMDFVbGJZaUl3TlpsOTluME40engyZWgxaHRCR3NHX0tZNHdURDR3VlBXQ01ZNE9LaVQ1NWNCajg5aEMxTHpjUHA0N1Z6Y0ZvbzJRVUNhSUNnOWhmbjBv?oc=5\" target=\"_blank\"&gt;アマゾン、人工知能研究部門で人員削減を実施 執筆&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5jWDA0aTVVeHVVdHFFSTFlTlRTYlhCOUkwMDFVbGJZaUl3TlpsOTluME40engyZWgxaHRCR3NHX0tZNHdURDR3VlBXQ01ZNE9LaVQ1NWNCajg5aEMxTHpjUHA0N1Z6Y0ZvbzJRVUNhSUNnOWhmbjBv?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "まもなく終了! Amazonプライムデー 日用品など買い忘れに注意",
+      "publisherName": "Impress Watch",
+      "publishedAt": "2026-07-13T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zbDNUVVFPb3AtWnAtQm92alFDSVN5eDJpejFiZVZnOV9CWS1RTmZUTWNNYUJON050NVlhcFMyd2dxY2J2REdndE5OTW96YmtlWF9TRUVYRzRuRlE5NVBReERRdG0?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zbDNUVVFPb3AtWnAtQm92alFDSVN5eDJpejFiZVZnOV9CWS1RTmZUTWNNYUJON050NVlhcFMyd2dxY2J2REdndE5OTW96YmtlWF9TRUVYRzRuRlE5NVBReERRdG0?oc=5\" target=\"_blank\"&gt;まもなく終了! Amazonプライムデー 日用品など買い忘れに注意&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Impress Watch&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zbDNUVVFPb3AtWnAtQm92alFDSVN5eDJpejFiZVZnOV9CWS1RTmZUTWNNYUJON050NVlhcFMyd2dxY2J2REdndE5OTW96YmtlWF9TRUVYRzRuRlE5NVBReERRdG0?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "12月16日のウクライナ紛争：ウクライナが「ロシアのアマゾン」チェーンを攻撃、ゼレンスキー大統領が近々米国を訪問予定。",
+      "publisherName": "Vietnam.vn",
+      "publishedAt": "2026-07-24T22:43:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRFFicWItYTFraFVBNjdVTW5hSTB1WFpKZkVGZ21ya1NJWW9xSVp0OUxiN1hFdExHV1Q4Y1R1LVdQZGVxU2JxQWxBeE5PRDRQSU1QbUlpak9HX3pVYWNaMWwtek12ckJlYjJrZ0tNeTFMOGlDQ3VTMFFpeUFySjRtVC1oWXJBYU9uWHFBTmRYb3RHbUhBX2gzSUsxeUItNDVmWG1qeTJJUmRvQjhuSkR1cWRR?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPRFFicWItYTFraFVBNjdVTW5hSTB1WFpKZkVGZ21ya1NJWW9xSVp0OUxiN1hFdExHV1Q4Y1R1LVdQZGVxU2JxQWxBeE5PRDRQSU1QbUlpak9HX3pVYWNaMWwtek12ckJlYjJrZ0tNeTFMOGlDQ3VTMFFpeUFySjRtVC1oWXJBYU9uWHFBTmRYb3RHbUhBX2gzSUsxeUItNDVmWG1qeTJJUmRvQjhuSkR1cWRR?oc=5\" target=\"_blank\"&gt;12月16日のウクライナ紛争：ウクライナが「ロシアのアマゾン」チェーンを攻撃、ゼレンスキー大統領が近々米国を訪問予定。&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Vietnam.vn&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRFFicWItYTFraFVBNjdVTW5hSTB1WFpKZkVGZ21ya1NJWW9xSVp0OUxiN1hFdExHV1Q4Y1R1LVdQZGVxU2JxQWxBeE5PRDRQSU1QbUlpak9HX3pVYWNaMWwtek12ckJlYjJrZ0tNeTFMOGlDQ3VTMFFpeUFySjRtVC1oWXJBYU9uWHFBTmRYb3RHbUhBX2gzSUsxeUItNDVmWG1qeTJJUmRvQjhuSkR1cWRR?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "JPYC社、アマゾン配送大手のAZ丸和と資本業務提携（NADA NEWS）",
+      "publisherName": "Yahoo!ニュース",
+      "publishedAt": "2026-07-22T14:18:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BYkJmMDlqQ2U5QzFUeFZteTY4dVN0VzNIRU8tck5ESFkzVi1oQnMwbmFaYjFUNVduQkc1TkNicHBtSHByLUtZWWphMktqdXZWdENPUklFeEZFT0RMT3hFSmdiTXRTTTJrOXdFemVPcmZrcVFTVHJWMXJ6MS1QNE0?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5BYkJmMDlqQ2U5QzFUeFZteTY4dVN0VzNIRU8tck5ESFkzVi1oQnMwbmFaYjFUNVduQkc1TkNicHBtSHByLUtZWWphMktqdXZWdENPUklFeEZFT0RMT3hFSmdiTXRTTTJrOXdFemVPcmZrcVFTVHJWMXJ6MS1QNE0?oc=5\" target=\"_blank\"&gt;JPYC社、アマゾン配送大手のAZ丸和と資本業務提携（NADA NEWS）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo!ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BYkJmMDlqQ2U5QzFUeFZteTY4dVN0VzNIRU8tck5ESFkzVi1oQnMwbmFaYjFUNVduQkc1TkNicHBtSHByLUtZWWphMktqdXZWdENPUklFeEZFT0RMT3hFSmdiTXRTTTJrOXdFemVPcmZrcVFTVHJWMXJ6MS1QNE0?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾンがAI研究部門の人員を削減し組織を再編へ",
+      "publisherName": "Межа. Новини України.",
+      "publishedAt": "2026-07-22T15:10:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JRGtmUzc2OHprQ2dHbi1fSDRYeEdWWWMyOTFDeERLRkxrYTRJTGhtVzVlOC1DczZtLVp5X3gzQ3F2eTctUmxVZUZrWTRsN3pmbzJ0OGp2NVpNMjBodVFQVQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JRGtmUzc2OHprQ2dHbi1fSDRYeEdWWWMyOTFDeERLRkxrYTRJTGhtVzVlOC1DczZtLVp5X3gzQ3F2eTctUmxVZUZrWTRsN3pmbzJ0OGp2NVpNMjBodVFQVQ?oc=5\" target=\"_blank\"&gt;アマゾンがAI研究部門の人員を削減し組織を再編へ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Межа. Новини України.&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JRGtmUzc2OHprQ2dHbi1fSDRYeEdWWWMyOTFDeERLRkxrYTRJTGhtVzVlOC1DczZtLVp5X3gzQ3F2eTctUmxVZUZrWTRsN3pmbzJ0OGp2NVpNMjBodVFQVQ?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "Apple Watchがアマゾンでセール、AppleCare+のセットも",
+      "publisherName": "ケータイ Watch",
+      "publishedAt": "2026-07-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42bE1YMG5yZjE5RXVVTGU3Mk9IdFVYSFpjUXM4Y051YUJxWVVNTC1hWUxNMzR1LUwzV0l4SDBCM3pPbUdQRVVSeS01cHdLM2xZdFhlcERvbTBqLXhxN1pqa29BbmFWeFFienhQeEZ3?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE42bE1YMG5yZjE5RXVVTGU3Mk9IdFVYSFpjUXM4Y051YUJxWVVNTC1hWUxNMzR1LUwzV0l4SDBCM3pPbUdQRVVSeS01cHdLM2xZdFhlcERvbTBqLXhxN1pqa29BbmFWeFFienhQeEZ3?oc=5\" target=\"_blank\"&gt;Apple Watchがアマゾンでセール、AppleCare+のセットも&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ケータイ Watch&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42bE1YMG5yZjE5RXVVTGU3Mk9IdFVYSFpjUXM4Y051YUJxWVVNTC1hWUxNMzR1LUwzV0l4SDBCM3pPbUdQRVVSeS01cHdLM2xZdFhlcERvbTBqLXhxN1pqa29BbmFWeFFienhQeEZ3?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "いよいよ本番! アマゾン「プライムデー」スタート",
+      "publisherName": "Impress Watch",
+      "publishedAt": "2026-07-10T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Ba2Q0ZTZCWlg4VzBYd0xvNW85UnVxNVJ4NGJJeXBudkN6NmhndzVjQldVU2lIbEx6TFVGdEVlX0ZrWWRRcnBiSnFyaUdIMWxrVWlqYWphaVN1dzlpZFkxRkdPejg?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Ba2Q0ZTZCWlg4VzBYd0xvNW85UnVxNVJ4NGJJeXBudkN6NmhndzVjQldVU2lIbEx6TFVGdEVlX0ZrWWRRcnBiSnFyaUdIMWxrVWlqYWphaVN1dzlpZFkxRkdPejg?oc=5\" target=\"_blank\"&gt;いよいよ本番! アマゾン「プライムデー」スタート&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Impress Watch&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Ba2Q0ZTZCWlg4VzBYd0xvNW85UnVxNVJ4NGJJeXBudkN6NmhndzVjQldVU2lIbEx6TFVGdEVlX0ZrWWRRcnBiSnFyaUdIMWxrVWlqYWphaVN1dzlpZFkxRkdPejg?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "どこかで見覚えがあるけど中身はXBOX系！ Hyperkinの有線XBOXコントローラーが9900円",
+      "publisherName": "ASCII.jp",
+      "publishedAt": "2026-07-24T14:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1MWEdpMmhTc2pXVmxCYmFzZHRrVzZqTTNiem5NWmppOTdWNURKblVPdUZucjBFWGtJMWNGWDdPTEZqVnhBM2Y1VUNScWZ2ckxCS0JfTg?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE1MWEdpMmhTc2pXVmxCYmFzZHRrVzZqTTNiem5NWmppOTdWNURKblVPdUZucjBFWGtJMWNGWDdPTEZqVnhBM2Y1VUNScWZ2ckxCS0JfTg?oc=5\" target=\"_blank\"&gt;どこかで見覚えがあるけど中身はXBOX系！ Hyperkinの有線XBOXコントローラーが9900円&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ASCII.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1MWEdpMmhTc2pXVmxCYmFzZHRrVzZqTTNiem5NWmppOTdWNURKblVPdUZucjBFWGtJMWNGWDdPTEZqVnhBM2Y1VUNScWZ2ckxCS0JfTg?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "アマゾン、汎用人工知能部門で人員削減を実施 執筆 - Investing.com",
+      "publisherName": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+      "publishedAt": "2026-07-22T15:37:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05emtCODZ5b1BadTJpeTZOZHdLSFZTRTFEbFBNU2loN2sta01GazZXMFQwVTdvMjJIaENSSUh2QzdVbldQOWlzcUlWREl1anJKck1HOUEydDdmWWRWWTQ2ZTc2NnR3eTFCRFE?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE05emtCODZ5b1BadTJpeTZOZHdLSFZTRTFEbFBNU2loN2sta01GazZXMFQwVTdvMjJIaENSSUh2QzdVbldQOWlzcUlWREl1anJKck1HOUEydDdmWWRWWTQ2ZTc2NnR3eTFCRFE?oc=5\" target=\"_blank\"&gt;アマゾン、汎用人工知能部門で人員削減を実施 執筆&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05emtCODZ5b1BadTJpeTZOZHdLSFZTRTFEbFBNU2loN2sta01GazZXMFQwVTdvMjJIaENSSUh2QzdVbldQOWlzcUlWREl1anJKck1HOUEydDdmWWRWWTQ2ZTc2NnR3eTFCRFE?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ホリの安心感たるや……。Switch 2対応のワイヤレスホリパッドが28％オフの5773円！",
+      "publisherName": "ASCII.jp",
+      "publishedAt": "2026-07-23T10:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9obS1uSldEN2hvc2lCTzRPUUhSM1pnamRrVWhfSjh3aURKVFhnQlF6RXN2SXBlUHRfSFU0a3VUQTVDMmY5alg0VlVOYWFaSzNuRno0UA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE9obS1uSldEN2hvc2lCTzRPUUhSM1pnamRrVWhfSjh3aURKVFhnQlF6RXN2SXBlUHRfSFU0a3VUQTVDMmY5alg0VlVOYWFaSzNuRno0UA?oc=5\" target=\"_blank\"&gt;ホリの安心感たるや……。Switch 2対応のワイヤレスホリパッドが28％オフの5773円！&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ASCII.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9obS1uSldEN2hvc2lCTzRPUUhSM1pnamRrVWhfSjh3aURKVFhnQlF6RXN2SXBlUHRfSFU0a3VUQTVDMmY5alg0VlVOYWFaSzNuRno0UA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "【Amazon プライムデー 2026】ラストチャンス！ GQセレクトによるApple製品をはじめとする対象商品115選！ エディター愛用品おすすめレビューも！",
+      "publisherName": "GQ Japan",
+      "publishedAt": "2026-07-12T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKVTNHbF9VeXRsRE1PYWV1MzBsRWpYU1BSd3F6R2dlVUI0V3IzRmZxN2VKQURXb0toSmdLUVFfSzZzaGktUzhZUWEwMGJjeVUwdkoyN2VZUFhEZEtGRlMwSHREdUZMWTFiQ0E?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBKVTNHbF9VeXRsRE1PYWV1MzBsRWpYU1BSd3F6R2dlVUI0V3IzRmZxN2VKQURXb0toSmdLUVFfSzZzaGktUzhZUWEwMGJjeVUwdkoyN2VZUFhEZEtGRlMwSHREdUZMWTFiQ0E?oc=5\" target=\"_blank\"&gt;【Amazon プライムデー 2026】ラストチャンス！ GQセレクトによるApple製品をはじめとする対象商品115選！ エディター愛用品おすすめレビューも！&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;GQ Japan&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKVTNHbF9VeXRsRE1PYWV1MzBsRWpYU1BSd3F6R2dlVUI0V3IzRmZxN2VKQURXb0toSmdLUVFfSzZzaGktUzhZUWEwMGJjeVUwdkoyN2VZUFhEZEtGRlMwSHREdUZMWTFiQ0E?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "豪当局、アマゾン現地法人を提訴　会員契約の「不公正な条項」で消費者保護法に違反と",
+      "publisherName": "BBC",
+      "publishedAt": "2026-07-01T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DYm9pT3pfUHdJRmg0QmdfVGtxUU5ncm9PN2tNeXNaa1BfZi1Tc0JVQkpKSGlRX2xEdVlBWGNoalRha0Y3ZTMwVmhlY2JQdy1nNWJZWERNREVPZEVmSHlr0gFkQVVfeXFMTnBCSmEwaUc4VllwZFhnbkNFbHJSSG9jUUd1TUplMVJVajVtZWdYM0stdnpzTUFaWWZOcjV0eVNBTTZkRXJhMW80blJVZnU0b2hlaHI4dkUyY0hUZ1JkdmZRYk1nZw?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DYm9pT3pfUHdJRmg0QmdfVGtxUU5ncm9PN2tNeXNaa1BfZi1Tc0JVQkpKSGlRX2xEdVlBWGNoalRha0Y3ZTMwVmhlY2JQdy1nNWJZWERNREVPZEVmSHlr0gFkQVVfeXFMTnBCSmEwaUc4VllwZFhnbkNFbHJSSG9jUUd1TUplMVJVajVtZWdYM0stdnpzTUFaWWZOcjV0eVNBTTZkRXJhMW80blJVZnU0b2hlaHI4dkUyY0hUZ1JkdmZRYk1nZw?oc=5\" target=\"_blank\"&gt;豪当局、アマゾン現地法人を提訴 会員契約の「不公正な条項」で消費者保護法に違反と&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;BBC&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5DYm9pT3pfUHdJRmg0QmdfVGtxUU5ncm9PN2tNeXNaa1BfZi1Tc0JVQkpKSGlRX2xEdVlBWGNoalRha0Y3ZTMwVmhlY2JQdy1nNWJZWERNREVPZEVmSHlr0gFkQVVfeXFMTnBCSmEwaUc4VllwZFhnbkNFbHJSSG9jUUd1TUplMVJVajVtZWdYM0stdnpzTUFaWWZOcjV0eVNBTTZkRXJhMW80blJVZnU0b2hlaHI4dkUyY0hUZ1JkdmZRYk1nZw?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "54%オフも！Amazonタイムセールで「ウッドチェア」や「寝袋」が今ならお買い得ですよ",
+      "publisherName": "ROOMIE（ルーミー）",
+      "publishedAt": "2026-07-22T01:00:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAteTU2TERVVkdLWENNaktQdkVwZUJvTUpjcnVEaU4tNVBfZ0IzUnBhdEJVQkxhSXhYWXRIMHBFbWJpTHBDazJ4cHlMQmt5YmM?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTFAteTU2TERVVkdLWENNaktQdkVwZUJvTUpjcnVEaU4tNVBfZ0IzUnBhdEJVQkxhSXhYWXRIMHBFbWJpTHBDazJ4cHlMQmt5YmM?oc=5\" target=\"_blank\"&gt;54%オフも！Amazonタイムセールで「ウッドチェア」や「寝袋」が今ならお買い得ですよ&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ROOMIE（ルーミー）&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAteTU2TERVVkdLWENNaktQdkVwZUJvTUpjcnVEaU4tNVBfZ0IzUnBhdEJVQkxhSXhYWXRIMHBFbWJpTHBDazJ4cHlMQmt5YmM?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "ゲームも動画編集もOKなスペックが魅力！ メモリ32GB＆RTX 5060搭載のLenovo製15.6型ゲーミングノート",
+      "publisherName": "ASCII.jp",
+      "publishedAt": "2026-07-24T13:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iTmhCNFVxUHRxaHJGNERZRW83TVJ6dUZMRjdoRml2M3poNkw5NjNTYXd4SnhKaDVuMDBvdjY2MlpMeDdZaDV6UmF4eVpCRXFNVWl4bA?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iTmhCNFVxUHRxaHJGNERZRW83TVJ6dUZMRjdoRml2M3poNkw5NjNTYXd4SnhKaDVuMDBvdjY2MlpMeDdZaDV6UmF4eVpCRXFNVWl4bA?oc=5\" target=\"_blank\"&gt;ゲームも動画編集もOKなスペックが魅力！ メモリ32GB＆RTX 5060搭載のLenovo製15.6型ゲーミングノート&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ASCII.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iTmhCNFVxUHRxaHJGNERZRW83TVJ6dUZMRjdoRml2M3poNkw5NjNTYXd4SnhKaDVuMDBvdjY2MlpMeDdZaDV6UmF4eVpCRXFNVWl4bA?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "任天堂純正品「Switch 2 プロコン」Amazonで販売中！ 確かな安心感と完成度を誇るマストバイアイテム",
+      "publisherName": "ASCII.jp",
+      "publishedAt": "2026-07-23T06:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zRUd1S3lyM3VFMXVQX2hRZ0QwUnVfdW9UZll4T2t4dWM3OFl2aUhNUUlsWjFQYlcxRGxXQkpCSXRQN3R6TzA1c1g0aUhDUl9NMlZ2Wg?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zRUd1S3lyM3VFMXVQX2hRZ0QwUnVfdW9UZll4T2t4dWM3OFl2aUhNUUlsWjFQYlcxRGxXQkpCSXRQN3R6TzA1c1g0aUhDUl9NMlZ2Wg?oc=5\" target=\"_blank\"&gt;任天堂純正品「Switch 2 プロコン」Amazonで販売中！ 確かな安心感と完成度を誇るマストバイアイテム&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;ASCII.jp&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zRUd1S3lyM3VFMXVQX2hRZ0QwUnVfdW9UZll4T2t4dWM3OFl2aUhNUUlsWjFQYlcxRGxXQkpCSXRQN3R6TzA1c1g0aUhDUl9NMlZ2Wg?oc=5",
+      "articleId": ""
+    },
+    {
+      "title": "LOUIS VUITTON（ルイ・ヴィトン） アマゾン M45236 ショルダーバッグ ブラウン",
+      "publisherName": "SNKRDUNK",
+      "publishedAt": "2026-07-24T02:29:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1FRDZqMmlUWURBdFJDVVFJdWlWTWJXaGlBU09UX216VE1QbGZSbWE3VEtrclFQdGQ3WXdaQm5kTW42Z1YwbmN5ZUJIc0EyNUVIMDdma2U1Mi1PSVkwOGhoZENiWQ?oc=5",
+      "snippet": "&lt;a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE1FRDZqMmlUWURBdFJDVVFJdWlWTWJXaGlBU09UX216VE1QbGZSbWE3VEtrclFQdGQ3WXdaQm5kTW42Z1YwbmN5ZUJIc0EyNUVIMDdma2U1Mi1PSVkwOGhoZENiWQ?oc=5\" target=\"_blank\"&gt;LOUIS VUITTON（ルイ・ヴィトン） アマゾン M45236 ショルダーバッグ ブラウン&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color=\"#6f6f6f\"&gt;SNKRDUNK&lt;/font&gt;",
+      "query": "アマゾン",
+      "googleNewsUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1FRDZqMmlUWURBdFJDVVFJdWlWTWJXaGlBU09UX216VE1QbGZSbWE3VEtrclFQdGQ3WXdaQm5kTW42Z1YwbmN5ZUJIc0EyNUVIMDdma2U1Mi1PSVkwOGhoZENiWQ?oc=5",
+      "articleId": ""
+    }
+  ]
+}

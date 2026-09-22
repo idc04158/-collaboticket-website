@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
 
 import { EnContactForm } from "@/components/en/en-contact-form"
+import { LanguageSwitch } from "@/components/language-switch"
 import { SiteLogo } from "@/components/site-logo"
 import {
   enCompanyInfo,
@@ -42,15 +42,8 @@ function EnHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link
-            href="/"
-            hrefLang="ko"
-            lang="ko"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-          >
-            한국어
-          </Link>
-          <a href="#contact" className="btn-brand px-5 py-2.5 text-sm">
+          <LanguageSwitch current="en" />
+          <a href="#contact" className="btn-brand px-4 py-2.5 text-sm sm:px-5">
             Contact us
           </a>
         </div>

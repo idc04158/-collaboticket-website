@@ -1,0 +1,91 @@
+name: Weekly Amazon Japan Insights
+
+on:
+  schedule:
+    # Monday 00:00 KST = Sunday 15:00 UTC
+    - cron: "0 15 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Fetch Amazon Japan news (Apify)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.5
+          AMAZON_NEWS_TIME_RANGE: 7d
+          AMAZON_NEWS_MAX: "60"
+        run: npm run fetch:amazon-news -- --time-range 7d --max 60
+
+      - name: Select 2 weekly topics
+        run: npm run select:amazon-topics -- --count 2 --weekly
+
+      - name: Generate insight markdown (Insight Engine v2 · GPT-5.5)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.5
+          AMAZON_INSIGHT_DELAY_MS: "6000"
+        run: npm run generate:amazon-insights
+
+      - name: Content rules check
+        run: npm run check:content-rules
+        continue-on-error: true
+
+      - name: Detect changes
+        id: changes
+        run: |
+          if git diff --quiet -- content/blog scripts/amazon-news-manifest.json scripts/amazon-news-slugs.json scripts/amazon-unique-angles.json scripts/amazon-news-raw.json scripts/amazon-news-seen-slugs.json; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create pull request
+        if: steps.changes.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="content/amazon-insights-$(date -u +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add content/blog scripts/amazon-news-manifest.json scripts/amazon-news-slugs.json scripts/amazon-unique-angles.json scripts/amazon-news-raw.json scripts/amazon-news-seen-slugs.json scripts/.amazon-insights-progress.json || true
+          git commit -m "$(cat <<'EOF'
+          Add weekly Amazon Japan insight reports
+
+          Auto-generated from Apify Google News (JP) and rewritten for CollaboTicket operators.
+          EOF
+          )"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Weekly Amazon Japan insights ($(date -u +%Y-%m-%d))" \
+            --body "$(cat <<'EOF'
+          ## Summary
+          - Fetched Amazon Japan news via Apify (`cirkit/google-news-scraper`)
+          - Selected 2 operator topics for this week (Mon/Thu dates)
+          - Rewrote into CollaboTicket insight markdown (FACT / INSIGHT / ACTION)
+
+          ## Test plan
+          - [ ] Preview `/insights` hub and new article pages
+          - [ ] Confirm hero 「이번 주 업데이트」 count matches Mon–Sun dates
+          - [ ] Spot-check References (publisher + date only, no copied body)
+          EOF
+          )"

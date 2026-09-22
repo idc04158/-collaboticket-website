@@ -8,6 +8,10 @@ import {
   loadSelfDiagnosis,
   type SelfDiagnosisResult,
 } from "@/lib/self-diagnosis"
+import {
+  parseContentContextFromSearch,
+  type InsightContentContext,
+} from "@/lib/insight-action-context"
 import { saveInquiryContext, type RecommendedInsight } from "@/lib/visitor-tracking"
 
 type Props = {
@@ -58,6 +62,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
   const [email, setEmail] = useState("")
   const [detail, setDetail] = useState("")
   const [inquirySource, setInquirySource] = useState("homepage")
+  const [contentContext, setContentContext] = useState<InsightContentContext | null>(null)
 
   useEffect(() => {
     setSelfDiagnosis(loadSelfDiagnosis())
@@ -65,16 +70,34 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
     const params = new URLSearchParams(window.location.search)
     const emailFromQuery = params.get("email")?.trim() || ""
     const topicFromQuery = params.get("topic")?.trim() || ""
+    const sourceFromQuery = params.get("source")?.trim() || ""
+    const ctx = parseContentContextFromSearch(window.location.search)
 
     if (emailFromQuery) setEmail(emailFromQuery)
 
-    if (topicFromQuery === "newsletter") {
+    if (ctx) {
+      setContentContext(ctx)
+      setInquirySource(ctx.source || topicFromQuery || "insight-action")
+      setDetail((prev) => {
+        if (prev) return prev
+        const checked =
+          ctx.checkedItems.length > 0
+            ? `체크한 항목: ${ctx.checkedItems.slice(0, 5).join(" · ")}`
+            : "체크리스트에서 우선순위 받기를 눌렀습니다."
+        return [
+          `인사이트 글을 읽고 상담을 요청합니다.`,
+          `글: ${ctx.title || ctx.slug}`,
+          `진행: ${ctx.progress}`,
+          checked,
+        ].join("\n")
+      })
+    } else if (topicFromQuery === "newsletter") {
       setInquirySource("newsletter")
       setDetail((prev) => prev || "인사이트 뉴스레터 구독을 신청합니다. 매주 일본 시장 데이터 메일 수신을 원합니다.")
-    } else if (topicFromQuery === "insight-mid" || topicFromQuery === "diagnosis") {
-      setInquirySource(topicFromQuery)
-    } else if (topicFromQuery) {
-      setInquirySource(topicFromQuery)
+    } else if (topicFromQuery === "insight-mid" || topicFromQuery === "diagnosis" || topicFromQuery === "insight-action") {
+      setInquirySource(sourceFromQuery || topicFromQuery)
+    } else if (topicFromQuery || sourceFromQuery) {
+      setInquirySource(sourceFromQuery || topicFromQuery)
     }
   }, [])
 
@@ -122,6 +145,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
           goal: formData.get("goal"),
           detail: formData.get("detail"),
           selfDiagnosis: selfDiagnosis || undefined,
+          contentContext: contentContext || undefined,
           consent: true,
         }),
       })

@@ -23,12 +23,22 @@ import {
 } from "./insight-content-rules.mjs"
 import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
 import { fixMarkdownHygiene } from "../lib/insight-markdown-hygiene.mjs"
+import {
+  buildInsightResponsesPayload,
+  resolveInsightBodyModel,
+} from "../lib/ai/prompts/prompt-builder.mjs"
+import {
+  bodyHasSection,
+  getInsightSection,
+  sectionAliases,
+  sectionHeadingRegex,
+} from "../lib/insight-sections.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const BLOG_DIR = path.join(__dirname, "..", "content", "blog")
 const PROGRESS_FILE = path.join(__dirname, ".rewrite-progress-v2.json")
 
-const MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini"
+const MODEL = resolveInsightBodyModel(process.env.OPENAI_MODEL)
 const DELAY_MS = Number(process.env.REWRITE_DELAY_MS || 4000)
 const MIN_BODY_CHARS = Number(process.env.REWRITE_MIN_CHARS || 2800)
 
@@ -107,24 +117,45 @@ SKU 1~2개에서 전환율 2% 이상, 반품률 5% 이하가 4주 유지될 때 
 현재 SKU, 판매가, 목표 플랫폼, 월 예산만으로 1차 진입 채널·리스크·90일 로드맵 초안을 제공합니다.`
 }
 
+function escapeHeadingAlias(alias) {
+  return alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s*")
+}
+
 function ensureMinimumFaq(body, meta) {
   if (countFaqItems(body) >= 4) return body
 
   const topic = meta.title.replace(/^\d+\.\s*/, "")
   const block = buildFaqBlock(topic)
+  const faqDisplay = getInsightSection("faq").display
+  const faqAliases = sectionAliases(getInsightSection("faq")).map(escapeHeadingAlias).join("|")
+  const afterFaqAliases = ["insight", "cta", "references"]
+    .flatMap((id) => sectionAliases(getInsightSection(id)))
+    .map(escapeHeadingAlias)
+    .join("|")
 
   let next = body.replace(
-    /^##\s+(?:FAQ|자주\s*묻는\s*질문)[\s\S]*?(?=\n##\s+(?:References|관련 리포트)|\n*$)/m,
+    new RegExp(
+      `^##\\s+(?:${faqAliases})[\\s\\S]*?(?=\\n##\\s+(?:${afterFaqAliases})|\\n*$)`,
+      "m",
+    ),
     "",
   )
 
-  if (/^##\s+References/m.test(next)) {
-    return next.replace(/^##\s+References/m, `## FAQ\n${block}\n\n## References`)
+  const insightRe = sectionHeadingRegex("insight", "m")
+  if (insightRe.test(next)) {
+    return next.replace(
+      insightRe,
+      `## ${faqDisplay}\n${block}\n\n## ${getInsightSection("insight").display}`,
+    )
   }
-  if (/^##\s+관련 리포트/m.test(next)) {
-    return next.replace(/^##\s+관련 리포트/m, `## FAQ\n${block}\n\n## 관련 리포트`)
+  const refRe = sectionHeadingRegex("references", "m")
+  if (refRe.test(next)) {
+    return next.replace(
+      refRe,
+      `## ${faqDisplay}\n${block}\n\n## ${getInsightSection("references").display}`,
+    )
   }
-  return `${next.trim()}\n\n## FAQ\n${block}\n`
+  return `${next.trim()}\n\n## ${faqDisplay}\n${block}\n`
 }
 
 function slugToLinkLabel(slug) {
@@ -155,7 +186,7 @@ function slugToLinkLabel(slug) {
 
 function ensureInternalLinks(body, relatedSlugs) {
   const current = (body.match(/\]\(\/insights\//g) || []).length
-  if (current >= 5) return body
+  if (current >= 2) return body
 
   const existing = new Set(
     [...body.matchAll(/\]\(\/insights\/([a-z0-9-]+)\)/g)].map((m) => m[1]),
@@ -163,35 +194,38 @@ function ensureInternalLinks(body, relatedSlugs) {
 
   const links = relatedSlugs
     .filter((slug) => !existing.has(slug))
-    .slice(0, Math.max(0, 5 - current))
-    .map((slug) => `- [${slugToLinkLabel(slug)}](/insights/${slug})`)
+    .slice(0, Math.max(0, 2 - current))
+    .map((slug) => `[${slugToLinkLabel(slug)}](/insights/${slug})`)
 
   if (links.length === 0) return body
 
-  const block = `\n## 관련 리포트\n${links.join("\n")}\n`
-  if (/^##\s+References/m.test(body)) {
-    return body.replace(/^##\s+References/m, `${block}\n## References`)
+  const weave = `\n\n관련해서는 ${links.join(", ")}도 함께 참고하세요.\n`
+  const ctaRe = sectionHeadingRegex("cta", "m")
+  if (ctaRe.test(body)) {
+    return body.replace(ctaRe, `${weave}\n## ${getInsightSection("cta").display}`)
   }
-  return `${body}\n${block}`
+  return `${body}\n${weave}`
 }
 
 function validateBody(body) {
   const issues = []
   if (body.length < MIN_BODY_CHARS) issues.push(`too short (${body.length} chars)`)
-  if (!/^##\s+AI 30초 요약/m.test(body)) issues.push("missing AI 30초 요약")
-  if (!/^##\s+FACT/m.test(body)) issues.push("missing FACT section")
-  if (!/^##\s+INSIGHT/m.test(body)) issues.push("missing INSIGHT section")
-  if (!/^##\s+ACTION/m.test(body)) issues.push("missing ACTION section")
-  if (!/^##\s+실행 체크리스트/m.test(body)) issues.push("missing 실행 체크리스트")
-  if (!/^##\s+실무 TIP/m.test(body)) issues.push("missing 실무 TIP")
-  if (!/^##\s+FAQ/m.test(body)) issues.push("missing FAQ")
-  if (!/^##\s+References/m.test(body)) issues.push("missing References")
+  const needed = [
+    ["conclusion", "missing 결론"],
+    ["why", "missing 왜 중요한가"],
+    ["practice", "missing 실무에서는 어떻게 보는가"],
+    ["checklist", "missing 바로 실행할 체크리스트"],
+    ["faq", "missing 자주 묻는 질문"],
+    ["insight", "missing 실무에서 자주 보는 사례"],
+    ["cta", "missing 다음 단계"],
+  ]
+  for (const [id, label] of needed) {
+    if (!bodyHasSection(body, id)) issues.push(label)
+  }
   const faqCount = countFaqItems(body)
-  if (faqCount < 7) issues.push(`FAQ count low (${faqCount})`)
-  const tableCount = (body.match(/^\|.+\|$/gm) || []).length
-  if (tableCount < 4) issues.push(`tables low (${tableCount} rows)`)
+  if (faqCount < 5) issues.push(`FAQ count low (${faqCount})`)
   const linkCount = (body.match(/\]\(\/insights\//g) || []).length
-  if (linkCount < 3) issues.push(`internal links low (${linkCount})`)
+  if (linkCount < 2) issues.push(`internal links low (${linkCount})`)
   return issues
 }
 
@@ -237,20 +271,32 @@ async function rewritePost({ meta, content, image, publishDate, relatedSlugs }) 
     existingExcerpt: excerpt,
   })
 
-  const res = await fetch("https://api.openai.com/v1/responses", {
+  const payload = buildInsightResponsesPayload({
+    model: MODEL,
+    prompt,
+    reasoningEffort: process.env.INSIGHT_REASONING_EFFORT || "high",
+  })
+  let res = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      model: MODEL,
-      tools: [{ type: "web_search_preview" }],
-      input: prompt,
-    }),
+    body: JSON.stringify(payload),
   })
 
-  const data = await res.json()
+  let data = await res.json()
+  if (!res.ok && /reasoning|effort|unsupported|unknown/i.test(data.error?.message || "")) {
+    res = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(buildInsightResponsesPayload({ model: MODEL, prompt, reasoningEffort: null })),
+    })
+    data = await res.json()
+  }
   if (!res.ok) {
     throw new Error(data.error?.message || `OpenAI error ${res.status}`)
   }

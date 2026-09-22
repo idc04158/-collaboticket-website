@@ -699,6 +699,28 @@ export function AdminCrmClient() {
                   <CrmRow label="주요 목표" value={selectedInquiry.goal} />
                 </div>
 
+                {selectedInquiry.contentContext?.slug ? (
+                  <div className="mt-5 rounded-xl border border-[#00B140]/25 bg-[#E6F7EE]/40 p-4">
+                    <p className="text-xs font-bold uppercase tracking-wide text-[#00B140]">인사이트 액션 컨텍스트</p>
+                    <dl className="mt-3 grid gap-2 text-sm md:grid-cols-2">
+                      <CrmRow
+                        label="글"
+                        value={`${selectedInquiry.contentContext.title || selectedInquiry.contentContext.slug} (${selectedInquiry.contentContext.slug})`}
+                      />
+                      <CrmRow label="진행" value={selectedInquiry.contentContext.progress} />
+                      <CrmRow label="단계" value={selectedInquiry.contentContext.step} />
+                      <CrmRow label="유입" value={selectedInquiry.contentContext.source} />
+                    </dl>
+                    {selectedInquiry.contentContext.checkedItems?.length > 0 ? (
+                      <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                        {selectedInquiry.contentContext.checkedItems.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                ) : null}
+
                 <AdminIntelligencePanel inquiryId={selectedInquiry.id} />
 
                 <div className="mt-5">

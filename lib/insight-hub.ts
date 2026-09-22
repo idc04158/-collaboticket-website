@@ -1,6 +1,6 @@
 import type { InsightMeta } from "@/lib/insights"
 import { getInsightCategoryLabel } from "@/lib/insight-categories"
-import { getFollowUpInsights } from "@/lib/insight-reading-paths"
+import { getFollowUpInsights, getFollowUpInsightsWithReasons } from "@/lib/insight-reading-paths"
 import { polishInsightCopy } from "@/lib/insight-plaintext-polish.mjs"
 
 export type InsightDifficulty = "입문" | "실무" | "전문가"
@@ -111,7 +111,20 @@ export function estimateReadingTime(content: string, description: string) {
 }
 
 export function extractSummaryParagraph(content: string) {
-  const aiSummaryMatch = content.match(/^##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
+  const answerFirstMatch = content.match(
+    /(?:^|\n)##\s+결론(?:\s*\([^)]*\))?\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/,
+  )
+  if (answerFirstMatch) {
+    return polishInsightCopy(
+      answerFirstMatch[1]
+        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/^[-*]\s+/gm, "")
+        .trim(),
+    )
+  }
+
+  const aiSummaryMatch = content.match(/(?:^|\n)##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/)
   if (aiSummaryMatch) {
     return polishInsightCopy(
       aiSummaryMatch[1]
@@ -123,7 +136,7 @@ export function extractSummaryParagraph(content: string) {
     )
   }
 
-  const summaryMatch = content.match(/^##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|\n*$)/m)
+  const summaryMatch = content.match(/(?:^|\n)##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/)
   if (summaryMatch) {
     return polishInsightCopy(
       summaryMatch[1]
@@ -137,14 +150,16 @@ export function extractSummaryParagraph(content: string) {
 
 export function extractChecklist(content: string) {
   const sectionMatch = content.match(
-    /^##\s+(?:실무 체크리스트|실행 전 체크리스트|실행 체크리스트|체크리스트)\s*\n+([\s\S]*?)(?=\n##|\n*$)/m,
+    /(?:^|\n)##\s+(?:바로 실행할 체크리스트|실무 체크리스트|실행 전 체크리스트|실행 체크리스트|체크리스트)\s*\n+([\s\S]*?)(?=\n##\s|$)/,
   )
   if (!sectionMatch) return []
 
   return sectionMatch[1]
     .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => /^[-*]\s+(\[[ x]\]\s*)?/.test(line))
     .map((line) => line.replace(/^[-*]\s+\[[ x]\]\s*/, "").replace(/^[-*]\s+/, "").trim())
-    .filter((line) => line.length > 0 && !line.startsWith("#"))
+    .filter((line) => line.length > 0 && !line.startsWith("#") && !line.startsWith("<"))
     .slice(0, 8)
 }
 
@@ -165,17 +180,43 @@ export function enrichInsight(meta: InsightMeta, content = ""): InsightEnriched 
   }
 }
 
+/** YYYY-MM-DD in Asia/Tokyo (Japan market calendar day). */
+function getTodayYmdTokyo(now = new Date()): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now)
+}
+
+/** Monday–Sunday week that contains `ymd` (YYYY-MM-DD). */
+function getCalendarWeekRangeMonSun(ymd: string): { start: string; end: string } {
+  const [y, m, d] = ymd.split("-").map(Number)
+  const utc = new Date(Date.UTC(y, m - 1, d))
+  const day = utc.getUTCDay() // 0=Sun … 6=Sat
+  const daysFromMonday = (day + 6) % 7
+  const monday = new Date(utc)
+  monday.setUTCDate(utc.getUTCDate() - daysFromMonday)
+  const sunday = new Date(monday)
+  sunday.setUTCDate(monday.getUTCDate() + 6)
+  return {
+    start: monday.toISOString().slice(0, 10),
+    end: sunday.toISOString().slice(0, 10),
+  }
+}
+
 export function getHubStats(posts: InsightMeta[]) {
-  const now = new Date()
-  const weekAgo = new Date(now)
-  weekAgo.setDate(now.getDate() - 7)
+  const today = getTodayYmdTokyo()
+  const { start: weekStart, end: weekEnd } = getCalendarWeekRangeMonSun(today)
 
   const weeklyNew = posts.filter((post) => {
     if (!post.date) return false
-    return new Date(post.date) >= weekAgo
+    const ymd = post.date.slice(0, 10)
+    return ymd >= weekStart && ymd <= weekEnd
   }).length
 
-  const latestDate = posts[0]?.date || new Date().toISOString().slice(0, 10)
+  const latestDate = posts[0]?.date || today
 
   return {
     weeklyNewReports: weeklyNew,
@@ -246,6 +287,14 @@ export function filterInsights(posts: InsightEnriched[], filters: InsightFilters
 
 export function getRelatedInsights(current: InsightEnriched, all: InsightEnriched[], limit = 5) {
   return getFollowUpInsights(current, all, limit)
+}
+
+export function getRelatedInsightsWithReasons(
+  current: InsightEnriched,
+  all: InsightEnriched[],
+  limit = 3,
+) {
+  return getFollowUpInsightsWithReasons(current, all, limit)
 }
 
 export function getTopicClusterLinks(current: InsightEnriched) {

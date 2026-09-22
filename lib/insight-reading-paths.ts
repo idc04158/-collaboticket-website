@@ -5,7 +5,7 @@ type InsightForPath = {
   category: string
   platforms: string[]
   topics: string[]
-  tags: string[]
+  tags?: string[]
   date: string
 }
 
@@ -176,6 +176,39 @@ export function getFollowUpSlugs(currentSlug: string, availableSlugs: Set<string
 }
 
 export function getFollowUpInsights<T extends InsightForPath>(current: T, all: T[], limit = 3): T[] {
+  return getFollowUpInsightsWithReasons(current, all, limit).map(({ post }) => post)
+}
+
+/** Why this follow-up is next — shown in Related rail */
+export function reasonForFollowUp(current: InsightForPath, candidate: InsightForPath): string {
+  const group = detectInsightGroup(candidate.slug)
+  const curGroup = detectInsightGroup(current.slug)
+  const tags = [...(candidate.tags || []), ...(candidate.topics || [])].join(" ").toLowerCase()
+
+  if (tags.includes("fba") || tags.includes("물류") || group === "logistics") {
+    return "재고·배송이 원인일 때 이어서 보세요"
+  }
+  if (tags.includes("광고") || tags.includes("ads") || tags.includes("검색")) {
+    return "광고·검색어 쪽을 손볼 때"
+  }
+  if (tags.includes("리뷰") || group === "review") {
+    return "전환·신뢰가 약할 때"
+  }
+  if (group === "amazon" && curGroup === "amazon") {
+    return "Amazon Japan 실행을 이어서"
+  }
+  if (group === "qoo10") return "Qoo10 운영 순서로 이어집니다"
+  if (group === "rakuten") return "Rakuten 실행 가이드로 이어집니다"
+  if (group === "strategy") return "채널·예산 설계를 잡을 때"
+  if (group === curGroup) return "같은 실행 흐름의 다음 글"
+  return "읽은 뒤 실행이 자연스럽게 이어집니다"
+}
+
+export function getFollowUpInsightsWithReasons<T extends InsightForPath>(
+  current: T,
+  all: T[],
+  limit = 3,
+): Array<{ post: T; reason: string }> {
   const available = new Set(all.map((post) => post.slug))
   const orderedSlugs = getFollowUpSlugs(current.slug, available, limit)
 
@@ -184,17 +217,22 @@ export function getFollowUpInsights<T extends InsightForPath>(current: T, all: T
     .map((slug) => bySlug.get(slug))
     .filter((post): post is T => Boolean(post))
 
-  if (picked.length >= limit) {
-    return picked.slice(0, limit)
+  let posts = picked
+  if (posts.length < limit) {
+    const pickedSet = new Set([current.slug, ...picked.map((post) => post.slug)])
+    const fallback = all
+      .filter((post) => !pickedSet.has(post.slug))
+      .map((post) => ({ post, score: scoreFallbackCandidate(current, post) }))
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date))
+      .map(({ post }) => post)
+    posts = [...picked, ...fallback].slice(0, limit)
+  } else {
+    posts = posts.slice(0, limit)
   }
 
-  const pickedSet = new Set([current.slug, ...picked.map((post) => post.slug)])
-  const fallback = all
-    .filter((post) => !pickedSet.has(post.slug))
-    .map((post) => ({ post, score: scoreFallbackCandidate(current, post) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date))
-    .map(({ post }) => post)
-
-  return [...picked, ...fallback].slice(0, limit)
+  return posts.map((post) => ({
+    post,
+    reason: reasonForFollowUp(current, post),
+  }))
 }
