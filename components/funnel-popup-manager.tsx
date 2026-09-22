@@ -24,7 +24,7 @@ import {
 } from "@/lib/visitor-tracking"
 
 const DWELL_TICK_MS = 10_000
-const EXCLUDED_PREFIXES = ["/contact", "/admin"]
+const EXCLUDED_PREFIXES = ["/contact", "/admin", "/en"]
 
 export function FunnelPopupManager() {
   const pathname = usePathname()

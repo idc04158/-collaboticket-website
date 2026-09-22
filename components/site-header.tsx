@@ -58,7 +58,15 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden lg:block">
+          <div className="hidden items-center gap-2 lg:flex">
+            <Link
+              href="/en"
+              hrefLang="en"
+              lang="en"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+            >
+              EN
+            </Link>
             <Link href="/contact" className="btn-brand px-5 py-2.5 text-sm">
               상담 신청
             </Link>
@@ -91,6 +99,15 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/en"
+              hrefLang="en"
+              lang="en"
+              className="rounded-lg px-3 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+              onClick={() => setMobileOpen(false)}
+            >
+              English
+            </Link>
             <div className="mt-3 px-3">
               <Link
                 href="/contact"

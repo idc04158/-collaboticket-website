@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "일본 시장 인사이트를 매주 제공하고 EC·콘텐츠·인플루언서 운영까지 실행하는 Japan Commerce Intelligence & Execution Company. Qoo10·Rakuten·Amazon 운영과 현지 콘텐츠 제작을 한 팀이 수행합니다.",
   alternates: {
     canonical: "/",
+    languages: {
+      ko: "/",
+      en: "/en",
+      "x-default": "/",
+    },
   },
   openGraph: {
     title: "콜라보티켓 | 일본 시장을 분석하고, 실행까지",

@@ -22,6 +22,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latestInsightDate.getTime() > 0 ? latestInsightDate : new Date(),
       changeFrequency: "weekly",
       priority: 1,
+      alternates: { languages: { en: `${SITE_URL}/en` } },
+    },
+    {
+      url: `${SITE_URL}/en`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { ko: `${SITE_URL}/` } },
     },
     {
       url: `${SITE_URL}/insights`,

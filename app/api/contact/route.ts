@@ -8,6 +8,7 @@ import { getInsightBySlug } from "@/lib/insights"
 import {
   formatInquiryMessage,
   saveInquiry,
+  type InquiryContentContext,
   type InquiryInput,
   type SelfDiagnosisInput,
 } from "@/lib/inquiries"
@@ -21,6 +22,21 @@ function asString(value: unknown) {
 function asStringArray(value: unknown) {
   if (!Array.isArray(value)) return []
   return value.filter((item): item is string => typeof item === "string").map((item) => item.trim()).filter(Boolean)
+}
+
+function asContentContext(value: unknown): InquiryContentContext | undefined {
+  if (!value || typeof value !== "object") return undefined
+  const body = value as Record<string, unknown>
+  const slug = asString(body.slug)
+  if (!slug) return undefined
+  return {
+    slug,
+    title: asString(body.title) || undefined,
+    checkedItems: asStringArray(body.checkedItems),
+    progress: asString(body.progress) || `${asStringArray(body.checkedItems).length}/?`,
+    step: asString(body.step) || "action-checklist",
+    source: asString(body.source) || "insight-action",
+  }
 }
 
 function asSelfDiagnosis(value: unknown): SelfDiagnosisInput | undefined {
@@ -68,6 +84,7 @@ function validateInquiry(body: Record<string, unknown>): InquiryInput | null {
     detail: asString(body.detail),
     source: asString(body.source) || "homepage",
     selfDiagnosis: asSelfDiagnosis(body.selfDiagnosis),
+    contentContext: asContentContext(body.contentContext),
   }
 
   const required = [
@@ -129,6 +146,45 @@ async function sendEmail({ to, subject, text }: { to: string; subject: string; t
   }
 }
 
+function buildCustomerConfirmation(inquiry: InquiryInput, inquiryMessage: string) {
+  if (inquiry.source === "en-landing") {
+    return {
+      to: inquiry.email,
+      subject: "We received your inquiry - CollaboTicket",
+      text: [
+        `Hi ${inquiry.name},`,
+        "",
+        "Thank you for contacting CollaboTicket. Our team will review your inquiry and reply by email.",
+        "If you would like to book a call in the meantime, please choose a time here:",
+        "",
+        calendarBookingUrl,
+        "",
+        "CollaboTicket",
+        "partner@collaboticket.com",
+      ].join("\n"),
+    }
+  }
+
+  return {
+    to: inquiry.email,
+    subject: "CollaboTicket 상담 신청이 접수되었습니다.",
+    text: [
+      `${inquiry.name}님, 상담 신청이 접수되었습니다.`,
+      "",
+      "문의 내용을 확인한 뒤 연락드리겠습니다.",
+      "먼저 편한 상담 시간을 예약하고 싶으시면 아래 링크에서 일정을 선택해주세요.",
+      "",
+      calendarBookingUrl,
+      "",
+      "가볍게 카카오톡으로 상담하고 싶으시면 아래 채널로 문의해주세요.",
+      kakaoChannelUrl,
+      "",
+      "접수 내용",
+      inquiryMessage,
+    ].join("\n"),
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => null)
@@ -186,24 +242,7 @@ export async function POST(request: Request) {
             text: `${inquiryMessage}\n\nCRM ID: ${inquiry.id}`,
           })
         : Promise.resolve(false),
-      sendEmail({
-        to: inquiryInput.email,
-        subject: "CollaboTicket 상담 신청이 접수되었습니다.",
-        text: [
-          `${inquiryInput.name}님, 상담 신청이 접수되었습니다.`,
-          "",
-          "문의 내용을 확인한 뒤 연락드리겠습니다.",
-          "먼저 편한 상담 시간을 예약하고 싶으시면 아래 링크에서 일정을 선택해주세요.",
-          "",
-          calendarBookingUrl,
-          "",
-          "가볍게 카카오톡으로 상담하고 싶으시면 아래 채널로 문의해주세요.",
-          kakaoChannelUrl,
-          "",
-          "접수 내용",
-          inquiryMessage,
-        ].join("\n"),
-      }),
+      sendEmail(buildCustomerConfirmation(inquiryInput, inquiryMessage)),
     ])
 
     // Never block the user response on Discord/Resend latency.

@@ -13,6 +13,15 @@ export type SelfDiagnosisInput = {
   completedAt?: string
 }
 
+export type InquiryContentContext = {
+  slug: string
+  title?: string
+  checkedItems: string[]
+  progress: string
+  step: string
+  source: string
+}
+
 export type InquiryInput = {
   name: string
   company: string
@@ -29,6 +38,7 @@ export type InquiryInput = {
   detail?: string
   source?: string
   selfDiagnosis?: SelfDiagnosisInput
+  contentContext?: InquiryContentContext
 }
 
 export type Inquiry = InquiryInput & {
@@ -96,8 +106,27 @@ export async function readInquiries() {
   return inquiries.map(normalizeInquiry)
 }
 
+function formatContentContextBlock(ctx?: InquiryContentContext) {
+  if (!ctx?.slug) return ""
+  const lines = [
+    "[인사이트 액션]",
+    `글: ${ctx.title || ctx.slug} (${ctx.slug})`,
+    `진행: ${ctx.progress}`,
+    `단계: ${ctx.step}`,
+    `유입: ${ctx.source}`,
+  ]
+  if (ctx.checkedItems?.length) {
+    lines.push("체크 항목:")
+    for (const item of ctx.checkedItems) lines.push(`- ${item}`)
+  } else {
+    lines.push("체크 항목: 없음")
+  }
+  return lines.join("\n")
+}
+
 export async function saveInquiry(input: InquiryInput) {
   const inquiries = await readInquiries()
+  const contextMemo = formatContentContextBlock(input.contentContext)
   const inquiry: Inquiry = {
     ...input,
     id: crypto.randomUUID(),
@@ -105,8 +134,11 @@ export async function saveInquiry(input: InquiryInput) {
     status: "new",
     priority: getInitialPriority(input),
     priorityManual: false,
+    memo: contextMemo || undefined,
     nextFollowUpAt: getDateOffset(1),
-    nextFollowUpSummary: "접수 내용 확인 후 1차 상담 가능 여부 안내",
+    nextFollowUpSummary: input.contentContext
+      ? `인사이트 액션 유입 (${input.contentContext.progress}) — 체크 항목 기준으로 우선순위 안내`
+      : "접수 내용 확인 후 1차 상담 가능 여부 안내",
     emailLogs: [],
     todos: [
       {
@@ -115,7 +147,9 @@ export async function saveInquiry(input: InquiryInput) {
         dueDate: getDateOffset(1),
         type: "follow-up",
         done: false,
-        memo: "매출 규모, 예산, 희망 서비스를 기준으로 상담 우선순위 판단",
+        memo: input.contentContext
+          ? `인사이트: ${input.contentContext.slug} · ${input.contentContext.progress}`
+          : "매출 규모, 예산, 희망 서비스를 기준으로 상담 우선순위 판단",
       },
     ],
   }
@@ -200,6 +234,7 @@ export function formatInquiryMessage(inquiry: InquiryInput) {
     `주요 판매 채널: ${inquiry.channels || "-"}`,
     `가장 중요한 목표: ${inquiry.goal}`,
     formatSelfDiagnosisBlock(inquiry.selfDiagnosis),
+    formatContentContextBlock(inquiry.contentContext) ? `\n${formatContentContextBlock(inquiry.contentContext)}` : "",
     "",
     `추가 내용:`,
     inquiry.detail || "-",
@@ -214,6 +249,18 @@ function normalizeInquiry(inquiry: Inquiry): Inquiry {
     priorityManual: inquiry.priorityManual ?? false,
     emailLogs: inquiry.emailLogs || [],
     todos: inquiry.todos || [],
+    contentContext: inquiry.contentContext
+      ? {
+          slug: inquiry.contentContext.slug || "",
+          title: inquiry.contentContext.title,
+          checkedItems: Array.isArray(inquiry.contentContext.checkedItems)
+            ? inquiry.contentContext.checkedItems.filter((x): x is string => typeof x === "string")
+            : [],
+          progress: inquiry.contentContext.progress || "",
+          step: inquiry.contentContext.step || "",
+          source: inquiry.contentContext.source || "",
+        }
+      : undefined,
   }
 }
 

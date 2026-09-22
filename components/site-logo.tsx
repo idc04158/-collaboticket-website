@@ -9,6 +9,8 @@ const LOGO_HEIGHT = 74
 
 type SiteLogoProps = {
   variant?: "header" | "footer"
+  href?: string
+  title?: string
   className?: string
 }
 
@@ -34,11 +36,11 @@ function LogoWordmark({
   )
 }
 
-export function SiteLogo({ variant = "header", className }: SiteLogoProps) {
+export function SiteLogo({ variant = "header", href = "/", title = "홈으로 이동", className }: SiteLogoProps) {
   return (
     <Link
-      href="/"
-      title="홈으로 이동"
+      href={href}
+      title={title}
       className={cn(
         "inline-flex shrink-0 items-center gap-2.5 rounded-md py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40",
         className,
