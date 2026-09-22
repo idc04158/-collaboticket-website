@@ -3,6 +3,7 @@ import path from "path"
 import matter from "gray-matter"
 
 import { enrichInsight, type InsightEnriched } from "@/lib/insight-hub"
+import { sanitizeInsightImage } from "@/lib/insight-image"
 
 export type InsightMeta = {
   slug: string
@@ -24,6 +25,7 @@ export {
   getFeaturedReport,
   getFeaturedReports,
   getHubStats,
+  weeklyUpdateDisplay,
   getRelatedInsights,
   getRelatedInsightsWithReasons,
   getTopicClusterLinks,
@@ -47,7 +49,7 @@ function readMetaFromFile(fileName: string): InsightMeta | null {
     category: (data.category as string) || "Insight",
     tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
     date: (data.date as string) || "",
-    image: data.image as string | undefined,
+    image: sanitizeInsightImage(data.image as string | undefined),
     heroMode: data.heroMode === "diagram" ? "diagram" : "brand",
   }
 }
@@ -108,7 +110,7 @@ export function getInsightBySlug(slug: string): {
       category: (data.category as string) || "Insight",
       tags: Array.isArray(data.tags) ? (data.tags as string[]).filter(Boolean) : [],
       date: (data.date as string) || "",
-      image: data.image as string | undefined,
+      image: sanitizeInsightImage(data.image as string | undefined),
       heroMode: data.heroMode === "diagram" ? "diagram" : "brand",
     }
     return { meta, content }

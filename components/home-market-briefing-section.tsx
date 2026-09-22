@@ -3,6 +3,7 @@ import { ArrowRight, Clock } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { getBriefingChannelLabel, getBriefingEmoji } from "@/lib/home-weekly-briefing"
+import { weeklyUpdateDisplay } from "@/lib/insight-hub"
 import type { InsightEnriched } from "@/lib/insight-hub"
 
 type Props = {
@@ -13,6 +14,8 @@ type Props = {
 }
 
 export function HomeMarketBriefingSection({ insights, totalCount, weeklyNewCount, lastUpdated }: Props) {
+  const weekly = weeklyUpdateDisplay(weeklyNewCount, lastUpdated)
+
   return (
     <section
       id="market-briefing"
@@ -27,15 +30,15 @@ export function HomeMarketBriefingSection({ insights, totalCount, weeklyNewCount
               이번 주 일본 시장 브리핑
             </h2>
             <p className="type-lead mt-4 text-muted-foreground">
-              실제 일본 EC·SNS·카테고리 운영 데이터를 바탕으로 매주 업데이트합니다. 시장 변화를 먼저
-              확인하고, 실행까지 연결하세요.
+              실제 일본 EC·SNS·카테고리 운영 데이터를 바탕으로 인사이트를 업데이트합니다. 시장 변화를
+              먼저 확인하고, 실행까지 연결하세요.
             </p>
           </div>
 
           <dl className="flex shrink-0 gap-6 rounded-2xl border bg-card px-6 py-4 shadow-sm">
             <div>
-              <dt className="text-xs font-medium text-muted-foreground">이번 주 신규</dt>
-              <dd className="mt-1 font-mono text-2xl font-bold text-brand">{weeklyNewCount}</dd>
+              <dt className="text-xs font-medium text-muted-foreground">{weekly.label}</dt>
+              <dd className="mt-1 font-mono text-2xl font-bold text-brand">{weekly.value}</dd>
             </div>
             <div className="w-px bg-border" aria-hidden="true" />
             <div>

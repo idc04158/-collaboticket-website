@@ -11,7 +11,7 @@ export const enStats = [
   { value: "2020", label: "Operating in the Japan market since" },
   { value: "2,500+", label: "Brand inquiries from companies exploring Japan" },
   { value: "8", label: "Service lines run by a single team" },
-  { value: "Weekly", label: "Japan market research published in-house" },
+  { value: "100+", label: "In-house Japan market insight reports" },
 ] as const
 
 export const enProblem = {
@@ -87,7 +87,7 @@ export const enDifferentiators = [
   },
   {
     title: "Data before spend",
-    body: "We publish Japan e-commerce research every week and use it with live operating data to set channel priorities, budgets and KPIs.",
+    body: "We publish in-house Japan e-commerce research and use it with live operating data to set channel priorities, budgets and KPIs.",
   },
   {
     title: "Made for Korean brands",

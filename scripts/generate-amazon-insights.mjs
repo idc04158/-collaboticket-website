@@ -15,7 +15,6 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { fileURLToPath } from "url"
-import { imageForIndex } from "./insight-images.mjs"
 import { PUBLISH_ORDER, pickRelatedSlugs } from "./insight-content-rules.mjs"
 import { normalizeInsightKorean } from "../lib/insight-language-rules.mjs"
 import {
@@ -302,8 +301,6 @@ async function main() {
     }
 
     const relatedSlugs = pickRelatedSlugs(item.slug, allSlugs)
-    const imageIndex = PUBLISH_ORDER.length + i + (manifest.mode === "weekly" ? 200 : 120)
-    const image = imageForIndex(imageIndex)
 
     if (dryRun) {
       console.log(`[dry-run] would write ${item.slug} date=${item.date}`)
@@ -321,7 +318,6 @@ async function main() {
       category: item.category,
       tags: item.tags,
       date: item.date,
-      image,
     }
 
     const cleanedBody = body.replace(/!\[[^\]]*\]\([^)]*IMAGE_PLACEHOLDER[^)]*\)\n*/g, "")

@@ -11,12 +11,17 @@ import {
   heroValueCards,
 } from "@/lib/aeo-content"
 
+import { weeklyUpdateDisplay } from "@/lib/insight-hub"
+
 type Props = {
   totalInsightCount: number
   weeklyNewCount: number
+  lastUpdated: string
 }
 
-export function HeroSection({ totalInsightCount, weeklyNewCount }: Props) {
+export function HeroSection({ totalInsightCount, weeklyNewCount, lastUpdated }: Props) {
+  const weekly = weeklyUpdateDisplay(weeklyNewCount, lastUpdated)
+
   return (
     <section className="relative overflow-hidden bg-[var(--surface-dark)] text-white">
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-[0.05]" />
@@ -100,9 +105,11 @@ export function HeroSection({ totalInsightCount, weeklyNewCount }: Props) {
                 <p className="mt-1 text-xs text-white/60">일본 EC·SNS 분석 리포트</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm">
-                <p className="text-xs font-medium text-white/50">이번 주 업데이트</p>
-                <p className="mt-1 font-mono text-2xl font-bold text-brand">{weeklyNewCount}</p>
-                <p className="mt-1 text-xs text-white/60">신규 브리핑 리포트</p>
+                <p className="text-xs font-medium text-white/50">{weekly.label}</p>
+                <p className="mt-1 font-mono text-2xl font-bold text-brand">{weekly.value}</p>
+                <p className="mt-1 text-xs text-white/60">
+                  {weeklyNewCount > 0 ? "신규 브리핑 리포트" : "마지막으로 올린 리포트"}
+                </p>
               </div>
             </div>
           </div>

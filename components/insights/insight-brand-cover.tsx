@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 
+import { sanitizeInsightImage } from "@/lib/insight-image"
 import { BRAND_COVER_PATH } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
 
@@ -18,11 +19,12 @@ type Props = {
  * Default: gradient mesh. Optional /brand/insight-cover.jpg or diagram media.
  */
 export function InsightBrandCover({ mediaSrc, heroMode = "brand", className, children }: Props) {
-  const preferDiagram = heroMode === "diagram" && Boolean(mediaSrc)
+  const media = sanitizeInsightImage(mediaSrc)
+  const preferDiagram = heroMode === "diagram" && Boolean(media)
   const [brandFailed, setBrandFailed] = useState(false)
   const [diagramFailed, setDiagramFailed] = useState(false)
 
-  const showDiagram = preferDiagram && !diagramFailed && mediaSrc
+  const showDiagram = preferDiagram && !diagramFailed && media
   const showBrandPhoto = !showDiagram && !brandFailed
 
   return (
@@ -30,7 +32,7 @@ export function InsightBrandCover({ mediaSrc, heroMode = "brand", className, chi
       {showDiagram ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={mediaSrc}
+          src={media}
           alt=""
           className="insight-brand-cover__media"
           onError={() => setDiagramFailed(true)}

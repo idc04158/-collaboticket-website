@@ -1,5 +1,6 @@
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
 
+import { DocumentLang } from "@/components/document-lang"
 import { EnContactForm } from "@/components/en/en-contact-form"
 import { LanguageSwitch } from "@/components/language-switch"
 import { SiteLogo } from "@/components/site-logo"
@@ -96,6 +97,7 @@ function EnFooter() {
 export function EnLanding() {
   return (
     <div lang="en" className="flex min-h-screen flex-col">
+      <DocumentLang lang="en" />
       <EnHeader />
 
       <main className="flex-1">

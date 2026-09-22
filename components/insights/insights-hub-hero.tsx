@@ -1,4 +1,4 @@
-import type { InsightEnriched } from "@/lib/insight-hub"
+import { weeklyUpdateDisplay } from "@/lib/insight-hub"
 
 type Props = {
   stats: {
@@ -10,8 +10,9 @@ type Props = {
 }
 
 export function InsightsHubHero({ stats }: Props) {
+  const weekly = weeklyUpdateDisplay(stats.weeklyNewReports, stats.lastUpdated)
   const kpis = [
-    { label: "이번주 신규 리포트", value: `${stats.weeklyNewReports}건` },
+    { label: weekly.label, value: stats.weeklyNewReports > 0 ? `${weekly.value}건` : weekly.value },
     { label: "누적 인사이트", value: `${stats.totalInsights}건` },
     { label: "분석 플랫폼", value: `${stats.platformCount}개` },
     { label: "최종 업데이트", value: stats.lastUpdated },
@@ -28,7 +29,7 @@ export function InsightsHubHero({ stats }: Props) {
           일본 시장 인사이트
         </h1>
         <p className="type-lead mt-5 max-w-2xl text-white/70 sm:text-lg">
-          매주 일본 EC, SNS, 소비자 트렌드, 광고 데이터, 플랫폼 변화, 성공 사례를 분석하여 실행 가능한
+          일본 EC, SNS, 소비자 트렌드, 광고 데이터, 플랫폼 변화, 성공 사례를 분석해 실행 가능한
           인사이트를 제공합니다.
         </p>
 

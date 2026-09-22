@@ -49,5 +49,8 @@ export function sanitizeInsightBody(
     "",
   )
 
+  // Placeholder stock photos from older generators
+  body = body.replace(/^\s*!\[[^\]]*\]\(https?:\/\/(?:picsum\.photos|loremflickr\.com|placehold\.co|via\.placeholder\.com)[^)]*\)\s*$/gim, "")
+
   return body.trimEnd()
 }

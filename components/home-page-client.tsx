@@ -42,7 +42,11 @@ export function HomePageClient({
       <SiteHeader />
 
       <main>
-        <HeroSection totalInsightCount={totalInsightCount} weeklyNewCount={weeklyNewCount} />
+        <HeroSection
+          totalInsightCount={totalInsightCount}
+          weeklyNewCount={weeklyNewCount}
+          lastUpdated={lastUpdated}
+        />
         <HomeMarketBriefingSection
           insights={weeklyBriefing}
           totalCount={totalInsightCount}

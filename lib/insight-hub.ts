@@ -110,42 +110,64 @@ export function estimateReadingTime(content: string, description: string) {
   return Math.max(6, Math.min(22, Math.ceil(chars / 850)))
 }
 
-export function extractSummaryParagraph(content: string) {
-  const answerFirstMatch = content.match(
+function stripMarkdownNoise(text: string) {
+  return text
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/^[-*•✓]\s+/gm, "")
+    .replace(/^\d+\.\s+/gm, "")
+}
+
+/** Short lede lines for the AI 30s summary — never dump a whole section. */
+function compactSummaryLines(text: string, max = 3): string[] {
+  const cleaned = polishInsightCopy(stripMarkdownNoise(text)).trim()
+  if (!cleaned) return []
+
+  const sentences = cleaned
+    .split(/(?<=다)\s+|(?<=요)\s+|(?<=다\.)\s+|(?<=요\.)\s+|\n+/)
+    .map((line) => line.replace(/^[-*•✓\d.]+\s*/, "").trim())
+    .filter((line) => {
+      if (line.length < 12 || line.length > 110) return false
+      if (/^(이 세 가지|오늘은|하지만)/.test(line)) return false
+      return true
+    })
+
+  const unique: string[] = []
+  for (const line of sentences) {
+    if (unique.some((existing) => existing === line || existing.includes(line) || line.includes(existing))) {
+      continue
+    }
+    unique.push(line)
+    if (unique.length >= max) break
+  }
+  return unique
+}
+
+export function extractSummaryParagraph(content: string, description = "") {
+  const fromDescription = compactSummaryLines(description)
+  if (fromDescription.length >= 2) {
+    return fromDescription.join("\n")
+  }
+
+  const sectionPatterns = [
     /(?:^|\n)##\s+결론(?:\s*\([^)]*\))?\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/,
-  )
-  if (answerFirstMatch) {
-    return polishInsightCopy(
-      answerFirstMatch[1]
-        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/^[-*]\s+/gm, "")
-        .trim(),
-    )
+    /(?:^|\n)##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/,
+    /(?:^|\n)##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/,
+  ]
+
+  for (const pattern of sectionPatterns) {
+    const match = content.match(pattern)
+    if (!match) continue
+    const merged = [...fromDescription, ...compactSummaryLines(match[1])]
+    const unique: string[] = []
+    for (const line of merged) {
+      if (!unique.includes(line)) unique.push(line)
+      if (unique.length >= 3) break
+    }
+    if (unique.length > 0) return unique.join("\n")
   }
 
-  const aiSummaryMatch = content.match(/(?:^|\n)##\s+AI 30초 요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/)
-  if (aiSummaryMatch) {
-    return polishInsightCopy(
-      aiSummaryMatch[1]
-        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/^✓\s*/gm, "")
-        .replace(/^-\s*/gm, "")
-        .trim(),
-    )
-  }
-
-  const summaryMatch = content.match(/(?:^|\n)##\s+요약\s*\n+([\s\S]*?)(?=\n##|\n!\[|$)/)
-  if (summaryMatch) {
-    return polishInsightCopy(
-      summaryMatch[1]
-        .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .trim(),
-    )
-  }
-  return ""
+  return fromDescription.join("\n")
 }
 
 export function extractChecklist(content: string) {
@@ -165,7 +187,7 @@ export function extractChecklist(content: string) {
 
 export function enrichInsight(meta: InsightMeta, content = ""): InsightEnriched {
   const text = normalizeText(meta, content)
-  const summary = extractSummaryParagraph(content)
+  const summary = extractSummaryParagraph(content, meta.description)
 
   return {
     ...meta,
@@ -175,7 +197,7 @@ export function enrichInsight(meta: InsightMeta, content = ""): InsightEnriched 
     topics: matchGroup(text, TOPIC_KEYWORDS, INSIGHT_FILTER_GROUPS.topics),
     industries: matchGroup(text, INDUSTRY_KEYWORDS, INSIGHT_FILTER_GROUPS.industries),
     audience: AUDIENCE_BY_CATEGORY[meta.category] || "일본 진출 실무자",
-    aiSummary: summary || meta.description,
+    aiSummary: summary || compactSummaryLines(meta.description).join("\n") || meta.description,
     checklist: extractChecklist(content),
   }
 }
@@ -226,6 +248,14 @@ export function getHubStats(posts: InsightMeta[]) {
   }
 }
 
+/** Avoid showing “이번 주 0건” on marketing surfaces. */
+export function weeklyUpdateDisplay(weeklyNewReports: number, lastUpdated: string) {
+  if (weeklyNewReports > 0) {
+    return { label: "이번 주 업데이트", value: String(weeklyNewReports) }
+  }
+  return { label: "최근 업데이트", value: lastUpdated }
+}
+
 export function getFeaturedReport(posts: InsightEnriched[]) {
   return posts[0] ?? null
 }
@@ -242,7 +272,7 @@ export function getWeeklyBriefLines(posts: InsightEnriched[]) {
   })
 
   while (lines.length < 3) {
-    lines.push("일본 EC·SNS·리뷰 데이터가 매주 업데이트됩니다.")
+    lines.push("일본 EC·SNS·리뷰 운영 인사이트를 이어서 확인할 수 있습니다.")
   }
 
   return lines.slice(0, 3)

@@ -335,5 +335,5 @@ export function splitSummaryBullets(summary: string) {
       .filter((line) => line.length > 0)
   }
 
-  return lines
+  return lines.slice(0, 3)
 }
