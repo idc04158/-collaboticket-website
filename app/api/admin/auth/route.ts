@@ -10,6 +10,7 @@ import {
   verifyAdminPassword,
   verifyCrmSessionToken,
 } from "@/lib/crm-auth"
+import { clientIp, rateLimit, readJsonBody } from "@/lib/public-request-guard"
 
 export const runtime = "nodejs"
 
@@ -19,8 +20,24 @@ export async function GET() {
   return NextResponse.json({ ok: Boolean(session), role: session?.role })
 }
 
+const LOGIN_BODY_LIMIT = 2_000
+const LOGIN_RATE_LIMIT = 10
+const LOGIN_RATE_WINDOW_MS = 15 * 60 * 1000
+
 export async function POST(request: Request) {
-  const body = await request.json().catch(() => null)
+  if (!rateLimit(`admin-login:${clientIp(request)}`, LOGIN_RATE_LIMIT, LOGIN_RATE_WINDOW_MS)) {
+    return NextResponse.json(
+      { ok: false, message: "로그인 시도가 너무 많습니다. 잠시 후 다시 시도해주세요." },
+      { status: 429 },
+    )
+  }
+
+  const parsed = await readJsonBody(request, LOGIN_BODY_LIMIT)
+  if (!parsed.ok) {
+    return NextResponse.json({ ok: false, message: "잘못된 요청입니다." }, { status: parsed.status })
+  }
+
+  const body = parsed.body && typeof parsed.body === "object" ? (parsed.body as Record<string, unknown>) : null
   const password = body && typeof body.password === "string" ? body.password : ""
   const username =
     body && typeof body.username === "string"

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CtaSection() {
   return (
-    <section id="contact" className="scroll-mt-24 relative overflow-hidden bg-brand py-24 lg:py-32">
+    <section id="consult" className="scroll-mt-24 relative overflow-hidden bg-brand py-24 lg:py-32">
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-10" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h2 className="type-section-title text-white">

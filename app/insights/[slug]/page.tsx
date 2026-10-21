@@ -74,19 +74,34 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const result = getEnrichedInsightBySlug(params.slug)
   if (!result) {
-    return { title: "Not found | CollaboTicket" }
+    return {
+      title: "Not found | CollaboTicket",
+      robots: { index: false, follow: false },
+    }
   }
+
+  const description = result.aiSummary || result.description
+  const images = result.image ? [{ url: result.image }] : undefined
+
   return {
     title: `${result.title} | CollaboTicket`,
-    description: result.aiSummary || result.description,
+    description,
     alternates: {
       canonical: `/insights/${params.slug}`,
     },
     openGraph: {
+      type: "article",
       title: result.title,
-      description: result.aiSummary || result.description,
+      description,
       url: `/insights/${params.slug}`,
-      images: result.image ? [{ url: result.image }] : undefined,
+      publishedTime: result.date || undefined,
+      images,
+    },
+    twitter: {
+      card: result.image ? "summary_large_image" : "summary",
+      title: result.title,
+      description,
+      images: result.image ? [result.image] : undefined,
     },
   }
 }

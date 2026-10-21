@@ -5,12 +5,25 @@ import { Users, Eye, TrendingUp, Filter } from "lucide-react"
 import { MarketingShell } from "@/components/marketing-shell"
 import { PageHero } from "@/components/page-hero"
 
+const title = "인플루언서 매칭 데모 | CollaboTicket"
+const description =
+  "카테고리·지표 기반으로 일본 인플루언서 후보를 빠르게 좁혀 보는 데모 흐름을 안내합니다. 실제 리스트는 상담 후 제공됩니다."
+
 export const metadata: Metadata = {
-  title: "인플루언서 매칭 데모 | CollaboTicket",
-  description:
-    "카테고리·지표 기반으로 일본 인플루언서 후보를 빠르게 좁혀 보는 데모 흐름을 안내합니다. 실제 리스트는 상담 후 제공됩니다.",
+  title,
+  description,
   alternates: {
     canonical: "/influencers",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/influencers",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
   },
 }
 

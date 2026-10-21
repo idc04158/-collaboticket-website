@@ -63,6 +63,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
   const [detail, setDetail] = useState("")
   const [inquirySource, setInquirySource] = useState("homepage")
   const [contentContext, setContentContext] = useState<InsightContentContext | null>(null)
+  const [formError, setFormError] = useState("")
 
   useEffect(() => {
     setSelfDiagnosis(loadSelfDiagnosis())
@@ -94,6 +95,9 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
     } else if (topicFromQuery === "newsletter") {
       setInquirySource("newsletter")
       setDetail((prev) => prev || "인사이트 뉴스레터 구독을 신청합니다. 매주 일본 시장 데이터 메일 수신을 원합니다.")
+    } else if (topicFromQuery === "webinar") {
+      setInquirySource("webinar")
+      setDetail((prev) => prev || "웨비나 사전 신청을 요청합니다.")
     } else if (topicFromQuery === "insight-mid" || topicFromQuery === "diagnosis" || topicFromQuery === "insight-action") {
       setInquirySource(sourceFromQuery || topicFromQuery)
     } else if (topicFromQuery || sourceFromQuery) {
@@ -108,16 +112,17 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
     if (formData.get("website")) return
 
     if (!formData.get("consent")) {
-      alert("개인정보 수집 및 이용에 동의해주세요.")
+      setFormError("개인정보 수집 및 이용에 동의해주세요.")
       return
     }
 
     const services = formData.getAll("services").join(", ")
     if (!services) {
-      alert("필요한 서비스를 1개 이상 선택해주세요.")
+      setFormError("필요한 서비스를 1개 이상 선택해주세요.")
       return
     }
 
+    setFormError("")
     setLoading(true)
 
     const controller = new AbortController()
@@ -159,7 +164,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
       }
 
       if (!response.ok || !result.ok || !result.calendarUrl || !result.kakaoUrl) {
-        alert(
+        setFormError(
           result.message ||
             `전송에 실패했습니다. 잠시 후 다시 시도해주세요. (오류 코드: ${response.status})`,
         )
@@ -194,7 +199,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
       setSelfDiagnosis(null)
     } catch (error) {
       const timedOut = error instanceof DOMException && error.name === "AbortError"
-      alert(
+      setFormError(
         timedOut
           ? "응답 시간이 초과되었습니다. 네트워크 상태를 확인한 뒤 다시 시도해주세요."
           : "전송 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.",
@@ -207,7 +212,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <input type="text" name="website" className="hidden" aria-hidden="true" />
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
       {selfDiagnosis && (
         <div className="rounded-2xl border border-[#00B140]/25 bg-[#00B140]/5 p-4">
@@ -242,7 +247,7 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
         </label>
         <label>
           <FieldLabel required>연락처</FieldLabel>
-          <input name="phone" required placeholder="연락 가능한 번호" className={fieldClass} />
+          <input name="phone" required type="tel" autoComplete="tel" placeholder="연락 가능한 번호" className={fieldClass} />
         </label>
       </div>
 
@@ -374,6 +379,12 @@ export function ContactForm({ onSuccess, submitLabel = "상담 신청하기" }: 
           (내용 보기)
         </a>
       </label>
+
+      {formError && (
+        <p role="alert" className="text-sm font-medium text-destructive">
+          {formError}
+        </p>
+      )}
 
       <button
         type="submit"

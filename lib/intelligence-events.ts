@@ -25,6 +25,9 @@ function resolveEventsPath() {
     return process.env.INTELLIGENCE_EVENTS_PATH
   }
   if (process.env.VERCEL) {
+    console.warn(
+      "[intelligence] INTELLIGENCE_EVENTS_PATH is unset. Events are stored in /tmp and can disappear on redeploy or a cold start.",
+    )
     return path.join("/tmp", "collaboticket-intelligence-events.jsonl")
   }
   return path.join(process.cwd(), ".data", "intelligence-events.jsonl")

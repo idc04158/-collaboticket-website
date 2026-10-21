@@ -2,7 +2,7 @@ import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
 
 import { DocumentLang } from "@/components/document-lang"
 import { EnContactForm } from "@/components/en/en-contact-form"
-import { LanguageSwitch } from "@/components/language-switch"
+import { EnHeader } from "@/components/en/en-header"
 import { SiteLogo } from "@/components/site-logo"
 import {
   enCompanyInfo,
@@ -16,42 +16,6 @@ import {
   enStats,
 } from "@/lib/en-content"
 import { typeBody, typeCardTitle, typeHero, typeLead, typeSectionTitle } from "@/lib/typography"
-
-const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Approach", href: "#approach" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
-]
-
-function EnHeader() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-lg">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <SiteLogo variant="header" href="/en" title="CollaboTicket home" />
-
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-lg px-3.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-2">
-          <LanguageSwitch current="en" />
-          <a href="#contact" className="btn-brand px-4 py-2.5 text-sm sm:px-5">
-            Contact us
-          </a>
-        </div>
-      </div>
-    </header>
-  )
-}
 
 function EnFooter() {
   return (

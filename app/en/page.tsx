@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     url: "/en",
     locale: "en_US",
   },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 }
 
 export default function EnglishLandingPage() {

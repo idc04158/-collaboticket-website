@@ -34,7 +34,7 @@ function SessionCard({ session, status }: { session: Webinar; status: "upcoming"
         <p className="text-sm leading-relaxed text-muted-foreground">{session.summary}</p>
         {status === "upcoming" ? (
           <Button asChild className="w-fit bg-[#00B140] text-white transition hover:bg-[#009C38]">
-            <Link href="/contact">사전 신청하기</Link>
+            <Link href="/contact?topic=webinar">사전 신청하기</Link>
           </Button>
         ) : (
           <p className="text-sm text-muted-foreground">

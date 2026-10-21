@@ -23,6 +23,12 @@ export const metadata: Metadata = {
       "매주 업데이트되는 일본 EC 인사이트와 Qoo10·Rakuten·Amazon 운영, 현지 콘텐츠·인플루언서 시딩을 통합 실행합니다.",
     url: "/",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "콜라보티켓 | 일본 시장을 분석하고, 실행까지",
+    description:
+      "매주 업데이트되는 일본 EC 인사이트와 Qoo10·Rakuten·Amazon 운영, 현지 콘텐츠·인플루언서 시딩을 통합 실행합니다.",
+  },
 }
 
 export default function Home() {

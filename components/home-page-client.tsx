@@ -41,7 +41,7 @@ export function HomePageClient({
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
 
-      <main>
+      <main className="flex-1 pb-24 md:pb-28">
         <HeroSection
           totalInsightCount={totalInsightCount}
           weeklyNewCount={weeklyNewCount}

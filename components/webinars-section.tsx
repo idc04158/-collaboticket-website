@@ -27,7 +27,7 @@ function WebinarCard({ webinar, status }: { webinar: Webinar; status: "upcoming"
         <p className="text-sm leading-relaxed text-muted-foreground">{webinar.summary}</p>
         {status === "upcoming" ? (
           <Button asChild className="w-fit rounded-xl bg-brand text-white hover:bg-brand-dark">
-            <Link href="/contact">
+            <Link href="/contact?topic=webinar">
               사전 신청
               <ArrowRight className="ml-1 size-4" />
             </Link>

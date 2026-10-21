@@ -82,6 +82,9 @@ function resolveStoragePath() {
     return process.env.INQUIRIES_STORAGE_PATH
   }
   if (process.env.VERCEL) {
+    console.warn(
+      "[inquiries] INQUIRIES_STORAGE_PATH is unset. Leads are stored in /tmp and can disappear on redeploy or a cold start.",
+    )
     return path.join("/tmp", "collaboticket-inquiries.json")
   }
   return path.join(process.cwd(), "data", "inquiries.json")

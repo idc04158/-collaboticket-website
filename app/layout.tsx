@@ -13,11 +13,27 @@ const notoSansKR = Noto_Sans_KR({
   weight: ["300", "400", "500", "600", "700", "800"],
 })
 
+const defaultTitle = "콜라보티켓 | Japan Commerce Intelligence & Execution"
+const defaultDescription =
+  "일본 시장 인사이트를 매주 제공하고 EC·콘텐츠·인플루언서 운영까지 실행하는 Japan Commerce Intelligence & Execution Company. Qoo10·Rakuten·Amazon 운영과 현지 콘텐츠 제작을 한 팀이 수행합니다."
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "CollaboTicket | 데이터로 설계하는 일본 시장 진출 전략",
-  description:
-    "콜라보티켓은 한국 브랜드의 일본 진출을 전략적으로 설계하는 글로벌 마케팅 파트너입니다.",
+  title: defaultTitle,
+  description: defaultDescription,
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    siteName: "CollaboTicket",
+    title: defaultTitle,
+    description: defaultDescription,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+  },
   icons: {
     icon: [{ url: "/logo.png", type: "image/png", sizes: "117x74" }],
     shortcut: "/logo.png",

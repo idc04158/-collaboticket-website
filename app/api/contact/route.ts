@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server"
 
 import { calendarBookingUrl, kakaoChannelUrl } from "@/lib/contact-links"
+import { pushLeadToCountSelf } from "@/lib/countself-lead"
 import { notifyDiscordContact } from "@/lib/discord"
 import { recommendInsightSlugsForInquiry } from "@/lib/inquiry-recommendations"
 import { appendIntelligenceEvent } from "@/lib/intelligence-events"
 import { getInsightBySlug } from "@/lib/insights"
+import { clientIp, rateLimit, readJsonBody } from "@/lib/public-request-guard"
 import {
   formatInquiryMessage,
   saveInquiry,
@@ -185,12 +187,34 @@ function buildCustomerConfirmation(inquiry: InquiryInput, inquiryMessage: string
   }
 }
 
+const CONTACT_BODY_LIMIT = 32_000
+const CONTACT_RATE_LIMIT = 8
+const CONTACT_RATE_WINDOW_MS = 10 * 60 * 1000
+
 export async function POST(request: Request) {
   try {
-    const body = await request.json().catch(() => null)
+    const parsed = await readJsonBody(request, CONTACT_BODY_LIMIT)
+    if (!parsed.ok) {
+      const message = parsed.status === 413 ? "문의 내용이 너무 깁니다." : "잘못된 요청입니다."
+      return NextResponse.json({ ok: false, message }, { status: parsed.status })
+    }
 
-    if (!body || typeof body !== "object") {
+    const body = parsed.body
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
       return NextResponse.json({ ok: false, message: "잘못된 요청입니다." }, { status: 400 })
+    }
+
+    const isEnglish = asString((body as Record<string, unknown>).source) === "en-landing"
+    if (!rateLimit(`contact:${clientIp(request)}`, CONTACT_RATE_LIMIT, CONTACT_RATE_WINDOW_MS)) {
+      return NextResponse.json(
+        {
+          ok: false,
+          message: isEnglish
+            ? "Too many requests. Please try again in a few minutes."
+            : "요청이 너무 많습니다. 잠시 후 다시 시도해주세요.",
+        },
+        { status: 429 },
+      )
     }
 
     if (asString((body as Record<string, unknown>).website)) {
@@ -202,17 +226,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, message: "필수 항목을 확인해주세요." }, { status: 400 })
     }
 
-    const inquiryId = crypto.randomUUID()
-    let inquiry = {
-      id: inquiryId,
-      createdAt: new Date().toISOString(),
-      ...inquiryInput,
-    }
-
+    let inquiry
     try {
       inquiry = await saveInquiry(inquiryInput)
     } catch (error) {
       console.error("[contact] saveInquiry failed:", error)
+      const message =
+        inquiryInput.source === "en-landing"
+          ? "We could not save your inquiry. Please try again in a moment."
+          : "접수 저장에 실패했습니다. 잠시 후 다시 시도해주세요."
+      return NextResponse.json({ ok: false, message }, { status: 500 })
     }
 
     const inquiryMessage = formatInquiryMessage(inquiryInput)
@@ -229,6 +252,15 @@ export async function POST(request: Request) {
       .filter((item): item is { slug: string; title: string } => Boolean(item))
 
     const notifications = Promise.allSettled([
+      pushLeadToCountSelf({
+        company: inquiryInput.company,
+        name: inquiryInput.name,
+        email: inquiryInput.email,
+        phone: inquiryInput.phone,
+        source: inquiryInput.source,
+        notes: inquiryMessage,
+        occurredAt: inquiry.createdAt,
+      }),
       notifyDiscordContact({
         id: inquiry.id,
         message: inquiryMessage,

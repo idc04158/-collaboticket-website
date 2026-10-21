@@ -70,6 +70,8 @@ export function SiteHeader() {
               type="button"
               className="flex size-10 items-center justify-center rounded-lg border border-border lg:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-nav"
               aria-label={mobileOpen ? "메뉴 닫기" : "메뉴 열기"}
             >
               {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -83,7 +85,7 @@ export function SiteHeader() {
             mobileOpen ? "max-h-[28rem] py-4" : "max-h-0 py-0",
           )}
         >
-          <nav className="flex flex-col gap-1 px-5" aria-label="Mobile navigation">
+          <nav id="mobile-nav" className="flex flex-col gap-1 px-5" aria-label="Mobile navigation">
             {navItems.map((item) => (
               <Link
                 key={item.href}

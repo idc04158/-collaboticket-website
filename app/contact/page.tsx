@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     description: "데이터 기반 일본 시장 실행 전략 상담을 신청하세요.",
     url: "/contact",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "상담 신청 | CollaboTicket",
+    description: "데이터 기반 일본 시장 실행 전략 상담을 신청하세요.",
+  },
 }
 
 export default function ContactPage() {

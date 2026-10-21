@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     description: "실행 가능한 일본 시장 데이터와 인사이트를 매주 업데이트합니다.",
     url: "/insights",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "일본 시장 인사이트 | CollaboTicket",
+    description: "실행 가능한 일본 시장 데이터와 인사이트를 매주 업데이트합니다.",
+  },
 }
 
 export default function InsightsIndexPage() {
